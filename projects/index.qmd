@@ -1,0 +1,273 @@
+---
+title: "Projects"
+body-classes: page-title
+page-layout: full
+
+listing:
+  - id: individual-differences-pubs
+    contents: ../publications/*/index.qmd
+    sort:
+      - "pub-status asc"
+      - "date desc"
+    template: ../assets/project-publications.ejs.md
+    fields: [title, pub-year, pub-authors, venue, pub-status, pub-type, pdf, path, project-areas]
+    template-params:
+      project-area: "individual-differences"
+
+  - id: neural-mechanisms-pubs
+    contents: ../publications/*/index.qmd
+    sort:
+      - "pub-status asc"
+      - "date desc"
+    template: ../assets/project-publications.ejs.md
+    fields: [title, pub-year, pub-authors, venue, pub-status, pub-type, pdf, path, project-areas]
+    template-params:
+      project-area: "neural-mechanisms"
+    max-items: 10
+
+  - id: contemplative-practices-pubs
+    contents: ../publications/*/index.qmd
+    sort:
+      - "pub-status asc"
+      - "date desc"
+    template: ../assets/project-publications.ejs.md
+    fields: [title, pub-year, pub-authors, venue, pub-status, pub-type, pdf, path, project-areas]
+    template-params:
+      project-area: "contemplative-practices"
+    max-items: 10
+---
+
+::: {.page-header}
+
+::: {.header-text}
+::: {.header-title}
+PROJECTS
+:::
+
+::: {.header-subtitle}
+Research areas and ongoing lines of work in the CALM Lab.
+:::
+:::
+
+:::
+
+::: {.projects-intro}
+The CALM Lab’s research is organized around three interconnected areas that together aim to understand attention across contexts of life and mind. Across these areas, we study how attention differs across individuals, how it is implemented in the brain, and how it may be strengthened through contemplative practice and training.
+:::
+
+:::: {.projects-overview-grid}
+
+::: {.project-area-card .project-area-blue}
+<div class="project-area-icon">
+<i class="bi bi-rulers"></i>
+</div>
+
+### Individual Differences
+
+<div class="project-area-text">
+We develop and refine behavioral measures of attention control and study how stable individual differences in attention relate to cognition, performance, and well-being.
+</div>
+
+<div class="project-area-cta">
+[Explore area →](#individual-differences)
+</div>
+:::
+
+::: {.project-area-card .project-area-red}
+<div class="project-area-icon">
+<i class="bi bi-diagram-3"></i>
+</div>
+
+### Neural Mechanisms
+
+<div class="project-area-text">
+We investigate the neural systems that support attention using methods such as EEG, fMRI, pupillometry, and network-based approaches to brain function.
+</div>
+
+<div class="project-area-cta">
+[Explore area →](#neural-mechanisms)
+</div>
+:::
+
+::: {.project-area-card .project-area-green}
+<div class="project-area-icon">
+<i class="bi bi-flower1"></i>
+</div>
+
+### Contemplative Practices
+
+<div class="project-area-text">
+We examine how mindfulness and related contemplative practices influence attention, cognitive performance, and resilience across everyday and high-demand settings.
+</div>
+
+<div class="project-area-cta">
+[Explore area →](#contemplative-practices)
+</div>
+:::
+
+::::
+
+::: {.project-section-card .project-section-blue}
+
+::: {.project-section-header}
+
+<div class="project-section-icon">
+<i class="bi bi-rulers"></i>
+</div>
+
+::: {.project-section-heading}
+## Individual Differences {#individual-differences}
+:::
+
+:::
+
+::: {.project-section-intro}
+This area focuses on how attention control can be measured reliably and how differences across individuals shape performance across a wide range of cognitive tasks and real-world outcomes.
+:::
+
+::: {.project-threads-panel}
+
+::: {.project-thread}
+
+### Measurement
+
+Developing reliable and valid tools for assessing attention control across task paradigms and populations.
+:::
+
+::: {.project-thread}
+
+### Sustained Attention
+
+Studying fluctuations in sustained attention and how they relate to response variability, mind wandering, and task performance.
+
+<div class="project-thread-meta">
+<span class="project-method">Behavioral Tasks</span>
+<span class="project-method">Individual Differences</span>
+</div>
+:::
+
+::: {.project-thread}
+
+### Cognitive Abilities
+
+Examining the relationship between attention control and broader cognitive abilities, including working memory capacity and fluid intelligence.
+
+<div class="project-thread-meta">
+<span class="project-method">Latent Variable Models</span>
+</div>
+:::
+
+:::
+
+::: {.project-subsection-label}
+Related Publications
+:::
+
+::: {#individual-differences-pubs}
+:::
+
+:::
+
+::: {.project-section-card .project-section-red}
+
+::: {.project-section-header}
+
+::: {.project-section-icon}
+<i class="bi bi-diagram-3"></i>
+:::
+
+::: {.project-section-heading}
+## Neural Mechanisms {#neural-mechanisms}
+:::
+
+:::
+
+::: {.project-section-intro}
+This area examines the neural systems and physiological dynamics that support attentional focus, attentional lapses, and control over thought and behavior.
+:::
+
+::: {.project-threads-panel}
+
+::: {.project-thread}
+
+### EEG Microstates
+
+Investigating how EEG microstate dynamics track attentional state, time-on-task effects, and mind wandering during sustained performance.
+:::
+
+::: {.project-thread}
+
+### Large-Scale Networks
+
+Studying how large-scale networks such as FPCN, DAN, and DMN interact to support attention control and internally directed cognition.
+:::
+
+::: {.project-thread}
+
+### LC-NE Function
+
+Using pupil dynamics as an index of attentional engagement and locus coeruleus–norepinephrine system involvement in cognitive control.
+:::
+
+:::
+
+::: {.project-subsection-label}
+Related Publications
+:::
+
+::: {#neural-mechanisms-pubs}
+:::
+
+:::
+
+::: {.project-section-card .project-section-green}
+
+::: {.project-section-header}
+
+::: {.project-section-icon}
+<i class="bi bi-flower1"></i>
+:::
+
+::: {.project-section-heading}
+## Contemplative Practices {#contemplative-practices}
+:::
+
+:::
+
+::: {.project-section-intro}
+This area explores whether and how contemplative practices such as mindfulness training can strengthen attention, reduce vulnerability to distraction, and support well-being in demanding contexts.
+:::
+
+::: {.project-threads-panel}
+
+::: {.project-thread}
+
+### Mindfulness Practice
+
+Testing whether individual mindfulness practice sessions produce immediate changes in focus, mood, and stress.
+:::
+
+::: {.project-thread}
+
+### Mindfulness Training
+
+Evaluating mindfulness-based interventions in groups such as firefighters and military personnel to understand training effects in applied settings.
+:::
+
+::: {.project-thread}
+
+### Well-Being
+
+Studying whether repeated short-term shifts during contemplative practice accumulate into broader changes across training.
+:::
+
+:::
+
+::: {.project-subsection-label}
+Related Publications
+:::
+
+::: {#contemplative-practices-pubs}
+:::
+
+:::

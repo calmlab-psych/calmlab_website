@@ -1,0 +1,95 @@
+---
+title: "Publications"
+body-classes: page-title
+page-layout: full
+
+listing:
+  - id: publications-list
+    contents: "*/index.qmd"
+    sort:
+      - "pub-status asc"
+      - "date desc"
+    template: templates/publication-card.ejs.md
+    fields: [title, pub-authors, pub-year, venue, pub-status, pub-type, categories, pdf, data, code, doi, citation-count, altmetric-count]
+    filter-ui: false
+    exclude:
+      draft: true
+---
+
+::: {.page-header}
+
+::: {.header-text}
+::: {.header-title}
+PUBLICATIONS
+:::
+
+::: {.header-subtitle}
+Peer-reviewed articles, chapters, and related scholarly work from the CALM Lab.
+:::
+:::
+
+:::
+
+<div class="pub-filter-bar">
+  <button class="pub-filter-btn active" data-filter="all">All</button>
+  <button class="pub-filter-btn" data-filter="Journal Article">Journal Articles</button>
+  <button class="pub-filter-btn" data-filter="Book Chapter">Book Chapters</button>
+  <button class="pub-filter-btn" data-filter="Popular Writing">Popular Writing</button>
+</div>
+
+::: {#publications-list}
+:::
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".pub-filter-btn");
+
+  function updatePublicationFilter(filter) {
+    const list = document.querySelector(".publications-list");
+    if (!list) return;
+
+    const children = Array.from(list.children);
+
+    children.forEach((el) => {
+      if (el.classList.contains("publication-entry")) {
+        const pubType = el.dataset.pubType || "";
+        const show = filter === "all" || pubType === filter;
+        el.style.display = show ? "" : "none";
+      }
+    });
+
+    const yearGroups = list.querySelectorAll(".publication-year-group");
+
+    yearGroups.forEach((group) => {
+      let next = group.nextElementSibling;
+      let hasVisibleEntries = false;
+
+      while (next && !next.classList.contains("publication-year-group")) {
+        if (
+          next.classList.contains("publication-entry") &&
+          next.style.display !== "none"
+        ) {
+          hasVisibleEntries = true;
+          break;
+        }
+        next = next.nextElementSibling;
+      }
+
+      group.style.display = hasVisibleEntries ? "" : "none";
+    });
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const filter = this.dataset.filter;
+
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      updatePublicationFilter(filter);
+    });
+  });
+
+  updatePublicationFilter("all");
+});
+</script>

@@ -1,0 +1,138 @@
+---
+name: Alex Smith
+position: Graduate Student
+tagline: Brain Mechanisms
+
+image: photo.jpeg
+
+degree_program: Masters in Experimental Psychology
+in_lab: 2025-Present
+
+email: "jtsukahara@..."
+cv: /files/jason_cv.pdf
+website: https://www.jasontsukahara.com
+google_scholar: https://scholar.google.com/citations?user=393wE14AAAAJ&hl=en&oi=ao
+linkedin: ok
+bluesky: drjt.bsky.social
+researchgate: yes
+x: jasontsukahara
+github: dr-JT
+
+page-layout: full
+body-classes: profile-page
+include-after-body: ../../templates/profile-links.html
+
+about:
+  id: person-about
+  template: jolla
+---
+
+::: {.profile-heading}
+
+# {{< meta name >}} {.profile-name}
+
+::: {.profile-position}
+{{< meta position >}}
+:::
+
+::: {.profile-tagline}
+{{< meta tagline >}}
+:::
+
+::: {.profile-links}
+
+<div id="profile-links-dynamic"
+  data-cv="{{< meta cv >}}"
+  data-website="{{< meta website >}}"
+  data-google-scholar="{{< meta google_scholar >}}"
+  data-linkedin="{{< meta linkedin >}}"
+  data-bluesky="{{< meta bluesky >}}"
+  data-researchgate="{{< meta researchgate >}}"
+  data-x="{{< meta x >}}"
+  data-github="{{< meta github >}}">
+</div>
+
+:::
+
+:::
+
+:::: {.profile-meta-grid}
+
+::: {.profile-meta-card}
+### Degree Program
+{{< meta degree_program >}}
+:::
+
+::: {.profile-meta-card}
+### Contact
+[{{< meta email >}}](mailto:{{< meta email >}})
+:::
+
+::: {.profile-meta-card}
+### In the Lab
+{{< meta in_lab >}}
+:::
+
+::::
+
+:::: {.profile-section-layout}
+
+::: {.profile-section-card}
+
+<div class="profile-section-icon profile-section-green">
+<i class="bi bi-lightbulb"></i>
+</div>
+
+### Research Interests
+
+This is a longer paragraph style explanation of my research interests into something I don't know how to do this but here we go, yipee kaya. Then this is a part of it as well. And what if it keeps on going on for a longer and longer and longer ezplanation. But does not stop here yet.
+
+:::
+
+::: {.profile-section-card}
+
+<div class="profile-section-icon profile-section-blue">
+<i class="bi bi-mortarboard"></i>
+</div>
+
+### Education
+
+**Ph.D. in Psychology** — Example University
+
+**M.A. in Cognitive Science** — Example University
+
+**B.A. in Psychology** — Example University
+
+:::
+
+::: {.profile-section-card .profile-publications}
+
+<div class="profile-section-icon profile-section-red">
+<i class="bi bi-journal-text"></i>
+</div>
+
+### Selected Publications
+
+**Doe, J.**, Smith, A., & Tsukahara, J. S. (2026). Title of paper goes here. *Journal Name*.
+
+Doe, J., & Tsukahara, J. S. (2025). Conference poster title here. *Conference Name*.
+
+:::
+
+::: {.profile-section-card .profile-about}
+
+<div class="profile-section-icon profile-section-green">
+<i class="bi bi-person"></i>
+</div>
+
+### About
+
+Jane Doe is a graduate student in the CALM Lab studying how attention fluctuates over time and how contemplative practices may help support cognitive performance and well-being. Her research focuses on understanding the dynamics of sustained attention—why focus is sometimes stable and at other times drifts—and how these fluctuations shape thought, behavior, and performance. By combining behavioral experiments with neurocognitive approaches, she investigates how attention operates both in everyday contexts and in situations that demand sustained mental effort.
+
+In her research, Jane is particularly interested in the relationship between mind wandering and cognitive control. She studies how internal thoughts emerge during ongoing tasks and how individuals differ in their ability to maintain goal-directed focus. Her work draws on behavioral tasks and physiological measures such as EEG to examine the moment-to-moment dynamics of attention and the neural systems that support these processes.
+
+More broadly, Jane is interested in how contemplative practices such as mindfulness may influence attention and emotional well-being. She is motivated by the possibility that training attention can enhance both cognitive performance and quality of life. Outside the lab, Jane enjoys exploring nature, reading, and practicing mindfulness meditation—interests that often inspire new questions about the mind and its capacity for focus and reflection.
+
+:::
+
+::::

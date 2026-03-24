@@ -1,0 +1,32 @@
+---
+title: "Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence"
+
+pub-authors:
+  - Cody A. Mashburn
+  - Jason S. Tsukahara
+  - Randall W. Engle
+
+pub-year: "2020"
+date: "2020-07-14"
+venue: "Working memory: The state of the science"
+pub-type: "Book Chapter"
+pub-status: "Published"
+
+categories:
+  - measurement
+  - higher-order-cognition
+  - review
+
+pdf: ""
+data: ""
+code: ""
+doi: "10.1093/oso/9780198842286.003.0007"
+
+project-areas:
+  - individual-differences
+
+abstract: "In this chapter, we detail our approach to the study of individual differences in working memory capacity (WMC) and how it has contributed to understanding the mechanisms of complex cognition. Theories of working memory have primarily focused on specifying how information is represented and manipulated in a limited-capacity cognitive system. Individuals differ in the efficacy of their working memory systems, forming the basis for WMC as a psychometric construct. Decades of research have shown that WMC is predictive of a broad range of abilities and outcomes (Engle, 2002; Engle & Kane, 2004; Feldman-Barrett, Tugade, & Engle, 2004). One of the most robust and, we believe, important findings is that WMC strongly predicts fluid intelligence (Gf), the ability to solve novel problems and learn new information (Kane, Hambrick, & Conway, 2005; Kyllonen & Christal, 1990). A central feature of many models of the working memory system is a domain-general executive attention, sometimes called a central executive, which regulates other components of the system (Baddeley & Hitch, 1974; Cowan, 1999). We argue that this attentional component forms the basis of the WMC–Gf relationship."
+
+listing-page: false
+format: html
+---

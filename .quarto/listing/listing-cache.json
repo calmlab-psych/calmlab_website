@@ -1,0 +1,47 @@
+{
+  "listingMap": {
+    "index.qmd": [
+      "ac-cogability/index.qmd",
+      "ac-measurement/index.qmd",
+      "ac-brain/index.qmd",
+      "publications",
+      "news",
+      "news/posts",
+      "publications/*/index.qmd"
+    ],
+    "news/index.qmd": [
+      "news/posts",
+      "posts"
+    ],
+    "team/index.qmd": [
+      "./",
+      "pi",
+      "graduate-students",
+      "undergraduates",
+      "research-assistants",
+      "jason-tsukahara",
+      "jason-tsukahara/index.qmd",
+      "grad-students",
+      "news/posts",
+      "../news/posts",
+      "../news/posts/*.qmd",
+      "undergrads"
+    ],
+    "publications/index.qmd": [
+      ".",
+      "*/index.qmd"
+    ],
+    "team/jason-tsukahara/index.qmd": [
+      "../../../publications/*/index.qmd",
+      "../../publications/*/index.qmd"
+    ],
+    "team/grad-students/grad1/index.qmd": [
+      "../../publications/*/index.qmd",
+      "../../../publications/*/index.qmd"
+    ],
+    "projects/index.qmd": [
+      "../publications/*/index.qmd",
+      "publications/*/index.qmd"
+    ]
+  }
+}

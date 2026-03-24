@@ -1,0 +1,35 @@
+project:
+  type: website
+
+website:
+  title: "CALM LAB"
+  site-url: https://jasontsukahara.com
+  page-navigation: true
+  back-to-top-navigation: true
+  twitter-card: true
+  search: false
+
+  navbar:
+    pinned: true
+    right:
+      - href: team/index.qmd
+        text: Team
+      # - href: projects/index.qmd
+      #   text: Projects
+      - href: publications/index.qmd
+        text: Publications
+      # - href: research_tools/index.qmd
+      #   text: Research Tools
+      - href: contact.qmd
+        text: Contact
+
+format:
+  html:
+    theme:
+      - cosmo
+    mainfont: "Source Sans 3"
+    css:
+      - assets/style.css
+    include-after-body: assets/news-filter.html
+    include-in-header: assets/academicons.html
+    anchor-sections: false

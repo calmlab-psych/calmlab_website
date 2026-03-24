@@ -1,0 +1,86 @@
+```{=html}
+<div class="publications-list">
+<%
+  const profileId = templateParams["profile-id"];
+  const matched = items.filter(item =>
+    Array.isArray(item["show-on-profiles"]) &&
+    item["show-on-profiles"].includes(profileId)
+  );
+%>
+
+<% if (matched.length === 0) { %>
+  <p class="profile-publications-empty">No selected publications listed yet.</p>
+<% } %>
+
+<% for (const item of matched) { %>
+  <div class="publication-entry publication-entry-profile">
+    <div class="publication-content">
+
+      <h3 class="publication-title publication-title-profile">
+        <% if (item.pdf) { %>
+          <a href="<%- item.pdf %>" target="_blank" rel="noopener"><%= item.title %></a>
+        <% } else if (item.path) { %>
+          <a href="<%- item.path %>"><%= item.title %></a>
+        <% } else { %>
+          <%= item.title %>
+        <% } %>
+      </h3>
+
+      <% if (item["pub-authors"] && item["pub-authors"].length) { %>
+        <div class="publication-authors publication-authors-profile">
+          <%= item["pub-authors"].join(", ") %>
+        </div>
+      <% } %>
+
+      <div class="publication-meta publication-meta-profile">
+
+        <% if (item["pub-year"]) { %>
+          <span class="publication-year publication-year-profile"><strong><%- item["pub-year"] %></strong></span>
+        <% } %>
+        
+        <% if (item.venue) { %>
+          <span class="publication-venue"><em><%- item.venue %></em></span>
+        <% } %>
+
+        <% if (item["pub-type"]) { %>
+          <span class="publication-type"><%- item["pub-type"] %></span>
+        <% } %>
+
+        <% if (item["pub-status"]) { %>
+          <span class="publication-status"><%- item["pub-status"] %></span>
+        <% } %>
+      </div>
+
+      <div class="publication-links publication-links-profile">
+        <% if (item.pdf) { %>
+          <a class="pub-link pub-link-pdf pub-link-profile" href="<%- item.pdf %>" target="_blank" rel="noopener">
+            <span class="pub-link-icon pub-link-icon-profile">
+              <i class="bi bi-file-earmark-pdf"></i>
+            </span>
+            <span class="pub-link-label">Read</span>
+          </a>
+        <% } %>
+
+        <% if (item.data) { %>
+          <a class="pub-link pub-link-data pub-link-profile" href="<%- item.data %>" target="_blank" rel="noopener">
+            <span class="pub-link-icon pub-link-icon-profile">
+              <i class="bi bi-database"></i>
+            </span>
+            <span class="pub-link-label">Data</span>
+          </a>
+        <% } %>
+
+        <% if (item.code) { %>
+          <a class="pub-link pub-link-code pub-link-profile" href="<%- item.code %>" target="_blank" rel="noopener">
+            <span class="pub-link-icon pub-link-icon-profile">
+              <i class="bi bi-code-slash"></i>
+            </span>
+            <span class="pub-link-label">Code</span>
+          </a>
+        <% } %>
+      </div>
+    </div>
+  </div>
+<% } %>
+</div>
+```

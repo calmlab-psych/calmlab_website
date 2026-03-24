@@ -1,0 +1,10 @@
+---
+title: "CALM Lab website launches"
+date: 2026-04-01
+categories: [Lab]
+description: "We are excited to launch the CALM Lab website."
+image: ../../images/lablogo.png
+link: ""
+---
+
+We are excited to launch the CALM Lab website. More updates about research, people, and opportunities will be added soon.

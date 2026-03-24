@@ -1,0 +1,10 @@
+---
+name: John Apple
+position: Research Assistant
+tagline: This is longer text for explaining some details about the RA why they joined the lab and some fun personal details. They will likely have a small paragraph. Will make it as concise as possible.
+
+image: "photo.jpeg"
+
+major: "Computer Science"
+class: "Senior"
+---

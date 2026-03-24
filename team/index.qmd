@@ -1,0 +1,63 @@
+---
+title: "Team"
+body-classes: page-title
+page-layout: full
+
+listing:
+
+  - id: pi
+    contents: jason-tsukahara/index.qmd
+    template: templates/pi-card.ejs.md
+    sort: "order asc"
+    exclude:
+      template: "yes"
+
+  - id: grad-students
+    contents: grad-students
+    template: templates/grad-card.ejs.md
+    sort: "order asc"
+
+  - id: undergrads
+    contents: undergrads
+    template: templates/ra-card.ejs.md
+    sort: "order asc"
+
+  - id: team-news
+    contents: ../news/posts/*.qmd
+    sort: "date desc"
+    template: ../assets/page-news.ejs.md
+    fields: [title, date, description, path]
+    include:
+      categories: "Team"
+---
+
+::: {.page-header}
+
+::: {.header-text}
+::: {.header-title}
+TEAM
+:::
+
+::: {.header-subtitle}
+Meat the CALM Lab team.
+:::
+:::
+
+:::
+
+::: {#pi}
+:::
+
+::: {#grad-students}
+:::
+
+::: {#undergrads}
+:::
+
+<hr>
+<br>
+
+## Team News
+
+::: {#team-news}
+:::

@@ -1,0 +1,32 @@
+---
+title: "Attention control and process overlap theory: Searching for cognitive processes underpinning the positive manifold"
+
+pub-authors:
+  - Alexander P. Burgoyne
+  - Cody A. Mashburn
+  - Jason S. Tsukahara
+  - Randall W. Engle
+
+pub-year: "2022"
+date: "2022-03-01"
+venue: "Intelligence"
+pub-type: "Journal Article"
+pub-status: "Published"
+
+categories:
+  - theory
+  - higher-order-cognition
+
+pdf: "/publications/2022-int-pot/2022-int-pot.pdf"
+data: "https://osf.io/be34k/"
+code: ""
+doi: "10.1016/j.intell.2022.101629"
+
+project-areas:
+  - individual-differences
+
+abstract: "Process overlap theory provides a contemporary explanation for the positive correlations observed among cognitive ability measures, a phenomenon which intelligence researchers refer to as the positive manifold. According to process overlap theory, cognitive tasks tap domain-general executive processes as well as domain-specific processes, and correlations between measures reflect the degree of overlap in the cognitive processes that are engaged when performing the tasks. In this article, we discuss points of agreement and disagreement between the executive attention framework and process overlap theory, with a focus on attention control, the domain-general ability to maintain focus on task-relevant information and disengage from irrelevant and no-longer relevant information. After describing the steps our lab has taken to improve the measurement of attention control, we review evidence suggesting that attention control can explain many of the positive correlations between broad cognitive abilities, such as fluid intelligence, working memory capacity, and sensory discrimination ability. Furthermore, when these latent variables are modeled under a higher-order g factor, attention control has the highest loading on g, indicating a strong relationship between attention control and domain-general cognitive ability. In closing, we reflect on the challenge of directly measuring cognitive processes and provide suggestions for future research."
+
+listing-page: false
+format: html
+---

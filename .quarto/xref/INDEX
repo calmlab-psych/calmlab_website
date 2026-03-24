@@ -1,0 +1,182 @@
+{
+  "index.qmd": {
+    "index.html": "1eb0c76b"
+  },
+  "about.qmd": {
+    "about.html": "92175ed1"
+  },
+  "news/posts/2026-04-new-paper.qmd": {
+    "2026-04-new-paper.html": "2d817912"
+  },
+  "news/posts/2026-05-new-paper.qmd": {
+    "2026-05-new-paper.html": "496ef3cf"
+  },
+  "news/posts/2026-04-website-launch.qmd": {
+    "2026-04-website-launch.html": "ddbdf468"
+  },
+  "news/index.qmd": {
+    "index.html": "9437b900"
+  },
+  "assets/home-news.ejs.md": {
+    "home-news.ejs.html": "a57b1cf9"
+  },
+  "team/index.qmd": {
+    "index.html": "e0a917aa"
+  },
+  "team/jason-tsukahara/index.qmd": {
+    "index.html": "b099d396"
+  },
+  "team/people.ejs.md": {
+    "people.ejs.html": "464480d2"
+  },
+  "team/pi/jason-tsukahara/index.qmd": {
+    "index.html": "e4642edf"
+  },
+  "team/templates/ra-card.ejs.md": {
+    "ra-card.ejs.html": "f69c6f20"
+  },
+  "team/templates/pi-card.ejs.md": {
+    "pi-card.ejs.html": "c6e72cc4"
+  },
+  "team/templates/ra-list.ejs.md": {
+    "ra-list.ejs.html": "9b459491"
+  },
+  "team/templates/grad-card.ejs.md": {
+    "grad-card.ejs.html": "631f1133"
+  },
+  "team/research-assistants/jason-tsukahara/index.qmd": {
+    "index.html": "e7dbf230"
+  },
+  "team/grad-students/jason-tsukahara/index.qmd": {
+    "index.html": "f1c14749"
+  },
+  "team/grad-students/grad1/index.qmd": {
+    "index.html": "85dc966e"
+  },
+  "team/research-assistants/ra1/index.qmd": {
+    "index.html": "0fdb541c"
+  },
+  "team/research-assistants/ra2/index.qmd": {
+    "index.html": "0c3f0e69"
+  },
+  "team/research-assistants/ra3/index.qmd": {
+    "index.html": "ccdde592"
+  },
+  "team/grad-students/grad2/index.qmd": {
+    "index.html": "328940dd"
+  },
+  "team/team.ejs.md": {
+    "team.ejs.html": "b1391dfb"
+  },
+  "assets/page-news.ejs.md": {
+    "page-news.ejs.html": "d2225f08"
+  },
+  "team/templates/person-page.ejs.md": {
+    "person-page.ejs.html": "ffefb805"
+  },
+  "team/templates/person-header.qmd": {
+    "person-header.html": "3df4600c"
+  },
+  "team/undergrads/ra1/index.qmd": {
+    "index.html": "f9dc8c9b"
+  },
+  "team/undergrads/ra2/index.qmd": {
+    "index.html": "3f503860"
+  },
+  "team/undergrads/ra3/index.qmd": {
+    "index.html": "244035ce"
+  },
+  "publications/index.qmd": {
+    "index.html": "0cbc0d54"
+  },
+  "publications/2022-attention-control-process-overlap/index.qmd": {
+    "index.html": "b0d6ebf0"
+  },
+  "publications/templates/publication-card.ejs.md": {
+    "publication-card.ejs.html": "3d95fc53"
+  },
+  "publications/2021-ijp-vagus-pupil/index.qmd": {
+    "index.html": "81c9cbb7"
+  },
+  "publications/2023-sact-2/index.qmd": {
+    "index.html": "bf530009"
+  },
+  "publications/2023-ac-psychomotor/index.qmd": {
+    "index.html": "6166b1c9"
+  },
+  "publications/2020-wms-book-chapter/index.qmd": {
+    "index.html": "fed24c04"
+  },
+  "publications/2021-cog-pupil-luminance-reply/index.qmd": {
+    "index.html": "4ad709c3"
+  },
+  "publications/2021-tr-rationality/index.qmd": {
+    "index.html": "9319efa0"
+  },
+  "publications/2023-brm-toolbox-2/index.qmd": {
+    "index.html": "b214ba57"
+  },
+  "publications/2022-chwml-book-chapter/index.qmd": {
+    "index.html": "f2b26dc8"
+  },
+  "publications/2020-app-sensory-discrimination/index.qmd": {
+    "index.html": "b96b423a"
+  },
+  "publications/2021-jepg-visualarrays/index.qmd": {
+    "index.html": "ff04519c"
+  },
+  "publications/2016-cp-baseline-pupil-og/index.qmd": {
+    "index.html": "b20f21b3"
+  },
+  "publications/2022-int-pot/index.qmd": {
+    "index.html": "99f1d093"
+  },
+  "publications/2021-jepg-toolbox-1/index.qmd": {
+    "index.html": "b3d6876a"
+  },
+  "publications/2021-sa-pupil/index.qmd": {
+    "index.html": "07ce350e"
+  },
+  "publications/2021-pnas-intelligence-lc/index.qmd": {
+    "index.html": "3d0ee62b"
+  },
+  "publications/2023-jepg-squared-intro/index.qmd": {
+    "index.html": "6ea475e4"
+  },
+  "publications/2020-lm-diff-exp/index.qmd": {
+    "index.html": "1695f73e"
+  },
+  "publications/2021-cog-pupil-luminance/index.qmd": {
+    "index.html": "8c3b1727"
+  },
+  "publications/templates/profile-publication-card.ejs.md": {
+    "profile-publication-card.ejs.html": "fe8492a2"
+  },
+  "projects/index.qmd": {
+    "index.html": "06768401"
+  },
+  "news/posts/2026-04-website-launch copy 2.qmd": {
+    "2026-04-website-launch copy 2.html": "aa1aea1f"
+  },
+  "news/posts/2026-05-new-paper copy.qmd": {
+    "2026-05-new-paper copy.html": "4881b48f"
+  },
+  "news/posts/2026-04-website-launch copy.qmd": {
+    "2026-04-website-launch copy.html": "e23a8fff"
+  },
+  "news/posts/2026-05-new-paper copy 2.qmd": {
+    "2026-05-new-paper copy 2.html": "9aef6739"
+  },
+  "assets/project-publications.ejs.md": {
+    "project-publications.ejs.html": "5949e164"
+  },
+  "assets/home-publications.ejs.md": {
+    "home-publications.ejs.html": "4d89f1d6"
+  },
+  "research_tools/index.qmd": {
+    "index.html": "e9b2506f"
+  },
+  "contact.qmd": {
+    "contact.html": "a8e17d14"
+  }
+}

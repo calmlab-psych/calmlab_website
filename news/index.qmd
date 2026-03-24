@@ -1,0 +1,10 @@
+---
+listing:
+  id: home-news
+  contents: posts
+  sort: "date desc"
+  template: ../assets/home-news.ejs.md
+  fields: [title, date, description, categories, path]
+  filter-ui: false
+  sort-ui: false
+---

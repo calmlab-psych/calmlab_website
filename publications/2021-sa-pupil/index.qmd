@@ -1,0 +1,29 @@
+---
+title: "Pupil Size Is a Marker of Intelligence"
+
+pub-authors:
+  - Jason S. Tsukahara
+  - Alexandar P. Burgoyne
+  - Randall W. Engle
+
+pub-year: "2021"
+date: "2021-06-01"
+venue: "Scientific American Mind"
+pub-type: "Popular Writing"
+pub-status: "Published"
+
+categories:
+  - pupillometry
+  - locus-coeruleus
+
+pdf: "https://www.scientificamerican.com/article/pupil-size-is-a-marker-of-intelligence/"
+data: ""
+code: ""
+doi: ""
+
+project:
+  - ac-brain
+
+listing-page: false
+format: html
+---
