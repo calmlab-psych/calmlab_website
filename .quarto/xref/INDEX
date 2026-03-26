@@ -178,5 +178,11 @@
   },
   "contact.qmd": {
     "contact.html": "a8e17d14"
+  },
+  "assets/home-listing-grid.ejs.md": {
+    "home-listing-grid.ejs.html": "d563cc59"
+  },
+  "assets/home-listing-scroll.ejs.md": {
+    "home-listing-scroll.ejs.html": "9e895f5c"
   }
 }

@@ -17,7 +17,6 @@ listing:
 ---
 
 ::: {.page-header}
-
 ::: {.header-text}
 ::: {.header-title}
 PUBLICATIONS
@@ -27,14 +26,13 @@ PUBLICATIONS
 Peer-reviewed articles, chapters, and related scholarly work from the CALM Lab.
 :::
 :::
-
 :::
 
 <div class="pub-filter-bar">
-  <button class="pub-filter-btn active" data-filter="all">All</button>
-  <button class="pub-filter-btn" data-filter="Journal Article">Journal Articles</button>
-  <button class="pub-filter-btn" data-filter="Book Chapter">Book Chapters</button>
-  <button class="pub-filter-btn" data-filter="Popular Writing">Popular Writing</button>
+  <button class="pill pill-filter active" data-filter="all">All</button>
+  <button class="pill pill-filter" data-filter="Journal Article">Journal Articles</button>
+  <button class="pill pill-filter" data-filter="Book Chapter">Book Chapters</button>
+  <button class="pill pill-filter" data-filter="Popular Writing">Popular Writing</button>
 </div>
 
 ::: {#publications-list}
@@ -42,7 +40,7 @@ Peer-reviewed articles, chapters, and related scholarly work from the CALM Lab.
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".pub-filter-btn");
+  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
 
   function updatePublicationFilter(filter) {
     const list = document.querySelector(".publications-list");

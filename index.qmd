@@ -6,16 +6,16 @@ listing:
   - id: home-news
     contents: news/posts
     sort: "date desc"
-    template: assets/home-news.ejs.md
+    template: assets/home-listing-grid.ejs.md
     fields: [title, date, description, categories, path]
-    max-items: 3
+    max-items: 6
 
   - id: home-publications
     contents: publications/*/index.qmd
     sort:
       - "pub-status asc"
       - "date desc"
-    template: assets/home-publications.ejs.md
+    template: assets/home-listing-scroll.ejs.md
     fields: [title, pub-year, pub-authors, venue, pub-status, pub-type, pdf, path]
     max-items: 6
 ---
@@ -40,68 +40,64 @@ Control of Attention in Life and Mind
 The CALM Lab studies attention control across contexts of life and mind, combining cognitive science, neuroscience, and contemplative approaches to understand how attention shapes thought, performance, and well-being.
 :::
 
-:::: {.quick-grid}
+::: {.grid-3 .section-shell}
+::: {.card .card-interactive .card-body .is-blue}
+<a href="/team/" class="quick-card-link">
+  <div class="icon-badge icon-badge-sm">
+    <i class="bi bi-people"></i>
+  </div>
 
-::: {.quick-card .quick-card-blue}
-<a href="/team/index.qmd" class="quick-card-link">
+  ### Team
 
-<div class="quick-card-icon"><i class="bi bi-people"></i></div>
+  Meet the researchers and students working in the CALM Lab.
 
-### Team
-Meet the researchers and students working in the CALM Lab.
-
-<span class="quick-card-cta">View Team →</span>
-
+  <span class="link-cta">View Team →</span>
 </a>
-
 :::
 
-::: {.quick-card .quick-card-red}
-<a href="/publications/index.qmd" class="quick-card-link">
+::: {.card .card-interactive .card-body .is-red}
+<a href="/projects/" class="quick-card-link">
+  <div class="icon-badge icon-badge-sm">
+    <i class="bi bi-diagram-3"></i>
+  </div>
 
-<div class="quick-card-icon"><i class="bi bi-diagram-3"></i></div>
+  ### Projects
 
-### Projects
-Explore our research on attention control, brain networks, and mindfulness.
+  Explore our research on attention control, brain networks, and mindfulness.
 
-<span class="quick-card-cta">View Projects →</span>
-
+  <span class="link-cta">View Projects →</span>
 </a>
-
 :::
 
-::: {.quick-card .quick-card-green}
-<a href="/contact.qmd" class="quick-card-link">
+::: {.card .card-interactive .card-body .is-green}
+<a href="/contact/" class="quick-card-link">
+  <div class="icon-badge icon-badge-sm">
+    <i class="bi bi-envelope"></i>
+  </div>
 
-<div class="quick-card-icon"><i class="bi bi-envelope"></i></div>
+  ### Connect
 
-### Connect
-Interested in collaborating, joining the lab, or learning more about our work?
+  Interested in collaborating, joining the lab, or learning more about our work?
 
-<span class="quick-card-cta">Get in Touch →</span>
-
+  <span class="link-cta">Get in Touch →</span>
 </a>
-
+:::
 :::
 
-::::
-
-<hr>
-<br>
+---
 
 ## Latest News
 
 ::: {#home-news}
 :::
 
-<hr>
-<br>
+---
 
 ## Latest Publications
 
 ::: {#home-publications}
 :::
 
-<div class="pub-grid-more">
-<a href="/publications/">View All Publications →</a>
-</div>
+::: {.listing-more}
+<a href="/publications/" class="link-cta">View All Publications →</a>
+:::

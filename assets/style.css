@@ -1434,6 +1434,41 @@ h2::before {
   opacity: 0.55;
 }
 
+/* =========================
+   Publications – Card refinement
+   ========================= */
+
+.publication-entry.card {
+  padding: 1.35rem 1.5rem;
+  border-radius: var(--radius-lg);
+  transition:
+    transform var(--transition-base),
+    box-shadow var(--transition-base);
+}
+
+.publication-entry.card + .publication-entry.card {
+  margin-top: 0.9rem;
+}
+
+.publication-entry.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+/* tighten spacing inside card */
+
+.publication-entry.card .publication-title {
+  margin-bottom: 0.4rem;
+}
+
+.publication-entry.card .publication-authors {
+  margin-bottom: 0.5rem;
+}
+
+.publication-entry.card .publication-meta {
+  margin-bottom: 0.7rem;
+}
+
 .publication-links,
 .profile-publication-links {
   display: flex;

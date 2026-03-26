@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>publication-card.ejs – CALM LAB</title>
+<title>home-listing-scroll.ejs – CALM LAB</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,18 +23,18 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-5b94127d5e40d8138456368c5be81c98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-ed96de9b727972fe78a7b5d16c58bf87.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-5b94127d5e40d8138456368c5be81c98.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -53,8 +53,8 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-<link rel="stylesheet" href="../../assets/theme-legacy.css">
-<link rel="stylesheet" href="../../assets/theme-system.css">
+<link rel="stylesheet" href="../assets/theme-legacy.css">
+<link rel="stylesheet" href="../assets/theme-system.css">
 <meta name="twitter:title" content="CALM LAB">
 <meta name="twitter:card" content="summary">
 </head>
@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">CALM LAB</span>
     </a>
   </div>
@@ -76,15 +76,15 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../team/index.html"> 
+    <a class="nav-link" href="../team/index.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../publications/index.html"> 
+    <a class="nav-link" href="../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contact.html"> 
+    <a class="nav-link" href="../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -105,93 +105,44 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="publications-list">
-&lt;%
-  let currentYear = null;
-%&gt;
-&lt;% for (const item of items) { %&gt;
-  &lt;%
-    const itemYear = item["pub-status"] === "Preprint" ? "Preprints" : item["pub-year"];
-    if (itemYear &amp;&amp; itemYear !== currentYear) {
-      currentYear = itemYear;
-  %&gt;
-    <div class="publication-year-group">
-      <h2 class="publication-year-heading">&lt;%= currentYear %&gt;</h2>
-    </div>
-  &lt;%
-    }
-  %&gt;
+<div class="listing-scroll-shell">
+  <div class="listing-scroll-row">
+    &lt;% for (const item of items) { %&gt;
+      <article class="listing-card card card-interactive" data-pub-type="<%- item['pub-type'] ? item['pub-type'].toLowerCase() : '' %>">
+        <a href="<%- item.pdf ? item.pdf : item.path %>" class="listing-card-link" <%="item.pdf" ?="" 'target="_blank" rel="noopener" '="" :="" ''="" %="">
+        &gt;
 
-  <article class="publication-entry card" data-pub-type="<%= item['pub-type'] || '' %>" data-categories="<%= (item.categories || []).join(' ') %>">
-    <div class="publication-content">
+          <div class="listing-eyebrow">
+            &lt;%- item["pub-status"] === "Preprint" ? "Preprint" : (item["pub-year"] ? item["pub-year"] : "") %&gt;
+          </div>
 
-      <h3 class="publication-title card-title">
-        &lt;% if (item.pdf) { %&gt;
-          <a href="<%- item.pdf %>" target="_blank" rel="noopener">&lt;%= item.title %&gt;</a>
-        &lt;% } else if (item.path) { %&gt;
-          <a href="<%- item.path %>">&lt;%= item.title %&gt;</a>
-        &lt;% } else { %&gt;
-          &lt;%= item.title %&gt;
-        &lt;% } %&gt;
-      </h3>
+          &lt;% if (item.venue) { %&gt;
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">&lt;%- item.venue %&gt;</span>
+            </div>
+          &lt;% } %&gt;
 
-      &lt;% if (item["pub-authors"] &amp;&amp; item["pub-authors"].length) { %&gt;
-        <div class="publication-authors card-text">
-          &lt;%= item["pub-authors"].join(", ") %&gt;
-        </div>
-      &lt;% } %&gt;
+          <h3 class="listing-title card-title">&lt;%- item.title %&gt;</h3>
 
-      <div class="publication-meta card-meta">
-        &lt;% if (item.venue) { %&gt;
-          <span class="publication-venue"><em>&lt;%- item.venue %&gt;</em></span>
-        &lt;% } %&gt;
+          &lt;% if (item["pub-authors"] &amp;&amp; item["pub-authors"].length) { %&gt;
+            <p class="listing-summary card-text">&lt;%- item["pub-authors"].join(", ") %&gt;</p>
+          &lt;% } %&gt;
 
-        &lt;% if (item["pub-type"]) { %&gt;
-          <span class="pill pill-status pill-outline">&lt;%- item["pub-type"] %&gt;</span>
-        &lt;% } %&gt;
+          <div class="listing-cta link-cta">
+            Read
+            <span>→</span>
+          </div>
 
-        &lt;% if (item["pub-status"]) { %&gt;
-          <span class="pill pill-status pill-soft">&lt;%- item["pub-status"] %&gt;</span>
-        &lt;% } %&gt;
-      </div>
-
-      <div class="publication-links">
-        &lt;% if (item.pdf) { %&gt;
-          <a class="pub-link pub-link-pdf" href="<%- item.pdf %>" target="_blank" rel="noopener">
-            <span class="pub-link-icon">
-              <i class="bi bi-file-earmark-pdf"></i>
-            </span>
-            <span class="pub-link-label">Read</span>
-          </a>
-        &lt;% } %&gt;
-
-        &lt;% if (item.data) { %&gt;
-          <a class="pub-link pub-link-data" href="<%- item.data %>" target="_blank" rel="noopener">
-            <span class="pub-link-icon">
-              <i class="bi bi-database"></i>
-            </span>
-            <span class="pub-link-label">Data</span>
-          </a>
-        &lt;% } %&gt;
-
-        &lt;% if (item.code) { %&gt;
-          <a class="pub-link pub-link-code" href="<%- item.code %>" target="_blank" rel="noopener">
-            <span class="pub-link-icon">
-              <i class="bi bi-code-slash"></i>
-            </span>
-            <span class="pub-link-label">Code</span>
-          </a>
-        &lt;% } %&gt;
-      </div>
-    </div>
-  </article>
-&lt;% } %&gt;
+        </a>
+      </article>
+    &lt;% } %&gt;
+  </div>
 </div>
 
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script src="../../assets/news-filter.js"></script>
+<script src="../assets/news-filter.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

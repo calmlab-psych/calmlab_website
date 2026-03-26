@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jasontsukahara.com/index.html</loc>
-    <lastmod>2026-03-18T02:15:38.528Z</lastmod>
+    <lastmod>2026-03-24T02:39:51.409Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/assets/home-news.ejs.html</loc>
@@ -54,7 +54,7 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/publications/templates/publication-card.ejs.html</loc>
-    <lastmod>2026-03-14T19:23:34.823Z</lastmod>
+    <lastmod>2026-03-24T02:00:48.670Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/publications/2022-chwml-book-chapter/index.html</loc>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/publications/index.html</loc>
-    <lastmod>2026-03-14T18:30:14.091Z</lastmod>
+    <lastmod>2026-03-24T02:00:26.568Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/publications/2023-ac-psychomotor/index.html</loc>
@@ -187,5 +187,13 @@
   <url>
     <loc>https://jasontsukahara.com/contact.html</loc>
     <lastmod>2026-03-15T00:07:06.130Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/home-listing-grid.ejs.html</loc>
+    <lastmod>2026-03-24T02:27:33.139Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/home-listing-scroll.ejs.html</loc>
+    <lastmod>2026-03-24T02:26:56.765Z</lastmod>
   </url>
 </urlset>

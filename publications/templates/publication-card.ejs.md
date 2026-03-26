@@ -16,10 +16,14 @@
     }
   %>
 
-  <div class="publication-entry" data-pub-type="<%= item['pub-type'] || '' %>" data-categories="<%= (item.categories || []).join(' ') %>">
+  <article
+    class="publication-entry card"
+    data-pub-type="<%= item['pub-type'] || '' %>"
+    data-categories="<%= (item.categories || []).join(' ') %>"
+  >
     <div class="publication-content">
 
-      <h3 class="publication-title">
+      <h3 class="publication-title card-title">
         <% if (item.pdf) { %>
           <a href="<%- item.pdf %>" target="_blank" rel="noopener"><%= item.title %></a>
         <% } else if (item.path) { %>
@@ -30,23 +34,22 @@
       </h3>
 
       <% if (item["pub-authors"] && item["pub-authors"].length) { %>
-        <div class="publication-authors">
+        <div class="publication-authors card-text">
           <%= item["pub-authors"].join(", ") %>
         </div>
       <% } %>
 
-      <div class="publication-meta">
-
+      <div class="publication-meta card-meta">
         <% if (item.venue) { %>
-          <span class="publication-venue"><b><em><%- item.venue %></em></b></span>
+          <span class="publication-venue"><em><%- item.venue %></em></span>
         <% } %>
 
         <% if (item["pub-type"]) { %>
-          <span class="publication-type"><%- item["pub-type"] %></span>
+          <span class="pill pill-status pill-outline"><%- item["pub-type"] %></span>
         <% } %>
 
         <% if (item["pub-status"]) { %>
-          <span class="publication-status"><%- item["pub-status"] %></span>
+          <span class="pill pill-status pill-soft"><%- item["pub-status"] %></span>
         <% } %>
       </div>
 
@@ -79,7 +82,7 @@
         <% } %>
       </div>
     </div>
-  </div>
+  </article>
 <% } %>
 </div>
 ```
