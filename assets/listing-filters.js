@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   filterableListings.forEach((listing) => {
     const buttons = listing.querySelectorAll(".listing-toolbar .pill-filter");
-    const cards = listing.querySelectorAll(".listing-grid .listing-card");
+    const cards = listing.querySelectorAll(".listing-card");
 
     if (!buttons.length || !cards.length) return;
 

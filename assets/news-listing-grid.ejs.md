@@ -2,7 +2,10 @@
 <div class="listing-block" data-filterable="true">
   <div class="listing-toolbar">
     <button class="pill pill-filter active" data-filter="all">All</button>
-    <button class="pill pill-filter" data-filter="lab">Lab</button>
+    <button class="pill pill-filter" 
+      data-filter="lab">Lab</button>
+    <button class="pill pill-filter" 
+      data-filter="team">Team</button>
     <button class="pill pill-filter" data-filter="paper">Papers</button>
   </div>
 
@@ -47,10 +50,6 @@
   </a>
   </article>
   <% } %>
-  </div>
-
-  <div class="listing-more">
-    <a href="/news/" class="link-cta">View All News →</a>
   </div>
 </div>
 ```

@@ -29,7 +29,6 @@ format:
       - cosmo
     mainfont: "Source Sans 3"
     css:
-      - assets/theme-legacy.css
       - assets/theme-system.css
     include-after-body: assets/scripts.html
     include-in-header: assets/academicons.html

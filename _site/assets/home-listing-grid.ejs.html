@@ -107,61 +107,63 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<div class="listing-toolbar">
-  <button class="pill pill-filter active" data-filter="all">All</button>
-  <button class="pill pill-filter" data-filter="lab">Lab</button>
-  <button class="pill pill-filter" data-filter="paper">Papers</button>
-</div>
+<div class="listing-block" data-filterable="true">
+  <div class="listing-toolbar">
+    <button class="pill pill-filter active" data-filter="all">All</button>
+    <button class="pill pill-filter" data-filter="lab">Lab</button>
+    <button class="pill pill-filter" data-filter="paper">Papers</button>
+  </div>
 
-<div class="listing-grid">
-&lt;% for (const item of items) { %&gt;
-<article class="listing-card card card-interactive" data-categories="<%- item.categories ? item.categories.join(',').toLowerCase() : '' %>">
-<a href="<%- item.link ? item.link : item.path %>" class="listing-card-link" <%="item.link" ?="" 'target="_blank" rel="noopener" '="" :="" ''="" %="">&gt;
+  <div class="listing-grid">
+  &lt;% for (const item of items) { %&gt;
+  <article class="listing-card card card-interactive" data-categories="<%- item.categories ? item.categories.join(',').toLowerCase() : '' %>">
+  <a href="<%- item.link ? item.link : item.path %>" class="listing-card-link" <%="item.link" ?="" 'target="_blank" rel="noopener" '="" :="" ''="" %="">&gt;
 
-&lt;% if (item.image) { %&gt;
-<div class="listing-thumb-wrap">
-<img src="<%- item.image %>" alt="" class="listing-thumb">
-</div>
-&lt;% } %&gt;
+  &lt;% if (item.image) { %&gt;
+  <div class="listing-thumb-wrap">
+  <img src="<%- item.image %>" alt="" class="listing-thumb">
+  </div>
+  &lt;% } %&gt;
 
-<div class="listing-eyebrow">&lt;%- item.date ? item.date : "" %&gt;</div>
+  <div class="listing-eyebrow">&lt;%- item.date ? item.date : "" %&gt;</div>
 
-&lt;% if (item.categories &amp;&amp; item.categories.length) { %&gt;
-<div class="listing-tags">
-&lt;% item.categories.forEach(function(cat) { %&gt;
-<span class="pill pill-tag pill-soft">&lt;%- cat %&gt;</span>
-&lt;% }) %&gt;
-</div>
-&lt;% } %&gt;
+  &lt;% if (item.categories &amp;&amp; item.categories.length) { %&gt;
+  <div class="listing-tags">
+  &lt;% item.categories.forEach(function(cat) { %&gt;
+  <span class="pill pill-tag pill-soft">&lt;%- cat %&gt;</span>
+  &lt;% }) %&gt;
+  </div>
+  &lt;% } %&gt;
 
-<h3 class="listing-title card-title">&lt;%- item.title %&gt;</h3>
+  <h3 class="listing-title card-title">&lt;%- item.title %&gt;</h3>
 
-&lt;% if (item.description) { %&gt;
-<p class="listing-summary card-text">&lt;%- item.description %&gt;</p>
-&lt;% } %&gt;
+  &lt;% if (item.description) { %&gt;
+  <p class="listing-summary card-text">&lt;%- item.description %&gt;</p>
+  &lt;% } %&gt;
 
-<div class="listing-cta link-cta">
-Read More
-&lt;% if (item.link) { %&gt;
-<span>↗</span>
-&lt;% } else { %&gt;
-<span>→</span>
-&lt;% } %&gt;
-</div>
+  <div class="listing-cta link-cta">
+  Read More
+  &lt;% if (item.link) { %&gt;
+  <span>↗</span>
+  &lt;% } else { %&gt;
+  <span>→</span>
+  &lt;% } %&gt;
+  </div>
 
-</a>
-</article>
-&lt;% } %&gt;
-</div>
+  </a>
+  </article>
+  &lt;% } %&gt;
+  </div>
 
-<div class="listing-more">
-<a href="../news/" class="link-cta">View All News →</a>
+  <div class="listing-more">
+    <a href="../news/" class="link-cta">View All News →</a>
+  </div>
 </div>
 
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script src="../assets/news-filter.js"></script>
+<script src="../assets/listing-filters.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

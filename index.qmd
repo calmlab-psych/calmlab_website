@@ -6,7 +6,7 @@ listing:
   - id: home-news
     contents: news/posts
     sort: "date desc"
-    template: assets/home-listing-grid.ejs.md
+    template: assets/news-listing-scroll.ejs.md
     fields: [title, date, description, categories, path]
     max-items: 6
 
@@ -15,7 +15,7 @@ listing:
     sort:
       - "pub-status asc"
       - "date desc"
-    template: assets/home-listing-scroll.ejs.md
+    template: assets/pub-listing-scroll.ejs.md
     fields: [title, pub-year, pub-authors, venue, pub-status, pub-type, pdf, path]
     max-items: 6
 ---
@@ -27,7 +27,7 @@ listing:
 
 ::: {.hero-text}
 ::: {.hero-title}
-CALM LAB
+CALM <span style="color: #B88A34;">LAB</span>
 :::
 
 ::: {.hero-subtitle}
@@ -37,51 +37,44 @@ Control of Attention in Life and Mind
 :::
 
 ::: {.hero-intro}
-The CALM Lab studies attention control across contexts of life and mind, combining cognitive science, neuroscience, and contemplative approaches to understand how attention shapes thought, performance, and well-being.
+The CALM Lab studies attention control across contexts of life and mind, combining cognitive science, neuroscience, and contemplative approaches to understand how attention shapes thought, success, and well-being.
 :::
 
 ::: {.grid-3 .section-shell}
-::: {.card .card-interactive .card-body .is-blue}
-<a href="/team/" class="quick-card-link">
-  <div class="icon-badge icon-badge-sm">
-    <i class="bi bi-people"></i>
-  </div>
 
-  ### Team
+::: {.card .card-interactive .card-body .is-primary}
+::: {.quick-card-link}
+<a href=""><div class="icon-badge icon-badge-sm"><i class="bi bi-people"></i></div>
+### Team
 
-  Meet the researchers and students working in the CALM Lab.
+Meet the researchers and students working in the CALM Lab.
 
-  <span class="link-cta">View Team →</span>
-</a>
+<span class="link-cta">View Team →</span></a>
+:::
 :::
 
-::: {.card .card-interactive .card-body .is-red}
-<a href="/projects/" class="quick-card-link">
-  <div class="icon-badge icon-badge-sm">
-    <i class="bi bi-diagram-3"></i>
-  </div>
+::: {.card .card-interactive .card-body .is-primary}
+::: {.quick-card-link}
+<a href=""><div class="icon-badge icon-badge-sm"><i class="bi bi-diagram-3"></i></div>
+### Projects
 
-  ### Projects
+Explore our research on attention control, brain networks, and mindfulness.
 
-  Explore our research on attention control, brain networks, and mindfulness.
-
-  <span class="link-cta">View Projects →</span>
-</a>
+<span class="link-cta">View Projects →</span></a>
+:::
 :::
 
-::: {.card .card-interactive .card-body .is-green}
-<a href="/contact/" class="quick-card-link">
-  <div class="icon-badge icon-badge-sm">
-    <i class="bi bi-envelope"></i>
-  </div>
+::: {.card .card-interactive .card-body .is-primary}
+::: {.quick-card-link}
+<a href=""><div class="icon-badge icon-badge-sm"><i class="bi bi-envelope"></i></div>
+### Connect
 
-  ### Connect
+Interested in collaborating, joining the lab, or learning more about our work?
 
-  Interested in collaborating, joining the lab, or learning more about our work?
-
-  <span class="link-cta">Get in Touch →</span>
-</a>
+<span class="link-cta">Get in Touch →</span></a>
 :::
+:::
+
 :::
 
 ---
@@ -89,6 +82,10 @@ The CALM Lab studies attention control across contexts of life and mind, combini
 ## Latest News
 
 ::: {#home-news}
+:::
+
+::: {.listing-more}
+<a href="/news/" class="link-cta">View All News →</a>
 :::
 
 ---

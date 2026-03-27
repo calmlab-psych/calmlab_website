@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Team – CALM LAB</title>
+<title>pub-listing-scroll.ejs – CALM LAB</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,8 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -52,159 +50,16 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-pi .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-name','listing-position','listing-tagline','listing-image','listing-degree_program','listing-in_lab','listing-email','listing-cv','listing-google_scholar','listing-linkedin','listing-bluesky','listing-researchgate','listing-x','listing-github','listing-page-layout','listing-body-classes','listing-include-after-body','listing-about','listing-listing','listing-path','listing-outputHref','listing-title','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-name","listing-position","listing-tagline","listing-image","listing-degree_program","listing-in_lab","listing-email","listing-cv","listing-google_scholar","listing-linkedin","listing-bluesky","listing-researchgate","listing-x","listing-github","listing-page-layout","listing-body-classes","listing-include-after-body","listing-about","listing-listing","listing-path","listing-outputHref","listing-title","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-pi'] = new List('listing-pi', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-grad-students .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-name','listing-position','listing-tagline','listing-image','listing-degree_program','listing-in_lab','listing-email','listing-cv','listing-google_scholar','listing-linkedin','listing-bluesky','listing-researchgate','listing-x','listing-github','listing-page-layout','listing-body-classes','listing-include-after-body','listing-about','listing-path','listing-outputHref','listing-title','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count','listing-listing',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-name","listing-position","listing-tagline","listing-image","listing-degree_program","listing-in_lab","listing-email","listing-cv","listing-google_scholar","listing-linkedin","listing-bluesky","listing-researchgate","listing-x","listing-github","listing-page-layout","listing-body-classes","listing-include-after-body","listing-about","listing-path","listing-outputHref","listing-title","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-listing"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-grad-students'] = new List('listing-grad-students', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-undergrads .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-language','listing-name','listing-position','listing-tagline','listing-image','listing-major','listing-class','listing-path','listing-outputHref','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-name","listing-position","listing-tagline","listing-image","listing-major","listing-class","listing-path","listing-outputHref","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-undergrads'] = new List('listing-undergrads', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-team-news .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-date','listing-description','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-date","listing-categories","listing-description","listing-image","listing-link","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-team-news'] = new List('listing-team-news', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
+<link rel="stylesheet" href="../assets/theme-legacy.css">
 <link rel="stylesheet" href="../assets/theme-system.css">
-<meta name="twitter:title" content="Team – CALM LAB">
-<meta name="twitter:image" content="https://jasontsukahara.com/team/jason-tsukahara/photo.jpeg">
-<meta name="twitter:image:alt" content="Jason S. Tsukahara, Ph.D.">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CALM LAB">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed page-title quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -221,7 +76,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../team/index.html" aria-current="page"> 
+    <a class="nav-link" href="../team/index.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
@@ -240,275 +95,51 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content column-page" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Team</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta column-page">
 
-    
-  
-    
-  </div>
-  
+<div class="listing-scroll-shell">
+  <div class="listing-scroll-row">
+    &lt;% for (const item of items) { %&gt;
+      <article class="listing-card card card-interactive" data-pub-type="<%- item['pub-type'] ? item['pub-type'].toLowerCase() : '' %>">
+        <a href="<%- item.pdf ? item.pdf : item.path %>" class="listing-card-link" <%="item.pdf" ?="" 'target="_blank" rel="noopener" '="" :="" ''="" %="">
+        &gt;
 
+          <div class="listing-eyebrow">
+            &lt;%- item["pub-status"] === "Preprint" ? "Preprint" : (item["pub-year"] ? item["pub-year"] : "") %&gt;
+          </div>
 
-</header>
+          &lt;% if (item.venue) { %&gt;
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">&lt;%- item.venue %&gt;</span>
+            </div>
+          &lt;% } %&gt;
 
+          <h3 class="listing-title card-title">&lt;%- item.title %&gt;</h3>
 
-<div class="page-header">
-<div class="header-text">
-<div class="header-title">
-<p>TEAM</p>
-</div>
-<div class="header-subtitle">
-<p>Meat the CALM Lab team.</p>
-</div>
-</div>
-</div>
-<div id="listing-pi" class="quarto-listing quarto-listing-container-custom">
+          &lt;% if (item["pub-authors"] &amp;&amp; item["pub-authors"].length) { %&gt;
+            <p class="listing-summary card-text">&lt;%- item["pub-authors"].join(", ") %&gt;</p>
+          &lt;% } %&gt;
 
-<div class="pi-card">
+          <div class="listing-cta link-cta">
+            Read
+            <span>→</span>
+          </div>
 
-  <div class="pi-photo">
-    <img src="../team/jason-tsukahara/photo.jpeg" alt="Jason S. Tsukahara, Ph.D.">
-    <a class="pi-view-link" href="../team/jason-tsukahara/index.html">
-      View Page →
-    </a>
-  </div>
-
-  <div class="pi-content">
-
-    <h3 class="pi-name">
-      Jason S. Tsukahara, Ph.D.
-    </h3>
-
-    
-      <div class="pi-position">Principal Investigator</div>
-    
-
-    
-      <p>Dr. Tsukahara directs the CALM Lab and studies attention control across contexts of life and mind. His research integrates cognitive psychology, neuroscience, and contemplative science to understand the nature and potentials of attention.</p>
-    
-
-    <div class="pi-links">
-
-      
-      <a href="jane-doe-cv.pdf">CV</a>
-      
-
-      
-      <a href="mailto:jane@university.edu">Email</a>
-      
-
-      
-      <a href="https://www.jasontsukahara.com">Personal Website ↗</a>
-      
-
-    </div>
-
-  </div>
-
-</div>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<div id="listing-grad-students" class="quarto-listing quarto-listing-container-custom">
-<div class="grad-grid">
-
-<div class="grad-card">
-  <a href="../team/grad-students/grad2/index.html">
-  <h3 class="grad-name">
-    Alex Smith
-  </h3>
-
-  
-    <div class="grad-position">Graduate Student</div>
-  
-
-  </a><a href="../team/grad-students/grad2/index.html">
-    <img src="../team/grad-students/grad2/photo.jpeg" alt="Alex Smith" class="grad-photo">
-  </a>
-
-  
-    <p>Brain Mechanisms</p>
-  
-
-  <div class="grad-view-link">
-    <a href="../team/grad-students/grad2/index.html">
-      View Page →
-    </a>
-  </div>
-  
-</div>
-
-<div class="grad-card">
-  <a href="../team/grad-students/grad1/index.html">
-  <h3 class="grad-name">
-    Jane Doe
-  </h3>
-
-  
-    <div class="grad-position">Graduate Student</div>
-  
-
-  </a><a href="../team/grad-students/grad1/index.html">
-    <img src="../team/grad-students/grad1/photo.jpeg" alt="Jane Doe" class="grad-photo">
-  </a>
-
-  
-    <p>Investigating sustained attention, mind wandering, and contemplative approaches to cognitive well-being.</p>
-  
-
-  <div class="grad-view-link">
-    <a href="../team/grad-students/grad1/index.html">
-      View Page →
-    </a>
-  </div>
-  
-</div>
-
-</div>
-
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<div id="listing-undergrads" class="quarto-listing quarto-listing-container-custom">
-<div class="ra-card">
-  <h1 style="margin-top: -1rem;  margin-bottom: 2rem; text-align: center;">Undergraduate Research Assistants</h1>
-
-  <div class="ra-grid">
-
-    
-      <div class="ra-person">
-        <h3 class="ra-name">
-          John Apple
-        </h3>
-
-        
-          <a href="../team/undergrads/ra1/index.html" class="ra-image-link">
-            <img src="../team/undergrads/ra1/photo.jpeg" alt="John Apple" class="ra-photo">
-          </a>
-        
-
-        
-          <p style="margin-bottom: 0rem;"><b>Major: </b>Computer Science</p>
-        
-
-        
-          <p style="margin-top: 0rem;"><b>Class: </b>Senior</p>
-        
-
-        
-          <p>This is longer text for explaining some details about the RA why they joined the lab and some fun personal details. They will likely have a small paragraph. Will make it as concise as possible.</p>
-        
-      </div>
-    
-      <div class="ra-person">
-        <h3 class="ra-name">
-          Kylo Ren
-        </h3>
-
-        
-          <a href="../team/undergrads/ra2/index.html" class="ra-image-link">
-            <img src="../team/undergrads/ra2/photo.jpeg" alt="Kylo Ren" class="ra-photo">
-          </a>
-        
-
-        
-          <p style="margin-bottom: 0rem;"><b>Major: </b>Psychology</p>
-        
-
-        
-          <p style="margin-top: 0rem;"><b>Class: </b>Sophmore</p>
-        
-
-        
-          <p>This is longer text for explaining some details about the RA why they joined the lab and some fun personal details. They will likely have a small paragraph. Will make it as concise as possible.</p>
-        
-      </div>
-    
-      <div class="ra-person">
-        <h3 class="ra-name">
-          John Nolan
-        </h3>
-
-        
-          <a href="../team/undergrads/ra3/index.html" class="ra-image-link">
-            <img src="../team/undergrads/ra3/photo.jpeg" alt="John Nolan" class="ra-photo">
-          </a>
-        
-
-        
-          <p style="margin-bottom: 0rem;"><b>Major: </b>Psychology</p>
-        
-
-        
-          <p style="margin-top: 0rem;"><b>Class: </b>Freshman</p>
-        
-
-        
-          <p>This is longer text for explaining some details about the RA why they joined the lab and some fun personal details. They will likely have a small paragraph. Will make it as concise as possible.</p>
-        
-      </div>
-    
-
+        </a>
+      </article>
+    &lt;% } %&gt;
   </div>
 </div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-<hr>
-<p><br></p>
-<section id="team-news" class="level2">
-<h2 data-anchor-id="team-news">Team News</h2>
-<div id="listing-team-news" class="quarto-listing quarto-listing-container-custom">
-<div class="news-grid">
-
-<article class="news-card" data-categories="team">
-<a href="../news/posts/2026-04-website-launch copy.html" class="news-card-link">
-
-<div class="news-thumb-wrap">
-<img src="../images/lablogo.png" alt="" class="news-thumb">
-</div>
-
-<div class="news-date">Apr 1, 2026</div>
-
-<div class="news-tags">
-
-<span class="news-tag">Team</span>
-
-</div>
-
-<h3 class="news-title">CALM Lab website launches</h3>
-
-<p class="news-description">We are excited to launch the CALM Lab website.</p>
-
-<div class="news-cta">
-Read More
-
-<span class="news-external">→</span>
-
-</div>
-
-</a>
-</article>
-
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
 
 
-
-</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script src="../assets/listing-filters.js"></script>

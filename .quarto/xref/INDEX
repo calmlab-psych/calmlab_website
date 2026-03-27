@@ -184,5 +184,11 @@
   },
   "assets/home-listing-scroll.ejs.md": {
     "home-listing-scroll.ejs.html": "9e895f5c"
+  },
+  "assets/news-listing-grid.ejs.md": {
+    "news-listing-grid.ejs.html": "73f47084"
+  },
+  "assets/pub-listing-scroll.ejs.md": {
+    "pub-listing-scroll.ejs.html": "1cd245c8"
   }
 }
