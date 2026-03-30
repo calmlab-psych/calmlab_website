@@ -190,5 +190,8 @@
   },
   "assets/pub-listing-scroll.ejs.md": {
     "pub-listing-scroll.ejs.html": "1cd245c8"
+  },
+  "assets/news-listing-scroll.ejs.md": {
+    "news-listing-scroll.ejs.html": "f48399d0"
   }
 }

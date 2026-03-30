@@ -5,11 +5,11 @@
    ========================= */
 
 :root {
-  --color-primary: #206D89;
+  --color-primary: #0B5570;
   --color-primary-highlight: #F1F5F9;
-  --color-secondary1: #dda642;
-  --color-secondary1-highlight: #f3e6c98a;
-  --color-secondary2: #bf903a;
+  --color-secondary: #2C8AA8;
+  --color-secondary-highlight: #2c89a81e;
+  --color-secondary2: #2C8AA8;
   --color-outline: #8DB3BE;
 
   --color-blue: #8DB3BE;
@@ -17,13 +17,13 @@
   --color-white: #FFFFFF;
   --color-white-border: #EAEAEA;
 
-  --color-red: #A34B43;
-  --color-red-highlight: #FDF2F0;
-  --color-green: #3FA7A3;
-  --color-green-highlight: #3fa7a427;
+  --color-red: #D9A441;
+  --color-red-highlight: #d9a4411f;
+  --color-green: #2C8AA8;
+  --color-green-highlight: #2c89a81e;
 
-  --color-bg: #FAF8F3;
-  --color-text: #2F3E46;
+  --color-bg: #FFFFFF;
+  --color-text: #1F2A30;
 
   --font-logo: "Nunito", sans-serif;
   --font-body: "Karla", system-ui, -apple-system, sans-serif;
@@ -302,17 +302,16 @@ hr {
 
 .is-primary .icon-badge,
 .icon-badge-primary {
-  background: var(--color-primary);
-  border: 2px solid var(--color-primary)
+  background: var(--color-secondary-highlight);
 }
 
 .is-primary .icon-badge i,
 .icon-badge-primary i {
-  color: var(--color-secondary1);
+  color: var(--color-secondary);
 }
 
 .is-primary:hover {
-  border: 1px solid var(--color-secondary2);
+  border: 1px solid var(--color-secondary);
 }
 
 .is-blue .icon-badge,
@@ -331,16 +330,16 @@ hr {
 
 .is-yellow .icon-badge,
 .icon-badge-yellow {
-  background: var(--color-secondary1-highlight);
+  background: var(--color-secondary-highlight);
 }
 
 .is-yellow .icon-badge i,
 .icon-badge-yellow i {
-  color: var(--color-secondary1);
+  color: var(--color-secondary);
 }
 
 .is-yellow:hover {
-  border: 1px solid var(--color-secondary1);
+  border: 1px solid var(--color-secondary);
 }
 
 .is-red .icon-badge,
@@ -387,7 +386,7 @@ hr {
 .navbar-brand {
   font-family: var(--font-logo);
   font-size: 1.4rem;
-  color: var(--color-secondary1);
+  color: var(--color-white);
   letter-spacing: 0.05em;
 }
 
@@ -595,7 +594,7 @@ hr {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--color-secondary2);
+  color: var(--color-red);
 }
 
 .listing-tags {
@@ -739,7 +738,6 @@ hr {
 
 .publication-entry {
   padding: 1rem 0;
-  border-bottom: none;
 }
 
 .publication-entry:first-child {
@@ -765,8 +763,7 @@ hr {
 }
 
 .publication-title a:hover {
-  text-decoration: underline;
-  text-underline-offset: 0.12em;
+  text-decoration: none;
 }
 
 .publication-authors {
@@ -790,6 +787,11 @@ hr {
 .publication-venue {
   color: var(--color-text);
   font-style: italic;
+}
+
+.publication-year {
+  color: var(--color-text);
+  font-weight: 600;
 }
 
 .publication-entry.card {
@@ -877,27 +879,27 @@ hr {
 }
 
 .pub-link-pdf .pub-link-icon {
-  background: var(--color-red-highlight);
+  background: var(--color-secondary-highlight);
 }
 
 .pub-link-pdf .pub-link-icon i {
-  color: var(--color-red);
+  color: var(--color-secondary);
 }
 
 .pub-link-pdf:hover {
-  border-color: rgba(163, 75, 67, 0.45);
+  border-color: var(--color-secondary);
 }
 
 .pub-link-data .pub-link-icon {
-  background: var(--color-green-highlight);
+  background: var(--color-red-highlight);
 }
 
 .pub-link-data .pub-link-icon i {
-  color: var(--color-green);
+  color: var(--color-red);
 }
 
 .pub-link-data:hover {
-  border-color: rgba(22, 99, 67, 0.45);
+  border-color: var(--color-red);
 }
 
 .pub-link-code .pub-link-icon {
@@ -909,7 +911,7 @@ hr {
 }
 
 .pub-link-code:hover {
-  border-color: rgba(44, 79, 107, 0.45);
+  border-color: var(--color-primary);
 }
 
 .publication-year-group {

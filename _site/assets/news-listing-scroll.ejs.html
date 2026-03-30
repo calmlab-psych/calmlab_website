@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>news-listing-grid.ejs – CALM LAB</title>
+<title>news-listing-scroll.ejs – CALM LAB</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -114,45 +114,47 @@ ul.task-list li input[type="checkbox"] {
     <button class="pill pill-filter" data-filter="paper">Papers</button>
   </div>
 
-  <div class="listing-grid">
-  &lt;% for (const item of items) { %&gt;
-  <article class="listing-card card card-interactive" data-categories="<%- item.categories ? item.categories.join(',').toLowerCase() : '' %>">
-  <a href="<%- item.link ? item.link : item.path %>" class="listing-card-link" <%="item.link" ?="" 'target="_blank" rel="noopener" '="" :="" ''="" %="">&gt;
+  <div class="listing-scroll-shell">
+    <div class="listing-scroll-row">
+      &lt;% for (const item of items) { %&gt;
+      <article class="listing-card card card-interactive" data-categories="<%- item.categories ? item.categories.join(',').toLowerCase() : '' %>">
+        <a href="<%- item.link ? item.link : item.path %>" class="listing-card-link" <%="item.link" ?="" 'target="_blank" rel="noopener" '="" :="" ''="" %="">&gt;
 
-  &lt;% if (item.image) { %&gt;
-  <div class="listing-thumb-wrap">
-  <img src="<%- item.image %>" alt="" class="listing-thumb">
-  </div>
-  &lt;% } %&gt;
+          &lt;% if (item.image) { %&gt;
+          <div class="listing-thumb-wrap">
+            <img src="<%- item.image %>" alt="" class="listing-thumb">
+          </div>
+          &lt;% } %&gt;
 
-  <div class="listing-eyebrow">&lt;%- item.date ? item.date : "" %&gt;</div>
+          <div class="listing-eyebrow">&lt;%- item.date ? item.date : "" %&gt;</div>
 
-  &lt;% if (item.categories &amp;&amp; item.categories.length) { %&gt;
-  <div class="listing-tags">
-  &lt;% item.categories.forEach(function(cat) { %&gt;
-  <span class="pill pill-tag pill-soft">&lt;%- cat %&gt;</span>
-  &lt;% }) %&gt;
-  </div>
-  &lt;% } %&gt;
+          &lt;% if (item.categories &amp;&amp; item.categories.length) { %&gt;
+          <div class="listing-tags">
+            &lt;% item.categories.forEach(function(cat) { %&gt;
+            <span class="pill pill-tag pill-soft">&lt;%- cat %&gt;</span>
+            &lt;% }) %&gt;
+          </div>
+          &lt;% } %&gt;
 
-  <h3 class="listing-title card-title">&lt;%- item.title %&gt;</h3>
+          <h3 class="listing-title card-title">&lt;%- item.title %&gt;</h3>
 
-  &lt;% if (item.description) { %&gt;
-  <p class="listing-summary card-text">&lt;%- item.description %&gt;</p>
-  &lt;% } %&gt;
+          &lt;% if (item.description) { %&gt;
+          <p class="listing-summary card-text">&lt;%- item.description %&gt;</p>
+          &lt;% } %&gt;
 
-  <div class="listing-cta link-cta">
-  Read More
-  &lt;% if (item.link) { %&gt;
-  <span>↗</span>
-  &lt;% } else { %&gt;
-  <span>→</span>
-  &lt;% } %&gt;
-  </div>
+          <div class="listing-cta link-cta">
+            Read More
+            &lt;% if (item.link) { %&gt;
+            <span>↗</span>
+            &lt;% } else { %&gt;
+            <span>→</span>
+            &lt;% } %&gt;
+          </div>
 
-  </a>
-  </article>
-  &lt;% } %&gt;
+        </a>
+      </article>
+      &lt;% } %&gt;
+    </div>
   </div>
 </div>
 

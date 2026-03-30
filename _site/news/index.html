@@ -55,7 +55,7 @@ ul.task-list li input[type="checkbox"] {
 <script>
 
   window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-home-news .list');
+    const listingTargetEl = window.document.querySelector('#listing-team-news .list');
     if (!listingTargetEl) {
       // No listing discovered, do not attach.
       return; 
@@ -68,7 +68,7 @@ ul.task-list li input[type="checkbox"] {
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-home-news'] = new List('listing-home-news', options);
+    window['quarto-listings']['listing-team-news'] = new List('listing-team-news', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -113,12 +113,12 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../assets/style.css">
+<link rel="stylesheet" href="../assets/theme-system.css">
 <meta name="twitter:title" content="CALM LAB">
 <meta name="twitter:image" content="https://jasontsukahara.com/images/lablogo.png">
 <meta name="twitter:image:alt" content="">
-<meta name="twitter:image-height" content="388">
-<meta name="twitter:image-width" content="616">
+<meta name="twitter:image-height" content="200">
+<meta name="twitter:image-width" content="200">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -143,16 +143,8 @@ window.Quarto = {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../research_tools/index.html"> 
-<span class="menu-text">Research Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../contact.html"> 
@@ -180,197 +172,232 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-custom" id="listing-home-news">
-<div class="news-toolbar">
-  <button class="news-tab active" data-filter="all">All</button>
-  <button class="news-tab" data-filter="lab">Lab</button>
-  <button class="news-tab" data-filter="paper">Papers</button>
-</div>
-
-<div class="news-grid">
-
-<article class="news-card" data-categories="paper">
-<a href="https://www.jasontsukahara.com" class="news-card-link" target="_blank" rel="noopener">
-
-<div class="news-thumb-wrap">
-<img src="../images/lablogo.png" alt="" class="news-thumb">
-</div>
-
-<div class="news-date">May 1, 2026</div>
-
-<div class="news-tags">
-
-<span class="news-tag">Paper</span>
-
-</div>
-
-<h3 class="news-title">New publication on attention control in the brain</h3>
-
-<p class="news-description">Our latest work on attention control and large-scale brain network dynamics is now available.</p>
-
-<div class="news-cta">
-Read More
-
-<span class="news-external">↗</span>
-
-</div>
-
-</a>
-</article>
-
-<article class="news-card" data-categories="paper">
-<a href="https://www.jasontsukahara.com" class="news-card-link" target="_blank" rel="noopener">
-
-<div class="news-thumb-wrap">
-<img src="../images/lablogo.png" alt="" class="news-thumb">
-</div>
-
-<div class="news-date">May 1, 2026</div>
-
-<div class="news-tags">
-
-<span class="news-tag">Paper</span>
-
-</div>
-
-<h3 class="news-title">New publication on attention control in the brain</h3>
-
-<p class="news-description">Our latest work on attention control and large-scale brain network dynamics is now available.</p>
-
-<div class="news-cta">
-Read More
-
-<span class="news-external">↗</span>
-
-</div>
-
-</a>
-</article>
-
-<article class="news-card" data-categories="paper">
-<a href="https://www.jasontsukahara.com" class="news-card-link" target="_blank" rel="noopener">
-
-<div class="news-thumb-wrap">
-<img src="../images/lablogo.png" alt="" class="news-thumb">
-</div>
-
-<div class="news-date">May 1, 2026</div>
-
-<div class="news-tags">
-
-<span class="news-tag">Paper</span>
-
-</div>
-
-<h3 class="news-title">New publication on attention control in the brain</h3>
-
-<p class="news-description">Our latest work on attention control and large-scale brain network dynamics is now available.</p>
-
-<div class="news-cta">
-Read More
-
-<span class="news-external">↗</span>
-
-</div>
-
-</a>
-</article>
-
-<article class="news-card" data-categories="lab">
-<a href="../news/posts/2026-04-website-launch copy 2.html" class="news-card-link">
-
-<div class="news-thumb-wrap">
-<img src="../images/lablogo.png" alt="" class="news-thumb">
-</div>
-
-<div class="news-date">Apr 1, 2026</div>
-
-<div class="news-tags">
-
-<span class="news-tag">Lab</span>
-
-</div>
-
-<h3 class="news-title">CALM Lab website launches</h3>
-
-<p class="news-description">We are excited to launch the CALM Lab website.</p>
-
-<div class="news-cta">
-Read More
-
-<span class="news-external">→</span>
-
-</div>
-
-</a>
-</article>
-
-<article class="news-card" data-categories="lab">
-<a href="../news/posts/2026-04-website-launch.html" class="news-card-link">
-
-<div class="news-thumb-wrap">
-<img src="../images/lablogo.png" alt="" class="news-thumb">
-</div>
-
-<div class="news-date">Apr 1, 2026</div>
-
-<div class="news-tags">
-
-<span class="news-tag">Lab</span>
-
-</div>
-
-<h3 class="news-title">CALM Lab website launches</h3>
-
-<p class="news-description">We are excited to launch the CALM Lab website.</p>
-
-<div class="news-cta">
-Read More
-
-<span class="news-external">→</span>
-
-</div>
-
-</a>
-</article>
-
-<article class="news-card" data-categories="lab">
-<a href="../news/posts/2026-04-website-launch copy.html" class="news-card-link">
-
-<div class="news-thumb-wrap">
-<img src="../images/lablogo.png" alt="" class="news-thumb">
-</div>
-
-<div class="news-date">Apr 1, 2026</div>
-
-<div class="news-tags">
-
-<span class="news-tag">Lab</span>
-
-</div>
-
-<h3 class="news-title">CALM Lab website launches</h3>
-
-<p class="news-description">We are excited to launch the CALM Lab website.</p>
-
-<div class="news-cta">
-Read More
-
-<span class="news-external">→</span>
-
-</div>
-
-</a>
-</article>
-
-</div>
-
-<div class="news-more">
-<a href="../news/">View All News →</a>
+<div class="quarto-listing quarto-listing-container-custom" id="listing-team-news">
+<div class="listing-block" data-filterable="true">
+  <div class="listing-toolbar">
+    <button class="pill pill-filter active" data-filter="all">All</button>
+    <button class="pill pill-filter" data-filter="lab">Lab</button>
+    <button class="pill pill-filter" data-filter="team">Team</button>
+    <button class="pill pill-filter" data-filter="paper">Papers</button>
+  </div>
+
+  <div class="listing-grid">
+  
+  <article class="listing-card card card-interactive" data-categories="paper">
+  <a href="https://www.jasontsukahara.com" class="listing-card-link" target="_blank" rel="noopener">
+
+  
+  <div class="listing-thumb-wrap">
+  <img src="../images/lablogo.png" alt="" class="listing-thumb">
+  </div>
+  
+
+  <div class="listing-eyebrow">May 1, 2026</div>
+
+  
+  <div class="listing-tags">
+  
+  <span class="pill pill-tag pill-soft">Paper</span>
+  
+  </div>
+  
+
+  <h3 class="listing-title card-title">New publication on attention control in the brain</h3>
+
+  
+  <p class="listing-summary card-text">Our latest work on attention control and large-scale brain network dynamics is now available.</p>
+  
+
+  <div class="listing-cta link-cta">
+  Read More
+  
+  <span>↗</span>
+  
+  </div>
+
+  </a>
+  </article>
+  
+  <article class="listing-card card card-interactive" data-categories="paper">
+  <a href="https://www.jasontsukahara.com" class="listing-card-link" target="_blank" rel="noopener">
+
+  
+  <div class="listing-thumb-wrap">
+  <img src="../images/lablogo.png" alt="" class="listing-thumb">
+  </div>
+  
+
+  <div class="listing-eyebrow">May 1, 2026</div>
+
+  
+  <div class="listing-tags">
+  
+  <span class="pill pill-tag pill-soft">Paper</span>
+  
+  </div>
+  
+
+  <h3 class="listing-title card-title">New publication on attention control in the brain</h3>
+
+  
+  <p class="listing-summary card-text">Our latest work on attention control and large-scale brain network dynamics is now available.</p>
+  
+
+  <div class="listing-cta link-cta">
+  Read More
+  
+  <span>↗</span>
+  
+  </div>
+
+  </a>
+  </article>
+  
+  <article class="listing-card card card-interactive" data-categories="paper">
+  <a href="https://www.jasontsukahara.com" class="listing-card-link" target="_blank" rel="noopener">
+
+  
+  <div class="listing-thumb-wrap">
+  <img src="../images/lablogo.png" alt="" class="listing-thumb">
+  </div>
+  
+
+  <div class="listing-eyebrow">May 1, 2026</div>
+
+  
+  <div class="listing-tags">
+  
+  <span class="pill pill-tag pill-soft">Paper</span>
+  
+  </div>
+  
+
+  <h3 class="listing-title card-title">New publication on attention control in the brain</h3>
+
+  
+  <p class="listing-summary card-text">Our latest work on attention control and large-scale brain network dynamics is now available.</p>
+  
+
+  <div class="listing-cta link-cta">
+  Read More
+  
+  <span>↗</span>
+  
+  </div>
+
+  </a>
+  </article>
+  
+  <article class="listing-card card card-interactive" data-categories="lab">
+  <a href="../news/posts/2026-04-website-launch copy 2.html" class="listing-card-link">
+
+  
+  <div class="listing-thumb-wrap">
+  <img src="../images/lablogo.png" alt="" class="listing-thumb">
+  </div>
+  
+
+  <div class="listing-eyebrow">Apr 1, 2026</div>
+
+  
+  <div class="listing-tags">
+  
+  <span class="pill pill-tag pill-soft">Lab</span>
+  
+  </div>
+  
+
+  <h3 class="listing-title card-title">CALM Lab website launches</h3>
+
+  
+  <p class="listing-summary card-text">We are excited to launch the CALM Lab website.</p>
+  
+
+  <div class="listing-cta link-cta">
+  Read More
+  
+  <span>→</span>
+  
+  </div>
+
+  </a>
+  </article>
+  
+  <article class="listing-card card card-interactive" data-categories="lab">
+  <a href="../news/posts/2026-04-website-launch.html" class="listing-card-link">
+
+  
+  <div class="listing-thumb-wrap">
+  <img src="../images/lablogo.png" alt="" class="listing-thumb">
+  </div>
+  
+
+  <div class="listing-eyebrow">Apr 1, 2026</div>
+
+  
+  <div class="listing-tags">
+  
+  <span class="pill pill-tag pill-soft">Lab</span>
+  
+  </div>
+  
+
+  <h3 class="listing-title card-title">CALM Lab website launches</h3>
+
+  
+  <p class="listing-summary card-text">We are excited to launch the CALM Lab website.</p>
+  
+
+  <div class="listing-cta link-cta">
+  Read More
+  
+  <span>→</span>
+  
+  </div>
+
+  </a>
+  </article>
+  
+  <article class="listing-card card card-interactive" data-categories="team">
+  <a href="../news/posts/2026-04-website-launch copy.html" class="listing-card-link">
+
+  
+  <div class="listing-thumb-wrap">
+  <img src="../images/lablogo.png" alt="" class="listing-thumb">
+  </div>
+  
+
+  <div class="listing-eyebrow">Apr 1, 2026</div>
+
+  
+  <div class="listing-tags">
+  
+  <span class="pill pill-tag pill-soft">Team</span>
+  
+  </div>
+  
+
+  <h3 class="listing-title card-title">CALM Lab website launches</h3>
+
+  
+  <p class="listing-summary card-text">We are excited to launch the CALM Lab website.</p>
+  
+
+  <div class="listing-cta link-cta">
+  Read More
+  
+  <span>→</span>
+  
+  </div>
+
+  </a>
+  </article>
+  
+  </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div><a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script src="../assets/news-filter.js"></script>
+<script src="../assets/listing-filters.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

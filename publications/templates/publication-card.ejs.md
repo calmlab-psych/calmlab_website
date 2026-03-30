@@ -40,16 +40,16 @@
       <% } %>
 
       <div class="publication-meta card-meta">
+        <% if (item["pub-year"]) { %>
+          <span class="publication-year"><%- item["pub-year"] %></span>
+        <% } %>
+
         <% if (item.venue) { %>
           <span class="publication-venue"><em><%- item.venue %></em></span>
         <% } %>
 
         <% if (item["pub-type"]) { %>
-          <span class="pill pill-status pill-outline"><%- item["pub-type"] %></span>
-        <% } %>
-
-        <% if (item["pub-status"]) { %>
-          <span class="pill pill-status pill-soft"><%- item["pub-status"] %></span>
+          <span class="pill pill-status pill-soft"><%- item["pub-type"] %></span>
         <% } %>
       </div>
 

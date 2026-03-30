@@ -27,7 +27,7 @@ listing:
 
 ::: {.hero-text}
 ::: {.hero-title}
-CALM <span style="color: #B88A34;">LAB</span>
+CALM <span style="color: var(--color-green);">LAB</span>
 :::
 
 ::: {.hero-subtitle}

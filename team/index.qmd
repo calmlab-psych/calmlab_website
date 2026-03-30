@@ -25,7 +25,7 @@ listing:
   - id: team-news
     contents: ../news/posts/*.qmd
     sort: "date desc"
-    template: ../assets/page-news.ejs.md
+    template: ../assets/news-listing-grid-notags.ejs.md
     fields: [title, date, description, path]
     include:
       categories: "Team"
