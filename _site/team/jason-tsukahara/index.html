@@ -64,7 +64,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-pub-authors','listing-show-on-profiles','listing-pub-year','listing-venue','listing-pub-type','listing-pub-status','listing-pdf','listing-data','listing-code',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-categories","listing-pdf","listing-data","listing-code","listing-doi","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-show-on-profiles"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-categories","listing-pdf","listing-data","listing-code","listing-doi","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-project-areas","listing-show-on-profiles"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -113,7 +113,7 @@ window.Quarto = {
 };
 </script>
 
-<link rel="stylesheet" href="../../assets/style.css">
+<link rel="stylesheet" href="../../assets/theme-system.css">
 </head>
 
 <body class="nav-fixed profile-page quarto-light">
@@ -137,19 +137,11 @@ window.Quarto = {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects/index.html"> 
-<span class="menu-text">Projects</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../rpackages.qmd"> 
-<span class="menu-text">Research Tools</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../contact.qmd"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -319,7 +311,7 @@ window.Quarto = {
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main>  
 </div>
  <!-- /main -->
-<script src="../../assets/news-filter.js"></script>
+<script src="../../assets/listing-filters.js"></script>
 <script>
 document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("profile-links-dynamic");
