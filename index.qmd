@@ -20,81 +20,94 @@ listing:
     max-items: 6
 ---
 
-::: {.hero-header}
-::: {.hero-logo}
+::::::: hero-header
+::: hero-logo
 ![](images/lablogo.png){alt="CALM Lab logo"}
 :::
 
-::: {.hero-text}
-::: {.hero-title}
-CALM <span style="color: var(--color-green);">LAB</span>
+::::: hero-text
+::: hero-title
+CALM [LAB]{style="color: var(--color-red);"}
 :::
 
-::: {.hero-subtitle}
+::: hero-subtitle
 Control of Attention in Life and Mind
 :::
-:::
-:::
+:::::
+:::::::
 
-::: {.hero-intro}
+::: hero-intro
 The CALM Lab studies attention control across contexts of life and mind, combining cognitive science, neuroscience, and contemplative approaches to understand how attention shapes thought, success, and well-being.
 :::
 
-::: {.grid-3 .section-shell}
+:::::::::::: {.grid-3 .section-shell}
+::::: {.card .card-interactive .card-body .is-primary}
+:::: quick-card-link
+<a href="">
 
-::: {.card .card-interactive .card-body .is-primary}
-::: {.quick-card-link}
-<a href=""><div class="icon-badge icon-badge-sm"><i class="bi bi-people"></i></div>
+::: {.icon-badge .icon-badge-sm}
+<i class="bi bi-people"></i>
+:::
+
 ### Team
 
 Meet the researchers and students working in the CALM Lab.
 
-<span class="link-cta">View Team →</span></a>
-:::
+[View Team →]{.link-cta}</a>
+::::
+:::::
+
+::::: {.card .card-interactive .card-body .is-primary}
+:::: quick-card-link
+<a href="">
+
+::: {.icon-badge .icon-badge-sm}
+<i class="bi bi-diagram-3"></i>
 :::
 
-::: {.card .card-interactive .card-body .is-primary}
-::: {.quick-card-link}
-<a href=""><div class="icon-badge icon-badge-sm"><i class="bi bi-diagram-3"></i></div>
 ### Projects
 
 Explore our research on attention control, brain networks, and mindfulness.
 
-<span class="link-cta">View Projects →</span></a>
-:::
+[View Projects →]{.link-cta}</a>
+::::
+:::::
+
+::::: {.card .card-interactive .card-body .is-primary}
+:::: quick-card-link
+<a href="">
+
+::: {.icon-badge .icon-badge-sm}
+<i class="bi bi-envelope"></i>
 :::
 
-::: {.card .card-interactive .card-body .is-primary}
-::: {.quick-card-link}
-<a href=""><div class="icon-badge icon-badge-sm"><i class="bi bi-envelope"></i></div>
 ### Connect
 
 Interested in collaborating, joining the lab, or learning more about our work?
 
-<span class="link-cta">Get in Touch →</span></a>
-:::
-:::
+[Get in Touch →]{.link-cta}</a>
+::::
+:::::
+::::::::::::
 
-:::
-
----
+------------------------------------------------------------------------
 
 ## Latest News
 
 ::: {#home-news}
 :::
 
-::: {.listing-more}
+::: listing-more
 <a href="/news/" class="link-cta">View All News →</a>
 :::
 
----
+------------------------------------------------------------------------
 
 ## Latest Publications
 
 ::: {#home-publications}
 :::
 
-::: {.listing-more}
+::: listing-more
 <a href="/publications/" class="link-cta">View All Publications →</a>
 :::
