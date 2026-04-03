@@ -193,5 +193,8 @@
   },
   "assets/news-listing-scroll.ejs.md": {
     "news-listing-scroll.ejs.html": "f48399d0"
+  },
+  "assets/news-listing-grid-notags.ejs.md": {
+    "news-listing-grid-notags.ejs.html": "0444a317"
   }
 }
