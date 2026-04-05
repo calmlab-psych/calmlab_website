@@ -1,29 +1,41 @@
 ---
-name: Alex Smith
+name: First Last
 position: Graduate Student
-tagline: Brain Mechanisms
+tagline: Short sentence describing research interest.
 
 image: photo.jpeg
 
-degree_program: Masters in Experimental Psychology
-in_lab: 2025-Present
+degree_program: Degree Program (e.g., Ph.D. in Psychology)
+in_lab: time in lab (e.g., 2026-Present)
 
-email: "jtsukahara@..."
-cv: /files/jason_cv.pdf
-website: https://www.jasontsukahara.com
-google_scholar: https://scholar.google.com/citations?user=393wE14AAAAJ&hl=en&oi=ao
-linkedin: ok
-bluesky: drjt.bsky.social
-researchgate: yes
-x: jasontsukahara
-github: dr-JT
+email: email.edu
+cv: cv.pdf
+website:
+google_scholar:
+linkedin:
+bluesky:
+researchgate:
+x:
+github:
 
+order: 1
 page-layout: full
 body-classes: profile-page
 
 about:
   id: person-about
   template: jolla
+
+listing:
+  - id: profile-publications-list
+    contents: "../../../publications/*/index.qmd"
+    template: "../../../assets/listings/pub-listing-selected.ejs.md"
+    fields: [title, pub-authors, show-on-profiles, pub-year, venue, pub-type, pub-status, pdf, data, code]
+    sort:
+      - "pub-status asc"
+      - "date desc"
+    template-params:
+      profile-id: "firstname-lastname"
 ---
 
 ::: {.profile-heading}
@@ -110,11 +122,10 @@ This is a longer paragraph style explanation of my research interests into somet
 <i class="bi bi-journal-text"></i>
 </div>
 
-### Selected Publications
+### Select Publications
 
-**Doe, J.**, Smith, A., & Tsukahara, J. S. (2026). Title of paper goes here. *Journal Name*.
-
-Doe, J., & Tsukahara, J. S. (2025). Conference poster title here. *Conference Name*.
+::: {#profile-publications-list}
+:::
 
 :::
 

@@ -1,0 +1,12 @@
+---
+name: First Last
+position: Research Assistant
+tagline: Short paragraph describing your interest in the lab and career / education goals.
+
+image: "photo.jpeg"
+
+major:
+class:
+
+order: 1
+---

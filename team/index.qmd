@@ -8,19 +8,18 @@ listing:
   - id: pi
     contents: jason-tsukahara/index.qmd
     template: ../assets/cards/pi-card.ejs.md
-    sort: "order asc"
     exclude:
       template: "yes"
 
-  - id: grad-students
-    contents: grad-students
-    template: ../assets/cards/grad-card.ejs.md
-    sort: "order asc"
+  # - id: grad-students
+  #   contents: grad-students
+  #   template: ../assets/cards/grad-card.ejs.md
+  #   sort: "order asc"
 
-  - id: undergrads
-    contents: undergrads
-    template: ../assets/cards/ra-card.ejs.md
-    sort: "order asc"
+  # - id: undergrads
+  #   contents: undergrads
+  #   template: ../assets/cards/ra-card.ejs.md
+  #   sort: "order asc"
 
   - id: team-news
     contents: ../news/posts/*.qmd
@@ -48,11 +47,11 @@ Meat the CALM Lab team.
 ::: {#pi}
 :::
 
-::: {#grad-students}
-:::
+<!-- ::: {#grad-students}
+::: -->
 
-::: {#undergrads}
-:::
+<!-- ::: {#undergrads}
+::: -->
 
 <hr>
 <br>
