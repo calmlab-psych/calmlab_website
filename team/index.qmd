@@ -22,7 +22,7 @@ listing:
   #   sort: "order asc"
 
   - id: team-news
-    contents: ../news/posts/*.qmd
+    contents: ../news/*/index.qmd
     sort: "date desc"
     template: ../assets/listings/news-listing-grid-notags.ejs.md
     fields: [title, date, description, path]

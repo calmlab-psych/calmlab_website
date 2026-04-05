@@ -4,7 +4,7 @@ page-layout: full
 
 listing:
   - id: home-news
-    contents: news/posts
+    contents: news/*/index.qmd
     sort: "date desc"
     template: assets/listings/news-listing-scroll.ejs.md
     fields: [title, date, description, categories, path]

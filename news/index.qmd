@@ -1,7 +1,7 @@
 ---
 listing:
   id: team-news
-  contents: posts
+  contents: "*/index.qmd"
   sort: "date desc"
   template: ../assets/listings/news-listing-grid.ejs.md
   fields: [title, date, description, categories, path]

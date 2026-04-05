@@ -2,12 +2,11 @@
   {
     "listing": "/index.html",
     "items": [
-      "/news/posts/2026-05-new-paper copy.html",
-      "/news/posts/2026-05-new-paper.html",
-      "/news/posts/2026-05-new-paper copy 2.html",
-      "/news/posts/2026-04-website-launch copy 2.html",
-      "/news/posts/2026-04-website-launch.html",
-      "/news/posts/2026-04-website-launch copy.html",
+      "/news/2026-05-new-paper copy 2/index.html",
+      "/news/2026-05-new-paper copy/index.html",
+      "/news/2026-05-new-paper/index.html",
+      "/news/2026-04-website-launch copy/index.html",
+      "/news/2026-04-website-launch/index.html",
       "/publications/2023-sact-2/index.html",
       "/publications/2023-ac-psychomotor/index.html",
       "/publications/2023-brm-toolbox-2/index.html",
@@ -31,12 +30,11 @@
   {
     "listing": "/news/index.html",
     "items": [
-      "/news/posts/2026-05-new-paper copy.html",
-      "/news/posts/2026-05-new-paper.html",
-      "/news/posts/2026-05-new-paper copy 2.html",
-      "/news/posts/2026-04-website-launch copy 2.html",
-      "/news/posts/2026-04-website-launch.html",
-      "/news/posts/2026-04-website-launch copy.html"
+      "/news/2026-05-new-paper copy 2/index.html",
+      "/news/2026-05-new-paper copy/index.html",
+      "/news/2026-05-new-paper/index.html",
+      "/news/2026-04-website-launch copy/index.html",
+      "/news/2026-04-website-launch/index.html"
     ]
   },
   {
@@ -66,7 +64,7 @@
     "listing": "/team/index.html",
     "items": [
       "/team/jason-tsukahara/index.html",
-      "/news/posts/2026-04-website-launch copy.html"
+      "/news/2026-04-website-launch copy/index.html"
     ]
   },
   {

@@ -223,5 +223,20 @@
   },
   "assets/listings/news-listing-scroll.ejs.md": {
     "news-listing-scroll.ejs.html": "d73573aa"
+  },
+  "news/2026-05-new-paper copy/index.qmd": {
+    "index.html": "87d1a2f6"
+  },
+  "news/2026-05-new-paper/index.qmd": {
+    "index.html": "61c5908e"
+  },
+  "news/2026-05-new-paper copy 2/index.qmd": {
+    "index.html": "65530ec7"
+  },
+  "news/2026-04-website-launch copy/index.qmd": {
+    "index.html": "7e97bc05"
+  },
+  "news/2026-04-website-launch/index.qmd": {
+    "index.html": "bb10b18f"
   }
 }
