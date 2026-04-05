@@ -1463,7 +1463,8 @@ h2::before {
 
 .profile-section-card .publication-title-profile {
   margin: 0 0 0.45rem 0;
-  font-size: 1.3rem;
+  font-size: 1.35rem;
+  font-weight: 700;
   line-height: 1.28;
   color: var(--color-text);
 }
