@@ -1,3 +1,4 @@
 /.quarto/
 **/*.quarto_ipynb
 .quarto/preview/lock
+.quarto/preview/lock/*
