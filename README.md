@@ -6,21 +6,19 @@
 
 ### Home Page
 
-1.  Research projects section. listing with image and left to right stagger
-2.  Select publications section.
-3.  Research tools section.
-4.  Contact.
+1. Add in research areas/projects/tools
 
 ### Projects Page
 
 1.  Create landing page. Header with cards for three research areas
-2.  Create projects organization, images, description
-3.  A section to highlight each project area with links and select publications
-4.  A separate page for each project area with full list of publications
+
+2.  Landing page sections:
+    - Active Research Studies
+    - Recently completed research studies
 
 ### Publications
 
-1.  Create landing page
+
 
 ### Research Tools
 
@@ -32,4 +30,5 @@
 ### Contact
 
 1.  create landing page
+
 # calmlab_website
