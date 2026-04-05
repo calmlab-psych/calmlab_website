@@ -53,7 +53,6 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-<link rel="stylesheet" href="../assets/theme-legacy.css">
 <link rel="stylesheet" href="../assets/theme-system.css">
 <meta name="twitter:title" content="CALM LAB">
 <meta name="twitter:card" content="summary">
@@ -80,8 +79,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../research_tools/index.html"> 
+<span class="menu-text">Research Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../contact.html"> 
@@ -125,7 +132,14 @@ ul.task-list li input[type="checkbox"] {
           <h3 class="listing-title card-title">&lt;%- item.title %&gt;</h3>
 
           &lt;% if (item["pub-authors"] &amp;&amp; item["pub-authors"].length) { %&gt;
-            <p class="listing-summary card-text">&lt;%- item["pub-authors"].join(", ") %&gt;</p>
+            <div class="publication-authors card-text">
+              &lt;%= item["pub-authors"].length === 1
+                ? item["pub-authors"][0]
+                : item["pub-authors"].length === 2
+                  ? item["pub-authors"].join(" &amp; ")
+                  : item["pub-authors"].slice(0, -1).join(", ") + ", &amp; " + item["pub-authors"].slice(-1)
+              %&gt;
+            </div>
           &lt;% } %&gt;
 
           <div class="listing-cta link-cta">
