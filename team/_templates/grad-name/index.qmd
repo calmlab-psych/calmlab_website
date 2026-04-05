@@ -9,7 +9,7 @@ degree_program: Degree Program (e.g., Ph.D. in Psychology)
 in_lab: time in lab (e.g., 2026-Present)
 
 email: email.edu
-cv: cv.pdf
+cv: filename.pdf
 website:
 google_scholar:
 linkedin:

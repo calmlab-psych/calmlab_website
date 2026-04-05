@@ -1,0 +1,10 @@
+---
+title: title
+date: YYYY-MM-DD
+categories: [category label] (e.g., [Lab])
+description: short description of news item
+image: image.png
+link: ""
+---
+
+More details about the news item can go here. This is the content of the news post, which can include text, images, and links.
