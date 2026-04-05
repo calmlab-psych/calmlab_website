@@ -43,7 +43,7 @@ The CALM Lab studies attention control across contexts of life and mind, combini
 :::::::::::: {.grid-3 .section-shell}
 ::::: {.card .card-interactive .card-body .is-primary}
 :::: quick-card-link
-<a href="">
+<a href="team/index.qmd">
 
 ::: {.icon-badge .icon-badge-sm}
 <i class="bi bi-people"></i>
@@ -59,7 +59,7 @@ Meet the researchers and students working in the CALM Lab.
 
 ::::: {.card .card-interactive .card-body .is-primary}
 :::: quick-card-link
-<a href="">
+<a href="projects/index.qmd">
 
 ::: {.icon-badge .icon-badge-sm}
 <i class="bi bi-diagram-3"></i>
@@ -75,7 +75,7 @@ Explore our research on attention control, brain networks, and mindfulness.
 
 ::::: {.card .card-interactive .card-body .is-primary}
 :::: quick-card-link
-<a href="">
+<a href="contact.qmd">
 
 ::: {.icon-badge .icon-badge-sm}
 <i class="bi bi-envelope"></i>

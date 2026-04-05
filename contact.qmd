@@ -7,6 +7,7 @@ page-layout: full
 ::: {.page-header}
 
 ::: {.header-text}
+
 ::: {.header-title}
 CONTACT
 :::
@@ -14,23 +15,28 @@ CONTACT
 ::: {.header-subtitle}
 Get in touch with the CALM Lab.
 :::
-:::
 
 :::
 
-::: {.contact-intro}
+:::
+
+::: {.section-shell}
+
+::: {.section-intro}
 For questions about the lab’s research, collaborations, or opportunities to work together, please use the contact information below.
 :::
 
-:::: {.contact-layout}
+::: {.grid-2}
 
-::: {.contact-card .contact-card-primary}
+::: {.card .card-lg .card-interactive .is-blue}
 
-<div class="contact-icon contact-icon-blue">
-<i class="bi bi-envelope"></i>
+::: {.card-body .card-body-lg}
+
+<div class="icon-badge icon-badge-blue">
+  <i class="bi bi-envelope"></i>
 </div>
 
-## General Contact
+### General Contact
 
 **Jason S. Tsukahara, Ph.D.**
 Principal Investigator, CALM Lab
@@ -43,16 +49,24 @@ Principal Investigator, CALM Lab
 
 :::
 
-::: {.contact-card}
+:::
 
-<div class="contact-icon contact-icon-green">
-<i class="bi bi-people"></i>
+::: {.card .card-lg .card-interactive .is-green}
+
+::: {.card-body .card-body-lg}
+
+<div class="icon-badge icon-badge-green">
+  <i class="bi bi-people"></i>
 </div>
 
-## Opportunities
+### Opportunities
 
 Prospective students, collaborators, and others interested in the lab’s work are welcome to reach out by email. When relevant, please include a brief note about your interests and reason for contacting the lab.
 
 :::
 
-::::
+:::
+
+:::
+
+:::

@@ -7,4 +7,5 @@ listing:
   fields: [title, date, description, categories, path]
   filter-ui: false
   sort-ui: false
+page-layout: full
 ---
