@@ -2,13 +2,13 @@
 title: "The visual arrays task: Visual storage capacity or attention control?"
 
 pub-authors:
-  - Jessie D. Martin
-  - Jason S. Tsukahara
-  - Christopher Draheim
-  - Zach Shipstead
-  - Cody A. Mashburn
-  - Vogel K. Edward
-  - Randall W. Engle
+  - Martin
+  - Tsukahara
+  - Draheim
+  - Shipstead
+  - Mashburn
+  - Vogel
+  - Engle
 
 pub-year: "2021"
 date: "2021-09-01"

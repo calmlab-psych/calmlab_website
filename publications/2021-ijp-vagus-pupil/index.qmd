@@ -2,12 +2,12 @@
 title: "Transcutaneous vagus nerve stimulation via tragus or cymba conchae: Are its psychophysiological effects dependent on the stimulation area?"
 
 pub-authors:
-  - Uirassu Borges
-  - Marie Pfannenstiel
-  - Jason S. Tsukahara
-  - Sylvain Laborde
-  - Stefanie Klatt
-  - Markus Raab
+  - Borges
+  - Pfannenstiel
+  - Tsukahara
+  - Laborde
+  - Klatt
+  - Raab
 
 pub-year: "2021"
 date: "2021-01-01"

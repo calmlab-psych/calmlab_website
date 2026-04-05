@@ -2,10 +2,10 @@
 title: "Attention control and process overlap theory: Searching for cognitive processes underpinning the positive manifold"
 
 pub-authors:
-  - Alexander P. Burgoyne
-  - Cody A. Mashburn
-  - Jason S. Tsukahara
-  - Randall W. Engle
+  - Burgoyne
+  - Mashburn
+  - Tsukahara
+  - Engle
 
 pub-year: "2022"
 date: "2022-03-01"

@@ -772,6 +772,7 @@ h2::before {
 .publication-authors {
   margin-bottom: 0.7rem;
   font-size: 1.02rem;
+  font-weight: 500;
   line-height: 1.55;
   color: var(--color-text);
 }
@@ -807,11 +808,6 @@ h2::before {
 
 .publication-entry.card + .publication-entry.card {
   margin-top: 0.9rem;
-}
-
-.publication-entry.card:hover {
-  transform: translateY(-2px);
-  box-shadow: var(--shadow-soft);
 }
 
 .publication-entry.card .publication-title {
@@ -919,7 +915,7 @@ h2::before {
 
 .publication-year-group {
   margin-top: 2.25rem;
-  margin-bottom: 0.25rem;
+  margin-bottom: 1rem;
 }
 
 .publication-year-group:first-child {

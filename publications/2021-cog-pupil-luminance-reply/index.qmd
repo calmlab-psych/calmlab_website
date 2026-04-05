@@ -2,9 +2,9 @@
 title: "Baseline pupil size is related to fluid intelligence: A reply to Unsworth et al. (2021)"
 
 pub-authors:
-  - Jason S. Tsukahara
-  - Christopher Draheim
-  - Randall W. Engle
+  - Tsukahara
+  - Draheim
+  - Engle
 
 pub-year: "2021"
 date: "2021-10-01"

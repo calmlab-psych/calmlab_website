@@ -2,9 +2,9 @@
 title: "Differential and experimental approaches to studying intelligence in humans and non-human animals"
 
 pub-authors:
-  - Alexander P. Burgoyne
-  - Jason S. Tsukahara
-  - Randall W. Engle
+  - Burgoyne
+  - Tsukahara
+  - Engle
 
 pub-year: "2020"
 date: "2020-10-28"

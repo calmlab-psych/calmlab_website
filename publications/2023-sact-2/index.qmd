@@ -2,8 +2,8 @@
 title: "Sustaining the focus of attention and how it relates to performance in complex cognitive tasks"
 
 pub-authors:
-  - Jason S. Tsukahara
-  - Randall W. Engle
+  - Tsukahara
+  - Engle
 
 pub-year: "2023"
 date: "2023-05-03"

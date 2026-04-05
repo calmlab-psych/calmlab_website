@@ -2,9 +2,9 @@
 title: "The relationship between baseline pupil size and intelligence"
 
 pub-authors:
-  - Jason S. Tsukahara
-  - Tyler L. Harrison
-  - Randall W. Engle
+  - Tsukahara
+  - Harrison
+  - Engle
 
 pub-year: "2016"
 date: "2016-10-12"

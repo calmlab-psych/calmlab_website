@@ -2,9 +2,9 @@
 title: "Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence"
 
 pub-authors:
-  - Cody A. Mashburn
-  - Jason S. Tsukahara
-  - Randall W. Engle
+  - Mashburn
+  - Tsukahara
+  - Engle
 
 pub-year: "2020"
 date: "2020-07-14"

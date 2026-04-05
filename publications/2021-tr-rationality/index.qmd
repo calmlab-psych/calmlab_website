@@ -2,12 +2,11 @@
 title: "Understanding the relationship between rationality and intelligence: A latent-variable approach"
 
 pub-authors:
-  - Alexander P. Burgoyne
-  - Cody A. Mashburn
-  - Jason S. Tsukahara
-  - Zach D. Hambrick
-  - Randall W. Engle
-
+  - Burgoyne
+  - Mashburn
+  - Tsukahara
+  - Hambrick
+  - Engle
 pub-year: "2021"
 date: "2021-11-26"
 venue: "Thinking and Reasoning"

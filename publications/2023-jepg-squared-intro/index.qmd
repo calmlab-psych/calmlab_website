@@ -2,10 +2,10 @@
 title: "Nature and measurement of attention control"
 
 pub-authors:
-  - Alexander P. Burgoyne
-  - Jason S. Tsukahara
-  - Cody A. Mashburn
-  - Randall W. Engle
+  - Burgoyne
+  - Tsukahara
+  - Mashburn
+  - Engle
 
 show-on-profiles:
   - home

@@ -2,8 +2,8 @@
 title: "Is baseline pupil size related to cognitive ability? Yes (under proper lighting conditions)"
 
 pub-authors:
-  - Jason S. Tsukahara
-  - Randall W. Engle
+  - Tsukahara
+  - Engle
 
 pub-year: "2021"
 date: "2021-02-19"

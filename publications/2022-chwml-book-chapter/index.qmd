@@ -2,12 +2,12 @@
 title: "Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension"
 
 pub-authors:
-  - Alexander P. Burgoyne
-  - Jessie D. Martin
-  - Cody A. Mashburn
-  - Jason S. Tsukahara
-  - Christopher Draheim
-  - Randall W. Engle
+  - Burgoyne
+  - Martin
+  - Mashburn
+  - Tsukahara
+  - Draheim
+  - Engle
 
 pub-year: "2022"
 date: "2022-12-08"

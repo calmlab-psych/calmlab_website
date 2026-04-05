@@ -2,9 +2,9 @@
 title: "Replication and extension of the toolbox approach to measuring attention control"
 
 pub-authors:
-  - Christopher D. Draheim
-  - Jason S. Tsukahara
-  - Randall W. Engle
+  - Draheim
+  - Tsukahara
+  - Engle
 
 show-on-profiles:
   - jason-tsukahara

@@ -2,11 +2,11 @@
 title: "Attention control: The missing link between sensory discrimination and intelligence"
 
 pub-authors:
-  - Jason S. Tsukahara
-  - Tyler L. Harrison
-  - Christopher Draheim
-  - Jessie D. Martin
-  - Randall W. Engle
+  - Tsukahara
+  - Harrison
+  - Draheim
+  - Martin
+  - Engle
 
 pub-year: "2020"
 date: "2020-06-08"

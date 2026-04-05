@@ -2,8 +2,8 @@
 title: "Fluid intelligence and the locus coeruleus-norepinephrine system"
 
 pub-authors:
-  - Jason S. Tsukahara
-  - Randall W. Engle
+  - Tsukahara
+  - Engle
 
 show-on-profiles:
   - jason-tsukahara

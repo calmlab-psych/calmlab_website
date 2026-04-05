@@ -2,12 +2,11 @@
 title: "A toolbox approach to improving the measurement of attention control"
 
 pub-authors:
-  - Christopher Draheim
-  - Jason S. Tsukahara
-  - Jessie D. Martin
-  - Cody A. Mashburn
-  - Randall W. Engle
-
+  - Draheim
+  - Tsukahara
+  - Martin
+  - Mashburn
+  - Engle
 pub-year: "2021"
 date: "2021-01-01"
 venue: "Journal of Experimental Psychology: General"

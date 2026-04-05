@@ -2,14 +2,14 @@
 title: "Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance"
 
 pub-authors:
-  - Cody A. Mashburn
-  - Alexander P. Burgoyne
-  - Jason S. Tsukahara
-  - Richard Pak
-  - Joseph T. Coyne
-  - Ciara Sibley
-  - Cyrus Foroughi
-  - Randall W. Engle
+  - Mashburn
+  - Burgoyne
+  - Tsukahara
+  - Pak
+  - Coyne
+  - Sibley
+  - Foroughi
+  - Engle
 
 pub-year: "2023"
 date: "2023-06-03"

@@ -35,7 +35,12 @@
 
       <% if (item["pub-authors"] && item["pub-authors"].length) { %>
         <div class="publication-authors card-text">
-          <%= item["pub-authors"].join(", ") %>
+          <%= item["pub-authors"].length === 1
+            ? item["pub-authors"][0]
+            : item["pub-authors"].length === 2
+              ? item["pub-authors"].join(" & ")
+              : item["pub-authors"].slice(0, -1).join(", ") + ", & " + item["pub-authors"].slice(-1)
+          %>
         </div>
       <% } %>
 
