@@ -28,7 +28,19 @@
 
       <% if (item["pub-authors"] && item["pub-authors"].length) { %>
         <div class="publication-authors publication-authors-profile">
-          <%= item["pub-authors"].join(", ") %>
+          <%
+            const authors = item["pub-authors"];
+            let authorText = "";
+
+            if (authors.length === 1) {
+              authorText = authors[0];
+            } else if (authors.length === 2) {
+              authorText = authors.join(" & ");
+            } else {
+              authorText = authors.slice(0, -1).join(", ") + ", & " + authors[authors.length - 1];
+            }
+          %>
+          <%= authorText %>
         </div>
       <% } %>
 
@@ -43,11 +55,7 @@
         <% } %>
 
         <% if (item["pub-type"]) { %>
-          <span class="publication-type"><%- item["pub-type"] %></span>
-        <% } %>
-
-        <% if (item["pub-status"]) { %>
-          <span class="publication-status"><%- item["pub-status"] %></span>
+          <span class="pill pill-status pill-soft"><%- item["pub-type"] %></span>
         <% } %>
       </div>
 

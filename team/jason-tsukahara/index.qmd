@@ -122,7 +122,7 @@ This is a longer paragraph style explanation of my research interests into somet
 <i class="bi bi-journal-text"></i>
 </div>
 
-### Select Publications
+### Selected Publications
 
 ::: {#profile-publications-list}
 :::

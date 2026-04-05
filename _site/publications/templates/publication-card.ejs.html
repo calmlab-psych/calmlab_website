@@ -136,7 +136,12 @@ ul.task-list li input[type="checkbox"] {
 
       &lt;% if (item["pub-authors"] &amp;&amp; item["pub-authors"].length) { %&gt;
         <div class="publication-authors card-text">
-          &lt;%= item["pub-authors"].join(", ") %&gt;
+          &lt;%= item["pub-authors"].length === 1
+            ? item["pub-authors"][0]
+            : item["pub-authors"].length === 2
+              ? item["pub-authors"].join(" &amp; ")
+              : item["pub-authors"].slice(0, -1).join(", ") + ", &amp; " + item["pub-authors"].slice(-1)
+          %&gt;
         </div>
       &lt;% } %&gt;
 
