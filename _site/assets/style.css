@@ -748,18 +748,19 @@ h2::before {
   max-width: 1050px;
 }
 
-.publication-title {
+.publication-title h3 {
   margin: 0 0 0.6rem 0;
-  font-size: 1.5rem;
+  font-size: 1.1rem;
   line-height: 1.2;
   letter-spacing: -0.01em;
-  font-weight: 700;
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .publication-title a {
   color: var(--color-primary);
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 .publication-title a:hover {
@@ -823,7 +824,7 @@ h2::before {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem !important;
-  margin-bottom: 0.95rem;
+  margin-bottom: 0rem;
 }
 
 .pub-link {
@@ -1435,7 +1436,7 @@ h2::before {
 }
 
 /* =========================
-   Profile Publications
+   Selected Publications
    ========================= */
 
 .profile-publications-empty {
@@ -1462,13 +1463,14 @@ h2::before {
   margin: 0 0 0.45rem 0;
   font-size: 1.35rem;
   font-weight: 700;
-  line-height: 1.28;
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
-.publication-title-profile a {
+.profile-section-card .publication-title-profile a {
   color: var(--color-primary);
   text-decoration: none;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 .publication-title-profile a:hover {
