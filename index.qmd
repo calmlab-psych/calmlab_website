@@ -6,7 +6,7 @@ listing:
   - id: home-news
     contents: news/posts
     sort: "date desc"
-    template: assets/news-listing-scroll.ejs.md
+    template: assets/listings/news-listing-scroll.ejs.md
     fields: [title, date, description, categories, path]
     max-items: 6
 
@@ -15,7 +15,7 @@ listing:
     sort:
       - "pub-status asc"
       - "date desc"
-    template: assets/pub-listing-scroll.ejs.md
+    template: assets/listings/pub-listing-scroll.ejs.md
     fields: [title, pub-year, pub-authors, venue, pub-status, pub-type, pdf, path]
     max-items: 6
 ---

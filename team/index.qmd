@@ -7,25 +7,25 @@ listing:
 
   - id: pi
     contents: jason-tsukahara/index.qmd
-    template: templates/pi-card.ejs.md
+    template: ../assets/cards/pi-card.ejs.md
     sort: "order asc"
     exclude:
       template: "yes"
 
   - id: grad-students
     contents: grad-students
-    template: templates/grad-card.ejs.md
+    template: ../assets/cards/grad-card.ejs.md
     sort: "order asc"
 
   - id: undergrads
     contents: undergrads
-    template: templates/ra-card.ejs.md
+    template: ../assets/cards/ra-card.ejs.md
     sort: "order asc"
 
   - id: team-news
     contents: ../news/posts/*.qmd
     sort: "date desc"
-    template: ../assets/news-listing-grid-notags.ejs.md
+    template: ../assets/listings/news-listing-grid-notags.ejs.md
     fields: [title, date, description, path]
     include:
       categories: "Team"

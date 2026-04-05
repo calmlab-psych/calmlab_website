@@ -20,7 +20,6 @@ github: dr-JT
 
 page-layout: full
 body-classes: profile-page
-include-after-body: ../templates/profile-links.html
 
 about:
   id: person-about
@@ -29,7 +28,7 @@ about:
 listing:
   - id: profile-publications-list
     contents: "../../publications/*/index.qmd"
-    template: "../../publications/templates/profile-publication-card.ejs.md"
+    template: "../../assets/listings/pub-listing-selected.ejs.md"
     fields: [title, pub-authors, show-on-profiles, pub-year, venue, pub-type, pub-status, pdf, data, code]
     sort:
       - "pub-status asc"

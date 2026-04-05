@@ -196,5 +196,32 @@
   },
   "assets/news-listing-grid-notags.ejs.md": {
     "news-listing-grid-notags.ejs.html": "0444a317"
+  },
+  "assets/cards/ra-card.ejs.md": {
+    "ra-card.ejs.html": "72ae71a7"
+  },
+  "assets/cards/pi-card.ejs.md": {
+    "pi-card.ejs.html": "f1e0c614"
+  },
+  "assets/cards/grad-card.ejs.md": {
+    "grad-card.ejs.html": "a7100fe6"
+  },
+  "assets/listings/news-listing-grid.ejs.md": {
+    "news-listing-grid.ejs.html": "d5574045"
+  },
+  "assets/listings/pub-listing-archive.ejs.md": {
+    "pub-listing-archive.ejs.html": "477b3fe5"
+  },
+  "assets/listings/pub-listing-scroll.ejs.md": {
+    "pub-listing-scroll.ejs.html": "97cf3bcc"
+  },
+  "assets/listings/pub-listing-selected.ejs.md": {
+    "pub-listing-selected.ejs.html": "c4ac16af"
+  },
+  "assets/listings/news-listing-grid-notags.ejs.md": {
+    "news-listing-grid-notags.ejs.html": "cd0dd8ee"
+  },
+  "assets/listings/news-listing-scroll.ejs.md": {
+    "news-listing-scroll.ejs.html": "d73573aa"
   }
 }

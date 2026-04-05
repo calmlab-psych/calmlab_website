@@ -3,7 +3,7 @@ listing:
   id: team-news
   contents: posts
   sort: "date desc"
-  template: ../assets/news-listing-grid.ejs.md
+  template: ../assets/listings/news-listing-grid.ejs.md
   fields: [title, date, description, categories, path]
   filter-ui: false
   sort-ui: false

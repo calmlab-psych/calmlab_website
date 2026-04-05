@@ -9,7 +9,7 @@ listing:
     sort:
       - "pub-status asc"
       - "date desc"
-    template: templates/publication-card.ejs.md
+    template: ../assets/listings/pub-listing-archive.ejs.md
     fields: [title, pub-authors, pub-year, venue, pub-status, pub-type, categories, pdf, data, code, doi, citation-count, altmetric-count]
     filter-ui: false
     exclude:

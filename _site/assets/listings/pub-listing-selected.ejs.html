@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>index – CALM LAB</title>
+<title>pub-listing-selected.ejs – CALM LAB</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,8 +24,6 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -52,71 +50,15 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-profile-publications-list .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-pub-authors','listing-show-on-profiles','listing-pub-year','listing-venue','listing-pub-type','listing-pub-status','listing-pdf','listing-data','listing-code',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
-      
-      searchColumns: ["listing-project","listing-website","listing-format","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-categories","listing-pdf","listing-data","listing-code","listing-doi","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-project-areas","listing-show-on-profiles"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-profile-publications-list'] = new List('listing-profile-publications-list', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../assets/style.css">
+<meta name="twitter:title" content="CALM LAB">
+<meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed profile-page quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -160,163 +102,112 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<div class="quarto-about-jolla column-page">
-  <img src="photo.jpeg" class="about-image
-  round " style="height: 15em; width: 15em;">
- <header id="title-block-header" class="quarto-title-block"></header><main class="content column-page" id="quarto-document-content">
-<section id="section" class="level1 profile-name profile-heading">
-<h1 class="profile-name">Jason S. Tsukahara, Ph.D.</h1>
-<div class="profile-position">
-<p>Principal Investigator</p>
-</div>
-<div class="profile-tagline">
-<p>Dr.&nbsp;Tsukahara directs the CALM Lab and studies attention control across contexts of life and mind. His research integrates cognitive psychology, neuroscience, and contemplative science to understand the nature and potentials of attention.</p>
-</div>
-<div class="profile-links">
-<div id="profile-links-dynamic" data-cv="jane-doe-cv.pdf" data-website="?meta:website" data-google-scholar="https://scholar.google.com/citations?user=393wE14AAAAJ&amp;hl=en&amp;oi=ao" data-linkedin="ok" data-bluesky="drjt.bsky.social" data-researchgate="yes" data-x="jasontsukahara" data-github="dr-JT">
-</div>
-</div>
-</section>
-<div class="profile-meta-grid">
-<section id="degree-program" class="level3 profile-meta-card">
-<h3 data-anchor-id="degree-program">Degree Program</h3>
-<p>Ph.D.&nbsp;Psychological Sciences</p>
-</section>
-<section id="contact" class="level3 profile-meta-card">
-<h3 data-anchor-id="contact">Contact</h3>
-<p><a href="mailto:jane@university.edu">jane@university.edu</a></p>
-</section>
-<section id="in-the-lab" class="level3 profile-meta-card">
-<h3 data-anchor-id="in-the-lab">In the Lab</h3>
-<p>2024-Present</p>
-</section>
-</div>
-<div class="profile-section-layout">
-<div class="profile-section-card">
-<div class="profile-section-icon profile-section-green">
-<p><i class="bi bi-lightbulb"></i></p>
-</div>
-<section id="research-interests" class="level3">
-<h3 data-anchor-id="research-interests">Research Interests</h3>
-<p>This is a longer paragraph style explanation of my research interests into something I don’t know how to do this but here we go, yipee kaya. Then this is a part of it as well. And what if it keeps on going on for a longer and longer and longer ezplanation. But does not stop here yet.</p>
-</section>
-</div>
-<div class="profile-section-card">
-<div class="profile-section-icon profile-section-blue">
-<p><i class="bi bi-mortarboard"></i></p>
-</div>
-<section id="education" class="level3">
-<h3 data-anchor-id="education">Education</h3>
-<p><strong>Ph.D.&nbsp;in Psychology</strong> — Example University</p>
-<p><strong>M.A.&nbsp;in Cognitive Science</strong> — Example University</p>
-<p><strong>B.A. in Psychology</strong> — Example University</p>
-</section>
-</div>
-<div class="profile-section-card profile-publications">
-<div class="profile-section-icon profile-section-red">
-<p><i class="bi bi-journal-text"></i></p>
-</div>
-<section id="selected-publications" class="level3">
-<h3 data-anchor-id="selected-publications">Selected Publications</h3>
-<div id="listing-profile-publications-list" class="quarto-listing quarto-listing-container-custom">
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+
+
+
+
 <div class="publications-list">
+&lt;%
+  const profileId = templateParams["profile-id"];
+  const matched = items.filter(item =&gt;
+    Array.isArray(item["show-on-profiles"]) &amp;&amp;
+    item["show-on-profiles"].includes(profileId)
+  );
+%&gt;
+
+&lt;% if (matched.length === 0) { %&gt;
+  <p class="profile-publications-empty">No selected publications listed yet.</p>
+&lt;% } %&gt;
+
+&lt;% for (const item of matched) { %&gt;
   <div class="publication-entry publication-entry-profile">
     <div class="publication-content">
+
       <h3 class="publication-title publication-title-profile">
-          <a href="../../publications/2023-brm-toolbox-2/2023-brm-toolbox-2.pdf" target="_blank" rel="noopener">Replication and extension of the toolbox approach to measuring attention control</a>
+        &lt;% if (item.pdf) { %&gt;
+          <a href="<%- item.pdf %>" target="_blank" rel="noopener">&lt;%= item.title %&gt;</a>
+        &lt;% } else if (item.path) { %&gt;
+          <a href="<%- item.path %>">&lt;%= item.title %&gt;</a>
+        &lt;% } else { %&gt;
+          &lt;%= item.title %&gt;
+        &lt;% } %&gt;
       </h3>
+
+      &lt;% if (item["pub-authors"] &amp;&amp; item["pub-authors"].length) { %&gt;
         <div class="publication-authors publication-authors-profile">
-          Draheim, Tsukahara, &amp; Engle
+          &lt;%
+            const authors = item["pub-authors"];
+            let authorText = "";
+
+            if (authors.length === 1) {
+              authorText = authors[0];
+            } else if (authors.length === 2) {
+              authorText = authors.join(" &amp; ");
+            } else {
+              authorText = authors.slice(0, -1).join(", ") + ", &amp; " + authors[authors.length - 1];
+            }
+          %&gt;
+          &lt;%= authorText %&gt;
         </div>
+      &lt;% } %&gt;
+
       <div class="publication-meta publication-meta-profile">
-          <span class="publication-year publication-year-profile"><strong>2023</strong></span>
-          <span class="publication-venue"><em>Behavior Research Methods</em></span>
-          <span class="pill pill-status pill-soft">Journal Article</span>
+
+        &lt;% if (item["pub-year"]) { %&gt;
+          <span class="publication-year publication-year-profile"><strong>&lt;%- item["pub-year"] %&gt;</strong></span>
+        &lt;% } %&gt;
+        
+        &lt;% if (item.venue) { %&gt;
+          <span class="publication-venue"><em>&lt;%- item.venue %&gt;</em></span>
+        &lt;% } %&gt;
+
+        &lt;% if (item["pub-type"]) { %&gt;
+          <span class="pill pill-status pill-soft">&lt;%- item["pub-type"] %&gt;</span>
+        &lt;% } %&gt;
       </div>
+
       <div class="publication-links publication-links-profile">
-          <a class="pub-link pub-link-pdf pub-link-profile" href="../../publications/2023-brm-toolbox-2/2023-brm-toolbox-2.pdf" target="_blank" rel="noopener">
+        &lt;% if (item.pdf) { %&gt;
+          <a class="pub-link pub-link-pdf pub-link-profile" href="<%- item.pdf %>" target="_blank" rel="noopener">
             <span class="pub-link-icon pub-link-icon-profile">
               <i class="bi bi-file-earmark-pdf"></i>
             </span>
             <span class="pub-link-label">Read</span>
           </a>
-          <a class="pub-link pub-link-data pub-link-profile" href="https://osf.io/me58c/" target="_blank" rel="noopener">
+        &lt;% } %&gt;
+
+        &lt;% if (item.data) { %&gt;
+          <a class="pub-link pub-link-data pub-link-profile" href="<%- item.data %>" target="_blank" rel="noopener">
             <span class="pub-link-icon pub-link-icon-profile">
               <i class="bi bi-database"></i>
             </span>
             <span class="pub-link-label">Data</span>
           </a>
-          <a class="pub-link pub-link-code pub-link-profile" href="https://osf.io/me58c/" target="_blank" rel="noopener">
+        &lt;% } %&gt;
+
+        &lt;% if (item.code) { %&gt;
+          <a class="pub-link pub-link-code pub-link-profile" href="<%- item.code %>" target="_blank" rel="noopener">
             <span class="pub-link-icon pub-link-icon-profile">
               <i class="bi bi-code-slash"></i>
             </span>
             <span class="pub-link-label">Code</span>
           </a>
+        &lt;% } %&gt;
       </div>
     </div>
   </div>
-  <div class="publication-entry publication-entry-profile">
-    <div class="publication-content">
-      <h3 class="publication-title publication-title-profile">
-          <a href="../../publications/2021-pnas-intelligence-lc/2021-pnas-intelligence-lc.pdf" target="_blank" rel="noopener">Fluid intelligence and the locus coeruleus-norepinephrine system</a>
-      </h3>
-        <div class="publication-authors publication-authors-profile">
-          Tsukahara &amp; Engle
-        </div>
-      <div class="publication-meta publication-meta-profile">
-          <span class="publication-year publication-year-profile"><strong>2021</strong></span>
-          <span class="publication-venue"><em>Proceedings of the National Academy of Sciences</em></span>
-          <span class="pill pill-status pill-soft">Journal Article</span>
-      </div>
-      <div class="publication-links publication-links-profile">
-          <a class="pub-link pub-link-pdf pub-link-profile" href="../../publications/2021-pnas-intelligence-lc/2021-pnas-intelligence-lc.pdf" target="_blank" rel="noopener">
-            <span class="pub-link-icon pub-link-icon-profile">
-              <i class="bi bi-file-earmark-pdf"></i>
-            </span>
-            <span class="pub-link-label">Read</span>
-          </a>
-          <a class="pub-link pub-link-data pub-link-profile" href="https://osf.io/2pu3q/" target="_blank" rel="noopener">
-            <span class="pub-link-icon pub-link-icon-profile">
-              <i class="bi bi-database"></i>
-            </span>
-            <span class="pub-link-label">Data</span>
-          </a>
-          <a class="pub-link pub-link-code pub-link-profile" href="https://osf.io/2pu3q/" target="_blank" rel="noopener">
-            <span class="pub-link-icon pub-link-icon-profile">
-              <i class="bi bi-code-slash"></i>
-            </span>
-            <span class="pub-link-label">Code</span>
-          </a>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div>
-</section>
-</div>
-<div class="profile-section-card profile-about">
-<div class="profile-section-icon profile-section-green">
-<p><i class="bi bi-person"></i></p>
-</div>
-<section id="about" class="level3">
-<h3 data-anchor-id="about">About</h3>
-<p>Jane Doe is a graduate student in the CALM Lab studying how attention fluctuates over time and how contemplative practices may help support cognitive performance and well-being. Her research focuses on understanding the dynamics of sustained attention—why focus is sometimes stable and at other times drifts—and how these fluctuations shape thought, behavior, and performance. By combining behavioral experiments with neurocognitive approaches, she investigates how attention operates both in everyday contexts and in situations that demand sustained mental effort.</p>
-<p>In her research, Jane is particularly interested in the relationship between mind wandering and cognitive control. She studies how internal thoughts emerge during ongoing tasks and how individuals differ in their ability to maintain goal-directed focus. Her work draws on behavioral tasks and physiological measures such as EEG to examine the moment-to-moment dynamics of attention and the neural systems that support these processes.</p>
-<p>More broadly, Jane is interested in how contemplative practices such as mindfulness may influence attention and emotional well-being. She is motivated by the possibility that training attention can enhance both cognitive performance and quality of life. Outside the lab, Jane enjoys exploring nature, reading, and practicing mindfulness meditation—interests that often inspire new questions about the mind and its capacity for focus and reflection.</p>
-</section>
-</div>
+&lt;% } %&gt;
 </div>
 
 
-<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main>  
-</div>
- <!-- /main -->
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script src="../../assets/listings/listing-filters.js"></script>
 
 <script>
@@ -414,7 +305,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/jasontsukahara\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

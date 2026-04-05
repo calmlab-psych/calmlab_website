@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jasontsukahara.com/index.html</loc>
-    <lastmod>2026-04-05T16:34:03.732Z</lastmod>
+    <lastmod>2026-04-05T17:23:26.826Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/assets/home-news.ejs.html</loc>
@@ -14,11 +14,11 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/team/grad-students/grad1/index.html</loc>
-    <lastmod>2026-03-14T19:33:42.152Z</lastmod>
+    <lastmod>2026-04-05T17:18:11.433Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/team/jason-tsukahara/index.html</loc>
-    <lastmod>2026-04-05T13:32:12.885Z</lastmod>
+    <lastmod>2026-04-05T17:17:42.127Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/team/team.ejs.html</loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/news/index.html</loc>
-    <lastmod>2026-04-05T14:09:24.578Z</lastmod>
+    <lastmod>2026-04-05T17:14:20.297Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/news/posts/2026-05-new-paper.html</loc>
@@ -66,7 +66,7 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/publications/index.html</loc>
-    <lastmod>2026-03-26T23:13:50.999Z</lastmod>
+    <lastmod>2026-04-05T17:14:45.702Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/publications/2023-ac-psychomotor/index.html</loc>
@@ -130,11 +130,11 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/team/index.html</loc>
-    <lastmod>2026-03-29T23:55:49.842Z</lastmod>
+    <lastmod>2026-04-05T17:09:07.371Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/team/grad-students/grad2/index.html</loc>
-    <lastmod>2026-03-14T13:49:14.854Z</lastmod>
+    <lastmod>2026-04-05T17:18:21.726Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/team/templates/ra-card.ejs.html</loc>
@@ -207,5 +207,41 @@
   <url>
     <loc>https://jasontsukahara.com/assets/news-listing-grid-notags.ejs.html</loc>
     <lastmod>2026-03-29T23:55:31.841Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/listings/news-listing-grid-notags.ejs.html</loc>
+    <lastmod>2026-03-29T23:55:31.841Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/listings/pub-listing-scroll.ejs.html</loc>
+    <lastmod>2026-04-05T13:59:21.997Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/listings/news-listing-grid.ejs.html</loc>
+    <lastmod>2026-03-26T23:12:00.083Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/cards/pi-card.ejs.html</loc>
+    <lastmod>2026-03-14T12:26:06.351Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/cards/ra-card.ejs.html</loc>
+    <lastmod>2026-04-03T02:31:28.822Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/cards/grad-card.ejs.html</loc>
+    <lastmod>2026-03-14T12:26:20.139Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/listings/pub-listing-archive.ejs.html</loc>
+    <lastmod>2026-04-05T01:04:55.677Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/listings/pub-listing-selected.ejs.html</loc>
+    <lastmod>2026-04-05T13:20:48.750Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/listings/news-listing-scroll.ejs.html</loc>
+    <lastmod>2026-03-26T23:11:58.812Z</lastmod>
   </url>
 </urlset>

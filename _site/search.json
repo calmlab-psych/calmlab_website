@@ -474,5 +474,68 @@
     "title": "CALM LAB",
     "section": "",
     "text": "&lt;% for (const item of items) { %&gt;\n  \n  &gt;\n\n  &lt;% if (item.image) { %&gt;\n  \n  \n  \n  &lt;% } %&gt;\n\n  &lt;%- item.date ? item.date : \"\" %&gt;\n\n  &lt;% if (item.categories && item.categories.length) { %&gt;\n  \n  &lt;% item.categories.forEach(function(cat) { %&gt;\n  &lt;%- cat %&gt;\n  &lt;% }) %&gt;\n  \n  &lt;% } %&gt;\n\n  &lt;%- item.title %&gt;\n\n  &lt;% if (item.description) { %&gt;\n  &lt;%- item.description %&gt;\n  &lt;% } %&gt;\n\n  \n  Read More\n  &lt;% if (item.link) { %&gt;\n  ↗\n  &lt;% } else { %&gt;\n  →\n  &lt;% } %&gt;\n  \n\n  \n  \n  &lt;% } %&gt;\n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/listings/news-listing-grid-notags.ejs.html",
+    "href": "assets/listings/news-listing-grid-notags.ejs.html",
+    "title": "CALM LAB",
+    "section": "",
+    "text": "&lt;% for (const item of items) { %&gt;\n  \n  &gt;\n\n  &lt;% if (item.image) { %&gt;\n  \n  \n  \n  &lt;% } %&gt;\n\n  &lt;%- item.date ? item.date : \"\" %&gt;\n\n  &lt;% if (item.categories && item.categories.length) { %&gt;\n  \n  &lt;% item.categories.forEach(function(cat) { %&gt;\n  &lt;%- cat %&gt;\n  &lt;% }) %&gt;\n  \n  &lt;% } %&gt;\n\n  &lt;%- item.title %&gt;\n\n  &lt;% if (item.description) { %&gt;\n  &lt;%- item.description %&gt;\n  &lt;% } %&gt;\n\n  \n  Read More\n  &lt;% if (item.link) { %&gt;\n  ↗\n  &lt;% } else { %&gt;\n  →\n  &lt;% } %&gt;\n  \n\n  \n  \n  &lt;% } %&gt;\n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/listings/pub-listing-scroll.ejs.html",
+    "href": "assets/listings/pub-listing-scroll.ejs.html",
+    "title": "CALM LAB",
+    "section": "",
+    "text": "&lt;% for (const item of items) { %&gt;\n      \n        \n        &gt;\n\n          \n            &lt;%- item[\"pub-status\"] === \"Preprint\" ? \"Preprint\" : (item[\"pub-year\"] ? item[\"pub-year\"] : \"\") %&gt;\n          \n\n          &lt;% if (item.venue) { %&gt;\n            \n              &lt;%- item.venue %&gt;\n            \n          &lt;% } %&gt;\n\n          &lt;%- item.title %&gt;\n\n          &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n            \n              &lt;%= item[\"pub-authors\"].length === 1\n                ? item[\"pub-authors\"][0]\n                : item[\"pub-authors\"].length === 2\n                  ? item[\"pub-authors\"].join(\" & \")\n                  : item[\"pub-authors\"].slice(0, -1).join(\", \") + \", & \" + item[\"pub-authors\"].slice(-1)\n              %&gt;\n            \n          &lt;% } %&gt;\n\n          \n            Read\n            →\n          \n\n        \n      \n    &lt;% } %&gt;\n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/listings/news-listing-grid.ejs.html",
+    "href": "assets/listings/news-listing-grid.ejs.html",
+    "title": "CALM LAB",
+    "section": "",
+    "text": "All\n    Lab\n    Team\n    Papers\n  \n\n  \n  &lt;% for (const item of items) { %&gt;\n  \n  &gt;\n\n  &lt;% if (item.image) { %&gt;\n  \n  \n  \n  &lt;% } %&gt;\n\n  &lt;%- item.date ? item.date : \"\" %&gt;\n\n  &lt;% if (item.categories && item.categories.length) { %&gt;\n  \n  &lt;% item.categories.forEach(function(cat) { %&gt;\n  &lt;%- cat %&gt;\n  &lt;% }) %&gt;\n  \n  &lt;% } %&gt;\n\n  &lt;%- item.title %&gt;\n\n  &lt;% if (item.description) { %&gt;\n  &lt;%- item.description %&gt;\n  &lt;% } %&gt;\n\n  \n  Read More\n  &lt;% if (item.link) { %&gt;\n  ↗\n  &lt;% } else { %&gt;\n  →\n  &lt;% } %&gt;\n  \n\n  \n  \n  &lt;% } %&gt;\n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/cards/pi-card.ejs.html",
+    "href": "assets/cards/pi-card.ejs.html",
+    "title": "CALM LAB",
+    "section": "",
+    "text": "&lt;% for (const item of items) { %&gt;\n\n\n\n  \n    \n    \n      View Page →\n    \n  \n\n  \n\n    \n      &lt;%- item.name %&gt;\n    \n\n    &lt;% if (item.position) { %&gt;\n      &lt;%- item.position %&gt;\n    &lt;% } %&gt;\n\n    &lt;% if (item.tagline) { %&gt;\n      &lt;%- item.tagline %&gt;\n    &lt;% } %&gt;\n\n    \n\n      &lt;% if (item.cv) { %&gt;\n      CV\n      &lt;% } %&gt;\n\n      &lt;% if (item.email) { %&gt;\n      Email\n      &lt;% } %&gt;\n\n      &lt;% if (item.website) { %&gt;\n      Personal Website ↗\n      &lt;% } %&gt;\n\n    \n\n  \n\n\n\n&lt;% } %&gt;\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/cards/ra-card.ejs.html",
+    "href": "assets/cards/ra-card.ejs.html",
+    "title": "Undergraduate Research Assistants",
+    "section": "",
+    "text": "&lt;% for (const item of items) { %&gt;\n      \n        \n          &lt;%- item.name %&gt;\n        \n\n        &lt;% if (item.image) { %&gt;\n          \n            \n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.major) { %&gt;\n          Major: &lt;%- item.major %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item.class) { %&gt;\n          Class: &lt;%- item.class %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item.tagline) { %&gt;\n          &lt;%- item.tagline %&gt;\n        &lt;% } %&gt;\n      \n    &lt;% } %&gt;\n\n  \n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/cards/grad-card.ejs.html",
+    "href": "assets/cards/grad-card.ejs.html",
+    "title": "CALM LAB",
+    "section": "",
+    "text": "&lt;% for (const item of items) { %&gt;\n\n\n  \n  \n    &lt;%- item.name %&gt;\n  \n\n  &lt;% if (item.position) { %&gt;\n    &lt;%- item.position %&gt;\n  &lt;% } %&gt;\n\n  \n    \n  \n\n  &lt;% if (item.tagline) { %&gt;\n    &lt;%- item.tagline %&gt;\n  &lt;% } %&gt;\n\n  \n    \n      View Page →\n    \n  \n  \n\n\n&lt;% } %&gt;\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/listings/pub-listing-archive.ejs.html",
+    "href": "assets/listings/pub-listing-archive.ejs.html",
+    "title": "CALM LAB",
+    "section": "",
+    "text": "&lt;%\n  let currentYear = null;\n%&gt;\n&lt;% for (const item of items) { %&gt;\n  &lt;%\n    const itemYear = item[\"pub-status\"] === \"Preprint\" ? \"Preprints\" : item[\"pub-year\"];\n    if (itemYear && itemYear !== currentYear) {\n      currentYear = itemYear;\n  %&gt;\n    \n      &lt;%= currentYear %&gt;\n    \n  &lt;%\n    }\n  %&gt;\n\n  \n    \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else if (item.path) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } %&gt;\n      \n\n      &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n        \n          &lt;%= item[\"pub-authors\"].length === 1\n            ? item[\"pub-authors\"][0]\n            : item[\"pub-authors\"].length === 2\n              ? item[\"pub-authors\"].join(\" & \")\n              : item[\"pub-authors\"].slice(0, -1).join(\", \") + \", & \" + item[\"pub-authors\"].slice(-1)\n          %&gt;\n        \n      &lt;% } %&gt;\n\n      \n        &lt;% if (item[\"pub-year\"]) { %&gt;\n          &lt;%- item[\"pub-year\"] %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item.venue) { %&gt;\n          &lt;%- item.venue %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item[\"pub-type\"]) { %&gt;\n          &lt;%- item[\"pub-type\"] %&gt;\n        &lt;% } %&gt;\n      \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          \n            \n              \n            \n            Read\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.data) { %&gt;\n          \n            \n              \n            \n            Data\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.code) { %&gt;\n          \n            \n              \n            \n            Code\n          \n        &lt;% } %&gt;\n      \n    \n  \n&lt;% } %&gt;\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/listings/pub-listing-selected.ejs.html",
+    "href": "assets/listings/pub-listing-selected.ejs.html",
+    "title": "CALM LAB",
+    "section": "",
+    "text": "&lt;%\n  const profileId = templateParams[\"profile-id\"];\n  const matched = items.filter(item =&gt;\n    Array.isArray(item[\"show-on-profiles\"]) &&\n    item[\"show-on-profiles\"].includes(profileId)\n  );\n%&gt;\n\n&lt;% if (matched.length === 0) { %&gt;\n  No selected publications listed yet.\n&lt;% } %&gt;\n\n&lt;% for (const item of matched) { %&gt;\n  \n    \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else if (item.path) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } %&gt;\n      \n\n      &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n        \n          &lt;%\n            const authors = item[\"pub-authors\"];\n            let authorText = \"\";\n\n            if (authors.length === 1) {\n              authorText = authors[0];\n            } else if (authors.length === 2) {\n              authorText = authors.join(\" & \");\n            } else {\n              authorText = authors.slice(0, -1).join(\", \") + \", & \" + authors[authors.length - 1];\n            }\n          %&gt;\n          &lt;%= authorText %&gt;\n        \n      &lt;% } %&gt;\n\n      \n\n        &lt;% if (item[\"pub-year\"]) { %&gt;\n          &lt;%- item[\"pub-year\"] %&gt;\n        &lt;% } %&gt;\n        \n        &lt;% if (item.venue) { %&gt;\n          &lt;%- item.venue %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item[\"pub-type\"]) { %&gt;\n          &lt;%- item[\"pub-type\"] %&gt;\n        &lt;% } %&gt;\n      \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          \n            \n              \n            \n            Read\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.data) { %&gt;\n          \n            \n              \n            \n            Data\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.code) { %&gt;\n          \n            \n              \n            \n            Code\n          \n        &lt;% } %&gt;\n      \n    \n  \n&lt;% } %&gt;\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "assets/listings/news-listing-scroll.ejs.html",
+    "href": "assets/listings/news-listing-scroll.ejs.html",
+    "title": "CALM LAB",
+    "section": "",
+    "text": "All\n    Lab\n    Team\n    Papers\n  \n\n  \n    \n      &lt;% for (const item of items) { %&gt;\n      \n        &gt;\n\n          &lt;% if (item.image) { %&gt;\n          \n            \n          \n          &lt;% } %&gt;\n\n          &lt;%- item.date ? item.date : \"\" %&gt;\n\n          &lt;% if (item.categories && item.categories.length) { %&gt;\n          \n            &lt;% item.categories.forEach(function(cat) { %&gt;\n            &lt;%- cat %&gt;\n            &lt;% }) %&gt;\n          \n          &lt;% } %&gt;\n\n          &lt;%- item.title %&gt;\n\n          &lt;% if (item.description) { %&gt;\n          &lt;%- item.description %&gt;\n          &lt;% } %&gt;\n\n          \n            Read More\n            &lt;% if (item.link) { %&gt;\n            ↗\n            &lt;% } else { %&gt;\n            →\n            &lt;% } %&gt;\n          \n\n        \n      \n      &lt;% } %&gt;\n    \n  \n\n\n\n\n Back to top"
   }
 ]

@@ -20,7 +20,6 @@ github: dr-JT
 
 page-layout: full
 body-classes: profile-page
-include-after-body: ../../templates/profile-links.html
 
 about:
   id: person-about
