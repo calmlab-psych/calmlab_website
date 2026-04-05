@@ -160,11 +160,7 @@ ul.task-list li input[type="checkbox"] {
         &lt;% } %&gt;
 
         &lt;% if (item["pub-type"]) { %&gt;
-          <span class="publication-type">&lt;%- item["pub-type"] %&gt;</span>
-        &lt;% } %&gt;
-
-        &lt;% if (item["pub-status"]) { %&gt;
-          <span class="publication-status">&lt;%- item["pub-status"] %&gt;</span>
+          <span class="pill pill-status pill-soft">&lt;%- item["pub-type"] %&gt;</span>
         &lt;% } %&gt;
       </div>
 
