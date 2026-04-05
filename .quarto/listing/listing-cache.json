@@ -42,6 +42,9 @@
     "projects/index.qmd": [
       "../publications/*/index.qmd",
       "publications/*/index.qmd"
+    ],
+    "team/templates/grad-name/index.qmd": [
+      "../../../publications/*/index.qmd"
     ]
   }
 }
