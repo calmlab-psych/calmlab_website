@@ -14,12 +14,12 @@ website:
     right:
       - href: team/index.qmd
         text: Team
-      # - href: projects/index.qmd
-      #   text: Projects
+      - href: projects/index.qmd
+        text: Projects
       - href: publications/index.qmd
         text: Publications
-      # - href: research_tools/index.qmd
-      #   text: Research Tools
+      - href: research_tools/index.qmd
+        text: Research Tools
       - href: contact.qmd
         text: Contact
 
