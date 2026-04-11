@@ -54,7 +54,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-<link rel="stylesheet" href="../../assets/theme-system.css">
+<link rel="stylesheet" href="../../assets/style.css">
 <meta name="twitter:title" content="Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension – CALM LAB">
 <meta name="twitter:description" content="In this chapter, we discuss the measurement of working memory capacity and attention control. First, we examine the origins of complex span measures of working memory capacity, which were created to better understand the cognitive processes underpinning language comprehension. We then discuss the executive attention theory of working memory, which places attention control at the center of individual differences in working memory capacity and fluid intelligence. Next, we describe the relationship between working memory capacity, attention control, and language comprehension, and discuss how maintenance and disengagement – two functions supported by the control of attention – contribute to performance across a range of cognitive tasks. Afterward, we discuss challenges associated with measuring working memory capacity and attention control and identify factors that threaten the construct and criterion validity of these measures. We also detail the steps our laboratory has taken to refine the measurement of these cognitive constructs. We close by providing practical recommendations and resources to researchers who wish to use measures of working memory capacity and attention control in their work.">
 <meta name="twitter:card" content="summary">
@@ -81,8 +81,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research_tools/index.html"> 
+<span class="menu-text">Research Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../contact.html"> 
@@ -150,7 +158,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script src="../../assets/listing-filters.js"></script>
+<script src="../../assets/listings/listing-filters.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("profile-links-dynamic");
+  if (!container) return;
+
+  const dataset = container.dataset;
+
+  const items = [
+    { key: "cv",            icon: "bi bi-file-earmark-text", label: "CV",             base: "" },
+    { key: "website",       icon: "bi bi-globe",             label: "Website",         base: "" },
+    { key: "googleScholar", icon: "bi bi-mortarboard",       label: "Google Scholar",  base: "" },
+    { key: "linkedin",      icon: "bi bi-linkedin",          label: "LinkedIn",        base: "https://linkedin.com/in/" },
+    { key: "bluesky",       icon: "bi bi-cloud",             label: "Bluesky",         base: "https://bsky.app/profile/" },
+    { key: "researchgate",  icon: "ai ai-researchgate",      label: "ResearchGate",    base: "https://www.researchgate.net/profile/" },
+    { key: "x",             icon: "bi bi-twitter-x",         label: "X.com",               base: "https://x.com/" },
+    { key: "github",        icon: "bi bi-github",            label: "GitHub",          base: "https://github.com/" },
+  ];
+
+  items.forEach(({ key, icon, label, base }) => {
+    const val = dataset[key]?.trim();
+    if (!val || val.startsWith("{{")) return;
+
+    const a = document.createElement("a");
+    a.href = base + val;
+    a.innerHTML = `<i class="${icon}"></i> ${label}`;
+    container.appendChild(a);
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

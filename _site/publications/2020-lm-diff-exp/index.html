@@ -54,7 +54,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-<link rel="stylesheet" href="../../assets/theme-system.css">
+<link rel="stylesheet" href="../../assets/style.css">
 <meta name="twitter:title" content="Differential and experimental approaches to studying intelligence in humans and non-human animals – CALM LAB">
 <meta name="twitter:description" content="Why do some individuals learn more quickly than others, or perform better in complex cognitive tasks? In this article, we describe how differential and experimental research methods can be used to study intelligence in humans and non-human animals. More than one hundred years ago, Spearman (1904) discovered a general factor underpinning performance across cognitive domains in humans. Shortly thereafter, Thorndike (1935) discovered positive correlations between cognitive performance measures in the albino rat. Today, research continues to shed light on the underpinnings of the positive manifold observed among ability measures. In this review, we focus on the relationship between cognitive performance and attention control; the domain-general ability to maintain focus on task-relevant information while preventing attentional capture by task-irrelevant thoughts and events. Recent work from our laboratory has revealed that individual differences in attention control can largely explain the positive associations between broad cognitive abilities such as working memory capacity and fluid intelligence. In research on mice, attention control has been closely linked to a general ability factor reflecting route learning and problem solving. Taken together, both lines of research suggest that individual differences in attention control underpin performance in a variety of complex cognitive tasks, helping to explain why measures of cognitive ability correlate positively. Efforts to find confirmatory and dis-confirmatory evidence across species stands to improve not only our understanding of attention control, but cognition in general.">
 <meta name="twitter:card" content="summary">
@@ -81,8 +81,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research_tools/index.html"> 
+<span class="menu-text">Research Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../contact.html"> 
@@ -150,7 +158,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script src="../../assets/listing-filters.js"></script>
+<script src="../../assets/listings/listing-filters.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("profile-links-dynamic");
+  if (!container) return;
+
+  const dataset = container.dataset;
+
+  const items = [
+    { key: "cv",            icon: "bi bi-file-earmark-text", label: "CV",             base: "" },
+    { key: "website",       icon: "bi bi-globe",             label: "Website",         base: "" },
+    { key: "googleScholar", icon: "bi bi-mortarboard",       label: "Google Scholar",  base: "" },
+    { key: "linkedin",      icon: "bi bi-linkedin",          label: "LinkedIn",        base: "https://linkedin.com/in/" },
+    { key: "bluesky",       icon: "bi bi-cloud",             label: "Bluesky",         base: "https://bsky.app/profile/" },
+    { key: "researchgate",  icon: "ai ai-researchgate",      label: "ResearchGate",    base: "https://www.researchgate.net/profile/" },
+    { key: "x",             icon: "bi bi-twitter-x",         label: "X.com",               base: "https://x.com/" },
+    { key: "github",        icon: "bi bi-github",            label: "GitHub",          base: "https://github.com/" },
+  ];
+
+  items.forEach(({ key, icon, label, base }) => {
+    const val = dataset[key]?.trim();
+    if (!val || val.startsWith("{{")) return;
+
+    const a = document.createElement("a");
+    a.href = base + val;
+    a.innerHTML = `<i class="${icon}"></i> ${label}`;
+    container.appendChild(a);
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

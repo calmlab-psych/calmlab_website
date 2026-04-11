@@ -54,7 +54,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-<link rel="stylesheet" href="../../assets/theme-system.css">
+<link rel="stylesheet" href="../../assets/style.css">
 <meta name="twitter:title" content="Is baseline pupil size related to cognitive ability? Yes (under proper lighting conditions) – CALM LAB">
 <meta name="twitter:description" content="There has been some controversy as to whether baseline pupil size is related to individual differences in cognitive ability. Previously, we had shown that a larger baseline pupil size was associated with higher cognitive ability and that the correlation to fluid intelligence was larger than that to working memory capacity (Tsukahara, Harrison, &amp; Engle, 2016). However, other researchers have not been able to replicate our findings – though they only measured working memory capacity and not fluid intelligence. Many of the studies showing no relationship had major methodological issues, namely small baseline pupil size values – down to the physiological minimum that resulted in reduced variability on baseline pupil size. We conducted two large-scale studies to investigate how different lighting conditions affect baseline pupil size values and the correlation with cognitive abilities. We found that fluid intelligence, working memory capacity, and attention control did correlate with baseline pupil size except in the brightest lighting conditions. We showed that a reduced variability in baseline pupil size values is due to the monitor settings being too bright. Overall, our findings demonstrated that the baseline pupil size working memory capacity relationship was not as strong or robust as that with fluid intelligence or attention control. Our findings have strong methodological implications for researchers investigating individual differences in task-free or task-evoked pupil size. We conclude that fluid intelligence does correlate with baseline pupil size and that this is related to the functional organization of the resting-state brain through the locus coeruleus-norepinephrine system.">
 <meta name="twitter:card" content="summary">
@@ -81,8 +81,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research_tools/index.html"> 
+<span class="menu-text">Research Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../contact.html"> 
@@ -150,7 +158,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script src="../../assets/listing-filters.js"></script>
+<script src="../../assets/listings/listing-filters.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("profile-links-dynamic");
+  if (!container) return;
+
+  const dataset = container.dataset;
+
+  const items = [
+    { key: "cv",            icon: "bi bi-file-earmark-text", label: "CV",             base: "" },
+    { key: "website",       icon: "bi bi-globe",             label: "Website",         base: "" },
+    { key: "googleScholar", icon: "bi bi-mortarboard",       label: "Google Scholar",  base: "" },
+    { key: "linkedin",      icon: "bi bi-linkedin",          label: "LinkedIn",        base: "https://linkedin.com/in/" },
+    { key: "bluesky",       icon: "bi bi-cloud",             label: "Bluesky",         base: "https://bsky.app/profile/" },
+    { key: "researchgate",  icon: "ai ai-researchgate",      label: "ResearchGate",    base: "https://www.researchgate.net/profile/" },
+    { key: "x",             icon: "bi bi-twitter-x",         label: "X.com",               base: "https://x.com/" },
+    { key: "github",        icon: "bi bi-github",            label: "GitHub",          base: "https://github.com/" },
+  ];
+
+  items.forEach(({ key, icon, label, base }) => {
+    const val = dataset[key]?.trim();
+    if (!val || val.startsWith("{{")) return;
+
+    const a = document.createElement("a");
+    a.href = base + val;
+    a.innerHTML = `<i class="${icon}"></i> ${label}`;
+    container.appendChild(a);
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

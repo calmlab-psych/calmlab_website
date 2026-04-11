@@ -5,22 +5,21 @@
    ========================= */
 
 :root {
-  --color-primary: #0B5570;
-  --color-primary-highlight: #F1F5F9;
-  --color-secondary: #2C8AA8;
-  --color-secondary-highlight: #2c89a81e;
-  --color-outline: #8DB3BE;
-
+  --color-primary: #5E1E22;
+  --color-primary-highlight: #F0E6E7;
+  --color-secondary: #2D4B8A;
+  --color-secondary-highlight: #2D4B8A20;
+  --color-outline: #8A6A6C;
   --color-white: #FFFFFF;
-  --color-white-border: #EAEAEA;
-
-  --color-yellow: #D9A441;
-  --color-yellow-highlight: #d9a4411f;
-  --color-green: #2C8AA8;
-  --color-green-highlight: #2c89a81e;
-
-  --color-bg: #FFFFFF;
-  --color-text: #1F2A30;
+  --color-white-border: #D8CECC;
+  --color-yellow: #7A5C38;
+  --color-yellow-highlight: #7A5C3820;
+  --color-green: #2B4A52;
+  --color-green-highlight: #2B4A5220;
+  --color-blue: #2D4B8A;
+  --color-blue-highlight: #2D4B8A20;
+  --color-bg: #F7F4F2;
+  --color-text: #1A1214;
 
   --font-logo: "Nunito", sans-serif;
   --font-body: "Karla", system-ui, -apple-system, sans-serif;
@@ -214,22 +213,22 @@ h2::before {
   font-weight: 600;
   border: 1px solid var(--color-white-border);
   background: var(--color-white);
-  color: var(--color-primary);
+  color: var(--color-secondary);
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
 .pill-filter:hover,
 .pill-filter.active {
-  background: var(--color-primary);
+  background: var(--color-secondary);
   color: var(--color-white);
-  border-color: var(--color-primary);
+  border-color: var(--color-secondary);
 }
 
 .pill-soft {
   background: var(--color-white);
-  border: 1px solid var(--color-primary);
-  color: var(--color-primary);
+  border: 1px solid var(--color-secondary);
+  color: var(--color-secondary);
 }
 
 .pill-outline {
@@ -314,16 +313,16 @@ h2::before {
 
 .is-blue .icon-badge,
 .icon-badge-blue {
-  background: var(--color-primary-highlight);
+  background: var(--color-blue-highlight);
 }
 
 .is-blue .icon-badge i,
 .icon-badge-blue i {
-  color: var(--color-primary);
+  color: var(--color-blue);
 }
 
 .is-blue:hover {
-  border: 1px solid var(--color-primary);
+  border: 1px solid var(--color-blue);
 }
 
 .is-yellow .icon-badge,
@@ -466,11 +465,11 @@ h2::before {
 }
 
 .hero-subtitle {
-  color: var(--color-primary);
+  color: var(--color-green);
 }
 
 .header-subtitle {
-  color: var(--color-yellow);
+  color: var(--color-green);
 }
 
 .hero-intro {
@@ -1049,6 +1048,7 @@ h2::before {
   margin: 0;
   font-size: 2rem;
   font-weight: 800;
+  color: var(--color-primary);
 }
 
 .pi-position {
@@ -1056,13 +1056,14 @@ h2::before {
   font-size: 1.1rem;
   margin-top: -0.25rem;
   margin-bottom: 1rem;
-  color: var(--color-yellow);
+  color: var(--color-green);
 }
 
 .pi-links a {
   margin-right: 1rem;
   font-size: 1.1rem;
   font-weight: 700;
+  color: var(--color-secondary);
 }
 
 .grad-grid {
@@ -1094,13 +1095,13 @@ h2::before {
   margin-top: 1rem;
   margin-bottom: 0.1rem;
   font-size: 1.5rem;
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .grad-position {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--color-yellow);
+  color: var(--color-green);
   letter-spacing: normal;
 }
 
@@ -1265,9 +1266,9 @@ h2::before {
   gap: 0.4rem;
   padding: 0.5rem 1.1rem;
   background: var(--color-white);
-  border: 1.5px solid var(--color-white-border);
+  border: 1px solid var(--color-white-border);
   border-radius: var(--radius-pill);
-  color: var(--color-primary);
+  color: var(--color-secondary);
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -1281,8 +1282,7 @@ h2::before {
 }
 
 .profile-links a:hover {
-  background: var(--color-primary-highlight);
-  border-color: rgba(44, 79, 107, 0.25);
+  background: var(--color-secondary-highlight);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }

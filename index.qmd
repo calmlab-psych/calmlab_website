@@ -27,7 +27,7 @@ listing:
 
 ::::: hero-text
 ::: hero-title
-CALM [LAB]{style="color: var(--color-yellow);"}
+CALM LAB
 :::
 
 ::: hero-subtitle

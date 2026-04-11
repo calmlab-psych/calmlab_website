@@ -54,7 +54,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-<link rel="stylesheet" href="../../assets/theme-system.css">
+<link rel="stylesheet" href="../../assets/style.css">
 <meta name="twitter:title" content="Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence – CALM LAB">
 <meta name="twitter:description" content="In this chapter, we detail our approach to the study of individual differences in working memory capacity (WMC) and how it has contributed to understanding the mechanisms of complex cognition. Theories of working memory have primarily focused on specifying how information is represented and manipulated in a limited-capacity cognitive system. Individuals differ in the efficacy of their working memory systems, forming the basis for WMC as a psychometric construct. Decades of research have shown that WMC is predictive of a broad range of abilities and outcomes (Engle, 2002; Engle &amp; Kane, 2004; Feldman-Barrett, Tugade, &amp; Engle, 2004). One of the most robust and, we believe, important findings is that WMC strongly predicts fluid intelligence (Gf), the ability to solve novel problems and learn new information (Kane, Hambrick, &amp; Conway, 2005; Kyllonen &amp; Christal, 1990). A central feature of many models of the working memory system is a domain-general executive attention, sometimes called a central executive, which regulates other components of the system (Baddeley &amp; Hitch, 1974; Cowan, 1999). We argue that this attentional component forms the basis of the WMC–Gf relationship.">
 <meta name="twitter:card" content="summary">
@@ -81,8 +81,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research_tools/index.html"> 
+<span class="menu-text">Research Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../contact.html"> 
@@ -151,7 +159,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script src="../../assets/listing-filters.js"></script>
+<script src="../../assets/listings/listing-filters.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("profile-links-dynamic");
+  if (!container) return;
+
+  const dataset = container.dataset;
+
+  const items = [
+    { key: "cv",            icon: "bi bi-file-earmark-text", label: "CV",             base: "" },
+    { key: "website",       icon: "bi bi-globe",             label: "Website",         base: "" },
+    { key: "googleScholar", icon: "bi bi-mortarboard",       label: "Google Scholar",  base: "" },
+    { key: "linkedin",      icon: "bi bi-linkedin",          label: "LinkedIn",        base: "https://linkedin.com/in/" },
+    { key: "bluesky",       icon: "bi bi-cloud",             label: "Bluesky",         base: "https://bsky.app/profile/" },
+    { key: "researchgate",  icon: "ai ai-researchgate",      label: "ResearchGate",    base: "https://www.researchgate.net/profile/" },
+    { key: "x",             icon: "bi bi-twitter-x",         label: "X.com",               base: "https://x.com/" },
+    { key: "github",        icon: "bi bi-github",            label: "GitHub",          base: "https://github.com/" },
+  ];
+
+  items.forEach(({ key, icon, label, base }) => {
+    const val = dataset[key]?.trim();
+    if (!val || val.startsWith("{{")) return;
+
+    const a = document.createElement("a");
+    a.href = base + val;
+    a.innerHTML = `<i class="${icon}"></i> ${label}`;
+    container.appendChild(a);
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

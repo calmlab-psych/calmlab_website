@@ -54,7 +54,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
 
-<link rel="stylesheet" href="../../assets/theme-system.css">
+<link rel="stylesheet" href="../../assets/style.css">
 <meta name="twitter:title" content="Sustaining the focus of attention and how it relates to performance in complex cognitive tasks – CALM LAB">
 <meta name="twitter:description" content="The ability to sustain attention over time and the maintenance of information in working memory are highly overlapping constructs. Many tasks used to measure sustained attention rely heavily on the maintenance of information in working memory to sustain continuous task performance over large periods of time. To further understand the relationship between sustained attention and working memory, we tested whether the ability to sustain the focus of attention over a relatively short period of time (e.g., 12 seconds) is related to cognitive abilities such as working memory capacity and attention control. We used a novel paradigm, the sustained attention-to-cue task, to manipulate the duration attention had tobe sustained at a cued location; none (0 seconds), short (2–5 seconds), medium (5.5–8.5 seconds), and long (9–12 seconds). We found that attention waned and accuracy decreased as the wait time got longer. Those higher on attention control ability, had less of a decline in accuracy as the wait time got longer. However, the decline in accuracy as wait time got longer was not related to working memory capacity, fluid intelligence, or multitasking. These findings challenge how we think about sustained attention and working memory capacity, and the nature of attention control more generally.">
 <meta name="twitter:card" content="summary">
@@ -81,8 +81,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
     <a class="nav-link" href="../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../research_tools/index.html"> 
+<span class="menu-text">Research Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../contact.html"> 
@@ -149,7 +157,37 @@ ul.task-list li input[type="checkbox"] {
 
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
-<script src="../../assets/listing-filters.js"></script>
+<script src="../../assets/listings/listing-filters.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("profile-links-dynamic");
+  if (!container) return;
+
+  const dataset = container.dataset;
+
+  const items = [
+    { key: "cv",            icon: "bi bi-file-earmark-text", label: "CV",             base: "" },
+    { key: "website",       icon: "bi bi-globe",             label: "Website",         base: "" },
+    { key: "googleScholar", icon: "bi bi-mortarboard",       label: "Google Scholar",  base: "" },
+    { key: "linkedin",      icon: "bi bi-linkedin",          label: "LinkedIn",        base: "https://linkedin.com/in/" },
+    { key: "bluesky",       icon: "bi bi-cloud",             label: "Bluesky",         base: "https://bsky.app/profile/" },
+    { key: "researchgate",  icon: "ai ai-researchgate",      label: "ResearchGate",    base: "https://www.researchgate.net/profile/" },
+    { key: "x",             icon: "bi bi-twitter-x",         label: "X.com",               base: "https://x.com/" },
+    { key: "github",        icon: "bi bi-github",            label: "GitHub",          base: "https://github.com/" },
+  ];
+
+  items.forEach(({ key, icon, label, base }) => {
+    const val = dataset[key]?.trim();
+    if (!val || val.startsWith("{{")) return;
+
+    const a = document.createElement("a");
+    a.href = base + val;
+    a.innerHTML = `<i class="${icon}"></i> ${label}`;
+    container.appendChild(a);
+  });
+});
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {
