@@ -4,3 +4,5 @@
 .quarto/preview/lock/*
 publications/.DS_Store
 team/_templates/.DS_Store
+*.DS_Store
+*.Rproj.user
