@@ -2,3 +2,5 @@
 **/*.quarto_ipynb
 .quarto/preview/lock
 .quarto/preview/lock/*
+publications/.DS_Store
+team/_templates/.DS_Store
