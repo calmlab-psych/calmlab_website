@@ -1,18 +1,6 @@
 ```{=html}
 <div class="publications-list">
-<%
-  const profileId = templateParams["profile-id"];
-  const matched = items.filter(item =>
-    Array.isArray(item["show-on-profiles"]) &&
-    item["show-on-profiles"].includes(profileId)
-  );
-%>
-
-<% if (matched.length === 0) { %>
-  <p class="profile-publications-empty">No selected publications listed yet.</p>
-<% } %>
-
-<% for (const item of matched) { %>
+<% for (const item of items) { %>
   <div class="publication-entry publication-entry-profile">
     <div class="publication-content">
 
