@@ -27,14 +27,14 @@ about:
 
 listing:
   - id: profile-publications-list
-    contents: "../../publications/*/index.qmd"
+    contents:
+      - "../../publications/2023/jepg-squared-intro/index.qmd"
+      - "../../publications/2023/ac-psychomotor/index.qmd"
     template: "../../assets/listings/pub-listing-selected.ejs.md"
     fields: [title, pub-authors, show-on-profiles, pub-year, venue, pub-type, pub-status, pdf, data, code]
     sort:
       - "pub-status asc"
       - "date desc"
-    template-params:
-      profile-id: "jason-tsukahara"
 ---
 
 ::: {.profile-heading}

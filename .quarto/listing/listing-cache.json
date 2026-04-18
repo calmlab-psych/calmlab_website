@@ -36,7 +36,12 @@
     ],
     "team/jason-tsukahara/index.qmd": [
       "../../../publications/*/index.qmd",
-      "../../publications/*/index.qmd"
+      "../../publications/*/index.qmd",
+      "../../publications/2023-jepg-squared-intro/index.qmd",
+      "../../publications/ac-psychomotor/index.qmd",
+      "../../publications/2023-ac-psychomotor/index.qmd",
+      "../../publications/2023/jepg-squared-intro/index.qmd",
+      "../../publications/2023/ac-psychomotor/index.qmd"
     ],
     "team/grad-students/grad1/index.qmd": [
       "../../publications/*/index.qmd",
