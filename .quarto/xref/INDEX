@@ -238,5 +238,59 @@
   },
   "news/2026-04-website-launch/index.qmd": {
     "index.html": "bb10b18f"
+  },
+  "publications/2022/int-pot/index.qmd": {
+    "index.html": "061c2212"
+  },
+  "publications/2022/chwml-book-chapter/index.qmd": {
+    "index.html": "bcafb9f9"
+  },
+  "publications/2024/ac-psychomotor/index.qmd": {
+    "index.html": "031420dc"
+  },
+  "publications/2023/sact-2/index.qmd": {
+    "index.html": "72d4a35a"
+  },
+  "publications/2023/brm-toolbox-2/index.qmd": {
+    "index.html": "ce28d3ae"
+  },
+  "publications/2023/jepg-squared-intro/index.qmd": {
+    "index.html": "38dc079b"
+  },
+  "publications/2021/jepg-visualarrays/index.qmd": {
+    "index.html": "d97048a6"
+  },
+  "publications/2021/sa-pupil/index.qmd": {
+    "index.html": "ae439130"
+  },
+  "publications/2021/pnas-intelligence-lc/index.qmd": {
+    "index.html": "c05992ed"
+  },
+  "publications/2021/cog-pupil-luminance/index.qmd": {
+    "index.html": "48ab00e1"
+  },
+  "publications/2021/tr-rationality/index.qmd": {
+    "index.html": "87f30080"
+  },
+  "publications/2021/jepg-toolbox-1/index.qmd": {
+    "index.html": "11852b4e"
+  },
+  "publications/2021/cog-pupil-luminance-reply/index.qmd": {
+    "index.html": "8015f097"
+  },
+  "publications/2021/ijp-vagus-pupil/index.qmd": {
+    "index.html": "c5e0ce23"
+  },
+  "publications/2020/lm-diff-exp/index.qmd": {
+    "index.html": "9d68fb8a"
+  },
+  "publications/2020/wms-book-chapter/index.qmd": {
+    "index.html": "8c300852"
+  },
+  "publications/2020/app-sensory-discrimination/index.qmd": {
+    "index.html": "2d7945eb"
+  },
+  "publications/2016/cp-baseline-pupil-og/index.qmd": {
+    "index.html": "5719cde9"
   }
 }

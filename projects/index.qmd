@@ -3,38 +3,6 @@ title: "Projects"
 body-classes: page-title
 page-layout: full
 
-listing:
-  - id: individual-differences-pubs
-    contents: ../publications/*/index.qmd
-    sort:
-      - "pub-status asc"
-      - "date desc"
-    template: ../assets/project-publications.ejs.md
-    fields: [title, pub-year, pub-authors, venue, pub-status, pub-type, pdf, path, project-areas]
-    template-params:
-      project-area: "individual-differences"
-
-  - id: neural-mechanisms-pubs
-    contents: ../publications/*/index.qmd
-    sort:
-      - "pub-status asc"
-      - "date desc"
-    template: ../assets/project-publications.ejs.md
-    fields: [title, pub-year, pub-authors, venue, pub-status, pub-type, pdf, path, project-areas]
-    template-params:
-      project-area: "neural-mechanisms"
-    max-items: 10
-
-  - id: contemplative-practices-pubs
-    contents: ../publications/*/index.qmd
-    sort:
-      - "pub-status asc"
-      - "date desc"
-    template: ../assets/project-publications.ejs.md
-    fields: [title, pub-year, pub-authors, venue, pub-status, pub-type, pdf, path, project-areas]
-    template-params:
-      project-area: "contemplative-practices"
-    max-items: 10
 ---
 
 ::: {.page-header}

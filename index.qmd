@@ -11,7 +11,7 @@ listing:
     max-items: 6
 
   - id: home-publications
-    contents: publications/*/index.qmd
+    contents: publications/*/*/index.qmd
     sort:
       - "pub-status asc"
       - "date desc"
@@ -41,8 +41,7 @@ The CALM Lab studies attention control across contexts of life and mind, combini
 :::
 
 :::::::::::: {.grid-3 .section-shell}
-::::: {.card .card-interactive .card-body .is-blue}
-:::: quick-card-link
+::::: {.card .card-interactive .quick-card .is-blue}
 <a href="team/index.qmd">
 
 ::: {.icon-badge .icon-badge-sm}
@@ -54,11 +53,9 @@ The CALM Lab studies attention control across contexts of life and mind, combini
 Meet the researchers and students working in the CALM Lab.
 
 [View Team →]{.link-cta}</a>
-::::
 :::::
 
-::::: {.card .card-interactive .card-body .is-yellow}
-:::: quick-card-link
+::::: {.card .card-interactive .quick-card .is-yellow}
 <a href="projects/index.qmd">
 
 ::: {.icon-badge .icon-badge-sm}
@@ -70,11 +67,10 @@ Meet the researchers and students working in the CALM Lab.
 Explore our research on attention control, brain networks, and mindfulness.
 
 [View Projects →]{.link-cta}</a>
-::::
+
 :::::
 
-::::: {.card .card-interactive .card-body .is-green}
-:::: quick-card-link
+::::: {.card .card-interactive .quick-card .is-green}
 <a href="contact.qmd">
 
 ::: {.icon-badge .icon-badge-sm}
@@ -86,8 +82,9 @@ Explore our research on attention control, brain networks, and mindfulness.
 Interested in collaborating, joining the lab, or learning more about our work?
 
 [Get in Touch →]{.link-cta}</a>
-::::
+
 :::::
+
 ::::::::::::
 
 ------------------------------------------------------------------------

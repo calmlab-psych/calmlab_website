@@ -274,16 +274,16 @@ window.Quarto = {
 
   
     <div class="publication-year-group">
-      <h2 class="publication-year-heading">2023</h2>
+      <h2 class="publication-year-heading">2024</h2>
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Journal Article" data-categories="navy higher-order-cognition">
+  <article class="publication-entry card" data-pub-type="Journal Article" data-categories="">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
         
-          <a href="../publications/2023-ac-psychomotor/index.html">Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance</a>
+          <a href="Mashburn_et_al_2024_Intelligence.pdf" target="_blank" rel="noopener">Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance</a>
         
       </h3>
 
@@ -295,11 +295,11 @@ window.Quarto = {
 
       <div class="publication-meta card-meta">
         
-          <span class="publication-year">2023</span>
+          <span class="publication-year">2024</span>
         
 
         
-          <span class="publication-venue"><em>PsyArxiv</em></span>
+          <span class="publication-venue"><em>Intelligence</em></span>
         
 
         
@@ -308,6 +308,13 @@ window.Quarto = {
       </div>
 
       <div class="publication-links">
+        
+          <a class="pub-link pub-link-pdf" href="Mashburn_et_al_2024_Intelligence.pdf" target="_blank" rel="noopener">
+            <span class="pub-link-icon">
+              <i class="bi bi-file-earmark-pdf"></i>
+            </span>
+            <span class="pub-link-label">Read</span>
+          </a>
         
 
         
@@ -331,6 +338,10 @@ window.Quarto = {
     </div>
   </article>
 
+  
+    <div class="publication-year-group">
+      <h2 class="publication-year-heading">2023</h2>
+    </div>
   
 
   <article class="publication-entry card" data-pub-type="Journal Article" data-categories="measurement">
@@ -1051,7 +1062,7 @@ window.Quarto = {
 
       <h3 class="publication-title card-title">
         
-          <a href="../publications/2020-wms-book-chapter/index.html">Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence</a>
+          <a href="../publications/2020/wms-book-chapter/index.html">Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence</a>
         
       </h3>
 
@@ -1158,7 +1169,7 @@ window.Quarto = {
 
       <h3 class="publication-title card-title">
         
-          <a href="../publications/2016-cp-baseline-pupil-og/2016-cp-baseline-pupil-og.pdf" target="_blank" rel="noopener">The relationship between baseline pupil size and intelligence</a>
+          <a href="../publications/2016/cp-baseline-pupil-og/Tsukahara_et_al_2016_Cognitive_Psychology.pdf" target="_blank" rel="noopener">The relationship between baseline pupil size and intelligence</a>
         
       </h3>
 
@@ -1184,7 +1195,7 @@ window.Quarto = {
 
       <div class="publication-links">
         
-          <a class="pub-link pub-link-pdf" href="../publications/2016-cp-baseline-pupil-og/2016-cp-baseline-pupil-og.pdf" target="_blank" rel="noopener">
+          <a class="pub-link pub-link-pdf" href="../publications/2016/cp-baseline-pupil-og/Tsukahara_et_al_2016_Cognitive_Psychology.pdf" target="_blank" rel="noopener">
             <span class="pub-link-icon">
               <i class="bi bi-file-earmark-pdf"></i>
             </span>
@@ -1290,6 +1301,22 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(a);
   });
 });
+</script>
+
+
+<script>
+function copyEmail(link) {
+  const email = link.dataset.copy;
+  const icon = link.querySelector('i');
+  navigator.clipboard.writeText(email).then(() => {
+    icon.classList.remove('bi-copy');
+    icon.classList.add('bi-check2');
+    setTimeout(() => {
+      icon.classList.remove('bi-check2');
+      icon.classList.add('bi-copy');
+    }, 1500);
+  });
+}
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

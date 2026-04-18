@@ -223,8 +223,7 @@ window.Quarto = {
 <p>The CALM Lab studies attention control across contexts of life and mind, combining cognitive science, neuroscience, and contemplative approaches to understand how attention shapes thought, success, and well-being.</p>
 </div>
 <div class="grid-3 section-shell">
-<div class="card card-interactive card-body is-blue">
-<div class="quick-card-link">
+<div class="card card-interactive quick-card is-blue">
 <p><a href="./team/index.html"></a></p><a href="./team/index.html">
 <div class="icon-badge icon-badge-sm">
 <p><i class="bi bi-people"></i></p>
@@ -235,9 +234,7 @@ window.Quarto = {
 </a><p><a href="./team/index.html"><span class="link-cta">View Team →</span></a></p>
 </section>
 </div>
-</div>
-<div class="card card-interactive card-body is-yellow">
-<div class="quick-card-link">
+<div class="card card-interactive quick-card is-yellow">
 <p><a href="./projects/index.html"></a></p><a href="./projects/index.html">
 <div class="icon-badge icon-badge-sm">
 <p><i class="bi bi-diagram-3"></i></p>
@@ -248,9 +245,7 @@ window.Quarto = {
 </a><p><a href="./projects/index.html"><span class="link-cta">View Projects →</span></a></p>
 </section>
 </div>
-</div>
-<div class="card card-interactive card-body is-green">
-<div class="quick-card-link">
+<div class="card card-interactive quick-card is-green">
 <p><a href="./contact.html"></a></p><a href="./contact.html">
 <div class="icon-badge icon-badge-sm">
 <p><i class="bi bi-envelope"></i></p>
@@ -260,7 +255,6 @@ window.Quarto = {
 <p>Interested in collaborating, joining the lab, or learning more about our work?</p>
 </a><p><a href="./contact.html"><span class="link-cta">Get in Touch →</span></a></p>
 </section>
-</div>
 </div>
 </div>
 <hr>
@@ -499,15 +493,15 @@ window.Quarto = {
       </article>
     
       <article class="listing-card card card-interactive" data-pub-type="journal article">
-        <a href="./publications/2023-ac-psychomotor/index.html" class="listing-card-link">
+        <a href="Mashburn_et_al_2024_Intelligence.pdf" class="listing-card-link" target="_blank" rel="noopener">
 
           <div class="listing-eyebrow">
-            2023
+            2024
           </div>
 
           
             <div class="listing-tags">
-              <span class="pill pill-tag pill-soft">PsyArxiv</span>
+              <span class="pill pill-tag pill-soft">Intelligence</span>
             </div>
           
 
@@ -686,6 +680,22 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(a);
   });
 });
+</script>
+
+
+<script>
+function copyEmail(link) {
+  const email = link.dataset.copy;
+  const icon = link.querySelector('i');
+  navigator.clipboard.writeText(email).then(() => {
+    icon.classList.remove('bi-copy');
+    icon.classList.add('bi-check2');
+    setTimeout(() => {
+      icon.classList.remove('bi-check2');
+      icon.classList.add('bi-copy');
+    }, 1500);
+  });
+}
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

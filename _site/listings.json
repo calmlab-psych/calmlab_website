@@ -7,24 +7,30 @@
       "/news/2026-05-new-paper/index.html",
       "/news/2026-04-website-launch copy/index.html",
       "/news/2026-04-website-launch/index.html",
-      "/publications/2023-sact-2/index.html",
-      "/publications/2023-ac-psychomotor/index.html",
-      "/publications/2023-brm-toolbox-2/index.html",
-      "/publications/2023-jepg-squared-intro/index.html",
-      "/publications/2022-chwml-book-chapter/index.html",
-      "/publications/2022-int-pot/index.html",
-      "/publications/2021-tr-rationality/index.html",
-      "/publications/2021-pnas-intelligence-lc/index.html",
-      "/publications/2021-cog-pupil-luminance-reply/index.html",
-      "/publications/2021-jepg-visualarrays/index.html",
-      "/publications/2021-sa-pupil/index.html",
-      "/publications/2021-cog-pupil-luminance/index.html",
-      "/publications/2021-ijp-vagus-pupil/index.html",
-      "/publications/2021-jepg-toolbox-1/index.html",
-      "/publications/2020-lm-diff-exp/index.html",
-      "/publications/2020-wms-book-chapter/index.html",
-      "/publications/2020-app-sensory-discrimination/index.html",
-      "/publications/2016-cp-baseline-pupil-og/index.html"
+      "/publications/2023/sact-2/index.html",
+      "/publications/2024/ac-psychomotor/index.html",
+      "/publications/2023/brm-toolbox-2/index.html",
+      "/publications/2023/jepg-squared-intro/index.html",
+      "/publications/2022/chwml-book-chapter/index.html",
+      "/publications/2022/int-pot/index.html",
+      "/publications/2021/tr-rationality/index.html",
+      "/publications/2021/pnas-intelligence-lc/index.html",
+      "/publications/2021/cog-pupil-luminance-reply/index.html",
+      "/publications/2021/jepg-visualarrays/index.html",
+      "/publications/2021/sa-pupil/index.html",
+      "/publications/2021/cog-pupil-luminance/index.html",
+      "/publications/2021/ijp-vagus-pupil/index.html",
+      "/publications/2021/jepg-toolbox-1/index.html",
+      "/publications/2020/lm-diff-exp/index.html",
+      "/publications/2020/wms-book-chapter/index.html",
+      "/publications/2020/app-sensory-discrimination/index.html",
+      "/publications/2016/cp-baseline-pupil-og/index.html"
+    ]
+  },
+  {
+    "listing": "/team/jason-tsukahara/index.html",
+    "items": [
+      "/publications/2023/jepg-squared-intro/index.html"
     ]
   },
   {
@@ -38,29 +44,6 @@
     ]
   },
   {
-    "listing": "/publications/index.html",
-    "items": [
-      "/publications/2023-sact-2/index.html",
-      "/publications/2023-ac-psychomotor/index.html",
-      "/publications/2023-brm-toolbox-2/index.html",
-      "/publications/2023-jepg-squared-intro/index.html",
-      "/publications/2022-chwml-book-chapter/index.html",
-      "/publications/2022-int-pot/index.html",
-      "/publications/2021-tr-rationality/index.html",
-      "/publications/2021-pnas-intelligence-lc/index.html",
-      "/publications/2021-cog-pupil-luminance-reply/index.html",
-      "/publications/2021-jepg-visualarrays/index.html",
-      "/publications/2021-sa-pupil/index.html",
-      "/publications/2021-cog-pupil-luminance/index.html",
-      "/publications/2021-ijp-vagus-pupil/index.html",
-      "/publications/2021-jepg-toolbox-1/index.html",
-      "/publications/2020-lm-diff-exp/index.html",
-      "/publications/2020-wms-book-chapter/index.html",
-      "/publications/2020-app-sensory-discrimination/index.html",
-      "/publications/2016-cp-baseline-pupil-og/index.html"
-    ]
-  },
-  {
     "listing": "/team/index.html",
     "items": [
       "/team/jason-tsukahara/index.html",
@@ -68,56 +51,26 @@
     ]
   },
   {
-    "listing": "/team/jason-tsukahara/index.html",
+    "listing": "/publications/index.html",
     "items": [
-      "/publications/2023/ac-psychomotor/index.html",
-      "/publications/2023/jepg-squared-intro/index.html"
-    ]
-  },
-  {
-    "listing": "/team/grad-students/grad1/index.html",
-    "items": [
-      "/publications/2023-sact-2/index.html",
-      "/publications/2023-ac-psychomotor/index.html",
-      "/publications/2023-brm-toolbox-2/index.html",
-      "/publications/2023-jepg-squared-intro/index.html",
-      "/publications/2022-chwml-book-chapter/index.html",
-      "/publications/2022-int-pot/index.html",
-      "/publications/2021-tr-rationality/index.html",
-      "/publications/2021-pnas-intelligence-lc/index.html",
-      "/publications/2021-cog-pupil-luminance-reply/index.html",
-      "/publications/2021-jepg-visualarrays/index.html",
-      "/publications/2021-sa-pupil/index.html",
-      "/publications/2021-cog-pupil-luminance/index.html",
-      "/publications/2021-ijp-vagus-pupil/index.html",
-      "/publications/2021-jepg-toolbox-1/index.html",
-      "/publications/2020-lm-diff-exp/index.html",
-      "/publications/2020-wms-book-chapter/index.html",
-      "/publications/2020-app-sensory-discrimination/index.html",
-      "/publications/2016-cp-baseline-pupil-og/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/index.html",
-    "items": [
-      "/publications/2023-sact-2/index.html",
-      "/publications/2023-ac-psychomotor/index.html",
-      "/publications/2023-brm-toolbox-2/index.html",
-      "/publications/2023-jepg-squared-intro/index.html",
-      "/publications/2022-chwml-book-chapter/index.html",
-      "/publications/2022-int-pot/index.html",
-      "/publications/2021-tr-rationality/index.html",
-      "/publications/2021-pnas-intelligence-lc/index.html",
-      "/publications/2021-cog-pupil-luminance-reply/index.html",
-      "/publications/2021-jepg-visualarrays/index.html",
-      "/publications/2021-sa-pupil/index.html",
-      "/publications/2021-cog-pupil-luminance/index.html",
-      "/publications/2021-ijp-vagus-pupil/index.html",
-      "/publications/2021-jepg-toolbox-1/index.html",
-      "/publications/2020-lm-diff-exp/index.html",
-      "/publications/2020-wms-book-chapter/index.html",
-      "/publications/2020-app-sensory-discrimination/index.html",
-      "/publications/2016-cp-baseline-pupil-og/index.html"
+      "/publications/2023/sact-2/index.html",
+      "/publications/2024/ac-psychomotor/index.html",
+      "/publications/2023/brm-toolbox-2/index.html",
+      "/publications/2023/jepg-squared-intro/index.html",
+      "/publications/2022/chwml-book-chapter/index.html",
+      "/publications/2022/int-pot/index.html",
+      "/publications/2021/tr-rationality/index.html",
+      "/publications/2021/pnas-intelligence-lc/index.html",
+      "/publications/2021/cog-pupil-luminance-reply/index.html",
+      "/publications/2021/jepg-visualarrays/index.html",
+      "/publications/2021/sa-pupil/index.html",
+      "/publications/2021/cog-pupil-luminance/index.html",
+      "/publications/2021/ijp-vagus-pupil/index.html",
+      "/publications/2021/jepg-toolbox-1/index.html",
+      "/publications/2020/lm-diff-exp/index.html",
+      "/publications/2020/wms-book-chapter/index.html",
+      "/publications/2020/app-sensory-discrimination/index.html",
+      "/publications/2016/cp-baseline-pupil-og/index.html"
     ]
   }
 ]

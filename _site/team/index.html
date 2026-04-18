@@ -366,6 +366,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 </script>
+
+
+<script>
+function copyEmail(link) {
+  const email = link.dataset.copy;
+  const icon = link.querySelector('i');
+  navigator.clipboard.writeText(email).then(() => {
+    icon.classList.remove('bi-copy');
+    icon.classList.add('bi-check2');
+    setTimeout(() => {
+      icon.classList.remove('bi-check2');
+      icon.classList.add('bi-copy');
+    }, 1500);
+  });
+}
+</script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const isCodeAnnotation = (el) => {

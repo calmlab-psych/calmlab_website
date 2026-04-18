@@ -16,7 +16,7 @@ categories:
   - pupillometry
   - locus-coeruleus
 
-pdf: "/publications/2016-cp-baseline-pupil-og/2016-cp-baseline-pupil-og.pdf"
+pdf: "/publications/2016/cp-baseline-pupil-og/Tsukahara_et_al_2016_Cognitive_Psychology.pdf"
 data: ""
 code: ""
 doi: "10.1016/j.cogpsych.2016.10.001"

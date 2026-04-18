@@ -191,7 +191,7 @@ window.Quarto = {
 </section>
 <section id="contact" class="level3 profile-meta-card">
 <h3 data-anchor-id="contact">Contact</h3>
-<p><a href="mailto:jane@university.edu">jane@university.edu</a></p>
+<p>jane@university.edu <a onclick="copyEmail(this); return false;" data-copy="jane@university.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a></p>
 </section>
 <section id="in-the-lab" class="level3 profile-meta-card">
 <h3 data-anchor-id="in-the-lab">In the Lab</h3>
@@ -200,7 +200,7 @@ window.Quarto = {
 </div>
 <div class="profile-section-layout">
 <div class="profile-section-card">
-<div class="profile-section-icon profile-section-green">
+<div class="profile-section-icon profile-section-blue">
 <p><i class="bi bi-lightbulb"></i></p>
 </div>
 <section id="research-interests" class="level3">
@@ -209,7 +209,7 @@ window.Quarto = {
 </section>
 </div>
 <div class="profile-section-card">
-<div class="profile-section-icon profile-section-blue">
+<div class="profile-section-icon profile-section-yellow">
 <p><i class="bi bi-mortarboard"></i></p>
 </div>
 <section id="education" class="level3">
@@ -220,42 +220,13 @@ window.Quarto = {
 </section>
 </div>
 <div class="profile-section-card profile-publications">
-<div class="profile-section-icon profile-section-red">
+<div class="profile-section-icon profile-section-green">
 <p><i class="bi bi-journal-text"></i></p>
 </div>
 <section id="selected-publications" class="level3">
 <h3 data-anchor-id="selected-publications">Selected Publications</h3>
 <div id="listing-profile-publications-list" class="quarto-listing quarto-listing-container-custom">
 <div class="publications-list">
-  <div class="publication-entry publication-entry-profile">
-    <div class="publication-content">
-      <h3 class="publication-title publication-title-profile">
-          <a href="../../publications/2023/ac-psychomotor/index.html">Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance</a>
-      </h3>
-        <div class="publication-authors publication-authors-profile">
-          Mashburn, Burgoyne, Tsukahara, Pak, Coyne, Sibley, Foroughi, &amp; Engle
-        </div>
-      <div class="publication-meta publication-meta-profile">
-          <span class="publication-year publication-year-profile"><strong>2023</strong></span>
-          <span class="publication-venue"><em>PsyArxiv</em></span>
-          <span class="pill pill-status pill-soft">Journal Article</span>
-      </div>
-      <div class="publication-links publication-links-profile">
-          <a class="pub-link pub-link-data pub-link-profile" href="https://osf.io/938cu/" target="_blank" rel="noopener">
-            <span class="pub-link-icon pub-link-icon-profile">
-              <i class="bi bi-database"></i>
-            </span>
-            <span class="pub-link-label">Data</span>
-          </a>
-          <a class="pub-link pub-link-code pub-link-profile" href="https://osf.io/938cu/" target="_blank" rel="noopener">
-            <span class="pub-link-icon pub-link-icon-profile">
-              <i class="bi bi-code-slash"></i>
-            </span>
-            <span class="pub-link-label">Code</span>
-          </a>
-      </div>
-    </div>
-  </div>
   <div class="publication-entry publication-entry-profile">
     <div class="publication-content">
       <h3 class="publication-title publication-title-profile">
@@ -297,7 +268,7 @@ window.Quarto = {
 </section>
 </div>
 <div class="profile-section-card profile-about">
-<div class="profile-section-icon profile-section-green">
+<div class="profile-section-icon profile-section-blue">
 <p><i class="bi bi-person"></i></p>
 </div>
 <section id="about" class="level3">
@@ -343,6 +314,22 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(a);
   });
 });
+</script>
+
+
+<script>
+function copyEmail(link) {
+  const email = link.dataset.copy;
+  const icon = link.querySelector('i');
+  navigator.clipboard.writeText(email).then(() => {
+    icon.classList.remove('bi-copy');
+    icon.classList.add('bi-check2');
+    setTimeout(() => {
+      icon.classList.remove('bi-check2');
+      icon.classList.add('bi-copy');
+    }, 1500);
+  });
+}
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

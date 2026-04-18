@@ -28,14 +28,13 @@ about:
 
 listing:
   - id: profile-publications-list
-    contents: "../../../publications/*/index.qmd"
+    contents:
+      - "../../publications/year/pub-folder/index.qmd"
     template: "../../../assets/listings/pub-listing-selected.ejs.md"
     fields: [title, pub-authors, show-on-profiles, pub-year, venue, pub-type, pub-status, pdf, data, code]
     sort:
       - "pub-status asc"
       - "date desc"
-    template-params:
-      profile-id: "firstname-lastname"
 ---
 
 ::: {.profile-heading}
@@ -76,7 +75,7 @@ listing:
 
 ::: {.profile-meta-card}
 ### Contact
-[{{< meta email >}}](mailto:{{< meta email >}})
+{{< meta email >}} <a onclick="copyEmail(this); return false;" data-copy="{{< meta email >}}" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 :::
 
 ::: {.profile-meta-card}
@@ -90,7 +89,7 @@ listing:
 
 ::: {.profile-section-card}
 
-<div class="profile-section-icon profile-section-green">
+<div class="profile-section-icon profile-section-blue">
 <i class="bi bi-lightbulb"></i>
 </div>
 
@@ -102,7 +101,7 @@ This is a longer paragraph style explanation of my research interests into somet
 
 ::: {.profile-section-card}
 
-<div class="profile-section-icon profile-section-blue">
+<div class="profile-section-icon profile-section-yellow">
 <i class="bi bi-mortarboard"></i>
 </div>
 
@@ -118,7 +117,7 @@ This is a longer paragraph style explanation of my research interests into somet
 
 ::: {.profile-section-card .profile-publications}
 
-<div class="profile-section-icon profile-section-red">
+<div class="profile-section-icon profile-section-green">
 <i class="bi bi-journal-text"></i>
 </div>
 
@@ -131,7 +130,7 @@ This is a longer paragraph style explanation of my research interests into somet
 
 ::: {.profile-section-card .profile-about}
 
-<div class="profile-section-icon profile-section-green">
+<div class="profile-section-icon profile-section-blue">
 <i class="bi bi-person"></i>
 </div>
 

@@ -14,466 +14,11 @@
     "text": "Latest News\n\n\n  \n    All\n    Lab\n    Team\n    Papers\n  \n\n  \n    \n      \n      \n        \n\n          \n          \n            \n          \n          \n\n          May 1, 2026\n\n          \n          \n            \n            Paper\n            \n          \n          \n\n          New publication on attention control in the brain\n\n          \n          Our latest work on attention control and large-scale brain network dynamics is now available.\n          \n\n          \n            Read More\n            \n            ↗\n            \n          \n\n        \n      \n      \n      \n        \n\n          \n          \n            \n          \n          \n\n          May 1, 2026\n\n          \n          \n            \n            Paper\n            \n          \n          \n\n          New publication on attention control in the brain\n\n          \n          Our latest work on attention control and large-scale brain network dynamics is now available.\n          \n\n          \n            Read More\n            \n            ↗\n            \n          \n\n        \n      \n      \n      \n        \n\n          \n          \n            \n          \n          \n\n          May 1, 2026\n\n          \n          \n            \n            Paper\n            \n          \n          \n\n          New publication on attention control in the brain\n\n          \n          Our latest work on attention control and large-scale brain network dynamics is now available.\n          \n\n          \n            Read More\n            \n            ↗\n            \n          \n\n        \n      \n      \n      \n        \n\n          \n          \n            \n          \n          \n\n          Apr 1, 2026\n\n          \n          \n            \n            Team\n            \n          \n          \n\n          CALM Lab website launches\n\n          \n          We are excited to launch the CALM Lab website.\n          \n\n          \n            Read More\n            \n            →\n            \n          \n\n        \n      \n      \n      \n        \n\n          \n          \n            \n          \n          \n\n          Apr 1, 2026\n\n          \n          \n            \n            Lab\n            \n          \n          \n\n          CALM Lab website launches\n\n          \n          We are excited to launch the CALM Lab website.\n          \n\n          \n            Read More\n            \n            →\n            \n          \n\n        \n      \n      \n    \n  \n\nNo matching items\n\n\nView All News →"
   },
   {
-    "objectID": "assets/home-news.ejs.html",
-    "href": "assets/home-news.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "All\n  Lab\n  Papers\n\n\n\n&lt;% for (const item of items) { %&gt;\n\n&gt;\n\n&lt;% if (item.image) { %&gt;\n\n\n\n&lt;% } %&gt;\n\n&lt;%- item.date ? item.date : \"\" %&gt;\n\n&lt;% if (item.categories && item.categories.length) { %&gt;\n\n&lt;% item.categories.forEach(function(cat) { %&gt;\n&lt;%- cat %&gt;\n&lt;% }) %&gt;\n\n&lt;% } %&gt;\n\n&lt;%- item.title %&gt;\n\n&lt;% if (item.description) { %&gt;\n&lt;%- item.description %&gt;\n&lt;% } %&gt;\n\n\nRead More\n&lt;% if(item.link) { %&gt;\n↗\n&lt;% } else { %&gt;\n→\n&lt;% } %&gt;\n\n\n\n\n&lt;% } %&gt;\n\n\n\nView All News →\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/templates/pi-card.ejs.html",
-    "href": "team/templates/pi-card.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n\n\n\n  \n    \n    \n      View Page →\n    \n  \n\n  \n\n    \n      &lt;%- item.name %&gt;\n    \n\n    &lt;% if (item.position) { %&gt;\n      &lt;%- item.position %&gt;\n    &lt;% } %&gt;\n\n    &lt;% if (item.tagline) { %&gt;\n      &lt;%- item.tagline %&gt;\n    &lt;% } %&gt;\n\n    \n\n      &lt;% if (item.cv) { %&gt;\n      CV\n      &lt;% } %&gt;\n\n      &lt;% if (item.email) { %&gt;\n      Email\n      &lt;% } %&gt;\n\n      &lt;% if (item.website) { %&gt;\n      Personal Website ↗\n      &lt;% } %&gt;\n\n    \n\n  \n\n\n\n&lt;% } %&gt;\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/grad-students/grad1/index.html",
-    "href": "team/grad-students/grad1/index.html",
-    "title": "Jane Doe",
-    "section": "",
-    "text": "Jane Doe\n\nGraduate Student\n\n\nInvestigating sustained attention, mind wandering, and contemplative approaches to cognitive well-being.\n\n\n\n\n\n\n\n\nDegree Program\nPh.D. Psychological Sciences\n\n\nContact\njane@university.edu\n\n\nIn the Lab\n2024-Present\n\n\n\n\n\n\n\n\nResearch Interests\nThis is a longer paragraph style explanation of my research interests into something I don’t know how to do this but here we go, yipee kaya. Then this is a part of it as well. And what if it keeps on going on for a longer and longer and longer ezplanation. But does not stop here yet.\n\n\n\n\n\n\n\nEducation\nPh.D. in Psychology — Example University\nM.A. in Cognitive Science — Example University\nB.A. in Psychology — Example University\n\n\n\n\n\n\n\nSelect Publications\n\n\n  \n    \n      \n          Fluid intelligence and the locus coeruleus-norepinephrine system\n      \n        \n          Tsukahara & Engle\n        \n      \n          2021\n          Proceedings of the National Academy of Sciences\n          Journal Article\n      \n      \n          \n            \n              \n            \n            Read\n          \n          \n            \n              \n            \n            Data\n          \n          \n            \n              \n            \n            Code\n          \n      \n    \n  \n\nNo matching items\n\n\n\n\n\n\n\n\nAbout\nJane Doe is a graduate student in the CALM Lab studying how attention fluctuates over time and how contemplative practices may help support cognitive performance and well-being. Her research focuses on understanding the dynamics of sustained attention—why focus is sometimes stable and at other times drifts—and how these fluctuations shape thought, behavior, and performance. By combining behavioral experiments with neurocognitive approaches, she investigates how attention operates both in everyday contexts and in situations that demand sustained mental effort.\nIn her research, Jane is particularly interested in the relationship between mind wandering and cognitive control. She studies how internal thoughts emerge during ongoing tasks and how individuals differ in their ability to maintain goal-directed focus. Her work draws on behavioral tasks and physiological measures such as EEG to examine the moment-to-moment dynamics of attention and the neural systems that support these processes.\nMore broadly, Jane is interested in how contemplative practices such as mindfulness may influence attention and emotional well-being. She is motivated by the possibility that training attention can enhance both cognitive performance and quality of life. Outside the lab, Jane enjoys exploring nature, reading, and practicing mindfulness meditation—interests that often inspire new questions about the mind and its capacity for focus and reflection.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/jason-tsukahara/index.html",
-    "href": "team/jason-tsukahara/index.html",
-    "title": "Jason S. Tsukahara, Ph.D.",
-    "section": "",
-    "text": "Jason S. Tsukahara, Ph.D.\n\nPrincipal Investigator\n\n\nDr. Tsukahara directs the CALM Lab and studies attention control across contexts of life and mind. His research integrates cognitive psychology, neuroscience, and contemplative science to understand the nature and potentials of attention.\n\n\n\n\n\n\n\n\nDegree Program\nPh.D. Psychological Sciences\n\n\nContact\njane@university.edu\n\n\nIn the Lab\n2024-Present\n\n\n\n\n\n\n\n\nResearch Interests\nThis is a longer paragraph style explanation of my research interests into something I don’t know how to do this but here we go, yipee kaya. Then this is a part of it as well. And what if it keeps on going on for a longer and longer and longer ezplanation. But does not stop here yet.\n\n\n\n\n\n\n\nEducation\nPh.D. in Psychology — Example University\nM.A. in Cognitive Science — Example University\nB.A. in Psychology — Example University\n\n\n\n\n\n\n\nSelected Publications\n\n\n  \n    \n      \n          Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance\n      \n        \n          Mashburn, Burgoyne, Tsukahara, Pak, Coyne, Sibley, Foroughi, & Engle\n        \n      \n          2023\n          PsyArxiv\n          Journal Article\n      \n      \n          \n            \n              \n            \n            Data\n          \n          \n            \n              \n            \n            Code\n          \n      \n    \n  \n  \n    \n      \n          Nature and measurement of attention control\n      \n        \n          Burgoyne, Tsukahara, Mashburn, & Engle\n        \n      \n          2023\n          Journal of Experimental Psychology: General\n          Journal Article\n      \n      \n          \n            \n              \n            \n            Read\n          \n          \n            \n              \n            \n            Data\n          \n          \n            \n              \n            \n            Code\n          \n      \n    \n  \n\nNo matching items\n\n\n\n\n\n\n\n\nAbout\nJane Doe is a graduate student in the CALM Lab studying how attention fluctuates over time and how contemplative practices may help support cognitive performance and well-being. Her research focuses on understanding the dynamics of sustained attention—why focus is sometimes stable and at other times drifts—and how these fluctuations shape thought, behavior, and performance. By combining behavioral experiments with neurocognitive approaches, she investigates how attention operates both in everyday contexts and in situations that demand sustained mental effort.\nIn her research, Jane is particularly interested in the relationship between mind wandering and cognitive control. She studies how internal thoughts emerge during ongoing tasks and how individuals differ in their ability to maintain goal-directed focus. Her work draws on behavioral tasks and physiological measures such as EEG to examine the moment-to-moment dynamics of attention and the neural systems that support these processes.\nMore broadly, Jane is interested in how contemplative practices such as mindfulness may influence attention and emotional well-being. She is motivated by the possibility that training attention can enhance both cognitive performance and quality of life. Outside the lab, Jane enjoys exploring nature, reading, and practicing mindfulness meditation—interests that often inspire new questions about the mind and its capacity for focus and reflection.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/team.ejs.html",
-    "href": "team/team.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n\n &lt;% if (item.image) { %&gt;  &lt;% } else { %&gt;\n\n\n\n&lt;% } %&gt; \n\n  &lt;% if (item.group) { %&gt;\n    &lt;div class=\"person-group\"&gt;&lt;%- item.group %&gt;&lt;/div&gt;\n  &lt;% } %&gt;\n\n  &lt;h3 class=\"person-name\"&gt;\n    &lt;a href=\"&lt;%- item.path %&gt;\"&gt;&lt;%- item.title %&gt;&lt;/a&gt;\n  &lt;/h3&gt;\n\n  &lt;% if (item.description) { %&gt;\n    &lt;p class=\"person-description\"&gt;&lt;%- item.description %&gt;&lt;/p&gt;\n  &lt;% } %&gt;\n\n  &lt;div class=\"person-links\"&gt;\n    &lt;a href=\"&lt;%- item.path %&gt;\" class=\"person-link\"&gt;Profile&lt;/a&gt;\n\n    &lt;% if (item.website) { %&gt;\n      &lt;a href=\"&lt;%- item.website %&gt;\" class=\"person-link\"&gt;Website&lt;/a&gt;\n    &lt;% } %&gt;\n\n    &lt;% if (item.cv) { %&gt;\n      &lt;a href=\"&lt;%- item.cv %&gt;\" class=\"person-link\"&gt;CV&lt;/a&gt;\n    &lt;% } %&gt;\n\n    &lt;% if (item.email) { %&gt;\n      &lt;a href=\"mailto:&lt;%- item.email %&gt;\" class=\"person-link\"&gt;Email&lt;/a&gt;\n    &lt;% } %&gt;\n  &lt;/div&gt;\n&lt;/div&gt;\n\n&lt;% } %&gt;\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/undergrads/ra2/index.html",
-    "href": "team/undergrads/ra2/index.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "news/index.html",
-    "href": "news/index.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "All\n    Lab\n    Team\n    Papers\n  \n\n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  May 1, 2026\n\n  \n  \n  \n  Paper\n  \n  \n  \n\n  New publication on attention control in the brain\n\n  \n  Our latest work on attention control and large-scale brain network dynamics is now available.\n  \n\n  \n  Read More\n  \n  ↗\n  \n  \n\n  \n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  May 1, 2026\n\n  \n  \n  \n  Paper\n  \n  \n  \n\n  New publication on attention control in the brain\n\n  \n  Our latest work on attention control and large-scale brain network dynamics is now available.\n  \n\n  \n  Read More\n  \n  ↗\n  \n  \n\n  \n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  May 1, 2026\n\n  \n  \n  \n  Paper\n  \n  \n  \n\n  New publication on attention control in the brain\n\n  \n  Our latest work on attention control and large-scale brain network dynamics is now available.\n  \n\n  \n  Read More\n  \n  ↗\n  \n  \n\n  \n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  Apr 1, 2026\n\n  \n  \n  \n  Team\n  \n  \n  \n\n  CALM Lab website launches\n\n  \n  We are excited to launch the CALM Lab website.\n  \n\n  \n  Read More\n  \n  →\n  \n  \n\n  \n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  Apr 1, 2026\n\n  \n  \n  \n  Lab\n  \n  \n  \n\n  CALM Lab website launches\n\n  \n  We are excited to launch the CALM Lab website.\n  \n\n  \n  Read More\n  \n  →\n  \n  \n\n  \n  \n  \n  \n\nNo matching items\n Back to top"
-  },
-  {
-    "objectID": "news/posts/2026-05-new-paper.html",
-    "href": "news/posts/2026-05-new-paper.html",
-    "title": "New publication on attention control in the brain",
-    "section": "",
-    "text": "Our latest work on attention control and large-scale brain network dynamics is now available.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "publications/2020-lm-diff-exp/index.html",
-    "href": "publications/2020-lm-diff-exp/index.html",
-    "title": "Differential and experimental approaches to studying intelligence in humans and non-human animals",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2021-pnas-intelligence-lc/index.html",
-    "href": "publications/2021-pnas-intelligence-lc/index.html",
-    "title": "Fluid intelligence and the locus coeruleus-norepinephrine system",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2021-jepg-toolbox-1/index.html",
-    "href": "publications/2021-jepg-toolbox-1/index.html",
-    "title": "A toolbox approach to improving the measurement of attention control",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2016-cp-baseline-pupil-og/index.html",
-    "href": "publications/2016-cp-baseline-pupil-og/index.html",
-    "title": "The relationship between baseline pupil size and intelligence",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/templates/publication-card.ejs.html",
-    "href": "publications/templates/publication-card.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;%\n  let currentYear = null;\n%&gt;\n&lt;% for (const item of items) { %&gt;\n  &lt;%\n    const itemYear = item[\"pub-status\"] === \"Preprint\" ? \"Preprints\" : item[\"pub-year\"];\n    if (itemYear && itemYear !== currentYear) {\n      currentYear = itemYear;\n  %&gt;\n    \n      &lt;%= currentYear %&gt;\n    \n  &lt;%\n    }\n  %&gt;\n\n  \n    \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else if (item.path) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } %&gt;\n      \n\n      &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n        \n          &lt;%= item[\"pub-authors\"].length === 1\n            ? item[\"pub-authors\"][0]\n            : item[\"pub-authors\"].length === 2\n              ? item[\"pub-authors\"].join(\" & \")\n              : item[\"pub-authors\"].slice(0, -1).join(\", \") + \", & \" + item[\"pub-authors\"].slice(-1)\n          %&gt;\n        \n      &lt;% } %&gt;\n\n      \n        &lt;% if (item[\"pub-year\"]) { %&gt;\n          &lt;%- item[\"pub-year\"] %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item.venue) { %&gt;\n          &lt;%- item.venue %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item[\"pub-type\"]) { %&gt;\n          &lt;%- item[\"pub-type\"] %&gt;\n        &lt;% } %&gt;\n      \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          \n            \n              \n            \n            Read\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.data) { %&gt;\n          \n            \n              \n            \n            Data\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.code) { %&gt;\n          \n            \n              \n            \n            Code\n          \n        &lt;% } %&gt;\n      \n    \n  \n&lt;% } %&gt;\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "publications/2022-chwml-book-chapter/index.html",
-    "href": "publications/2022-chwml-book-chapter/index.html",
-    "title": "Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2021-tr-rationality/index.html",
-    "href": "publications/2021-tr-rationality/index.html",
-    "title": "Understanding the relationship between rationality and intelligence: A latent-variable approach",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/index.html",
-    "href": "publications/index.html",
-    "title": "Publications",
-    "section": "",
-    "text": "PUBLICATIONS\n\n\nPeer-reviewed articles, chapters, and related scholarly work.\n\n\n\n\nAll Journal Articles Book Chapters Popular Writing\n\n\n\n\n  \n    \n      Preprints\n    \n  \n\n  \n    \n\n      \n        \n          Sustaining the focus of attention and how it relates to performance in complex cognitive tasks\n        \n      \n\n      \n        \n          Tsukahara & Engle\n        \n      \n\n      \n        \n          2023\n        \n\n        \n          PsyArxiv\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n    \n      2023\n    \n  \n\n  \n    \n\n      \n        \n          Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance\n        \n      \n\n      \n        \n          Mashburn, Burgoyne, Tsukahara, Pak, Coyne, Sibley, Foroughi, & Engle\n        \n      \n\n      \n        \n          2023\n        \n\n        \n          PsyArxiv\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Replication and extension of the toolbox approach to measuring attention control\n        \n      \n\n      \n        \n          Draheim, Tsukahara, & Engle\n        \n      \n\n      \n        \n          2023\n        \n\n        \n          Behavior Research Methods\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Nature and measurement of attention control\n        \n      \n\n      \n        \n          Burgoyne, Tsukahara, Mashburn, & Engle\n        \n      \n\n      \n        \n          2023\n        \n\n        \n          Journal of Experimental Psychology: General\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n    \n      2022\n    \n  \n\n  \n    \n\n      \n        \n          Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension\n        \n      \n\n      \n        \n          Burgoyne, Martin, Mashburn, Tsukahara, Draheim, & Engle\n        \n      \n\n      \n        \n          2022\n        \n\n        \n          The Cambridge Handbook of Working Memory and Language\n        \n\n        \n          Book Chapter\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Attention control and process overlap theory: Searching for cognitive processes underpinning the positive manifold\n        \n      \n\n      \n        \n          Burgoyne, Mashburn, Tsukahara, & Engle\n        \n      \n\n      \n        \n          2022\n        \n\n        \n          Intelligence\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n      \n    \n  \n\n  \n    \n      2021\n    \n  \n\n  \n    \n\n      \n        \n          Understanding the relationship between rationality and intelligence: A latent-variable approach\n        \n      \n\n      \n        \n          Burgoyne, Mashburn, Tsukahara, Hambrick, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Thinking and Reasoning\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Fluid intelligence and the locus coeruleus-norepinephrine system\n        \n      \n\n      \n        \n          Tsukahara & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Proceedings of the National Academy of Sciences\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Baseline pupil size is related to fluid intelligence: A reply to Unsworth et al. (2021)\n        \n      \n\n      \n        \n          Tsukahara, Draheim, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Cognition\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          The visual arrays task: Visual storage capacity or attention control?\n        \n      \n\n      \n        \n          Martin, Tsukahara, Draheim, Shipstead, Mashburn, Vogel, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Journal of Experimental Psychology: General\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Pupil Size Is a Marker of Intelligence\n        \n      \n\n      \n        \n          Tsukahara, Burgoyne, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Scientific American Mind\n        \n\n        \n          Popular Writing\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Is baseline pupil size related to cognitive ability? Yes (under proper lighting conditions)\n        \n      \n\n      \n        \n          Tsukahara & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Cognition\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Transcutaneous vagus nerve stimulation via tragus or cymba conchae: Are its psychophysiological effects dependent on the stimulation area?\n        \n      \n\n      \n        \n          Borges, Pfannenstiel, Tsukahara, Laborde, Klatt, & Raab\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          International Journal of Psychophysiology\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          A toolbox approach to improving the measurement of attention control\n        \n      \n\n      \n        \n          Draheim, Tsukahara, Martin, Mashburn, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Journal of Experimental Psychology: General\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n    \n      2020\n    \n  \n\n  \n    \n\n      \n        \n          Differential and experimental approaches to studying intelligence in humans and non-human animals\n        \n      \n\n      \n        \n          Burgoyne, Tsukahara, & Engle\n        \n      \n\n      \n        \n          2020\n        \n\n        \n          Learning and Motivation\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence\n        \n      \n\n      \n        \n          Mashburn, Tsukahara, & Engle\n        \n      \n\n      \n        \n          2020\n        \n\n        \n          Working memory: The state of the science\n        \n\n        \n          Book Chapter\n        \n      \n\n      \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Attention control: The missing link between sensory discrimination and intelligence\n        \n      \n\n      \n        \n          Tsukahara, Harrison, Draheim, Martin, & Engle\n        \n      \n\n      \n        \n          2020\n        \n\n        \n          Attention, Perception, and Psychophysics\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n    \n      2016\n    \n  \n\n  \n    \n\n      \n        \n          The relationship between baseline pupil size and intelligence\n        \n      \n\n      \n        \n          Tsukahara, Harrison, & Engle\n        \n      \n\n      \n        \n          2016\n        \n\n        \n          Cognitive Psychology\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n\nNo matching items\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "publications/2023-ac-psychomotor/index.html",
-    "href": "publications/2023-ac-psychomotor/index.html",
-    "title": "Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2021-ijp-vagus-pupil/index.html",
-    "href": "publications/2021-ijp-vagus-pupil/index.html",
-    "title": "Transcutaneous vagus nerve stimulation via tragus or cymba conchae: Are its psychophysiological effects dependent on the stimulation area?",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2023-sact-2/index.html",
-    "href": "publications/2023-sact-2/index.html",
-    "title": "Sustaining the focus of attention and how it relates to performance in complex cognitive tasks",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2020-wms-book-chapter/index.html",
-    "href": "publications/2020-wms-book-chapter/index.html",
-    "title": "Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2021-cog-pupil-luminance-reply/index.html",
-    "href": "publications/2021-cog-pupil-luminance-reply/index.html",
-    "title": "Baseline pupil size is related to fluid intelligence: A reply to Unsworth et al. (2021)",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2023-brm-toolbox-2/index.html",
-    "href": "publications/2023-brm-toolbox-2/index.html",
-    "title": "Replication and extension of the toolbox approach to measuring attention control",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2020-app-sensory-discrimination/index.html",
-    "href": "publications/2020-app-sensory-discrimination/index.html",
-    "title": "Attention control: The missing link between sensory discrimination and intelligence",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2021-jepg-visualarrays/index.html",
-    "href": "publications/2021-jepg-visualarrays/index.html",
-    "title": "The visual arrays task: Visual storage capacity or attention control?",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2022-int-pot/index.html",
-    "href": "publications/2022-int-pot/index.html",
-    "title": "Attention control and process overlap theory: Searching for cognitive processes underpinning the positive manifold",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2021-sa-pupil/index.html",
-    "href": "publications/2021-sa-pupil/index.html",
-    "title": "Pupil Size Is a Marker of Intelligence",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2023-jepg-squared-intro/index.html",
-    "href": "publications/2023-jepg-squared-intro/index.html",
-    "title": "Nature and measurement of attention control",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "publications/2021-cog-pupil-luminance/index.html",
-    "href": "publications/2021-cog-pupil-luminance/index.html",
-    "title": "Is baseline pupil size related to cognitive ability? Yes (under proper lighting conditions)",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "news/posts/2026-04-website-launch.html",
-    "href": "news/posts/2026-04-website-launch.html",
-    "title": "CALM Lab website launches",
-    "section": "",
-    "text": "We are excited to launch the CALM Lab website. More updates about research, people, and opportunities will be added soon.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/undergrads/ra1/index.html",
-    "href": "team/undergrads/ra1/index.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "team/undergrads/ra3/index.html",
-    "href": "team/undergrads/ra3/index.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "Back to top"
-  },
-  {
-    "objectID": "team/index.html",
-    "href": "team/index.html",
-    "title": "Team",
-    "section": "",
-    "text": "TEAM\n\n\nMeat the CALM Lab team."
-  },
-  {
-    "objectID": "team/index.html#team-news",
-    "href": "team/index.html#team-news",
-    "title": "Team",
-    "section": "Team News",
-    "text": "Team News\n\n\n\n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  Apr 1, 2026\n\n  \n  \n  \n  Team\n  \n  \n  \n\n  CALM Lab website launches\n\n  \n  We are excited to launch the CALM Lab website.\n  \n\n  \n  Read More\n  \n  →\n  \n  \n\n  \n  \n  \n  \n\nNo matching items"
-  },
-  {
-    "objectID": "team/grad-students/grad2/index.html",
-    "href": "team/grad-students/grad2/index.html",
-    "title": "Alex Smith",
-    "section": "",
-    "text": "Alex Smith\n\nGraduate Student\n\n\nBrain Mechanisms\n\n\n\n\n\n\n\n\nDegree Program\nMasters in Experimental Psychology\n\n\nContact\njtsukahara@…\n\n\nIn the Lab\n2025-Present\n\n\n\n\n\n\n\n\nResearch Interests\nThis is a longer paragraph style explanation of my research interests into something I don’t know how to do this but here we go, yipee kaya. Then this is a part of it as well. And what if it keeps on going on for a longer and longer and longer ezplanation. But does not stop here yet.\n\n\n\n\n\n\n\nEducation\nPh.D. in Psychology — Example University\nM.A. in Cognitive Science — Example University\nB.A. in Psychology — Example University\n\n\n\n\n\n\n\nSelected Publications\nDoe, J., Smith, A., & Tsukahara, J. S. (2026). Title of paper goes here. Journal Name.\nDoe, J., & Tsukahara, J. S. (2025). Conference poster title here. Conference Name.\n\n\n\n\n\n\n\nAbout\nJane Doe is a graduate student in the CALM Lab studying how attention fluctuates over time and how contemplative practices may help support cognitive performance and well-being. Her research focuses on understanding the dynamics of sustained attention—why focus is sometimes stable and at other times drifts—and how these fluctuations shape thought, behavior, and performance. By combining behavioral experiments with neurocognitive approaches, she investigates how attention operates both in everyday contexts and in situations that demand sustained mental effort.\nIn her research, Jane is particularly interested in the relationship between mind wandering and cognitive control. She studies how internal thoughts emerge during ongoing tasks and how individuals differ in their ability to maintain goal-directed focus. Her work draws on behavioral tasks and physiological measures such as EEG to examine the moment-to-moment dynamics of attention and the neural systems that support these processes.\nMore broadly, Jane is interested in how contemplative practices such as mindfulness may influence attention and emotional well-being. She is motivated by the possibility that training attention can enhance both cognitive performance and quality of life. Outside the lab, Jane enjoys exploring nature, reading, and practicing mindfulness meditation—interests that often inspire new questions about the mind and its capacity for focus and reflection.\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/templates/ra-card.ejs.html",
-    "href": "team/templates/ra-card.ejs.html",
-    "title": "Undergraduate Research Assistants",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n      \n        \n          &lt;%- item.name %&gt;\n        \n\n        &lt;% if (item.image) { %&gt;\n          \n            \n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.major) { %&gt;\n          Major: &lt;%- item.major %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item.class) { %&gt;\n          Class: &lt;%- item.class %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item.tagline) { %&gt;\n          &lt;%- item.tagline %&gt;\n        &lt;% } %&gt;\n      \n    &lt;% } %&gt;\n\n  \n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "team/templates/grad-card.ejs.html",
-    "href": "team/templates/grad-card.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n\n\n  \n  \n    &lt;%- item.name %&gt;\n  \n\n  &lt;% if (item.position) { %&gt;\n    &lt;%- item.position %&gt;\n  &lt;% } %&gt;\n\n  \n    \n  \n\n  &lt;% if (item.tagline) { %&gt;\n    &lt;%- item.tagline %&gt;\n  &lt;% } %&gt;\n\n  \n    \n      View Page →\n    \n  \n  \n\n\n&lt;% } %&gt;\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "assets/page-news.ejs.html",
-    "href": "assets/page-news.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n\n&gt;\n\n&lt;% if (item.image) { %&gt;\n\n\n\n&lt;% } %&gt;\n\n&lt;%- item.date ? item.date : \"\" %&gt;\n\n&lt;% if (item.categories && item.categories.length) { %&gt;\n\n&lt;% item.categories.forEach(function(cat) { %&gt;\n&lt;%- cat %&gt;\n&lt;% }) %&gt;\n\n&lt;% } %&gt;\n\n&lt;%- item.title %&gt;\n\n&lt;% if (item.description) { %&gt;\n&lt;%- item.description %&gt;\n&lt;% } %&gt;\n\n\nRead More\n&lt;% if(item.link) { %&gt;\n↗\n&lt;% } else { %&gt;\n→\n&lt;% } %&gt;\n\n\n\n\n&lt;% } %&gt;\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "index.html#select-publications",
-    "href": "index.html#select-publications",
-    "title": "CALM LAB",
-    "section": "Select Publications",
-    "text": "Select Publications\n\n\n\n\n  \n    \n\n      \n        \n          Nature and measurement of attention control\n        \n      \n\n      \n        \n          Alexander P. Burgoyne, Jason S. Tsukahara, Cody A. Mashburn, Randall W. Engle\n        \n      \n\n      \n\n        \n          2023\n        \n        \n        \n          Journal of Experimental Psychology: General\n        \n\n        \n          Journal Article\n        \n\n        \n          Published\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/index.html",
-    "href": "projects/index.html",
-    "title": "Projects",
-    "section": "",
-    "text": "PROJECTS\n\n\nResearch areas and ongoing lines of work in the CALM Lab."
-  },
-  {
-    "objectID": "projects/index.html#measurement-individual-differences-measurement-individual-differences",
-    "href": "projects/index.html#measurement-individual-differences-measurement-individual-differences",
-    "title": "Projects",
-    "section": "{#measurement-individual-differences} Measurement & Individual Differences",
-    "text": "{#measurement-individual-differences} Measurement & Individual Differences\n\nThis area focuses on how attention control can be measured reliably and how differences across individuals shape performance across a wide range of cognitive tasks and real-world outcomes.\n\n\n\nAttention Control Measurement\nDeveloping reliable and valid tools for assessing attention control across task paradigms and populations.\n\nOngoing Behavioral Tasks Psychometrics\n\n\n\nSustained Attention and Performance Variability\nStudying fluctuations in sustained attention and how they relate to response variability, mind wandering, and task performance.\n\nOngoing Behavioral Tasks Individual Differences\n\n\n\nAttention Control, Working Memory, and Intelligence\nExamining the relationship between attention control and broader cognitive abilities, including working memory capacity and fluid intelligence.\n\nOngoing Latent Variable Models"
-  },
-  {
-    "objectID": "projects/index.html#neural-mechanisms-neural-mechanisms",
-    "href": "projects/index.html#neural-mechanisms-neural-mechanisms",
-    "title": "Projects",
-    "section": "{#neural-mechanisms} Neural Mechanisms",
-    "text": "{#neural-mechanisms} Neural Mechanisms\n\nThis area examines the neural systems and physiological dynamics that support attentional focus, attentional lapses, and control over thought and behavior.\n\n\n\nEEG Microstates and Mind Wandering\nInvestigating how EEG microstate dynamics track attentional state, time-on-task effects, and mind wandering during sustained performance.\n\nOngoing EEG Time-on-Task\n\n\n\nFunctional Network Dynamics\nStudying how large-scale networks such as FPCN, DAN, and DMN interact to support attention control and internally directed cognition.\n\nOngoing fMRI Network Neuroscience\n\n\n\nPupillometry and LC-NE Function\nUsing pupil dynamics as an index of attentional engagement and locus coeruleus–norepinephrine system involvement in cognitive control.\n\nOngoing Pupillometry"
-  },
-  {
-    "objectID": "projects/index.html#contemplative-training-contemplative-training",
-    "href": "projects/index.html#contemplative-training-contemplative-training",
-    "title": "Projects",
-    "section": "{#contemplative-training} Contemplative Training",
-    "text": "{#contemplative-training} Contemplative Training\n\nThis area explores whether and how contemplative practices such as mindfulness training can strengthen attention, reduce vulnerability to distraction, and support well-being in demanding contexts.\n\n\n\nAcute Effects of Mindfulness Practice\nTesting whether individual mindfulness practice sessions produce immediate changes in focus, mood, and stress.\n\nOngoing Repeated Measures Training Studies\n\n\n\nMindfulness Training in High-Demand Populations\nEvaluating mindfulness-based interventions in groups such as firefighters and military personnel to understand training effects in applied settings.\n\nOngoing Intervention Applied Research\n\n\n\nState-to-Trait Change in Attention and Well-Being\nStudying whether repeated short-term shifts during contemplative practice accumulate into broader changes across training.\n\nOngoing Longitudinal Modeling"
-  },
-  {
-    "objectID": "publications/templates/profile-publication-card.ejs.html",
-    "href": "publications/templates/profile-publication-card.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;%\n  const profileId = templateParams[\"profile-id\"];\n  const matched = items.filter(item =&gt;\n    Array.isArray(item[\"show-on-profiles\"]) &&\n    item[\"show-on-profiles\"].includes(profileId)\n  );\n%&gt;\n\n&lt;% if (matched.length === 0) { %&gt;\n  No selected publications listed yet.\n&lt;% } %&gt;\n\n&lt;% for (const item of matched) { %&gt;\n  \n    \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else if (item.path) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } %&gt;\n      \n\n      &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n        \n          &lt;%\n            const authors = item[\"pub-authors\"];\n            let authorText = \"\";\n\n            if (authors.length === 1) {\n              authorText = authors[0];\n            } else if (authors.length === 2) {\n              authorText = authors.join(\" & \");\n            } else {\n              authorText = authors.slice(0, -1).join(\", \") + \", & \" + authors[authors.length - 1];\n            }\n          %&gt;\n          &lt;%= authorText %&gt;\n        \n      &lt;% } %&gt;\n\n      \n\n        &lt;% if (item[\"pub-year\"]) { %&gt;\n          &lt;%- item[\"pub-year\"] %&gt;\n        &lt;% } %&gt;\n        \n        &lt;% if (item.venue) { %&gt;\n          &lt;%- item.venue %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item[\"pub-type\"]) { %&gt;\n          &lt;%- item[\"pub-type\"] %&gt;\n        &lt;% } %&gt;\n      \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          \n            \n              \n            \n            Read\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.data) { %&gt;\n          \n            \n              \n            \n            Data\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.code) { %&gt;\n          \n            \n              \n            \n            Code\n          \n        &lt;% } %&gt;\n      \n    \n  \n&lt;% } %&gt;\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "projects/index.html#measurement-individual-differences-1",
-    "href": "projects/index.html#measurement-individual-differences-1",
-    "title": "Projects",
-    "section": "Measurement & Individual Differences",
-    "text": "Measurement & Individual Differences\n\nThis area focuses on how attention control can be measured reliably and how differences across individuals shape performance across a wide range of cognitive tasks and real-world outcomes.\n\n\n\nAttention Control Measurement\nDeveloping reliable and valid tools for assessing attention control across task paradigms and populations.\n\nOngoing Behavioral Tasks Psychometrics\n\n\n\nSustained Attention and Performance Variability\nStudying fluctuations in sustained attention and how they relate to response variability, mind wandering, and task performance.\n\nOngoing Behavioral Tasks Individual Differences\n\n\n\nAttention Control, Working Memory, and Intelligence\nExamining the relationship between attention control and broader cognitive abilities, including working memory capacity and fluid intelligence.\n\nOngoing Latent Variable Models"
-  },
-  {
-    "objectID": "projects/index.html#neural-mechanisms-1",
-    "href": "projects/index.html#neural-mechanisms-1",
-    "title": "Projects",
-    "section": "Neural Mechanisms",
-    "text": "Neural Mechanisms\n\nThis area examines the neural systems and physiological dynamics that support attentional focus, attentional lapses, and control over thought and behavior.\n\n\n\nEEG Microstates and Mind Wandering\nInvestigating how EEG microstate dynamics track attentional state, time-on-task effects, and mind wandering during sustained performance.\n\nOngoing EEG Time-on-Task\n\n\n\nFunctional Network Dynamics\nStudying how large-scale networks such as FPCN, DAN, and DMN interact to support attention control and internally directed cognition.\n\nOngoing fMRI Network Neuroscience\n\n\n\nPupillometry and LC-NE Function\nUsing pupil dynamics as an index of attentional engagement and locus coeruleus–norepinephrine system involvement in cognitive control.\n\nOngoing Pupillometry"
-  },
-  {
-    "objectID": "projects/index.html#contemplative-practices-1",
-    "href": "projects/index.html#contemplative-practices-1",
-    "title": "Projects",
-    "section": "Contemplative Practices",
-    "text": "Contemplative Practices\n\nThis area explores whether and how contemplative practices such as mindfulness training can strengthen attention, reduce vulnerability to distraction, and support well-being in demanding contexts.\n\n\n\nAcute Effects of Mindfulness Practice\nTesting whether individual mindfulness practice sessions produce immediate changes in focus, mood, and stress.\n\nOngoing Repeated Measures Training Studies\n\n\n\nMindfulness Training in High-Demand Populations\nEvaluating mindfulness-based interventions in groups such as firefighters and military personnel to understand training effects in applied settings.\n\nOngoing Intervention Applied Research\n\n\n\nState-to-Trait Change in Attention and Well-Being\nStudying whether repeated short-term shifts during contemplative practice accumulate into broader changes across training.\n\nOngoing Longitudinal Modeling"
-  },
-  {
-    "objectID": "projects/index.html#individual-differences-1",
-    "href": "projects/index.html#individual-differences-1",
-    "title": "Projects",
-    "section": "Individual Differences",
-    "text": "Individual Differences\n\nThis area focuses on how attention control can be measured reliably and how differences across individuals shape performance across a wide range of cognitive tasks and real-world outcomes.\n\n\n\nAttention Control Measurement\nDeveloping reliable and valid tools for assessing attention control across task paradigms and populations.\n\nOngoing Behavioral Tasks Psychometrics\n\n\n\nSustained Attention and Performance Variability\nStudying fluctuations in sustained attention and how they relate to response variability, mind wandering, and task performance.\n\nOngoing Behavioral Tasks Individual Differences\n\n\n\nAttention Control, Working Memory, and Intelligence\nExamining the relationship between attention control and broader cognitive abilities, including working memory capacity and fluid intelligence.\n\nOngoing Latent Variable Models"
-  },
-  {
-    "objectID": "projects/index.html#individual-differences",
-    "href": "projects/index.html#individual-differences",
-    "title": "Projects",
-    "section": "Individual Differences",
-    "text": "Individual Differences"
-  },
-  {
-    "objectID": "projects/index.html#neural-mechanisms",
-    "href": "projects/index.html#neural-mechanisms",
-    "title": "Projects",
-    "section": "Neural Mechanisms",
-    "text": "Neural Mechanisms"
-  },
-  {
-    "objectID": "projects/index.html#contemplative-practices",
-    "href": "projects/index.html#contemplative-practices",
-    "title": "Projects",
-    "section": "Contemplative Practices",
-    "text": "Contemplative Practices"
-  },
-  {
     "objectID": "index.html#latest-publications",
     "href": "index.html#latest-publications",
     "title": "CALM LAB",
     "section": "Latest Publications",
-    "text": "Latest Publications\n\n\n  \n    \n      \n        \n\n          \n            Preprint\n          \n\n          \n            \n              PsyArxiv\n            \n          \n\n          Sustaining the focus of attention and how it relates to performance in complex cognitive tasks\n\n          \n            \n              Tsukahara & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2023\n          \n\n          \n            \n              PsyArxiv\n            \n          \n\n          Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance\n\n          \n            \n              Mashburn, Burgoyne, Tsukahara, Pak, Coyne, Sibley, Foroughi, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2023\n          \n\n          \n            \n              Behavior Research Methods\n            \n          \n\n          Replication and extension of the toolbox approach to measuring attention control\n\n          \n            \n              Draheim, Tsukahara, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2023\n          \n\n          \n            \n              Journal of Experimental Psychology: General\n            \n          \n\n          Nature and measurement of attention control\n\n          \n            \n              Burgoyne, Tsukahara, Mashburn, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2022\n          \n\n          \n            \n              The Cambridge Handbook of Working Memory and Language\n            \n          \n\n          Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension\n\n          \n            \n              Burgoyne, Martin, Mashburn, Tsukahara, Draheim, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2022\n          \n\n          \n            \n              Intelligence\n            \n          \n\n          Attention control and process overlap theory: Searching for cognitive processes underpinning the positive manifold\n\n          \n            \n              Burgoyne, Mashburn, Tsukahara, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n  \n\nNo matching items\n\n\nView All Publications →"
-  },
-  {
-    "objectID": "assets/project-publications.ejs.html",
-    "href": "assets/project-publications.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;%\n  const area = templateParams[\"project-area\"];\n  const matched = items.filter(item =&gt;\n    Array.isArray(item[\"project-areas\"]) &&\n    item[\"project-areas\"].includes(area)\n  );\n%&gt;\n\n\n  \n    &lt;% for (const item of matched) { %&gt;\n    \n      &gt;\n\n        \n          &lt;%- item[\"pub-status\"] === \"Preprint\" ? \"Preprint\" : (item[\"pub-year\"] ? item[\"pub-year\"] : \"\") %&gt;\n        \n\n        &lt;% if (item.venue) { %&gt;\n        \n          &lt;%- item.venue %&gt;\n        \n        &lt;% } %&gt;\n\n        &lt;%- item.title %&gt;\n\n        &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n        &lt;%- item[\"pub-authors\"].join(\", \") %&gt;\n        &lt;% } %&gt;\n\n        \n          Read\n          →\n        \n\n      \n    \n    &lt;% } %&gt;\n  \n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "news/posts/2026-04-website-launch copy.html",
-    "href": "news/posts/2026-04-website-launch copy.html",
-    "title": "CALM Lab website launches",
-    "section": "",
-    "text": "We are excited to launch the CALM Lab website. More updates about research, people, and opportunities will be added soon.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "news/posts/2026-04-website-launch copy 2.html",
-    "href": "news/posts/2026-04-website-launch copy 2.html",
-    "title": "CALM Lab website launches",
-    "section": "",
-    "text": "We are excited to launch the CALM Lab website. More updates about research, people, and opportunities will be added soon.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "news/posts/2026-05-new-paper copy.html",
-    "href": "news/posts/2026-05-new-paper copy.html",
-    "title": "New publication on attention control in the brain",
-    "section": "",
-    "text": "Our latest work on attention control and large-scale brain network dynamics is now available.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "news/posts/2026-05-new-paper copy 2.html",
-    "href": "news/posts/2026-05-new-paper copy 2.html",
-    "title": "New publication on attention control in the brain",
-    "section": "",
-    "text": "Our latest work on attention control and large-scale brain network dynamics is now available.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "assets/home-publications.ejs.html",
-    "href": "assets/home-publications.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n  \n  &gt;\n\n  \n    &lt;%- item[\"pub-status\"] === \"Preprint\" ? \"Preprint\" : (item[\"pub-year\"] ? item[\"pub-year\"] : \"\") %&gt;\n  \n\n  &lt;% if (item.venue) { %&gt;\n  \n    &lt;%- item.venue %&gt;\n  \n  &lt;% } %&gt;\n\n  &lt;%- item.title %&gt;\n\n  &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n  &lt;%- item[\"pub-authors\"].join(\", \") %&gt;\n  &lt;% } %&gt;\n\n  \n  Read\n  →\n  \n\n  \n  \n  &lt;% } %&gt;\n  \n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "research_tools/index.html",
-    "href": "research_tools/index.html",
-    "title": "Research Tools",
-    "section": "",
-    "text": "RESEARCH TOOLS\n\n\nCognitive tasks and data analysis tools from the CALM Lab.\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact",
-    "section": "",
-    "text": "CONTACT\n\n\nGet in touch with the CALM Lab.\n\n\n\n\n\nFor questions about the lab’s research, collaborations, or opportunities to work together, please use the contact information below.\n\n\n\n\n\n\n\n\nGeneral Contact\nJason S. Tsukahara, Ph.D. Principal Investigator, CALM Lab\nEmail\nWebsite\nGoogle Scholar\n\n\n\n\n\n\n\n\n\nOpportunities\nProspective students, collaborators, and others interested in the lab’s work are welcome to reach out by email. When relevant, please include a brief note about your interests and reason for contacting the lab.\n\n\n\n\n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "contact.html#general-contact",
-    "href": "contact.html#general-contact",
-    "title": "Contact",
-    "section": "General Contact",
-    "text": "General Contact\nJason S. Tsukahara, Ph.D. Principal Investigator, CALM Lab\nEmail\nWebsite\nGoogle Scholar"
-  },
-  {
-    "objectID": "contact.html#opportunities",
-    "href": "contact.html#opportunities",
-    "title": "Contact",
-    "section": "Opportunities",
-    "text": "Opportunities\nProspective students, collaborators, and others interested in the lab’s work are welcome to reach out by email. When relevant, please include a brief note about your interests and reason for contacting the lab."
-  },
-  {
-    "objectID": "assets/home-listing-grid.ejs.html",
-    "href": "assets/home-listing-grid.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "All\n    Lab\n    Papers\n  \n\n  \n  &lt;% for (const item of items) { %&gt;\n  \n  &gt;\n\n  &lt;% if (item.image) { %&gt;\n  \n  \n  \n  &lt;% } %&gt;\n\n  &lt;%- item.date ? item.date : \"\" %&gt;\n\n  &lt;% if (item.categories && item.categories.length) { %&gt;\n  \n  &lt;% item.categories.forEach(function(cat) { %&gt;\n  &lt;%- cat %&gt;\n  &lt;% }) %&gt;\n  \n  &lt;% } %&gt;\n\n  &lt;%- item.title %&gt;\n\n  &lt;% if (item.description) { %&gt;\n  &lt;%- item.description %&gt;\n  &lt;% } %&gt;\n\n  \n  Read More\n  &lt;% if (item.link) { %&gt;\n  ↗\n  &lt;% } else { %&gt;\n  →\n  &lt;% } %&gt;\n  \n\n  \n  \n  &lt;% } %&gt;\n  \n\n  \n    View All News →\n  \n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "assets/home-listing-scroll.ejs.html",
-    "href": "assets/home-listing-scroll.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n      \n        \n        &gt;\n\n          \n            &lt;%- item[\"pub-status\"] === \"Preprint\" ? \"Preprint\" : (item[\"pub-year\"] ? item[\"pub-year\"] : \"\") %&gt;\n          \n\n          &lt;% if (item.venue) { %&gt;\n            \n              &lt;%- item.venue %&gt;\n            \n          &lt;% } %&gt;\n\n          &lt;%- item.title %&gt;\n\n          &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n            &lt;%- item[\"pub-authors\"].join(\", \") %&gt;\n          &lt;% } %&gt;\n\n          \n            Read\n            →\n          \n\n        \n      \n    &lt;% } %&gt;\n  \n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "assets/pub-listing-scroll.ejs.html",
-    "href": "assets/pub-listing-scroll.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n      \n        \n        &gt;\n\n          \n            &lt;%- item[\"pub-status\"] === \"Preprint\" ? \"Preprint\" : (item[\"pub-year\"] ? item[\"pub-year\"] : \"\") %&gt;\n          \n\n          &lt;% if (item.venue) { %&gt;\n            \n              &lt;%- item.venue %&gt;\n            \n          &lt;% } %&gt;\n\n          &lt;%- item.title %&gt;\n\n          &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n            \n              &lt;%= item[\"pub-authors\"].length === 1\n                ? item[\"pub-authors\"][0]\n                : item[\"pub-authors\"].length === 2\n                  ? item[\"pub-authors\"].join(\" & \")\n                  : item[\"pub-authors\"].slice(0, -1).join(\", \") + \", & \" + item[\"pub-authors\"].slice(-1)\n              %&gt;\n            \n          &lt;% } %&gt;\n\n          \n            Read\n            →\n          \n\n        \n      \n    &lt;% } %&gt;\n  \n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "assets/news-listing-grid.ejs.html",
-    "href": "assets/news-listing-grid.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "All\n    Lab\n    Papers\n  \n\n  \n  &lt;% for (const item of items) { %&gt;\n  \n  &gt;\n\n  &lt;% if (item.image) { %&gt;\n  \n  \n  \n  &lt;% } %&gt;\n\n  &lt;%- item.date ? item.date : \"\" %&gt;\n\n  &lt;% if (item.categories && item.categories.length) { %&gt;\n  \n  &lt;% item.categories.forEach(function(cat) { %&gt;\n  &lt;%- cat %&gt;\n  &lt;% }) %&gt;\n  \n  &lt;% } %&gt;\n\n  &lt;%- item.title %&gt;\n\n  &lt;% if (item.description) { %&gt;\n  &lt;%- item.description %&gt;\n  &lt;% } %&gt;\n\n  \n  Read More\n  &lt;% if (item.link) { %&gt;\n  ↗\n  &lt;% } else { %&gt;\n  →\n  &lt;% } %&gt;\n  \n\n  \n  \n  &lt;% } %&gt;\n  \n\n  \n    View All News →\n  \n\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "assets/news-listing-grid-notags.ejs.html",
-    "href": "assets/news-listing-grid-notags.ejs.html",
-    "title": "CALM LAB",
-    "section": "",
-    "text": "&lt;% for (const item of items) { %&gt;\n  \n  &gt;\n\n  &lt;% if (item.image) { %&gt;\n  \n  \n  \n  &lt;% } %&gt;\n\n  &lt;%- item.date ? item.date : \"\" %&gt;\n\n  &lt;% if (item.categories && item.categories.length) { %&gt;\n  \n  &lt;% item.categories.forEach(function(cat) { %&gt;\n  &lt;%- cat %&gt;\n  &lt;% }) %&gt;\n  \n  &lt;% } %&gt;\n\n  &lt;%- item.title %&gt;\n\n  &lt;% if (item.description) { %&gt;\n  &lt;%- item.description %&gt;\n  &lt;% } %&gt;\n\n  \n  Read More\n  &lt;% if (item.link) { %&gt;\n  ↗\n  &lt;% } else { %&gt;\n  →\n  &lt;% } %&gt;\n  \n\n  \n  \n  &lt;% } %&gt;\n  \n\n\n\n\n Back to top"
+    "text": "Latest Publications\n\n\n  \n    \n      \n        \n\n          \n            Preprint\n          \n\n          \n            \n              PsyArxiv\n            \n          \n\n          Sustaining the focus of attention and how it relates to performance in complex cognitive tasks\n\n          \n            \n              Tsukahara & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2024\n          \n\n          \n            \n              Intelligence\n            \n          \n\n          Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance\n\n          \n            \n              Mashburn, Burgoyne, Tsukahara, Pak, Coyne, Sibley, Foroughi, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2023\n          \n\n          \n            \n              Behavior Research Methods\n            \n          \n\n          Replication and extension of the toolbox approach to measuring attention control\n\n          \n            \n              Draheim, Tsukahara, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2023\n          \n\n          \n            \n              Journal of Experimental Psychology: General\n            \n          \n\n          Nature and measurement of attention control\n\n          \n            \n              Burgoyne, Tsukahara, Mashburn, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2022\n          \n\n          \n            \n              The Cambridge Handbook of Working Memory and Language\n            \n          \n\n          Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension\n\n          \n            \n              Burgoyne, Martin, Mashburn, Tsukahara, Draheim, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n      \n        \n\n          \n            2022\n          \n\n          \n            \n              Intelligence\n            \n          \n\n          Attention control and process overlap theory: Searching for cognitive processes underpinning the positive manifold\n\n          \n            \n              Burgoyne, Mashburn, Tsukahara, & Engle\n            \n          \n\n          \n            Read\n            →\n          \n\n        \n      \n    \n  \n\nNo matching items\n\n\nView All Publications →"
   },
   {
     "objectID": "assets/listings/news-listing-grid-notags.ejs.html",
@@ -504,6 +49,104 @@
     "text": "&lt;% for (const item of items) { %&gt;\n\n\n\n  \n    \n    \n      View Page →\n    \n  \n\n  \n\n    \n      &lt;%- item.name %&gt;\n    \n\n    &lt;% if (item.position) { %&gt;\n      &lt;%- item.position %&gt;\n    &lt;% } %&gt;\n\n    &lt;% if (item.tagline) { %&gt;\n      &lt;%- item.tagline %&gt;\n    &lt;% } %&gt;\n\n    \n\n      &lt;% if (item.cv) { %&gt;\n      CV\n      &lt;% } %&gt;\n\n      &lt;% if (item.email) { %&gt;\n      Email\n      &lt;% } %&gt;\n\n      &lt;% if (item.website) { %&gt;\n      Personal Website ↗\n      &lt;% } %&gt;\n\n    \n\n  \n\n\n\n&lt;% } %&gt;\n\n\n\n Back to top"
   },
   {
+    "objectID": "team/jason-tsukahara/index.html",
+    "href": "team/jason-tsukahara/index.html",
+    "title": "Jason S. Tsukahara, Ph.D.",
+    "section": "",
+    "text": "Jason S. Tsukahara, Ph.D.\n\nPrincipal Investigator\n\n\nDr. Tsukahara directs the CALM Lab and studies attention control across contexts of life and mind. His research integrates cognitive psychology, neuroscience, and contemplative science to understand the nature and potentials of attention.\n\n\n\n\n\n\n\n\nDegree Program\nPh.D. Psychological Sciences\n\n\nContact\njane@university.edu \n\n\nIn the Lab\n2024-Present\n\n\n\n\n\n\n\n\nResearch Interests\nThis is a longer paragraph style explanation of my research interests into something I don’t know how to do this but here we go, yipee kaya. Then this is a part of it as well. And what if it keeps on going on for a longer and longer and longer ezplanation. But does not stop here yet.\n\n\n\n\n\n\n\nEducation\nPh.D. in Psychology — Example University\nM.A. in Cognitive Science — Example University\nB.A. in Psychology — Example University\n\n\n\n\n\n\n\nSelected Publications\n\n\n  \n    \n      \n          Nature and measurement of attention control\n      \n        \n          Burgoyne, Tsukahara, Mashburn, & Engle\n        \n      \n          2023\n          Journal of Experimental Psychology: General\n          Journal Article\n      \n      \n          \n            \n              \n            \n            Read\n          \n          \n            \n              \n            \n            Data\n          \n          \n            \n              \n            \n            Code\n          \n      \n    \n  \n\nNo matching items\n\n\n\n\n\n\n\n\nAbout\nJane Doe is a graduate student in the CALM Lab studying how attention fluctuates over time and how contemplative practices may help support cognitive performance and well-being. Her research focuses on understanding the dynamics of sustained attention—why focus is sometimes stable and at other times drifts—and how these fluctuations shape thought, behavior, and performance. By combining behavioral experiments with neurocognitive approaches, she investigates how attention operates both in everyday contexts and in situations that demand sustained mental effort.\nIn her research, Jane is particularly interested in the relationship between mind wandering and cognitive control. She studies how internal thoughts emerge during ongoing tasks and how individuals differ in their ability to maintain goal-directed focus. Her work draws on behavioral tasks and physiological measures such as EEG to examine the moment-to-moment dynamics of attention and the neural systems that support these processes.\nMore broadly, Jane is interested in how contemplative practices such as mindfulness may influence attention and emotional well-being. She is motivated by the possibility that training attention can enhance both cognitive performance and quality of life. Outside the lab, Jane enjoys exploring nature, reading, and practicing mindfulness meditation—interests that often inspire new questions about the mind and its capacity for focus and reflection.\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "news/2026-04-website-launch/index.html",
+    "href": "news/2026-04-website-launch/index.html",
+    "title": "CALM Lab website launches",
+    "section": "",
+    "text": "We are excited to launch the CALM Lab website. More updates about research, people, and opportunities will be added soon.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "news/index.html",
+    "href": "news/index.html",
+    "title": "CALM LAB",
+    "section": "",
+    "text": "All\n    Lab\n    Team\n    Papers\n  \n\n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  May 1, 2026\n\n  \n  \n  \n  Paper\n  \n  \n  \n\n  New publication on attention control in the brain\n\n  \n  Our latest work on attention control and large-scale brain network dynamics is now available.\n  \n\n  \n  Read More\n  \n  ↗\n  \n  \n\n  \n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  May 1, 2026\n\n  \n  \n  \n  Paper\n  \n  \n  \n\n  New publication on attention control in the brain\n\n  \n  Our latest work on attention control and large-scale brain network dynamics is now available.\n  \n\n  \n  Read More\n  \n  ↗\n  \n  \n\n  \n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  May 1, 2026\n\n  \n  \n  \n  Paper\n  \n  \n  \n\n  New publication on attention control in the brain\n\n  \n  Our latest work on attention control and large-scale brain network dynamics is now available.\n  \n\n  \n  Read More\n  \n  ↗\n  \n  \n\n  \n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  Apr 1, 2026\n\n  \n  \n  \n  Team\n  \n  \n  \n\n  CALM Lab website launches\n\n  \n  We are excited to launch the CALM Lab website.\n  \n\n  \n  Read More\n  \n  →\n  \n  \n\n  \n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  Apr 1, 2026\n\n  \n  \n  \n  Lab\n  \n  \n  \n\n  CALM Lab website launches\n\n  \n  We are excited to launch the CALM Lab website.\n  \n\n  \n  Read More\n  \n  →\n  \n  \n\n  \n  \n  \n  \n\nNo matching items\n Back to top"
+  },
+  {
+    "objectID": "news/2026-05-new-paper/index.html",
+    "href": "news/2026-05-new-paper/index.html",
+    "title": "New publication on attention control in the brain",
+    "section": "",
+    "text": "Our latest work on attention control and large-scale brain network dynamics is now available.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "research_tools/index.html",
+    "href": "research_tools/index.html",
+    "title": "Research Tools",
+    "section": "",
+    "text": "RESEARCH TOOLS\n\n\nCognitive tasks and data analysis tools from the CALM Lab.\n\n\n\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "projects/index.html",
+    "href": "projects/index.html",
+    "title": "Projects",
+    "section": "",
+    "text": "PROJECTS\n\n\nResearch areas and ongoing lines of work in the CALM Lab."
+  },
+  {
+    "objectID": "projects/index.html#individual-differences",
+    "href": "projects/index.html#individual-differences",
+    "title": "Projects",
+    "section": "Individual Differences",
+    "text": "Individual Differences"
+  },
+  {
+    "objectID": "projects/index.html#neural-mechanisms",
+    "href": "projects/index.html#neural-mechanisms",
+    "title": "Projects",
+    "section": "Neural Mechanisms",
+    "text": "Neural Mechanisms"
+  },
+  {
+    "objectID": "projects/index.html#contemplative-practices",
+    "href": "projects/index.html#contemplative-practices",
+    "title": "Projects",
+    "section": "Contemplative Practices",
+    "text": "Contemplative Practices"
+  },
+  {
+    "objectID": "news/2026-05-new-paper copy/index.html",
+    "href": "news/2026-05-new-paper copy/index.html",
+    "title": "New publication on attention control in the brain",
+    "section": "",
+    "text": "Our latest work on attention control and large-scale brain network dynamics is now available.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "news/2026-05-new-paper copy 2/index.html",
+    "href": "news/2026-05-new-paper copy 2/index.html",
+    "title": "New publication on attention control in the brain",
+    "section": "",
+    "text": "Our latest work on attention control and large-scale brain network dynamics is now available.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "news/2026-04-website-launch copy/index.html",
+    "href": "news/2026-04-website-launch copy/index.html",
+    "title": "CALM Lab website launches",
+    "section": "",
+    "text": "We are excited to launch the CALM Lab website. More updates about research, people, and opportunities will be added soon.\n\n\n\n Back to top"
+  },
+  {
+    "objectID": "team/index.html",
+    "href": "team/index.html",
+    "title": "Team",
+    "section": "",
+    "text": "TEAM\n\n\nMeat the CALM Lab team."
+  },
+  {
+    "objectID": "team/index.html#team-news",
+    "href": "team/index.html#team-news",
+    "title": "Team",
+    "section": "Team News",
+    "text": "Team News\n\n\n\n  \n  \n  \n  \n\n  \n  \n  \n  \n  \n\n  Apr 1, 2026\n\n  \n  \n  \n  Team\n  \n  \n  \n\n  CALM Lab website launches\n\n  \n  We are excited to launch the CALM Lab website.\n  \n\n  \n  Read More\n  \n  →\n  \n  \n\n  \n  \n  \n  \n\nNo matching items"
+  },
+  {
     "objectID": "assets/cards/ra-card.ejs.html",
     "href": "assets/cards/ra-card.ejs.html",
     "title": "Undergraduate Research Assistants",
@@ -529,7 +172,7 @@
     "href": "assets/listings/pub-listing-selected.ejs.html",
     "title": "CALM LAB",
     "section": "",
-    "text": "&lt;%\n  const profileId = templateParams[\"profile-id\"];\n  const matched = items.filter(item =&gt;\n    Array.isArray(item[\"show-on-profiles\"]) &&\n    item[\"show-on-profiles\"].includes(profileId)\n  );\n%&gt;\n\n&lt;% if (matched.length === 0) { %&gt;\n  No selected publications listed yet.\n&lt;% } %&gt;\n\n&lt;% for (const item of matched) { %&gt;\n  \n    \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else if (item.path) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } %&gt;\n      \n\n      &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n        \n          &lt;%\n            const authors = item[\"pub-authors\"];\n            let authorText = \"\";\n\n            if (authors.length === 1) {\n              authorText = authors[0];\n            } else if (authors.length === 2) {\n              authorText = authors.join(\" & \");\n            } else {\n              authorText = authors.slice(0, -1).join(\", \") + \", & \" + authors[authors.length - 1];\n            }\n          %&gt;\n          &lt;%= authorText %&gt;\n        \n      &lt;% } %&gt;\n\n      \n\n        &lt;% if (item[\"pub-year\"]) { %&gt;\n          &lt;%- item[\"pub-year\"] %&gt;\n        &lt;% } %&gt;\n        \n        &lt;% if (item.venue) { %&gt;\n          &lt;%- item.venue %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item[\"pub-type\"]) { %&gt;\n          &lt;%- item[\"pub-type\"] %&gt;\n        &lt;% } %&gt;\n      \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          \n            \n              \n            \n            Read\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.data) { %&gt;\n          \n            \n              \n            \n            Data\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.code) { %&gt;\n          \n            \n              \n            \n            Code\n          \n        &lt;% } %&gt;\n      \n    \n  \n&lt;% } %&gt;\n\n\n\n\n Back to top"
+    "text": "&lt;% for (const item of items) { %&gt;\n  \n    \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else if (item.path) { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } else { %&gt;\n          &lt;%= item.title %&gt;\n        &lt;% } %&gt;\n      \n\n      &lt;% if (item[\"pub-authors\"] && item[\"pub-authors\"].length) { %&gt;\n        \n          &lt;%\n            const authors = item[\"pub-authors\"];\n            let authorText = \"\";\n\n            if (authors.length === 1) {\n              authorText = authors[0];\n            } else if (authors.length === 2) {\n              authorText = authors.join(\" & \");\n            } else {\n              authorText = authors.slice(0, -1).join(\", \") + \", & \" + authors[authors.length - 1];\n            }\n          %&gt;\n          &lt;%= authorText %&gt;\n        \n      &lt;% } %&gt;\n\n      \n\n        &lt;% if (item[\"pub-year\"]) { %&gt;\n          &lt;%- item[\"pub-year\"] %&gt;\n        &lt;% } %&gt;\n        \n        &lt;% if (item.venue) { %&gt;\n          &lt;%- item.venue %&gt;\n        &lt;% } %&gt;\n\n        &lt;% if (item[\"pub-type\"]) { %&gt;\n          &lt;%- item[\"pub-type\"] %&gt;\n        &lt;% } %&gt;\n      \n\n      \n        &lt;% if (item.pdf) { %&gt;\n          \n            \n              \n            \n            Read\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.data) { %&gt;\n          \n            \n              \n            \n            Data\n          \n        &lt;% } %&gt;\n\n        &lt;% if (item.code) { %&gt;\n          \n            \n              \n            \n            Code\n          \n        &lt;% } %&gt;\n      \n    \n  \n&lt;% } %&gt;\n\n\n\n\n Back to top"
   },
   {
     "objectID": "assets/listings/news-listing-scroll.ejs.html",
@@ -539,38 +182,17 @@
     "text": "All\n    Lab\n    Team\n    Papers\n  \n\n  \n    \n      &lt;% for (const item of items) { %&gt;\n      \n        &gt;\n\n          &lt;% if (item.image) { %&gt;\n          \n            \n          \n          &lt;% } %&gt;\n\n          &lt;%- item.date ? item.date : \"\" %&gt;\n\n          &lt;% if (item.categories && item.categories.length) { %&gt;\n          \n            &lt;% item.categories.forEach(function(cat) { %&gt;\n            &lt;%- cat %&gt;\n            &lt;% }) %&gt;\n          \n          &lt;% } %&gt;\n\n          &lt;%- item.title %&gt;\n\n          &lt;% if (item.description) { %&gt;\n          &lt;%- item.description %&gt;\n          &lt;% } %&gt;\n\n          \n            Read More\n            &lt;% if (item.link) { %&gt;\n            ↗\n            &lt;% } else { %&gt;\n            →\n            &lt;% } %&gt;\n          \n\n        \n      \n      &lt;% } %&gt;\n    \n  \n\n\n\n\n Back to top"
   },
   {
-    "objectID": "news/2026-04-website-launch/index.html",
-    "href": "news/2026-04-website-launch/index.html",
-    "title": "CALM Lab website launches",
+    "objectID": "publications/index.html",
+    "href": "publications/index.html",
+    "title": "Publications",
     "section": "",
-    "text": "We are excited to launch the CALM Lab website. More updates about research, people, and opportunities will be added soon.\n\n\n\n Back to top"
+    "text": "PUBLICATIONS\n\n\nPeer-reviewed articles, chapters, and related scholarly work.\n\n\n\n\nAll Journal Articles Book Chapters Popular Writing\n\n\n\n\n  \n    \n      Preprints\n    \n  \n\n  \n    \n\n      \n        \n          Sustaining the focus of attention and how it relates to performance in complex cognitive tasks\n        \n      \n\n      \n        \n          Tsukahara & Engle\n        \n      \n\n      \n        \n          2023\n        \n\n        \n          PsyArxiv\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n    \n      2024\n    \n  \n\n  \n    \n\n      \n        \n          Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance\n        \n      \n\n      \n        \n          Mashburn, Burgoyne, Tsukahara, Pak, Coyne, Sibley, Foroughi, & Engle\n        \n      \n\n      \n        \n          2024\n        \n\n        \n          Intelligence\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n    \n      2023\n    \n  \n\n  \n    \n\n      \n        \n          Replication and extension of the toolbox approach to measuring attention control\n        \n      \n\n      \n        \n          Draheim, Tsukahara, & Engle\n        \n      \n\n      \n        \n          2023\n        \n\n        \n          Behavior Research Methods\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Nature and measurement of attention control\n        \n      \n\n      \n        \n          Burgoyne, Tsukahara, Mashburn, & Engle\n        \n      \n\n      \n        \n          2023\n        \n\n        \n          Journal of Experimental Psychology: General\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n    \n      2022\n    \n  \n\n  \n    \n\n      \n        \n          Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension\n        \n      \n\n      \n        \n          Burgoyne, Martin, Mashburn, Tsukahara, Draheim, & Engle\n        \n      \n\n      \n        \n          2022\n        \n\n        \n          The Cambridge Handbook of Working Memory and Language\n        \n\n        \n          Book Chapter\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Attention control and process overlap theory: Searching for cognitive processes underpinning the positive manifold\n        \n      \n\n      \n        \n          Burgoyne, Mashburn, Tsukahara, & Engle\n        \n      \n\n      \n        \n          2022\n        \n\n        \n          Intelligence\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n      \n    \n  \n\n  \n    \n      2021\n    \n  \n\n  \n    \n\n      \n        \n          Understanding the relationship between rationality and intelligence: A latent-variable approach\n        \n      \n\n      \n        \n          Burgoyne, Mashburn, Tsukahara, Hambrick, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Thinking and Reasoning\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Fluid intelligence and the locus coeruleus-norepinephrine system\n        \n      \n\n      \n        \n          Tsukahara & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Proceedings of the National Academy of Sciences\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Baseline pupil size is related to fluid intelligence: A reply to Unsworth et al. (2021)\n        \n      \n\n      \n        \n          Tsukahara, Draheim, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Cognition\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          The visual arrays task: Visual storage capacity or attention control?\n        \n      \n\n      \n        \n          Martin, Tsukahara, Draheim, Shipstead, Mashburn, Vogel, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Journal of Experimental Psychology: General\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Pupil Size Is a Marker of Intelligence\n        \n      \n\n      \n        \n          Tsukahara, Burgoyne, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Scientific American Mind\n        \n\n        \n          Popular Writing\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Is baseline pupil size related to cognitive ability? Yes (under proper lighting conditions)\n        \n      \n\n      \n        \n          Tsukahara & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Cognition\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Transcutaneous vagus nerve stimulation via tragus or cymba conchae: Are its psychophysiological effects dependent on the stimulation area?\n        \n      \n\n      \n        \n          Borges, Pfannenstiel, Tsukahara, Laborde, Klatt, & Raab\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          International Journal of Psychophysiology\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          A toolbox approach to improving the measurement of attention control\n        \n      \n\n      \n        \n          Draheim, Tsukahara, Martin, Mashburn, & Engle\n        \n      \n\n      \n        \n          2021\n        \n\n        \n          Journal of Experimental Psychology: General\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n    \n      2020\n    \n  \n\n  \n    \n\n      \n        \n          Differential and experimental approaches to studying intelligence in humans and non-human animals\n        \n      \n\n      \n        \n          Burgoyne, Tsukahara, & Engle\n        \n      \n\n      \n        \n          2020\n        \n\n        \n          Learning and Motivation\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence\n        \n      \n\n      \n        \n          Mashburn, Tsukahara, & Engle\n        \n      \n\n      \n        \n          2020\n        \n\n        \n          Working memory: The state of the science\n        \n\n        \n          Book Chapter\n        \n      \n\n      \n        \n\n        \n\n        \n      \n    \n  \n\n  \n\n  \n    \n\n      \n        \n          Attention control: The missing link between sensory discrimination and intelligence\n        \n      \n\n      \n        \n          Tsukahara, Harrison, Draheim, Martin, & Engle\n        \n      \n\n      \n        \n          2020\n        \n\n        \n          Attention, Perception, and Psychophysics\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n          \n            \n              \n            \n            Data\n          \n        \n\n        \n          \n            \n              \n            \n            Code\n          \n        \n      \n    \n  \n\n  \n    \n      2016\n    \n  \n\n  \n    \n\n      \n        \n          The relationship between baseline pupil size and intelligence\n        \n      \n\n      \n        \n          Tsukahara, Harrison, & Engle\n        \n      \n\n      \n        \n          2016\n        \n\n        \n          Cognitive Psychology\n        \n\n        \n          Journal Article\n        \n      \n\n      \n        \n          \n            \n              \n            \n            Read\n          \n        \n\n        \n\n        \n      \n    \n  \n\n\nNo matching items\n\n\n\n\n\n\n Back to top"
   },
   {
-    "objectID": "news/2026-05-new-paper/index.html",
-    "href": "news/2026-05-new-paper/index.html",
-    "title": "New publication on attention control in the brain",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact",
     "section": "",
-    "text": "Our latest work on attention control and large-scale brain network dynamics is now available.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "news/2026-05-new-paper copy/index.html",
-    "href": "news/2026-05-new-paper copy/index.html",
-    "title": "New publication on attention control in the brain",
-    "section": "",
-    "text": "Our latest work on attention control and large-scale brain network dynamics is now available.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "news/2026-05-new-paper copy 2/index.html",
-    "href": "news/2026-05-new-paper copy 2/index.html",
-    "title": "New publication on attention control in the brain",
-    "section": "",
-    "text": "Our latest work on attention control and large-scale brain network dynamics is now available.\n\n\n\n Back to top"
-  },
-  {
-    "objectID": "news/2026-04-website-launch copy/index.html",
-    "href": "news/2026-04-website-launch copy/index.html",
-    "title": "CALM Lab website launches",
-    "section": "",
-    "text": "We are excited to launch the CALM Lab website. More updates about research, people, and opportunities will be added soon.\n\n\n\n Back to top"
+    "text": "CONTACT\n\n\nGet in touch with the CALM Lab.\n\n\n\n\n\nFor questions about the lab’s research, collaborations, or opportunities to work together, please use the contact information below.\n\n\n\n\n\n\n\n\nGeneral Contact\nJason S. Tsukahara, Ph.D. Principal Investigator, CALM Lab\nEmail\nWebsite\nGoogle Scholar\n\n\n\n\n\n\n\n\n\nOpportunities\nProspective students, collaborators, and others interested in the lab’s work are welcome to reach out by email. When relevant, please include a brief note about your interests and reason for contacting the lab.\n\n\n\n\n\n\n\n\n Back to top"
   }
 ]

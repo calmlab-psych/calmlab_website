@@ -5,17 +5,17 @@
    ========================= */
 
 :root {
-  --color-primary: #5E1E22;
-  --color-primary-highlight: #F0E6E7;
-  --color-secondary: #2D4B8A;
-  --color-secondary-highlight: #2D4B8A20;
-  --color-outline: #8A6A6C;
+  --color-primary: #2D4B8A;
+  --color-primary-highlight: #2D4B8A20;
+  --color-secondary: #B8893A;
+  --color-secondary-highlight: #B8893A20;
+  --color-outline: #B8893A;
   --color-white: #FFFFFF;
   --color-white-border: #D8CECC;
-  --color-yellow: #7A5C38;
-  --color-yellow-highlight: #7A5C3820;
-  --color-green: #2B4A52;
-  --color-green-highlight: #2B4A5220;
+  --color-yellow: #B8893A;
+  --color-yellow-highlight: #B8893A20;
+  --color-green: #3A6B4F;
+  --color-green-highlight: #3A6B4F20;
   --color-blue: #2D4B8A;
   --color-blue-highlight: #2D4B8A20;
   --color-bg: #F7F4F2;
@@ -79,6 +79,10 @@ h2::before {
   transform: scaleY(0);
   transform-origin: center;
   animation: headerBarGrow 0.6s ease forwards;
+}
+
+hr {
+  border-color: var(--color-secondary);
 }
 
 @keyframes headerBarGrow {
@@ -213,22 +217,22 @@ h2::before {
   font-weight: 600;
   border: 1px solid var(--color-white-border);
   background: var(--color-white);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   cursor: pointer;
   transition: all var(--transition-fast);
 }
 
 .pill-filter:hover,
 .pill-filter.active {
-  background: var(--color-secondary);
+  background: var(--color-primary);
   color: var(--color-white);
-  border-color: var(--color-secondary);
+  border-color: var(--color-primary);
 }
 
 .pill-soft {
   background: var(--color-white);
-  border: 1px solid var(--color-secondary);
-  color: var(--color-secondary);
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
 }
 
 .pill-outline {
@@ -316,6 +320,14 @@ h2::before {
   background: var(--color-blue-highlight);
 }
 
+.is-blue h3 {
+  color: var(--color-blue) !important;
+}
+
+.is-blue .link-cta {
+  color: var(--color-blue) !important;
+}
+
 .is-blue .icon-badge i,
 .icon-badge-blue i {
   color: var(--color-blue);
@@ -328,6 +340,14 @@ h2::before {
 .is-yellow .icon-badge,
 .icon-badge-yellow {
   background: var(--color-secondary-highlight);
+}
+
+.is-yellow h3 {
+  color: var(--color-yellow) !important;
+}
+
+.is-yellow .link-cta {
+  color: var(--color-yellow) !important;
 }
 
 .is-yellow .icon-badge i,
@@ -358,6 +378,14 @@ h2::before {
   background: var(--color-green-highlight);
 }
 
+.is-green h3 {
+  color: var(--color-green) !important;
+}
+
+.is-green .link-cta {
+  color: var(--color-green) !important;
+}
+
 .is-green .icon-badge i,
 .icon-badge-green i {
   color: var(--color-green);
@@ -374,8 +402,8 @@ h2::before {
 .navbar {
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
-  background: var(--color-primary);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  background: var(--color-bg);
+  border-bottom: 1px solid var(--color-secondary-highlight);
   font-family: var(--font-body);
   font-weight: 400;
 }
@@ -383,30 +411,31 @@ h2::before {
 .navbar-brand {
   font-family: var(--font-logo);
   font-size: 1.4rem;
-  color: var(--color-white);
+  font-weight: 600;
+  color: var(--color-primary);
   letter-spacing: 0.05em;
 }
 
 .navbar-brand:hover {
-  color: var(--color-bg);
+  color: var(--color-primary);
 }
 
 .navbar-nav .nav-link {
   margin-inline: 0.6rem;
   font-size: 1rem;
   font-weight: 400;
-  color: var(--color-bg);
+  color: var(--color-primary);
   transition: color var(--transition-fast), transform 0.15s ease;
 }
 
 .navbar-nav .nav-link:hover,
 .navbar-nav .nav-link:focus {
-  color: var(--color-bg);
+  color: var(--color-primary);
   transform: translateY(-1px);
 }
 
 .navbar .nav-link.active {
-  color: var(--color-bg);
+  color: var(--color-primary);
   font-weight: 700;
 }
 
@@ -465,11 +494,11 @@ h2::before {
 }
 
 .hero-subtitle {
-  color: var(--color-green);
+  color: var(--color-secondary);
 }
 
 .header-subtitle {
-  color: var(--color-green);
+  color: var(--color-secondary);
 }
 
 .hero-intro {
@@ -486,74 +515,35 @@ h2::before {
    Quick Cards
    ========================= */
 
-.quick-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 1.5rem;
-  margin: 3rem 0;
+.quick-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
 }
 
-.quick-card-link {
-  display: block;
-  color: inherit;
+.quick-card > section {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.quick-card > section > p:last-child {
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.quick-card h3 {
+  margin-top: 0;
+  font-weight: 700;
+}
+
+.quick-card a {
+  color: var(--color-text);
   text-decoration: none;
 }
 
-.quick-card-icon {
-  width: 52px;
-  height: 52px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  line-height: 0;
-  margin-bottom: 20px;
-}
-
-.quick-card-icon i {
-  font-size: 1.2rem;
-  line-height: 1;
-}
-
-.quick-card-link h3 {
-  margin-top: 0;
-  font-weight: 700;
-  color: var(--color-text);
-}
-
-.quick-card-link .link-cta,
-.quick-card-link .quick-card-cta {
-  margin-top: auto;
-  color: var(--color-secondary)
-}
-
-.quick-card-link:hover .link-cta,
-.quick-card-link:hover .quick-card-cta {
+.quick-card:hover .link-cta {
   transform: translateX(3px);
-}
-
-.quick-card-blue .quick-card-icon {
-  background: var(--color-primary-highlight);
-}
-
-.quick-card-blue i {
-  color: var(--color-primary);
-}
-
-.quick-card-red .quick-card-icon {
-  background: var(--color-yellow-highlight);
-}
-
-.quick-card-red i {
-  color: var(--color-yellow);
-}
-
-.quick-card-green .quick-card-icon {
-  background: var(--color-green-highlight);
-}
-
-.quick-card-green i {
-  color: var(--color-green);
 }
 
 /* =========================
@@ -875,15 +865,15 @@ h2::before {
 }
 
 .pub-link-pdf .pub-link-icon {
-  background: var(--color-secondary-highlight);
+  background: var(--color-primary-highlight);
 }
 
 .pub-link-pdf .pub-link-icon i {
-  color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .pub-link-pdf:hover {
-  border-color: var(--color-secondary);
+  border-color: var(--color-primary);
 }
 
 .pub-link-data .pub-link-icon {
@@ -899,15 +889,15 @@ h2::before {
 }
 
 .pub-link-code .pub-link-icon {
-  background: var(--color-primary-highlight);
+  background: var(--color-green-highlight);
 }
 
 .pub-link-code .pub-link-icon i {
-  color: var(--color-primary);
+  color: var(--color-green);
 }
 
 .pub-link-code:hover {
-  border-color: var(--color-primary);
+  border-color: var(--color-green);
 }
 
 .publication-year-group {
@@ -1056,7 +1046,7 @@ h2::before {
   font-size: 1.1rem;
   margin-top: -0.25rem;
   margin-bottom: 1rem;
-  color: var(--color-green);
+  color: var(--color-secondary);
 }
 
 .pi-links a {
@@ -1101,7 +1091,7 @@ h2::before {
 .grad-position {
   font-size: 0.9rem;
   font-weight: 600;
-  color: var(--color-green);
+  color: var(--color-secondary);
   letter-spacing: normal;
 }
 
@@ -1268,7 +1258,7 @@ h2::before {
   background: var(--color-white);
   border: 1px solid var(--color-white-border);
   border-radius: var(--radius-pill);
-  color: var(--color-secondary);
+  color: var(--color-primary);
   font-size: 0.875rem;
   font-weight: 700;
   letter-spacing: 0.01em;
@@ -1282,7 +1272,7 @@ h2::before {
 }
 
 .profile-links a:hover {
-  background: var(--color-secondary-highlight);
+  background: var(--color-white);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
 }
@@ -1322,7 +1312,7 @@ h2::before {
   margin: 0;
   line-height: 1.55;
   font-size: 1rem;
-  color: var(--color-text);
+  color: var(--color-primary);
 }
 
 .profile-meta-card a {
@@ -1427,11 +1417,11 @@ h2::before {
   color: var(--color-green);
 }
 
-.profile-section-red {
+.profile-section-yellow {
   background: var(--color-yellow-highlight);
 }
 
-.profile-section-red i {
+.profile-section-yellow i {
   color: var(--color-yellow);
 }
 
@@ -1682,4 +1672,29 @@ h2::before {
   .publication-meta-profile {
     font-size: 0.84rem;
   }
+}
+
+.copy-email-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 0.4em;
+  color: var(--color-primary);
+  text-decoration: none;
+  opacity: 0.65;
+  transition: opacity 0.15s ease, color 0.15s ease;
+  cursor: pointer;
+}
+
+.copy-email-link:hover {
+  opacity: 1;
+  color: var(--color-primary);
+}
+
+.copy-email-link i {
+  font-size: 0.9em;
+}
+
+.copy-email-link.copied {
+  color: var(--color-secondary);
+  opacity: 1;
 }

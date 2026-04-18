@@ -8,7 +8,8 @@
       "news",
       "news/posts",
       "publications/*/index.qmd",
-      "news/*/index.qmd"
+      "news/*/index.qmd",
+      "publications/*/*/index.qmd"
     ],
     "news/index.qmd": [
       "news/posts",
