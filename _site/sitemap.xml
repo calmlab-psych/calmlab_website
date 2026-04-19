@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jasontsukahara.com/index.html</loc>
-    <lastmod>2026-04-19T00:52:16.580Z</lastmod>
+    <lastmod>2026-04-19T02:42:48.681Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/assets/listings/news-listing-grid-notags.ejs.html</loc>
@@ -30,7 +30,7 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/news/index.html</loc>
-    <lastmod>2026-04-11T19:58:36.894Z</lastmod>
+    <lastmod>2026-04-19T01:49:46.498Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/news/2026-05-new-paper/index.html</loc>
@@ -42,7 +42,7 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/projects/index.html</loc>
-    <lastmod>2026-04-18T18:38:44.098Z</lastmod>
+    <lastmod>2026-04-19T02:38:49.189Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/news/2026-05-new-paper copy/index.html</loc>
@@ -183,5 +183,21 @@
   <url>
     <loc>https://jasontsukahara.com/publications/2024/ac-psychomotor/index.html</loc>
     <lastmod>2026-04-18T23:52:06.055Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/assets/listings/simple-listing.ejs.html</loc>
+    <lastmod>2026-04-19T02:11:03.286Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/projects/individual-differences/index.html</loc>
+    <lastmod>2026-04-19T02:41:24.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/projects/mindfulness/index.html</loc>
+    <lastmod>2026-04-19T02:41:31.093Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/projects/brain/index.html</loc>
+    <lastmod>2026-04-19T02:41:21.130Z</lastmod>
   </url>
 </urlset>

@@ -84,5 +84,13 @@
       "/publications/2020/app-sensory-discrimination/index.html",
       "/publications/2016/cp-baseline-pupil-og/index.html"
     ]
+  },
+  {
+    "listing": "/projects/index.html",
+    "items": [
+      "/projects/individual-differences/index.html",
+      "/projects/brain/index.html",
+      "/projects/mindfulness/index.html"
+    ]
   }
 ]

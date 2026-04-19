@@ -1,0 +1,10 @@
+---
+title: "How do differences in the ability to control attention relate to cognition and well-being?"
+
+description: "People differ in their ability to control attention, and these differences are a fundamental aspect of human cognition. We investigate how individual differences in attention control play a role in shaping our perception, memory, reasoning, and well-being."
+
+link: ""
+order: 1
+---
+
+dfsdfd

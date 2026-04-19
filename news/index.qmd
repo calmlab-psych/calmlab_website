@@ -1,6 +1,5 @@
 ---
 listing:
-  id: team-news
   contents: "*/index.qmd"
   sort: "date desc"
   template: ../assets/listings/news-listing-grid.ejs.md
@@ -9,3 +8,17 @@ listing:
   sort-ui: false
 page-layout: full
 ---
+
+::: {.page-header}
+
+::: {.header-text}
+::: {.header-title}
+NEWS
+:::
+
+::: {.header-subtitle}
+Updates and announcements from the CALM Lab.
+:::
+:::
+
+:::

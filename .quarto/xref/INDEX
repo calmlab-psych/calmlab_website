@@ -310,5 +310,17 @@
   },
   "publications/2026/cogneuro-eeg-micro/index.qmd": {
     "index.html": "e8659383"
+  },
+  "projects/mindfulness/index.qmd": {
+    "index.html": "5c289c72"
+  },
+  "projects/brain/index.qmd": {
+    "index.html": "ed9e59e5"
+  },
+  "projects/individual-differences/index.qmd": {
+    "index.html": "d1c2a5f9"
+  },
+  "assets/listings/simple-listing.ejs.md": {
+    "simple-listing.ejs.html": "56f2599e"
   }
 }
