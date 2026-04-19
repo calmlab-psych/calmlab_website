@@ -18,8 +18,6 @@ website:
         text: Projects
       - href: publications/index.qmd
         text: Publications
-      - href: research_tools/index.qmd
-        text: Research Tools
       - href: contact.qmd
         text: Contact
 
