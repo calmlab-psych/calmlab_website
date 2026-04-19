@@ -19,5 +19,16 @@ doi: ""
 link: "https://www.scientificamerican.com/article/pupil-size-is-a-marker-of-intelligence/"
 
 listing-page: false
-format: html
+page-layout: full
+format:
+  html:
+    include-in-header:
+      - text: |
+          <style>.quarto-title-meta { display: none !important; } .quarto-title-block .abstract { display: none !important; }</style>
 ---
+
+{{< include ../../../assets/_meta-publication.qmd >}}
+
+{{< include ../../../assets/_download-buttons.qmd >}}
+
+{{< include ../../../assets/_pdf-viewer.qmd >}}

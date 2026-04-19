@@ -23,5 +23,16 @@ link: ""
 abstract: "Intelligence is correlated with the ability to make fine sensory discriminations. Although this relationship has been known since the beginning of intelligence testing, the mechanisms underlying this relationship are still unknown. In two large-scale structural equation modelling studies, we investigated whether individual differences in attention control abilities can explain the relationship between sensory discrimination and intelligence. Across these two studies, we replicated the finding that attention control fully mediated the relationships of intelligence/working-memory capacity to sensory discrimination. Our findings show that attention control plays a prominent role in relating sensory discrimination to higher-order cognitive abilities."
 
 listing-page: false
-format: html
+page-layout: full
+format:
+  html:
+    include-in-header:
+      - text: |
+          <style>.quarto-title-meta { display: none !important; } .quarto-title-block .abstract { display: none !important; }</style>
 ---
+
+{{< include ../../../assets/_meta-publication.qmd >}}
+
+{{< include ../../../assets/_download-buttons.qmd >}}
+
+{{< include ../../../assets/_pdf-viewer.qmd >}}
