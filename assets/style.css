@@ -121,6 +121,10 @@ hr {
   padding-left: 0.5rem;
 }
 
+a {
+  font-weight: 600;
+}
+
 /* =========================
    Quarto Category Pills
    ========================= */

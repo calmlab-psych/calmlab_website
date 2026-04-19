@@ -22,10 +22,6 @@ Get in touch with the CALM Lab.
 
 ::: {.section-shell}
 
-::: {.section-intro}
-For questions about the lab’s research, collaborations, or opportunities to work together, please use the contact information below.
-:::
-
 ::: {.grid-2}
 
 ::: {.card .card-lg .card-interactive .is-blue}
@@ -36,16 +32,23 @@ For questions about the lab’s research, collaborations, or opportunities to wo
   <i class="bi bi-envelope"></i>
 </div>
 
-### General Contact
+### Dr. Jason S. Tsukahara, Ph.D.
 
-**Jason S. Tsukahara, Ph.D.**
-Principal Investigator, CALM Lab
+::: {style="color: var(--color-secondary); font-size: 1.25rem; font-weight: 700; margin-top: -.5rem;"}
+Principal Investigator
+:::
 
-[Email](mailto:jason@example.edu)
+**Email**: jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
-[Website](https://www.jasontsukahara.com)
+::: {style="line-height: 0.5;"}
+**Office**: building, room number
 
-[Google Scholar](https://scholar.google.com/citations?user=393wE14AAAAJ&hl=en&oi=ao)
+**Office Phone**: office phone here
+
+**Mailing Address**: address here
+:::
+
+[jasontsukahara.com Website](https://www.jasontsukahara.com) <span>↗</span>
 
 :::
 
@@ -59,13 +62,63 @@ Principal Investigator, CALM Lab
   <i class="bi bi-people"></i>
 </div>
 
-### Opportunities
+### Contact the Lab
 
-Prospective students, collaborators, and others interested in the lab’s work are welcome to reach out by email. When relevant, please include a brief note about your interests and reason for contacting the lab.
+::: {style="color: var(--color-secondary); font-size: 1.25rem; font-weight: 700; margin-top: -.5rem;"}
+General Inquiries
+:::
+
+**Email**: jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+
+::: {style="line-height: 0.5;"}
+**Lab Location:** building, room number
+
+**Lab Phone**: office phone here
+
+**Mailing Address**: address here
+:::
+
+:::
 
 :::
 
 :::
+
+:::
+
+::: {.section-shell}
+
+::: {.grid-2}
+
+::: {.card .card-lg .card-interactive .is-blue}
+
+::: {.card-body .card-body-lg}
+
+<div class="icon-badge icon-badge-blue">
+  <i class="bi bi-envelope"></i>
+</div>
+
+### Join the Lab
+
+::: {style="color: var(--color-secondary); font-size: 1.25rem; font-weight: 700; margin-top: -.5rem;"}
+Interested in joining the CALM Lab?
+:::
+
+::: {style="line-height: 0.5; margin-bottom: 2rem;"}
+We are currently recruiting for:
+
+- Undergraduate Research Assistant
+:::
+
+**Email**: jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+
+Check out our [Projects](projects/index.qmd) to learn more about our research, and feel free to reach out with any questions or to express interest in joining the lab!
+
+:::
+
+:::
+
+
 
 :::
 
