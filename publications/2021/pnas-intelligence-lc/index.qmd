@@ -12,21 +12,13 @@ show-on-profiles:
 pub-year: "2021"
 date: "2021-11-10"
 venue: "Proceedings of the National Academy of Sciences"
-pub-type: "Journal Article"
+pub-type: "Review Article"
 pub-status: "Published"
 
-categories:
-  - pupillometry
-  - locus-coeruleus
-  - theory
-
-pdf: "/publications/2021-pnas-intelligence-lc/2021-pnas-intelligence-lc.pdf"
+pdf: "/publications/2021/pnas-intelligence-lc/Tsukahara_and_Engle_2021_Proceedings_of_the_National_Academy_of_Sciences.pdf"
 code: "https://osf.io/2pu3q/"
 data: "https://osf.io/2pu3q/"
 doi: "10.1073/pnas.2110630118"
-
-project:
-  - ac-brain
 
 abstract: "The last decade has seen significant progress identifying genetic and brain differences related to intelligence. However, there remain considerable gaps in our understanding of how cognitive mechanisms that underpin intelligence map onto various brain functions. In this article, we argue that the locus coeruleus-norepinephrine system is essential for understanding the biological basis of intelligence. We review evidence suggesting that the locus coeruleus–norepinephrine system plays a central role at all levels of brain function, from metabolic processes to the organization of large-scale brain networks. We connect this evidence with our executive attention view of working-memory capacity and fluid intelligence and present analyses on baseline pupil size, an indicator of locus coeruleus activity. Using a latent variable approach, our analyses showed that a common executive attention factor predicted baseline pupil size. Additionally, the executive attention function of disengagement––not maintenance––uniquely predicted baseline pupil size. These findings suggest that the ability to control attention may be important for understanding how cognitive mechanisms of fluid intelligence map onto the locus coeruleus–norepinephrine system. We discuss how further research is needed to better understand the relationships between fluid intelligence, the locus coeruleus–norepinephrine system, and functionally organized brain networks."
 

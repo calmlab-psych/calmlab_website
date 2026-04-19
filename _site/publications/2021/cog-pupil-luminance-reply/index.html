@@ -115,11 +115,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Baseline pupil size is related to fluid intelligence: A reply to Unsworth et al.&nbsp;(2021)</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">pupillometry</div>
-    <div class="quarto-category">measurement</div>
-  </div>
-  </div>
+</div>
 
 
 
@@ -182,6 +178,76 @@ document.addEventListener("DOMContentLoaded", () => {
     a.innerHTML = `<i class="${icon}"></i> ${label}`;
     container.appendChild(a);
   });
+});
+</script>
+
+
+<script>
+function copyEmail(link) {
+  const email = link.dataset.copy;
+  const icon = link.querySelector('i');
+  navigator.clipboard.writeText(email).then(() => {
+    icon.classList.remove('bi-copy');
+    icon.classList.add('bi-check2');
+    setTimeout(() => {
+      icon.classList.remove('bi-check2');
+      icon.classList.add('bi-copy');
+    }, 1500);
+  });
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
+
+  function updatePublicationFilter(filter) {
+    const list = document.querySelector(".publications-list");
+    if (!list) return;
+
+    const children = Array.from(list.children);
+
+    children.forEach((el) => {
+      if (el.classList.contains("publication-entry")) {
+        const pubType = el.dataset.pubType || "";
+        const show = filter === "all" || pubType === filter;
+        el.style.display = show ? "" : "none";
+      }
+    });
+
+    const yearGroups = list.querySelectorAll(".publication-year-group");
+
+    yearGroups.forEach((group) => {
+      let next = group.nextElementSibling;
+      let hasVisibleEntries = false;
+
+      while (next && !next.classList.contains("publication-year-group")) {
+        if (
+          next.classList.contains("publication-entry") &&
+          next.style.display !== "none"
+        ) {
+          hasVisibleEntries = true;
+          break;
+        }
+        next = next.nextElementSibling;
+      }
+
+      group.style.display = hasVisibleEntries ? "" : "none";
+    });
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const filter = this.dataset.filter;
+
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      updatePublicationFilter(filter);
+    });
+  });
+
+  updatePublicationFilter("all");
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

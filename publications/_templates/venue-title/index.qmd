@@ -1,0 +1,27 @@
+---
+title: "paper title"
+
+pub-authors:
+  - list
+  - of
+  - authors
+  - last
+  - names
+  - only
+
+pub-year: year
+date: YYYY-MM-DD
+venue: "venue full name"
+pub-type: type of publication (e.g., Empirical Article, Review Article, Book Chapter, Popular Writing)
+pub-status: publication status (e.g., Published or Preprint)
+
+pdf: filename.pdf
+data:
+code:
+doi: ""
+
+abstract: "Paper Abstract"
+
+listing-page: false
+format: html
+---

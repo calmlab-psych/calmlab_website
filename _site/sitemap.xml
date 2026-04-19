@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jasontsukahara.com/index.html</loc>
-    <lastmod>2026-04-18T22:00:52.599Z</lastmod>
+    <lastmod>2026-04-18T23:58:15.270Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/assets/listings/news-listing-grid-notags.ejs.html</loc>
@@ -22,7 +22,7 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/team/jason-tsukahara/index.html</loc>
-    <lastmod>2026-04-18T21:46:02.560Z</lastmod>
+    <lastmod>2026-04-18T23:25:42.564Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/news/2026-04-website-launch/index.html</loc>
@@ -82,10 +82,106 @@
   </url>
   <url>
     <loc>https://jasontsukahara.com/publications/index.html</loc>
-    <lastmod>2026-04-11T19:58:36.897Z</lastmod>
+    <lastmod>2026-04-18T23:57:00.430Z</lastmod>
   </url>
   <url>
     <loc>https://jasontsukahara.com/contact.html</loc>
     <lastmod>2026-04-11T19:58:36.891Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2016/cp-baseline-pupil-og/index.html</loc>
+    <lastmod>2026-04-18T23:49:39.785Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2020/wms-book-chapter/index.html</loc>
+    <lastmod>2026-04-18T22:27:20.689Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2021/ijp-vagus-pupil/index.html</loc>
+    <lastmod>2026-04-18T23:50:59.898Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2021/jepg-toolbox-1/index.html</loc>
+    <lastmod>2026-04-18T23:51:06.018Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2021/cog-pupil-luminance/index.html</loc>
+    <lastmod>2026-04-18T23:50:27.699Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2021/sa-pupil/index.html</loc>
+    <lastmod>2026-04-18T22:39:00.707Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2023/jepg-squared-intro/index.html</loc>
+    <lastmod>2026-04-18T23:51:54.362Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2023/sact-2/index.html</loc>
+    <lastmod>2026-04-18T23:52:00.353Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2025/ijsa-navy/index.html</loc>
+    <lastmod>2026-04-18T23:52:26.584Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2025/front-climate/index.html</loc>
+    <lastmod>2026-04-18T23:52:16.138Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2022/int-pot/index.html</loc>
+    <lastmod>2026-04-18T23:51:42.998Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2022/chwml-book-chapter/index.html</loc>
+    <lastmod>2026-04-18T22:53:22.378Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2025/jepg-inspection/index.html</loc>
+    <lastmod>2026-04-18T23:52:30.732Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2025/front-vigdec/index.html</loc>
+    <lastmod>2026-04-18T23:52:21.489Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2023/brm-toolbox-2/index.html</loc>
+    <lastmod>2026-04-18T23:51:49.493Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2021/jepg-visualarrays/index.html</loc>
+    <lastmod>2026-04-18T23:51:12.275Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2021/pnas-intelligence-lc/index.html</loc>
+    <lastmod>2026-04-18T23:51:34.496Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2021/tr-rationality/index.html</loc>
+    <lastmod>2026-04-18T23:51:26.636Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2021/cog-pupil-luminance-reply/index.html</loc>
+    <lastmod>2026-04-18T23:50:25.314Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2020/lm-diff-exp/index.html</loc>
+    <lastmod>2026-04-18T23:49:52.926Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2020/app-sensory-discrimination/index.html</loc>
+    <lastmod>2026-04-18T23:49:47.760Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2026/cogneuro-eeg-micro/index.html</loc>
+    <lastmod>2026-04-18T23:52:35.817Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2026/pnas-qpp/index.html</loc>
+    <lastmod>2026-04-18T23:52:40.862Z</lastmod>
+  </url>
+  <url>
+    <loc>https://jasontsukahara.com/publications/2024/ac-psychomotor/index.html</loc>
+    <lastmod>2026-04-18T23:52:06.055Z</lastmod>
   </url>
 </urlset>

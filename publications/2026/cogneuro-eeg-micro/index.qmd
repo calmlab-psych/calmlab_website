@@ -1,0 +1,26 @@
+---
+title: "Catching the drift: EEG microstate dynamics resemble time‑on‑task changes in sustained attention and mind wandering"
+
+pub-authors:
+  - Tsukahara
+  - Zanesco
+  - Schwartzman
+  - Denkova
+  - Jha
+
+pub-year: 2026
+date: 2026-05-01
+venue: "Cognitive Neuroscience"
+pub-type: Empirical Article
+pub-status: Published
+
+pdf: "/"
+data:
+code:
+doi: ""
+
+abstract: "Paper Abstract"
+
+listing-page: false
+format: html
+---

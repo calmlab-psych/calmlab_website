@@ -14,7 +14,7 @@ pub-authors:
 pub-year: "2024"
 date: "2024-05-01"
 venue: "Intelligence"
-pub-type: "Journal Article"
+pub-type: "Empirical Article"
 pub-status: "Published"
 
 pdf: "Mashburn_et_al_2024_Intelligence.pdf"

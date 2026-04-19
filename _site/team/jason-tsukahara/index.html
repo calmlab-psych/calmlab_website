@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-pub-authors','listing-show-on-profiles','listing-pub-year','listing-venue','listing-pub-type','listing-pub-status','listing-pdf','listing-data','listing-code',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-show-on-profiles","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-categories","listing-pdf","listing-data","listing-code","listing-doi","listing-project-areas","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -230,7 +230,7 @@ window.Quarto = {
   <div class="publication-entry publication-entry-profile">
     <div class="publication-content">
       <h3 class="publication-title publication-title-profile">
-          <a href="../../publications/2023-jepg-squared-intro/2023-jepg-squared-intro.pdf" target="_blank" rel="noopener">Nature and measurement of attention control</a>
+          <a href="../../publications/2023/jepg-squared-intro/Burgoyne_et_al_2023_Journal_of_Experimental_Psychology_General.pdf" target="_blank" rel="noopener">Nature and measurement of attention control</a>
       </h3>
         <div class="publication-authors publication-authors-profile">
           Burgoyne, Tsukahara, Mashburn, &amp; Engle
@@ -238,10 +238,10 @@ window.Quarto = {
       <div class="publication-meta publication-meta-profile">
           <span class="publication-year publication-year-profile"><strong>2023</strong></span>
           <span class="publication-venue"><em>Journal of Experimental Psychology: General</em></span>
-          <span class="pill pill-status pill-soft">Journal Article</span>
+          <span class="pill pill-status pill-soft">Empirical Article</span>
       </div>
       <div class="publication-links publication-links-profile">
-          <a class="pub-link pub-link-pdf pub-link-profile" href="../../publications/2023-jepg-squared-intro/2023-jepg-squared-intro.pdf" target="_blank" rel="noopener">
+          <a class="pub-link pub-link-pdf pub-link-profile" href="../../publications/2023/jepg-squared-intro/Burgoyne_et_al_2023_Journal_of_Experimental_Psychology_General.pdf" target="_blank" rel="noopener">
             <span class="pub-link-icon pub-link-icon-profile">
               <i class="bi bi-file-earmark-pdf"></i>
             </span>
@@ -330,6 +330,60 @@ function copyEmail(link) {
     }, 1500);
   });
 }
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
+
+  function updatePublicationFilter(filter) {
+    const list = document.querySelector(".publications-list");
+    if (!list) return;
+
+    const children = Array.from(list.children);
+
+    children.forEach((el) => {
+      if (el.classList.contains("publication-entry")) {
+        const pubType = el.dataset.pubType || "";
+        const show = filter === "all" || pubType === filter;
+        el.style.display = show ? "" : "none";
+      }
+    });
+
+    const yearGroups = list.querySelectorAll(".publication-year-group");
+
+    yearGroups.forEach((group) => {
+      let next = group.nextElementSibling;
+      let hasVisibleEntries = false;
+
+      while (next && !next.classList.contains("publication-year-group")) {
+        if (
+          next.classList.contains("publication-entry") &&
+          next.style.display !== "none"
+        ) {
+          hasVisibleEntries = true;
+          break;
+        }
+        next = next.nextElementSibling;
+      }
+
+      group.style.display = hasVisibleEntries ? "" : "none";
+    });
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const filter = this.dataset.filter;
+
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      updatePublicationFilter(filter);
+    });
+  });
+
+  updatePublicationFilter("all");
+});
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

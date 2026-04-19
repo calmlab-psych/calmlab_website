@@ -292,5 +292,23 @@
   },
   "publications/2016/cp-baseline-pupil-og/index.qmd": {
     "index.html": "5719cde9"
+  },
+  "publications/2025/front-climate/index.qmd": {
+    "index.html": "dc883ac0"
+  },
+  "publications/2025/jepg-inspection/index.qmd": {
+    "index.html": "87195a15"
+  },
+  "publications/2025/ijsa-navy/index.qmd": {
+    "index.html": "5e9d8d9e"
+  },
+  "publications/2025/front-vigdec/index.qmd": {
+    "index.html": "fe9e3fcc"
+  },
+  "publications/2026/pnas-qpp/index.qmd": {
+    "index.html": "e29cb746"
+  },
+  "publications/2026/cogneuro-eeg-micro/index.qmd": {
+    "index.html": "e8659383"
   }
 }

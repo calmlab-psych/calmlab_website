@@ -10,13 +10,13 @@ pub-authors:
 pub-year: "2021"
 date: "2021-01-01"
 venue: "Journal of Experimental Psychology: General"
-pub-type: "Journal Article"
+pub-type: "Empirical Article"
 pub-status: "Published"
 
 categories:
   - measurement
 
-pdf: "/publications/2021-jepg-toolbox-1/2021-jepg-toolbox-1.pdf"
+pdf: "/publications/2021/jepg-toolbox-1/Draheim_et_al_2021_Journal_of_Experimental_Psychology_General.pdf"
 data: ""
 code: ""
 doi: "10.1037/xge0000783"

@@ -115,11 +115,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">Pupil Size Is a Marker of Intelligence</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">pupillometry</div>
-    <div class="quarto-category">locus-coeruleus</div>
-  </div>
-  </div>
+</div>
 
 
 
@@ -175,6 +171,22 @@ document.addEventListener("DOMContentLoaded", () => {
     container.appendChild(a);
   });
 });
+</script>
+
+
+<script>
+function copyEmail(link) {
+  const email = link.dataset.copy;
+  const icon = link.querySelector('i');
+  navigator.clipboard.writeText(email).then(() => {
+    icon.classList.remove('bi-copy');
+    icon.classList.add('bi-check2');
+    setTimeout(() => {
+      icon.classList.remove('bi-check2');
+      icon.classList.add('bi-copy');
+    }, 1500);
+  });
+}
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

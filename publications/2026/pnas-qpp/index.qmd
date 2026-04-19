@@ -1,0 +1,27 @@
+---
+title: "Trait‑level Attention Control Emerges from Dynamic Frontoparietal Control Network Interactions"
+
+pub-authors:
+  - Seeburger
+  - Tsukahara
+  - Xu
+  - Ahluwalia
+  - Keilholz
+  - Engle
+
+pub-year: 2026
+date: 2026-04-01
+venue: "Proceedings for the National Academy of Sciences"
+pub-type: Empirical Article
+pub-status: Published
+
+pdf: "/"
+data:
+code:
+doi: ""
+
+abstract: "Paper Abstract"
+
+listing-page: false
+format: html
+---

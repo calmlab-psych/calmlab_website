@@ -30,64 +30,11 @@ Peer-reviewed articles, chapters, and related scholarly work.
 
 <div class="pub-filter-bar">
   <button class="pill pill-filter active" data-filter="all">All</button>
-  <button class="pill pill-filter" data-filter="Journal Article">Journal Articles</button>
+  <button class="pill pill-filter" data-filter="Empirical Article">Empirical Articles</button>
+  <button class="pill pill-filter" data-filter="Review Article">Review Articles</button>
   <button class="pill pill-filter" data-filter="Book Chapter">Book Chapters</button>
   <button class="pill pill-filter" data-filter="Popular Writing">Popular Writing</button>
 </div>
 
 ::: {#publications-list}
 :::
-
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
-
-  function updatePublicationFilter(filter) {
-    const list = document.querySelector(".publications-list");
-    if (!list) return;
-
-    const children = Array.from(list.children);
-
-    children.forEach((el) => {
-      if (el.classList.contains("publication-entry")) {
-        const pubType = el.dataset.pubType || "";
-        const show = filter === "all" || pubType === filter;
-        el.style.display = show ? "" : "none";
-      }
-    });
-
-    const yearGroups = list.querySelectorAll(".publication-year-group");
-
-    yearGroups.forEach((group) => {
-      let next = group.nextElementSibling;
-      let hasVisibleEntries = false;
-
-      while (next && !next.classList.contains("publication-year-group")) {
-        if (
-          next.classList.contains("publication-entry") &&
-          next.style.display !== "none"
-        ) {
-          hasVisibleEntries = true;
-          break;
-        }
-        next = next.nextElementSibling;
-      }
-
-      group.style.display = hasVisibleEntries ? "" : "none";
-    });
-  }
-
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const filter = this.dataset.filter;
-
-      buttons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      updatePublicationFilter(filter);
-    });
-  });
-
-  updatePublicationFilter("all");
-});
-</script>

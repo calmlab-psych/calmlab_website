@@ -12,20 +12,13 @@ pub-authors:
 pub-year: "2021"
 date: "2021-01-01"
 venue: "International Journal of Psychophysiology"
-pub-type: "Journal Article"
+pub-type: "Empirical Article"
 pub-status: "Published"
 
-categories:
-  - pupillometry
-  - measurement
-
-pdf: "/publications/2021-ijp-vagus-pupil/2021-ijp-vagus-pupil.pdf"
+pdf: "/publications/2021/ijp-vagus-pupil/Borges_et_al_2021_International_Journal_of_Psychophysiology.pdf"
 data: ""
 code: ""
 doi: "10.1016/j.ijpsycho.2021.01.003"
-
-project:
-  - ac-brain
 
 listing-page: false
 format: html
