@@ -15,6 +15,12 @@ venue: "Proceedings of the National Academy of Sciences"
 pub-type: "Review Article"
 pub-status: "Published"
 
+projects:
+  - brain
+
+categories:
+  - locus-coeruleus
+
 pdf: "/publications/2021/pnas-intelligence-lc/Tsukahara_and_Engle_2021_Proceedings_of_the_National_Academy_of_Sciences.pdf"
 code: "https://osf.io/2pu3q/"
 data: "https://osf.io/2pu3q/"

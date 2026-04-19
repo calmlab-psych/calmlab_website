@@ -12,6 +12,12 @@ venue: "Working memory: The state of the science"
 pub-type: "Book Chapter"
 pub-status: "Published"
 
+projects:
+  - cognitive
+
+categories:
+  - measurement
+
 pdf: "/publications/2020/wms-book-chapter/Mashburn_et_al_2020_Working_Memory_The_state_of_the_science.pdf"
 data: ""
 code: ""

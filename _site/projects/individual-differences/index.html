@@ -67,7 +67,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-pub-year','listing-pub-authors','listing-venue','listing-pub-status','listing-pub-type','listing-pdf','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-categories","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-project-areas","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-page-layout","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-categories","listing-project-areas"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -95,11 +95,39 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-pub-year','listing-pub-authors','listing-venue','listing-pub-status','listing-pub-type','listing-pdf','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-page-layout"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-page-layout","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
     window['quarto-listings']['listing-sensation'] = new List('listing-sensation', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-cognition .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-pub-year','listing-pub-authors','listing-venue','listing-pub-status','listing-pub-type','listing-pdf','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-page-layout","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-cognition'] = new List('listing-cognition', options);
 
     if (window['quarto-listing-loaded']) {
       window['quarto-listing-loaded']();
@@ -339,40 +367,6 @@ window.Quarto = {
         </a>
       </article>
     
-      <article class="listing-card card card-interactive" data-pub-type="book chapter">
-
-        
-          <a href="../../publications/2022/chwml-book-chapter/index.html" class="listing-card-link">
-        
-
-          <div class="listing-eyebrow">
-            2022
-          </div>
-
-          
-            <div class="listing-tags">
-              <span class="pill pill-tag pill-soft">The Cambridge Handbook of Working Memory and Language</span>
-            </div>
-          
-
-          <h3 class="listing-title card-title">Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension</h3>
-
-          
-            <div class="publication-authors card-text">
-              Burgoyne, Martin, Mashburn, Tsukahara, Draheim, &amp; Engle
-            </div>
-          
-
-          <div class="listing-cta link-cta">
-            Read
-            
-              <span>→</span>
-            
-          </div>
-
-        </a>
-      </article>
-    
       <article class="listing-card card card-interactive" data-pub-type="empirical article">
 
         
@@ -428,6 +422,40 @@ window.Quarto = {
           
             <div class="publication-authors card-text">
               Draheim, Tsukahara, Martin, Mashburn, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="book chapter">
+
+        
+          <a href="../../publications/2020/wms-book-chapter/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2020
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Working memory: The state of the science</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence</h3>
+
+          
+            <div class="publication-authors card-text">
+              Mashburn, Tsukahara, &amp; Engle
             </div>
           
 
@@ -532,8 +560,291 @@ window.Quarto = {
 </div>
 </section>
 </section>
-<section id="cognition" class="level2">
-<h2 data-anchor-id="cognition">Cognition</h2>
+<section id="higher-order-cognition" class="level2">
+<h2 data-anchor-id="higher-order-cognition">Higher-Order Cognition</h2>
+<div class="profile-section-card">
+<p>Higher-order cognitive processes, such as working memory, executive function, and fluid intelligence, are influenced by individual differences in attention control. We explore how these differences impact performance in complex cognitive tasks and real-world applications.</p>
+</div>
+<div id="listing-cognition" class="quarto-listing quarto-listing-container-custom">
+<div class="listing-scroll-shell">
+  <div class="listing-scroll-row">
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2025/ijsa-navy/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2025
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">International Journal of Selection and Assessment</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Attention control measures improve the prediction of performance in Navy trainees</h3>
+
+          
+            <div class="publication-authors card-text">
+              Burgoyne, Mashburn, Tsukahara, Pak, Coyne, Foroughi, Sibley, Drollinger, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2025/front-climate/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2025
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Frontiers in Psychology</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Climate anxiety impairs sustained attention: Objective evidence of a cognitive cost</h3>
+
+          
+            <div class="publication-authors card-text">
+              Denkova, Tardibuono, Tsukahara, Zanesco, &amp; Jha
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2024/ac-psychomotor/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2024
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Intelligence</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance</h3>
+
+          
+            <div class="publication-authors card-text">
+              Mashburn, Burgoyne, Tsukahara, Pak, Coyne, Sibley, Foroughi, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2023/jepg-squared-intro/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2023
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Journal of Experimental Psychology: General</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Nature and measurement of attention control</h3>
+
+          
+            <div class="publication-authors card-text">
+              Burgoyne, Tsukahara, Mashburn, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="book chapter">
+
+        
+          <a href="../../publications/2022/chwml-book-chapter/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2022
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">The Cambridge Handbook of Working Memory and Language</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension</h3>
+
+          
+            <div class="publication-authors card-text">
+              Burgoyne, Martin, Mashburn, Tsukahara, Draheim, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2022/int-pot/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2022
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Intelligence</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Attention control and process overlap theory: Searching for cognitive processes underpinning the positive manifold</h3>
+
+          
+            <div class="publication-authors card-text">
+              Burgoyne, Mashburn, Tsukahara, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2021/tr-rationality/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2021
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Thinking and Reasoning</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Understanding the relationship between rationality and intelligence: A latent-variable approach</h3>
+
+          
+            <div class="publication-authors card-text">
+              Burgoyne, Mashburn, Tsukahara, Hambrick, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="review article">
+
+        
+          <a href="../../publications/2020/lm-diff-exp/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2020
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Learning and Motivation</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Differential and experimental approaches to studying intelligence in humans and non-human animals</h3>
+
+          
+            <div class="publication-authors card-text">
+              Burgoyne, Tsukahara, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+  </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
 </section>
 <section id="real-world-success" class="level2">
 <h2 data-anchor-id="real-world-success">Real-World Success</h2>

@@ -19,7 +19,7 @@
   <article
     class="publication-entry card"
     data-pub-type="<%= item['pub-type'] || '' %>"
-    data-categories="<%= (item.categories || []).join(' ') %>"
+    data-categories="<%= (item.categories || []).join(',') %>"
   >
     <div class="publication-content">
 

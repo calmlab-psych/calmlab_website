@@ -15,6 +15,12 @@ venue: "The Cambridge Handbook of Working Memory and Language"
 pub-type: "Book Chapter"
 pub-status: "Published"
 
+projects:
+  - cognitive
+
+categories:
+  - cognition
+
 pdf: "/publications/2022/chwml-book-chapter/Burgoyne_et_al_2022_The_Cambridge_Handbook_of_Working_Memory_and_Language.pdf"
 data: ""
 code: ""

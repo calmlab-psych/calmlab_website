@@ -13,6 +13,12 @@ venue: "Journal of Experimental Psychology: General"
 pub-type: Empirical Article
 pub-status: Published
 
+projects:
+  - cognitive
+
+categories:
+  - sensation
+
 pdf: /publications/2025/jepg-inspection/Tsukahara_et_al_2025_Journal_of_Experimental_Psychology_General.pdf
 data: https://osf.io/uxywg/
 code: https://osf.io/uxywg/

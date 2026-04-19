@@ -17,6 +17,12 @@ venue: "Intelligence"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - cognitive
+
+categories:
+  - real-world
+
 pdf: "Mashburn_et_al_2024_Intelligence.pdf"
 data: "https://osf.io/938cu/"
 code: "https://osf.io/938cu/"

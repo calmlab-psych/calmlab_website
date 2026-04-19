@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-pub-year','listing-pub-authors','listing-venue','listing-pub-status','listing-pub-type','listing-pdf','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-page-layout","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-categories","listing-project-areas","listing-show-on-profiles"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-projects","listing-categories","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-page-layout","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-show-on-profiles"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -468,7 +468,7 @@ window.Quarto = {
 <div class="listing-scroll-shell">
   <div class="listing-scroll-row">
     
-      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+      <article class="listing-card card card-interactive" data-pub-type="Empirical Article" data-categories="sustained-attention">
 
         
           <a href="./publications/2023/sact-2/index.html" class="listing-card-link">
@@ -502,7 +502,7 @@ window.Quarto = {
         </a>
       </article>
     
-      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+      <article class="listing-card card card-interactive" data-pub-type="Empirical Article" data-categories="sustained-attention,brain-networks,eeg">
 
         
           <a href="./publications/2026/cogneuro-eeg-micro/index.html" class="listing-card-link">
@@ -536,7 +536,7 @@ window.Quarto = {
         </a>
       </article>
     
-      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+      <article class="listing-card card card-interactive" data-pub-type="Empirical Article" data-categories="locus-coeruleus,brain-networks">
 
         
           <a href="./publications/2026/pnas-qpp/index.html" class="listing-card-link">
@@ -570,7 +570,7 @@ window.Quarto = {
         </a>
       </article>
     
-      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+      <article class="listing-card card card-interactive" data-pub-type="Empirical Article" data-categories="real-world">
 
         
           <a href="./publications/2025/ijsa-navy/index.html" class="listing-card-link">
@@ -604,7 +604,7 @@ window.Quarto = {
         </a>
       </article>
     
-      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+      <article class="listing-card card card-interactive" data-pub-type="Empirical Article" data-categories="sustained-attention,real-world">
 
         
           <a href="./publications/2025/front-climate/index.html" class="listing-card-link">
@@ -638,7 +638,7 @@ window.Quarto = {
         </a>
       </article>
     
-      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+      <article class="listing-card card card-interactive" data-pub-type="Empirical Article" data-categories="measurement,sustained-attention">
 
         
           <a href="./publications/2025/front-vigdec/index.html" class="listing-card-link">
@@ -735,55 +735,65 @@ function copyEmail(link) {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
+  const filterBars = document.querySelectorAll(".pub-filter-bar");
 
-  function updatePublicationFilter(filter) {
-    const list = document.querySelector(".publications-list");
-    if (!list) return;
+  filterBars.forEach((bar) => {
+    const buttons = bar.querySelectorAll(".pill-filter");
+    const targetSelector = bar.dataset.target || ".publications-list";
+    const filterBy = bar.dataset.filterBy || "pub-type";
+    const list = document.querySelector(targetSelector);
+    if (!list || !buttons.length) return;
 
-    const children = Array.from(list.children);
+    const datasetKey = filterBy.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
 
-    children.forEach((el) => {
-      if (el.classList.contains("publication-entry")) {
-        const pubType = el.dataset.pubType || "";
-        const show = filter === "all" || pubType === filter;
-        el.style.display = show ? "" : "none";
+    function itemMatches(el, filter) {
+      if (filter === "all") return true;
+      const raw = (el.dataset[datasetKey] || "").trim();
+      if (!raw) return false;
+
+      // If the value contains commas, treat as multi-valued; otherwise exact match
+      if (raw.includes(",")) {
+        const values = raw.split(",").map((v) => v.trim()).filter(Boolean);
+        return values.includes(filter);
       }
-    });
+      return raw === filter;
+    }
 
-    const yearGroups = list.querySelectorAll(".publication-year-group");
+    function applyFilter(filter) {
+      const entries = list.querySelectorAll(".publication-entry, .listing-card");
+      entries.forEach((el) => {
+        el.style.display = itemMatches(el, filter) ? "" : "none";
+      });
 
-    yearGroups.forEach((group) => {
-      let next = group.nextElementSibling;
-      let hasVisibleEntries = false;
-
-      while (next && !next.classList.contains("publication-year-group")) {
-        if (
-          next.classList.contains("publication-entry") &&
-          next.style.display !== "none"
-        ) {
-          hasVisibleEntries = true;
-          break;
+      const yearGroups = list.querySelectorAll(".publication-year-group");
+      yearGroups.forEach((group) => {
+        let next = group.nextElementSibling;
+        let hasVisibleEntries = false;
+        while (next && !next.classList.contains("publication-year-group")) {
+          if (
+            next.classList.contains("publication-entry") &&
+            next.style.display !== "none"
+          ) {
+            hasVisibleEntries = true;
+            break;
+          }
+          next = next.nextElementSibling;
         }
-        next = next.nextElementSibling;
-      }
+        group.style.display = hasVisibleEntries ? "" : "none";
+      });
+    }
 
-      group.style.display = hasVisibleEntries ? "" : "none";
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const filter = this.dataset.filter;
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+        applyFilter(filter);
+      });
     });
-  }
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const filter = this.dataset.filter;
-
-      buttons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      updatePublicationFilter(filter);
-    });
+    applyFilter("all");
   });
-
-  updatePublicationFilter("all");
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

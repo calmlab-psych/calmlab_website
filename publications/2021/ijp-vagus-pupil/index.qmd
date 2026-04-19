@@ -15,6 +15,12 @@ venue: "International Journal of Psychophysiology"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - brain
+
+categories:
+  - locus-coeruleus
+
 pdf: "/publications/2021/ijp-vagus-pupil/Borges_et_al_2021_International_Journal_of_Psychophysiology.pdf"
 data: ""
 code: ""

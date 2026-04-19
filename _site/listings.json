@@ -52,9 +52,30 @@
   {
     "listing": "/projects/index.html",
     "items": [
-      "/projects/individual-differences/index.html",
-      "/projects/brain/index.html",
-      "/projects/mindfulness/index.html"
+      "/publications/2023/sact-2/index.html",
+      "/publications/2025/ijsa-navy/index.html",
+      "/publications/2025/front-climate/index.html",
+      "/publications/2025/front-vigdec/index.html",
+      "/publications/2025/jepg-inspection/index.html",
+      "/publications/2024/ac-psychomotor/index.html",
+      "/publications/2023/brm-toolbox-2/index.html",
+      "/publications/2023/jepg-squared-intro/index.html",
+      "/publications/2022/chwml-book-chapter/index.html",
+      "/publications/2022/int-pot/index.html",
+      "/publications/2021/tr-rationality/index.html",
+      "/publications/2021/jepg-visualarrays/index.html",
+      "/publications/2021/jepg-toolbox-1/index.html",
+      "/publications/2020/lm-diff-exp/index.html",
+      "/publications/2020/wms-book-chapter/index.html",
+      "/publications/2020/app-sensory-discrimination/index.html",
+      "/publications/2026/cogneuro-eeg-micro/index.html",
+      "/publications/2026/pnas-qpp/index.html",
+      "/publications/2021/pnas-intelligence-lc/index.html",
+      "/publications/2021/cog-pupil-luminance-reply/index.html",
+      "/publications/2021/sa-pupil/index.html",
+      "/publications/2021/cog-pupil-luminance/index.html",
+      "/publications/2021/ijp-vagus-pupil/index.html",
+      "/publications/2016/cp-baseline-pupil-og/index.html"
     ]
   },
   {
@@ -92,11 +113,18 @@
       "/publications/2023/sact-2/index.html",
       "/publications/2023/brm-toolbox-2/index.html",
       "/publications/2023/jepg-squared-intro/index.html",
-      "/publications/2022/chwml-book-chapter/index.html",
       "/publications/2021/jepg-visualarrays/index.html",
       "/publications/2021/jepg-toolbox-1/index.html",
+      "/publications/2020/wms-book-chapter/index.html",
       "/publications/2025/jepg-inspection/index.html",
-      "/publications/2020/app-sensory-discrimination/index.html"
+      "/publications/2020/app-sensory-discrimination/index.html",
+      "/publications/2025/ijsa-navy/index.html",
+      "/publications/2025/front-climate/index.html",
+      "/publications/2024/ac-psychomotor/index.html",
+      "/publications/2022/chwml-book-chapter/index.html",
+      "/publications/2022/int-pot/index.html",
+      "/publications/2021/tr-rationality/index.html",
+      "/publications/2020/lm-diff-exp/index.html"
     ]
   },
   {

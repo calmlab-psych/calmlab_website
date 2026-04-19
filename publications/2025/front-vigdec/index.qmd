@@ -14,6 +14,13 @@ venue: Frontiers in Cognition
 pub-type: Empirical Article
 pub-status: Published
 
+projects:
+  - cognitive
+
+categories:
+  - measurement
+  - sustained-attention
+
 pdf: /publications/2025/venue-title/Schwartzman_et_al_2025_Frontiers_in_Cognition.pdf
 data:
 code:

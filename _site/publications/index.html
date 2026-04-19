@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-pub-authors','listing-pub-year','listing-venue','listing-pub-status','listing-pub-type','listing-categories','listing-pdf','listing-data','listing-code','listing-doi','listing-citation-count','listing-altmetric-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-page-layout","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-categories","listing-project-areas","listing-show-on-profiles"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-projects","listing-categories","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-page-layout","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-show-on-profiles"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -200,7 +200,7 @@ window.Quarto = {
 </div>
 </div>
 </div>
-<div class="pub-filter-bar">
+<div class="pub-filter-bar" data-filter-by="pub-type" data-target=".publications-list">
 <p><button class="pill pill-filter active" data-filter="all">All</button> <button class="pill pill-filter" data-filter="Empirical Article">Empirical Articles</button> <button class="pill pill-filter" data-filter="Review Article">Review Articles</button> <button class="pill pill-filter" data-filter="Book Chapter">Book Chapters</button> <button class="pill pill-filter" data-filter="Popular Writing">Popular Writing</button></p>
 </div>
 <div id="listing-publications-list" class="quarto-listing quarto-listing-container-custom">
@@ -212,7 +212,7 @@ window.Quarto = {
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="sustained-attention">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -278,7 +278,7 @@ window.Quarto = {
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="sustained-attention,brain-networks,eeg">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -326,7 +326,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="locus-coeruleus,brain-networks">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -378,7 +378,7 @@ window.Quarto = {
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="real-world">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -426,7 +426,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="sustained-attention,real-world">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -474,7 +474,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="measurement,sustained-attention">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -522,7 +522,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="sensation">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -588,7 +588,7 @@ window.Quarto = {
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="real-world">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -654,7 +654,7 @@ window.Quarto = {
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="measurement">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -716,7 +716,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="measurement,cognition">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -782,7 +782,7 @@ window.Quarto = {
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Book Chapter" data-categories="">
+  <article class="publication-entry card" data-pub-type="Book Chapter" data-categories="cognition">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -830,7 +830,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="cognition">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -889,7 +889,7 @@ window.Quarto = {
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="cognition">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -937,7 +937,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Review Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Review Article" data-categories="locus-coeruleus">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -999,7 +999,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="locus-coeruleus">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -1047,7 +1047,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="measurement">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -1109,7 +1109,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Popular Writing" data-categories="">
+  <article class="publication-entry card" data-pub-type="Popular Writing" data-categories="locus-coeruleus">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -1157,7 +1157,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="locus-coeruleus">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -1219,7 +1219,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="locus-coeruleus">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -1319,7 +1319,7 @@ window.Quarto = {
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Review Article" data-categories="measurement,cognition">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -1344,7 +1344,7 @@ window.Quarto = {
         
 
         
-          <span class="pill pill-status pill-soft">Empirical Article</span>
+          <span class="pill pill-status pill-soft">Review Article</span>
         
       </div>
 
@@ -1367,7 +1367,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Book Chapter" data-categories="">
+  <article class="publication-entry card" data-pub-type="Book Chapter" data-categories="measurement">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -1415,7 +1415,7 @@ window.Quarto = {
 
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="sensation">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -1481,7 +1481,7 @@ window.Quarto = {
     </div>
   
 
-  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="">
+  <article class="publication-entry card" data-pub-type="Empirical Article" data-categories="locus-coeruleus">
     <div class="publication-content">
 
       <h3 class="publication-title card-title">
@@ -1585,55 +1585,65 @@ function copyEmail(link) {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
+  const filterBars = document.querySelectorAll(".pub-filter-bar");
 
-  function updatePublicationFilter(filter) {
-    const list = document.querySelector(".publications-list");
-    if (!list) return;
+  filterBars.forEach((bar) => {
+    const buttons = bar.querySelectorAll(".pill-filter");
+    const targetSelector = bar.dataset.target || ".publications-list";
+    const filterBy = bar.dataset.filterBy || "pub-type";
+    const list = document.querySelector(targetSelector);
+    if (!list || !buttons.length) return;
 
-    const children = Array.from(list.children);
+    const datasetKey = filterBy.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
 
-    children.forEach((el) => {
-      if (el.classList.contains("publication-entry")) {
-        const pubType = el.dataset.pubType || "";
-        const show = filter === "all" || pubType === filter;
-        el.style.display = show ? "" : "none";
+    function itemMatches(el, filter) {
+      if (filter === "all") return true;
+      const raw = (el.dataset[datasetKey] || "").trim();
+      if (!raw) return false;
+
+      // If the value contains commas, treat as multi-valued; otherwise exact match
+      if (raw.includes(",")) {
+        const values = raw.split(",").map((v) => v.trim()).filter(Boolean);
+        return values.includes(filter);
       }
-    });
+      return raw === filter;
+    }
 
-    const yearGroups = list.querySelectorAll(".publication-year-group");
+    function applyFilter(filter) {
+      const entries = list.querySelectorAll(".publication-entry, .listing-card");
+      entries.forEach((el) => {
+        el.style.display = itemMatches(el, filter) ? "" : "none";
+      });
 
-    yearGroups.forEach((group) => {
-      let next = group.nextElementSibling;
-      let hasVisibleEntries = false;
-
-      while (next && !next.classList.contains("publication-year-group")) {
-        if (
-          next.classList.contains("publication-entry") &&
-          next.style.display !== "none"
-        ) {
-          hasVisibleEntries = true;
-          break;
+      const yearGroups = list.querySelectorAll(".publication-year-group");
+      yearGroups.forEach((group) => {
+        let next = group.nextElementSibling;
+        let hasVisibleEntries = false;
+        while (next && !next.classList.contains("publication-year-group")) {
+          if (
+            next.classList.contains("publication-entry") &&
+            next.style.display !== "none"
+          ) {
+            hasVisibleEntries = true;
+            break;
+          }
+          next = next.nextElementSibling;
         }
-        next = next.nextElementSibling;
-      }
+        group.style.display = hasVisibleEntries ? "" : "none";
+      });
+    }
 
-      group.style.display = hasVisibleEntries ? "" : "none";
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const filter = this.dataset.filter;
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+        applyFilter(filter);
+      });
     });
-  }
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const filter = this.dataset.filter;
-
-      buttons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      updatePublicationFilter(filter);
-    });
+    applyFilter("all");
   });
-
-  updatePublicationFilter("all");
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

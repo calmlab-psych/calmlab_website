@@ -54,6 +54,7 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+<style>.quarto-title-meta { display: none !important; } .quarto-title-block .abstract { display: none !important; }</style>
 
 
 <link rel="stylesheet" href="../../../assets/style.css">
@@ -62,7 +63,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -106,21 +107,24 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title">The visual arrays task: Visual storage capacity or attention control?</h1>
-</div>
+  <div class="quarto-categories">
+    <div class="quarto-category">measurement</div>
+  </div>
+  </div>
 
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
     <div>
@@ -152,6 +156,26 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="pub-header">
+<div class="pub-header-authors">
+Martin, Tsukahara, Draheim, Shipstead, Mashburn, Vogel, &amp; Engle
+</div>
+<div class="pub-header-citation">
+<span class="pub-header-year">2021</span><span class="pub-header-sep">·</span><span class="pub-header-venue">Journal of Experimental Psychology: General</span>
+</div>
+<div class="pub-header-doi">
+<a href="https://doi.org/10.1037/xge0001048" target="_blank" rel="noopener">doi.org/10.1037/xge0001048</a>
+</div>
+</div>
+<div class="download-buttons">
+<a class="download-btn download-btn-pdf" href="../../../publications/2021/jepg-visualarrays/Martin_et_al_2021_Journal_of_Experimental_Psychology_General.pdf" download=""><span class="download-btn-icon"><i class="bi bi-download"></i></span><span class="download-btn-label">Download PDF</span></a><a class="download-btn download-btn-data" href="https://osf.io/23nzu/" target="_blank" rel="noopener"><span class="download-btn-icon"><i class="bi bi-database"></i></span><span class="download-btn-label">Data</span></a><a class="download-btn download-btn-code" href="https://osf.io/23nzu/" target="_blank" rel="noopener"><span class="download-btn-icon"><i class="bi bi-code-slash"></i></span><span class="download-btn-label">Code</span></a>
+</div>
+<object class="pdf-viewer-frame" data="/publications/2021/jepg-visualarrays/Martin_et_al_2021_Journal_of_Experimental_Psychology_General.pdf" type="application/pdf">
+  <p class="pdf-viewer-fallback">
+    Your browser can't display this PDF inline.
+    <a href="../../../publications/2021/jepg-visualarrays/Martin_et_al_2021_Journal_of_Experimental_Psychology_General.pdf" download="">Download it instead</a>.
+  </p>
+</object>
 
 
 
@@ -206,55 +230,65 @@ function copyEmail(link) {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
+  const filterBars = document.querySelectorAll(".pub-filter-bar");
 
-  function updatePublicationFilter(filter) {
-    const list = document.querySelector(".publications-list");
-    if (!list) return;
+  filterBars.forEach((bar) => {
+    const buttons = bar.querySelectorAll(".pill-filter");
+    const targetSelector = bar.dataset.target || ".publications-list";
+    const filterBy = bar.dataset.filterBy || "pub-type";
+    const list = document.querySelector(targetSelector);
+    if (!list || !buttons.length) return;
 
-    const children = Array.from(list.children);
+    const datasetKey = filterBy.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
 
-    children.forEach((el) => {
-      if (el.classList.contains("publication-entry")) {
-        const pubType = el.dataset.pubType || "";
-        const show = filter === "all" || pubType === filter;
-        el.style.display = show ? "" : "none";
+    function itemMatches(el, filter) {
+      if (filter === "all") return true;
+      const raw = (el.dataset[datasetKey] || "").trim();
+      if (!raw) return false;
+
+      // If the value contains commas, treat as multi-valued; otherwise exact match
+      if (raw.includes(",")) {
+        const values = raw.split(",").map((v) => v.trim()).filter(Boolean);
+        return values.includes(filter);
       }
-    });
+      return raw === filter;
+    }
 
-    const yearGroups = list.querySelectorAll(".publication-year-group");
+    function applyFilter(filter) {
+      const entries = list.querySelectorAll(".publication-entry, .listing-card");
+      entries.forEach((el) => {
+        el.style.display = itemMatches(el, filter) ? "" : "none";
+      });
 
-    yearGroups.forEach((group) => {
-      let next = group.nextElementSibling;
-      let hasVisibleEntries = false;
-
-      while (next && !next.classList.contains("publication-year-group")) {
-        if (
-          next.classList.contains("publication-entry") &&
-          next.style.display !== "none"
-        ) {
-          hasVisibleEntries = true;
-          break;
+      const yearGroups = list.querySelectorAll(".publication-year-group");
+      yearGroups.forEach((group) => {
+        let next = group.nextElementSibling;
+        let hasVisibleEntries = false;
+        while (next && !next.classList.contains("publication-year-group")) {
+          if (
+            next.classList.contains("publication-entry") &&
+            next.style.display !== "none"
+          ) {
+            hasVisibleEntries = true;
+            break;
+          }
+          next = next.nextElementSibling;
         }
-        next = next.nextElementSibling;
-      }
+        group.style.display = hasVisibleEntries ? "" : "none";
+      });
+    }
 
-      group.style.display = hasVisibleEntries ? "" : "none";
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const filter = this.dataset.filter;
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+        applyFilter(filter);
+      });
     });
-  }
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const filter = this.dataset.filter;
-
-      buttons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      updatePublicationFilter(filter);
-    });
+    applyFilter("all");
   });
-
-  updatePublicationFilter("all");
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

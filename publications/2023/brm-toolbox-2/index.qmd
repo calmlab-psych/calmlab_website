@@ -12,6 +12,12 @@ venue: "Behavior Research Methods"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - cognitive
+
+categories:
+  - measurement
+
 pdf: "/publications/2023/brm-toolbox-2/Draheim_et_al_2023_Behavior_Research_Methods.pdf"
 data: "https://osf.io/me58c/"
 code: "https://osf.io/me58c/"

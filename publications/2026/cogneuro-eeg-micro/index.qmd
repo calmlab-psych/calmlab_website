@@ -14,6 +14,14 @@ venue: "Cognitive Neuroscience"
 pub-type: Empirical Article
 pub-status: Published
 
+projects:
+  - brain
+
+categories:
+  - sustained-attention
+  - brain-networks
+  - eeg
+
 pdf: "/"
 data:
 code:

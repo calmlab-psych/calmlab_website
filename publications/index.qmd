@@ -28,7 +28,7 @@ Peer-reviewed articles, chapters, and related scholarly work.
 :::
 :::
 
-<div class="pub-filter-bar">
+<div class="pub-filter-bar" data-filter-by="pub-type" data-target=".publications-list">
   <button class="pill pill-filter active" data-filter="all">All</button>
   <button class="pill pill-filter" data-filter="Empirical Article">Empirical Articles</button>
   <button class="pill pill-filter" data-filter="Review Article">Review Articles</button>

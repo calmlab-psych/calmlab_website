@@ -14,6 +14,12 @@ venue: "Thinking and Reasoning"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - cognitive
+
+categories:
+  - cognition
+
 pdf: "/publications/2021/tr-rationality/Burgoyne_et_al_2021_Thinking_Reasoning.pdf"
 data: ""
 code: ""

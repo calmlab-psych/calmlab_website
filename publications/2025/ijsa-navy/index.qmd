@@ -18,6 +18,12 @@ venue: International Journal of Selection and Assessment
 pub-type: Empirical Article
 pub-status: Published
 
+projects:
+  - cognitive
+
+categories:
+  - real-world
+
 pdf: /publications/2025/ijsa-navy/Burgoyne_et_al_2025_International_Journal_of_Selection_and_Assessment.pdf
 data:
 code:

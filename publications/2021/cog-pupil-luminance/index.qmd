@@ -11,6 +11,12 @@ venue: "Cognition"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - brain
+
+categories:
+  - locus-coeruleus
+
 pdf: "/publications/2021/cog-pupil-luminance/Tsukahara_and_Engle_2021_Cognition.pdf"
 data: "https://osf.io/ajm4d/"
 code: "https://osf.io/ajm4d/"

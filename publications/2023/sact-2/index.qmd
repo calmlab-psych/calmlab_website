@@ -11,6 +11,12 @@ venue: "PsyArxiv"
 pub-type: "Empirical Article"
 pub-status: "Preprint"
 
+projects:
+  - cognitive
+
+categories:
+  - sustained-attention
+
 pdf: "https://psyarxiv.com/wd5kz/"
 data: "https://osf.io/2vqas/"
 code: "https://osf.io/2vqas/"

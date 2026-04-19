@@ -210,55 +210,65 @@ function copyEmail(link) {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
+  const filterBars = document.querySelectorAll(".pub-filter-bar");
 
-  function updatePublicationFilter(filter) {
-    const list = document.querySelector(".publications-list");
-    if (!list) return;
+  filterBars.forEach((bar) => {
+    const buttons = bar.querySelectorAll(".pill-filter");
+    const targetSelector = bar.dataset.target || ".publications-list";
+    const filterBy = bar.dataset.filterBy || "pub-type";
+    const list = document.querySelector(targetSelector);
+    if (!list || !buttons.length) return;
 
-    const children = Array.from(list.children);
+    const datasetKey = filterBy.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
 
-    children.forEach((el) => {
-      if (el.classList.contains("publication-entry")) {
-        const pubType = el.dataset.pubType || "";
-        const show = filter === "all" || pubType === filter;
-        el.style.display = show ? "" : "none";
+    function itemMatches(el, filter) {
+      if (filter === "all") return true;
+      const raw = (el.dataset[datasetKey] || "").trim();
+      if (!raw) return false;
+
+      // If the value contains commas, treat as multi-valued; otherwise exact match
+      if (raw.includes(",")) {
+        const values = raw.split(",").map((v) => v.trim()).filter(Boolean);
+        return values.includes(filter);
       }
-    });
+      return raw === filter;
+    }
 
-    const yearGroups = list.querySelectorAll(".publication-year-group");
+    function applyFilter(filter) {
+      const entries = list.querySelectorAll(".publication-entry, .listing-card");
+      entries.forEach((el) => {
+        el.style.display = itemMatches(el, filter) ? "" : "none";
+      });
 
-    yearGroups.forEach((group) => {
-      let next = group.nextElementSibling;
-      let hasVisibleEntries = false;
-
-      while (next && !next.classList.contains("publication-year-group")) {
-        if (
-          next.classList.contains("publication-entry") &&
-          next.style.display !== "none"
-        ) {
-          hasVisibleEntries = true;
-          break;
+      const yearGroups = list.querySelectorAll(".publication-year-group");
+      yearGroups.forEach((group) => {
+        let next = group.nextElementSibling;
+        let hasVisibleEntries = false;
+        while (next && !next.classList.contains("publication-year-group")) {
+          if (
+            next.classList.contains("publication-entry") &&
+            next.style.display !== "none"
+          ) {
+            hasVisibleEntries = true;
+            break;
+          }
+          next = next.nextElementSibling;
         }
-        next = next.nextElementSibling;
-      }
+        group.style.display = hasVisibleEntries ? "" : "none";
+      });
+    }
 
-      group.style.display = hasVisibleEntries ? "" : "none";
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const filter = this.dataset.filter;
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+        applyFilter(filter);
+      });
     });
-  }
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const filter = this.dataset.filter;
-
-      buttons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      updatePublicationFilter(filter);
-    });
+    applyFilter("all");
   });
-
-  updatePublicationFilter("all");
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

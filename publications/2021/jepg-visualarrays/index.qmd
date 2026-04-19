@@ -16,6 +16,12 @@ venue: "Journal of Experimental Psychology: General"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - cognitive
+
+categories:
+  - measurement
+
 pdf: "/publications/2021/jepg-visualarrays/Martin_et_al_2021_Journal_of_Experimental_Psychology_General.pdf"
 data: "https://osf.io/23nzu/"
 code: "https://osf.io/23nzu/"

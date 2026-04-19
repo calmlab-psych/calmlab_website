@@ -12,6 +12,12 @@ venue: "Cognitive Psychology"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - brain
+
+categories:
+  - locus-coeruleus
+
 pdf: "/publications/2016/cp-baseline-pupil-og/Tsukahara_et_al_2016_Cognitive_Psychology.pdf"
 data: ""
 code: ""

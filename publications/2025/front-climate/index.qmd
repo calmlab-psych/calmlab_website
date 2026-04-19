@@ -14,6 +14,13 @@ venue: Frontiers in Psychology
 pub-type: Empirical Article
 pub-status: Published
 
+projects:
+  - cognitive
+
+categories:
+  - sustained-attention
+  - real-world
+
 pdf: /publications/2025/front-climate/Denkova_et_al_2025.pdf
 data:
 code:

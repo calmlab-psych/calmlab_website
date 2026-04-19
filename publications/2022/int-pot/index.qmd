@@ -13,6 +13,12 @@ venue: "Intelligence"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - cognitive
+
+categories:
+  - cognition
+
 pdf: "/publications/2022/int-pot/Burgoyne_et_al_2022_Intelligence.pdf"
 data: "https://osf.io/be34k/"
 code: ""

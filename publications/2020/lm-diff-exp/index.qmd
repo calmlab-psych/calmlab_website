@@ -9,8 +9,15 @@ pub-authors:
 pub-year: "2020"
 date: "2020-10-28"
 venue: "Learning and Motivation"
-pub-type: "Empirical Article"
+pub-type: "Review Article"
 pub-status: "Published"
+
+projects:
+  - cognitive
+
+categories:
+  - measurement
+  - cognition
 
 pdf: "/publications/2020/lm-diff-exp/Burgoyne_et_al_2020_Learning_and_Motivation.pdf"
 data: ""

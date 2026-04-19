@@ -15,6 +15,13 @@ venue: "Proceedings for the National Academy of Sciences"
 pub-type: Empirical Article
 pub-status: Published
 
+projects:
+  - brain
+
+categories:
+  - locus-coeruleus
+  - brain-networks
+
 pdf: "/"
 data:
 code:

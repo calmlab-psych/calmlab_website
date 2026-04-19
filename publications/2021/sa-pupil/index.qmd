@@ -12,6 +12,12 @@ venue: "Scientific American Mind"
 pub-type: "Popular Writing"
 pub-status: "Published"
 
+projects:
+  - brain
+
+categories:
+  - locus-coeruleus
+
 pdf: ""
 data: ""
 code: ""

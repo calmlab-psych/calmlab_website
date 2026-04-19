@@ -15,6 +15,21 @@ venue: "venue full name"
 pub-type: type of publication (e.g., Empirical Article, Review Article, Book Chapter, Popular Writing)
 pub-status: publication status (e.g., Published or Preprint)
 
+projects:
+  - cognitive
+  - brain
+  - mindfulness
+
+categories:
+  - measurement
+  - sensation
+  - cognition
+  - sustained-attention
+  - real-world
+  - locus-coeruleus
+  - brain-networks
+  - eeg
+
 pdf: filename.pdf
 data:
 code:

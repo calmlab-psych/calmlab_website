@@ -14,6 +14,12 @@ venue: "Attention, Perception, and Psychophysics"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - cognitive
+
+categories:
+  - sensation
+
 pdf: "/publications/2020/app-sensory-discrimination/Tsukahara_et_al_2020_Attention_Perception_and_Psychophysics.pdf"
 data: "https://osf.io/hsqru/"
 code: "https://osf.io/hsqru/"

@@ -99,9 +99,11 @@ hr {
 
 .quarto-title .quarto-categories {
   padding-top: 2rem;
+  margin-bottom: -2rem !important;
 }
 
 .description {
+  padding-top: 2rem !important;
   color: var(--color-text);
   opacity: 1 !important;
   font-weight: 600;
@@ -643,6 +645,7 @@ hr {
   padding: 1.35rem;
   color: inherit;
   text-decoration: none;
+  text-align: left;
 }
 
 .listing-eyebrow {
@@ -652,6 +655,7 @@ hr {
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--color-yellow);
+  text-align: left;
 }
 
 .listing-tags {
@@ -2058,7 +2062,7 @@ hr {
   flex-direction: column;
   align-items: center;
   gap: 0.6rem;
-  margin: 0.5rem auto 0 auto;
+  margin: 2rem auto 0 auto;
   max-width: 900px;
   text-align: center;
 }

@@ -4,7 +4,8 @@
     <% for (const item of items) { %>
       <article
         class="listing-card card card-interactive"
-        data-pub-type="<%- item['pub-type'] ? item['pub-type'].toLowerCase() : '' %>"
+        data-pub-type="<%= item['pub-type'] || '' %>"
+        data-categories="<%= (item.categories || []).join(',') %>"
       >
 
         <% if (item.pdf) { %>

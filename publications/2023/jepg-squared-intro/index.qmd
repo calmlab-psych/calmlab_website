@@ -13,6 +13,13 @@ venue: "Journal of Experimental Psychology: General"
 pub-type: "Empirical Article"
 pub-status: "Published"
 
+projects:
+  - cognitive
+
+categories:
+  - measurement
+  - cognition
+
 pdf: "/publications/2023/jepg-squared-intro/Burgoyne_et_al_2023_Journal_of_Experimental_Psychology_General.pdf"
 data: "https://osf.io/zkqbs/"
 code: "https://osf.io/cdme2/"
