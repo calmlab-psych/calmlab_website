@@ -515,7 +515,7 @@ hr {
 .hero-header {
   display: flex;
   align-items: center;
-  gap: 2.5rem;
+  gap: 1rem;
   padding: 2.5rem 0 1.5rem 0;
 }
 
@@ -524,10 +524,10 @@ hr {
 }
 
 .hero-logo img {
-  width: 75%;
+  width: 60%;
   height: auto;
   display: block;
-  padding-left: 3rem;
+  margin-left: 0rem;
 }
 
 .hero-text,

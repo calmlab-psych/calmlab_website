@@ -89,7 +89,7 @@ Interested in collaborating, joining the lab, or learning more about our work?
 
 ------------------------------------------------------------------------
 
-## Latest News
+# Latest News  {style="text-align: center; color: var(--color-primary);"}
 
 ::: {#home-news}
 :::
@@ -102,7 +102,48 @@ Interested in collaborating, joining the lab, or learning more about our work?
 
 ------------------------------------------------------------------------
 
-## Latest Publications
+# Research {style="text-align: center; color: var(--color-primary);"}
+
+::: {style="text-align: center; color: var(--color-secondary); font-size: 1.25rem; font-weight: 700;"}
+The CALM Lab’s research is organized around three interconnected areas that together aim to understand attention across contexts of life and mind.
+:::
+
+:::::::::::: {.grid-3 .section-shell}
+::::: {.card .card-interactive .quick-card .is-blue}
+<a href="/projects#cognitive-section">
+
+### Cognitive Mechanisms
+
+How do differences in the ability to control attention relate to cognition and well-being?
+
+[View Project →]{.link-cta}</a>
+:::::
+
+::::: {.card .card-interactive .quick-card .is-yellow}
+<a href="/projects#brain-section">
+
+### Neural Mechanisms
+
+What are the neural mechanisms underlying the ability to control attention?
+
+[View Project →]{.link-cta}</a>
+
+:::::
+
+::::: {.card .card-interactive .quick-card .is-green}
+<a href="/projects#mindfulness-section">
+
+### Mindfulness
+
+How can mindfulness and contemplative practices strengthen attention control and well-being?
+
+[View Project →]{.link-cta}</a>
+
+:::::
+
+::::::::::::
+
+### Latest Publications {style="text-align: center; color: var(--color-primary);"}
 
 ::: {#home-publications}
 :::
