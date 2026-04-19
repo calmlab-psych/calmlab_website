@@ -22,6 +22,7 @@ pdf: /publications/2025/ijsa-navy/Burgoyne_et_al_2025_International_Journal_of_S
 data:
 code:
 doi: "10.1111/ijsa.12510"
+link: ""
 
 abstract: "Military selection tests leave room for improvement when predicting work‐relevant outcomes. We tested whether measures of attention control, working memory capacity, and fluid intelligence improved the prediction of training success above and beyond composite scores used by the U.S. Military. For student air traffic controllers, commonality analyses revealed that attention control explained 9.1% (R = .30) of the unique variance in academic performance, whereas the Armed Forces  Qualification Test explained 5.2% (r = .23) of the unique variance. For student naval aviators, incremental validity estimates were small and nonsignificant. For student naval flight officers, commonality analyses revealed that attention control measures explained 11.8% (R = .34) of the unique variance in aviation preflight indoctrination training performance and 4.3% (R = .21) of  the unique variance in flight performance. Although these point estimates are based on relatively small samples, they provide preliminary evidence that attention control measures might improve training outcome classification accuracy in real‐world samples of military personnel."
 

@@ -28,6 +28,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -53,8 +55,94 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-measurement .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-pub-year','listing-pub-authors','listing-venue','listing-pub-status','listing-pub-type','listing-pdf','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-categories","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-project-areas","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-measurement'] = new List('listing-measurement', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-sensation .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-pub-year','listing-pub-authors','listing-venue','listing-pub-status','listing-pub-type','listing-pdf','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-page-layout"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-sensation'] = new List('listing-sensation', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../assets/style.css">
 <meta name="twitter:title" content="How do differences in the ability to control attention relate to cognition and well-being? – CALM LAB">
@@ -62,7 +150,7 @@ ul.task-list li input[type="checkbox"] {
 <meta name="twitter:card" content="summary">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -106,12 +194,12 @@ ul.task-list li input[type="checkbox"] {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content column-page" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
@@ -125,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 
 
-<div class="quarto-title-meta">
+<div class="quarto-title-meta column-page">
 
     
   
@@ -137,9 +225,325 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>dfsdfd</p>
+<section id="measurement-and-individual-differences" class="level2">
+<h2 data-anchor-id="measurement-and-individual-differences">Measurement and Individual Differences</h2>
+<div class="profile-section-card">
+<p>Critical to understanding the role of attention control in cognition and well-being is the ability to measure it. We investigate how to best measure attention control, including the development of new tasks and approaches to measuring attention control in real-world contexts.</p>
+<p><a href="#measurement" class="link-cta">View and Download Attention Tasks →</a></p>
+</div>
+<section id="publications" class="level3 before-adjust">
+<h3 class="before-adjust" data-anchor-id="publications">Publications</h3>
+<div id="listing-measurement" class="quarto-listing quarto-listing-container-custom">
+<div class="listing-scroll-shell">
+  <div class="listing-scroll-row">
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2023/sact-2/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            Preprint
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">PsyArxiv</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Sustaining the focus of attention and how it relates to performance in complex cognitive tasks</h3>
+
+          
+            <div class="publication-authors card-text">
+              Tsukahara &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2023/brm-toolbox-2/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2023
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Behavior Research Methods</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Replication and extension of the toolbox approach to measuring attention control</h3>
+
+          
+            <div class="publication-authors card-text">
+              Draheim, Tsukahara, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2023/jepg-squared-intro/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2023
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Journal of Experimental Psychology: General</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Nature and measurement of attention control</h3>
+
+          
+            <div class="publication-authors card-text">
+              Burgoyne, Tsukahara, Mashburn, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="book chapter">
+
+        
+          <a href="../../publications/2022/chwml-book-chapter/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2022
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">The Cambridge Handbook of Working Memory and Language</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension</h3>
+
+          
+            <div class="publication-authors card-text">
+              Burgoyne, Martin, Mashburn, Tsukahara, Draheim, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2021/jepg-visualarrays/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2021
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Journal of Experimental Psychology: General</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">The visual arrays task: Visual storage capacity or attention control?</h3>
+
+          
+            <div class="publication-authors card-text">
+              Martin, Tsukahara, Draheim, Shipstead, Mashburn, Vogel, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2021/jepg-toolbox-1/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2021
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Journal of Experimental Psychology: General</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">A toolbox approach to improving the measurement of attention control</h3>
+
+          
+            <div class="publication-authors card-text">
+              Draheim, Tsukahara, Martin, Mashburn, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+  </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+</section>
+<section id="sensation-and-perception" class="level2">
+<h2 data-anchor-id="sensation-and-perception">Sensation and Perception</h2>
+<div class="profile-section-card">
+<p>Attention control plays a critical role in shaping our perception of the world around us. We investigate how individual differences in attention control influence sensory processing and perceptual experience, including phenomena such as sensory discrimination, perceptual stability, and the integration of sensory information across modalities.</p>
+</div>
+<section id="publications-1" class="level3 before-adjust">
+<h3 class="before-adjust" data-anchor-id="publications-1">Publications</h3>
+<div id="listing-sensation" class="quarto-listing quarto-listing-container-custom">
+<div class="listing-scroll-shell">
+  <div class="listing-scroll-row">
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2025/jepg-inspection/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2025
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Journal of Experimental Psychology: General</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Faster, smarter, and more attentive: The control of attention is about more than just conflict resolution</h3>
+
+          
+            <div class="publication-authors card-text">
+              Tsukahara, Mashburn, Campbell, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-pub-type="empirical article">
+
+        
+          <a href="../../publications/2020/app-sensory-discrimination/index.html" class="listing-card-link">
+        
+
+          <div class="listing-eyebrow">
+            2020
+          </div>
+
+          
+            <div class="listing-tags">
+              <span class="pill pill-tag pill-soft">Attention, Perception, and Psychophysics</span>
+            </div>
+          
+
+          <h3 class="listing-title card-title">Attention control: The missing link between sensory discrimination and intelligence</h3>
+
+          
+            <div class="publication-authors card-text">
+              Tsukahara, Harrison, Draheim, Martin, &amp; Engle
+            </div>
+          
+
+          <div class="listing-cta link-cta">
+            Read
+            
+              <span>→</span>
+            
+          </div>
+
+        </a>
+      </article>
+    
+  </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div>
+</section>
+</section>
+<section id="cognition" class="level2">
+<h2 data-anchor-id="cognition">Cognition</h2>
+</section>
+<section id="real-world-success" class="level2">
+<h2 data-anchor-id="real-world-success">Real-World Success</h2>
+</section>
+<section id="well-being" class="level2">
+<h2 data-anchor-id="well-being">Well-Being</h2>
 
 
+
+</section>
 
 <a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
 <script src="../../assets/listings/listing-filters.js"></script>

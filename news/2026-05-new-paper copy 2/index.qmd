@@ -4,6 +4,7 @@ date: 2026-05-01
 categories: [Paper]
 description: "Our latest work on attention control and large-scale brain network dynamics is now available."
 image: ../../images/lablogo.png
+page: ""
 link: https://www.jasontsukahara.com
 ---
 

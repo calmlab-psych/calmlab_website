@@ -1,0 +1,34 @@
+```{r}
+#| echo: false
+#| output: asis
+pdf_url  <- rmarkdown::metadata$pdf
+data_url <- rmarkdown::metadata$data
+code_url <- rmarkdown::metadata$code
+
+parts <- c('<div class="download-buttons">')
+
+if (!is.null(pdf_url) && nzchar(pdf_url)) {
+  parts <- c(parts, sprintf(
+    '<a class="download-btn download-btn-pdf" href="%s" download><span class="download-btn-icon"><i class="bi bi-download"></i></span><span class="download-btn-label">Download PDF</span></a>',
+    pdf_url
+  ))
+}
+
+if (!is.null(data_url) && nzchar(data_url)) {
+  parts <- c(parts, sprintf(
+    '<a class="download-btn download-btn-data" href="%s" target="_blank" rel="noopener"><span class="download-btn-icon"><i class="bi bi-database"></i></span><span class="download-btn-label">Data</span></a>',
+    data_url
+  ))
+}
+
+if (!is.null(code_url) && nzchar(code_url)) {
+  parts <- c(parts, sprintf(
+    '<a class="download-btn download-btn-code" href="%s" target="_blank" rel="noopener"><span class="download-btn-icon"><i class="bi bi-code-slash"></i></span><span class="download-btn-label">Code</span></a>',
+    code_url
+  ))
+}
+
+parts <- c(parts, '</div>')
+
+cat(paste(parts, collapse = ""))
+```

@@ -4,6 +4,7 @@ date: YYYY-MM-DD
 categories: [category label] (e.g., [Lab])
 description: short description of news item
 image: image.png
+page: ""
 link: ""
 ---
 

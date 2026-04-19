@@ -51,10 +51,21 @@
     "projects/index.qmd": [
       "../publications/*/index.qmd",
       "publications/*/index.qmd",
-      "*/index.qmd"
+      "*/index.qmd",
+      "../research_tools/index.qmd"
     ],
     "team/templates/grad-name/index.qmd": [
       "../../../publications/*/index.qmd"
+    ],
+    "projects/individual-differences/index.qmd": [
+      "../../publications/2020/app-sensory-discrimination/index.qmd",
+      "../../publications/2025/jepg-inspection/index.qmd",
+      "../../publications/2021/jepg-toolbox-1/index.qmd",
+      "../../publications/2021/jepg-visualarrays/index.qmd",
+      "../../publications/2022/chwml-book-chapter/index.qmd",
+      "../../publications/2023/brm-toolbox-2/index.qmd",
+      "../../publications/2023/jepg-squared-intro/index.qmd",
+      "../../publications/2023/sact-2/index.qmd"
     ]
   }
 }

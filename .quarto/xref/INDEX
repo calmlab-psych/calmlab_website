@@ -322,5 +322,14 @@
   },
   "assets/listings/simple-listing.ejs.md": {
     "simple-listing.ejs.html": "56f2599e"
+  },
+  "assets/listings/simple-listing-grid-3col.ejs.md": {
+    "simple-listing-grid-3col.ejs.html": "f0d3b9d0"
+  },
+  "assets/listings/simple-listing-grid-4col.ejs.md": {
+    "simple-listing-grid-4col.ejs.html": "3f563159"
+  },
+  "assets/listings/simple-listing-grid-2col.ejs.md": {
+    "simple-listing-grid-2col.ejs.html": "82ce2384"
   }
 }

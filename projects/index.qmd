@@ -1,9 +1,11 @@
 ---
 listing:
-  contents: "*/index.qmd"
+  contents:
+    - "*/index.qmd"
   fields: [title, description]
-  template: ../assets/listings/simple-listing.ejs.md
+  template: ../assets/listings/simple-listing-grid-2col.ejs.md
   sort: order
+  grid-columns: 2
 
 page-layout: full
 ---

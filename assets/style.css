@@ -60,7 +60,7 @@ h2 {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 1.2rem;
   padding-bottom: 0;
   border-bottom: none;
@@ -83,11 +83,78 @@ h2::before {
 
 hr {
   border-color: var(--color-secondary);
+  height: 2px !important;
+  opacity: 1 !important;
 }
 
 @keyframes headerBarGrow {
   from { transform: scaleY(0); }
   to   { transform: scaleY(1); }
+}
+
+.title {
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.quarto-title .quarto-categories {
+  padding-top: 2rem;
+}
+
+.description {
+  color: var(--color-text);
+  opacity: 1 !important;
+  font-weight: 600;
+  text-align: center;
+}
+
+.quarto-title-meta {
+  text-align: center;
+  justify-content: center;
+  grid-template-columns: 1fr !important;
+  padding-bottom: 1rem !important;
+}
+
+.before-adjust {
+  padding-left: 0.5rem;
+}
+
+/* =========================
+   Quarto Category Pills
+   ========================= */
+
+.quarto-categories {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  gap: 0.45rem !important;
+  margin: -1.25rem 0 .25rem 0 !important;
+  justify-content: center !important;
+}
+
+.quarto-categories .quarto-category {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill) !important;
+  border: 1px solid var(--color-primary) !important;
+  background: var(--color-white);
+  color: var(--color-primary) !important;
+  font-size: 0.73rem !important;
+  font-weight: 600 !important;
+  opacity: 1 !important;
+  line-height: 1.2;
+  text-decoration: none;
+  transition:
+    border-color var(--transition-fast),
+    color var(--transition-fast),
+    background-color var(--transition-fast),
+    transform var(--transition-fast);
+}
+
+.quarto-categories .quarto-category:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  transform: translateY(-1px);
 }
 
 /* =========================
@@ -1334,6 +1401,14 @@ hr {
   align-items: stretch;
 }
 
+.profile-section-layout-alt {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+  gap: 1.5rem;
+  margin: 2rem 0 3rem 0;
+  align-items: stretch;
+}
+
 .profile-section-card {
   padding: 1.75rem 2rem;
   min-width: 0;
@@ -1765,5 +1840,300 @@ hr {
 
   .listing-simple-title {
     font-size: 1.2rem;
+  }
+}
+
+/* =========================
+   Simple Listing — Grid variants
+   ========================= */
+
+.listing-simple-grid {
+  display: grid;
+  gap: 1.25rem;
+  width: 100%;
+  max-width: 1050px;
+  margin-top: 0.5rem;
+  justify-content: center;
+}
+
+.listing-simple-grid-2col {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.listing-simple-grid-3col {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.listing-simple-grid-4col {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+/* Center a lone trailing card when the final row isn't filled.
+   2-col: 1 orphan centers at half width.
+   3-col: 1 orphan centers at one-third width.
+   4-col: 1 orphan centers at one-quarter width. */
+
+.listing-simple-grid-2col .listing-simple-entry:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+  max-width: calc((100% - 1.25rem) / 2);
+  justify-self: center;
+}
+
+.listing-simple-grid-3col .listing-simple-entry:last-child:nth-child(3n - 2) {
+  grid-column: 1 / -1;
+  max-width: calc((100% - 2 * 1.25rem) / 3);
+  justify-self: center;
+}
+
+.listing-simple-grid-4col .listing-simple-entry:last-child:nth-child(4n - 3) {
+  grid-column: 1 / -1;
+  max-width: calc((100% - 3 * 1.25rem) / 4);
+  justify-self: center;
+}
+
+/* Responsive collapse */
+
+@media (max-width: 1000px) {
+  .listing-simple-grid-3col,
+  .listing-simple-grid-4col {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .listing-simple-grid-3col .listing-simple-entry:last-child:nth-child(3n - 2),
+  .listing-simple-grid-4col .listing-simple-entry:last-child:nth-child(4n - 3) {
+    grid-column: auto;
+    max-width: none;
+    justify-self: stretch;
+  }
+}
+
+@media (max-width: 700px) {
+  .listing-simple-grid-2col,
+  .listing-simple-grid-3col,
+  .listing-simple-grid-4col {
+    grid-template-columns: 1fr;
+  }
+
+  .listing-simple-grid-2col .listing-simple-entry:last-child:nth-child(odd) {
+    grid-column: auto;
+    max-width: none;
+    justify-self: stretch;
+  }
+}
+
+/* =========================
+   Download Buttons
+   ========================= */
+
+.download-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  justify-content: center;
+  margin: 1.5rem 0;
+}
+
+.download-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.35rem 0.9rem 0.35rem 0.5rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-white-border);
+  background: var(--color-white);
+  color: var(--color-text);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+  box-sizing: border-box;
+  transition:
+    border-color var(--transition-fast),
+    transform var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.download-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.download-btn-icon {
+  width: 1.85rem;
+  height: 1.85rem;
+  flex: 0 0 1.85rem;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-btn-icon i {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.download-btn-label {
+  flex: 1;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.download-btn-pdf .download-btn-icon {
+  background: var(--color-primary-highlight);
+}
+
+.download-btn-pdf .download-btn-icon i {
+  color: var(--color-primary);
+}
+
+.download-btn-pdf:hover {
+  border-color: var(--color-primary);
+}
+
+.download-btn-data .download-btn-icon {
+  background: var(--color-yellow-highlight);
+}
+
+.download-btn-data .download-btn-icon i {
+  color: var(--color-yellow);
+}
+
+.download-btn-data:hover {
+  border-color: var(--color-yellow);
+}
+
+.download-btn-code .download-btn-icon {
+  background: var(--color-green-highlight);
+}
+
+.download-btn-code .download-btn-icon i {
+  color: var(--color-green);
+}
+
+.download-btn-code:hover {
+  border-color: var(--color-green);
+}
+
+@media (max-width: 500px) {
+  .download-btn {
+    width: auto;
+    flex: 1 1 auto;
+  }
+}
+
+/* =========================
+   PDF Viewer
+   ========================= */
+
+.pdf-viewer-frame {
+  width: 100%;
+  height: 100vh;
+  min-height: 500px;
+  margin: 1.5rem 0 2rem 0;
+  border: 1px solid var(--color-white-border);
+  border-radius: var(--radius-md);
+  background: var(--color-white);
+  box-shadow: var(--shadow-soft);
+  display: block;
+}
+
+.pdf-viewer-fallback {
+  padding: 2rem;
+  text-align: center;
+  color: var(--color-text);
+}
+
+.pdf-viewer-fallback a {
+  color: var(--color-primary);
+  font-weight: 700;
+}
+
+/* =========================
+   Publication Header
+   ========================= */
+
+.pub-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 0.5rem auto 0 auto;
+  max-width: 900px;
+  text-align: center;
+}
+
+.pub-header-authors {
+  margin-top: 0;
+  font-size: 1.15rem;
+  font-weight: 500;
+  font-style: italic;
+  color: var(--color-text);
+  line-height: 1.5;
+}
+
+.pub-header-citation {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: var(--color-text);
+  line-height: 1.4;
+}
+
+.pub-header-year {
+  font-weight: 600;
+}
+
+.pub-header-venue {
+  font-style: italic;
+  font-weight: 500;
+}
+
+.pub-header-sep {
+  color: var(--color-secondary);
+  font-weight: 700;
+}
+
+.pub-header-doi {
+  font-size: 0.88rem;
+}
+
+.pub-header-doi a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color var(--transition-fast);
+}
+
+.pub-header-doi a:hover {
+  color: var(--color-secondary);
+  text-decoration: none;
+}
+
+.pub-header-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.7rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--color-primary);
+  background: var(--color-white);
+  color: var(--color-primary);
+  font-size: 0.73rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.2;
+}
+
+@media (max-width: 700px) {
+  .pub-header-authors {
+    font-size: 1rem;
+  }
+
+  .pub-header-citation {
+    font-size: 0.92rem;
   }
 }

@@ -95,7 +95,9 @@ Interested in collaborating, joining the lab, or learning more about our work?
 :::
 
 ::: listing-more
+
 <a href="/news/" class="link-cta">View All News →</a>
+
 :::
 
 ------------------------------------------------------------------------

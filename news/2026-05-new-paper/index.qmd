@@ -1,10 +1,11 @@
 ---
-title: "New publication on attention control in the brain"
+title: "New publication on attention control in the brainz"
 date: 2026-05-01
 categories: [Paper]
 description: "Our latest work on attention control and large-scale brain network dynamics is now available."
 image: ../../images/lablogo.png
-link: https://www.jasontsukahara.com
+page: "/publications/2026/pnas-qpp"
+link: ""
 ---
 
 Our latest work on attention control and large-scale brain network dynamics is now available.

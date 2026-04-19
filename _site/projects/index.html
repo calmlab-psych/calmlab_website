@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-description","listing-link","listing-order","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-description","listing-link","listing-order","listing-page-layout","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-listing"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -192,7 +192,7 @@ window.Quarto = {
 
 
 <div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
-<div class="listing-simple">
+<div class="listing-simple-grid listing-simple-grid-2col">
 
   <article class="listing-simple-entry card card-interactive">
     <div class="listing-simple-content">
@@ -204,7 +204,11 @@ window.Quarto = {
       </h3>
 
       
-        <p class="listing-simple-description card-text">People differ in their ability to control attention, and these differences are a fundamental aspect of human cognition. We investigate how individual differences in attention control play a role in shaping our perception, memory, reasoning, and well-being.</p>
+        
+          <a href="../projects/individual-differences/index.html">
+            <p class="listing-simple-description card-text">People differ in their ability to control attention, and these differences are a fundamental aspect of human cognition. We investigate how individual differences in attention control play a role in shaping our perception, memory, reasoning, and well-being.</p>
+          </a>
+        
       
 
       
@@ -228,7 +232,11 @@ window.Quarto = {
       </h3>
 
       
-        <p class="listing-simple-description card-text">Attention control is supported by a complex network of brain regions and systems. We investigate the neural mechanisms of attention control using methods such as EEG, fMRI, pupillometry, and network-based approaches to brain function.</p>
+        
+          <a href="../projects/brain/index.html">
+            <p class="listing-simple-description card-text">Attention control is supported by a complex network of brain regions and systems. We investigate the neural mechanisms of attention control using methods such as EEG, fMRI, pupillometry, and network-based approaches to brain function.</p>
+          </a>
+        
       
 
       
@@ -252,7 +260,11 @@ window.Quarto = {
       </h3>
 
       
-        <p class="listing-simple-description card-text">Mindfulness and related contemplative practices have been shown to influence attention, cognitive performance, and resilience. We investigate how these practices can strengthen attention control and promote well-being.</p>
+        
+          <a href="../projects/mindfulness/index.html">
+            <p class="listing-simple-description card-text">Mindfulness and related contemplative practices have been shown to influence attention, cognitive performance, and resilience. We investigate how these practices can strengthen attention control and promote well-being.</p>
+          </a>
+        
       
 
       

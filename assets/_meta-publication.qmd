@@ -1,0 +1,62 @@
+```{r}
+#| echo: false
+#| output: asis
+
+authors    <- rmarkdown::metadata[["pub-authors"]]
+year       <- rmarkdown::metadata[["pub-year"]]
+venue      <- rmarkdown::metadata[["venue"]]
+doi        <- rmarkdown::metadata[["doi"]]
+
+has_value <- function(x) {
+  if (is.null(x)) return(FALSE)
+  if (length(x) == 0) return(FALSE)
+  char_vals <- as.character(x)
+  any(!is.na(char_vals) & nzchar(char_vals))
+}
+
+format_authors <- function(x) {
+  char_vals <- as.character(x)
+  if (length(char_vals) == 1) return(char_vals)
+  if (length(char_vals) == 2) return(paste(char_vals, collapse = " & "))
+  paste0(
+    paste(char_vals[-length(char_vals)], collapse = ", "),
+    ", & ",
+    char_vals[length(char_vals)]
+  )
+}
+
+parts <- c('<div class="pub-header">')
+
+# Authors
+if (has_value(authors)) {
+  parts <- c(parts, sprintf(
+    '<div class="pub-header-authors">%s</div>',
+    format_authors(authors)
+  ))
+}
+
+# Year · Journal (combined line)
+venue_parts <- c()
+if (has_value(year))  venue_parts <- c(venue_parts, sprintf('<span class="pub-header-year">%s</span>', as.character(year)))
+if (has_value(venue)) venue_parts <- c(venue_parts, sprintf('<span class="pub-header-venue">%s</span>', as.character(venue)))
+
+if (length(venue_parts) > 0) {
+  parts <- c(parts, sprintf(
+    '<div class="pub-header-citation">%s</div>',
+    paste(venue_parts, collapse = '<span class="pub-header-sep">·</span>')
+  ))
+}
+
+# DOI (optional — small link under citation)
+if (has_value(doi)) {
+  doi_clean <- sub("^https?://(dx\\.)?doi\\.org/", "", as.character(doi))
+  parts <- c(parts, sprintf(
+    '<div class="pub-header-doi"><a href="https://doi.org/%s" target="_blank" rel="noopener">doi.org/%s</a></div>',
+    doi_clean, doi_clean
+  ))
+}
+
+parts <- c(parts, '</div>')
+
+cat(paste(parts, collapse = ""))
+```

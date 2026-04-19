@@ -15,7 +15,17 @@
       </h3>
 
       <% if (item.description) { %>
-        <p class="listing-simple-description card-text"><%- item.description %></p>
+        <% if (item.path) { %>
+          <a href="<%- item.path %>">
+          <p class="listing-simple-description card-text"><%- item.description %></p>
+          </a>
+        <% } else if (item.url) { %>
+          <a href="<%- item.url %>" target="_blank" rel="noopener">
+            <p class="listing-simple-description card-text"><%- item.description %></p>
+          </a>
+        <% } else { %>
+          <p class="listing-simple-description card-text"><%- item.description %></p>
+        <% } %>
       <% } %>
 
       <% if (item.path || item.url) { %>

@@ -18,6 +18,7 @@ pdf: "/publications/2020/app-sensory-discrimination/Tsukahara_et_al_2020_Attenti
 data: "https://osf.io/hsqru/"
 code: "https://osf.io/hsqru/"
 doi: "10.3758/s13414-020-02044-9"
+link: ""
 
 abstract: "Intelligence is correlated with the ability to make fine sensory discriminations. Although this relationship has been known since the beginning of intelligence testing, the mechanisms underlying this relationship are still unknown. In two large-scale structural equation modelling studies, we investigated whether individual differences in attention control abilities can explain the relationship between sensory discrimination and intelligence. Across these two studies, we replicated the finding that attention control fully mediated the relationships of intelligence/working-memory capacity to sensory discrimination. Our findings show that attention control plays a prominent role in relating sensory discrimination to higher-order cognitive abilities."
 

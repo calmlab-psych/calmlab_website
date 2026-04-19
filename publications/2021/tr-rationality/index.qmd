@@ -18,6 +18,7 @@ pdf: "/publications/2021/tr-rationality/Burgoyne_et_al_2021_Thinking_Reasoning.p
 data: ""
 code: ""
 doi: "10.1080/13546783.2021.2008003"
+link: ""
 
 abstract: "A hallmark of intelligent behavior is rationality – the disposition and ability to think analytically to make decisions that maximize expected utility or follow the laws of probability. However, the question remains as to whether rationality and intelligence are empirically distinct, as does the question of what cognitive mechanisms underlie individual differences in rationality. In a sample of 331 participants, we assessed the relationship between rationality and intelligence. There was a common ability underpinning performance on some, but not all, rationality tests. Latent factors representing rationality and general intelligence were strongly correlated (r = .54), but their correlation fell well short of unity. Rationality correlated significantly with fluid intelligence (r = .56), working memory capacity (r = .44), and attention control (r = .49). Attention control fully accounted for the relationship between working memory capacity and rationality, and partially accounted for the relationship between fluid intelligence and rationality. We conclude by speculating about factors rationality tests may tap that other cognitive ability tests miss, and outline directions for further research."
 

@@ -50,10 +50,11 @@
     ]
   },
   {
-    "listing": "/team/index.html",
+    "listing": "/projects/index.html",
     "items": [
-      "/team/jason-tsukahara/index.html",
-      "/news/2026-04-website-launch copy/index.html"
+      "/projects/individual-differences/index.html",
+      "/projects/brain/index.html",
+      "/projects/mindfulness/index.html"
     ]
   },
   {
@@ -86,11 +87,23 @@
     ]
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/projects/individual-differences/index.html",
     "items": [
-      "/projects/individual-differences/index.html",
-      "/projects/brain/index.html",
-      "/projects/mindfulness/index.html"
+      "/publications/2023/sact-2/index.html",
+      "/publications/2023/brm-toolbox-2/index.html",
+      "/publications/2023/jepg-squared-intro/index.html",
+      "/publications/2022/chwml-book-chapter/index.html",
+      "/publications/2021/jepg-visualarrays/index.html",
+      "/publications/2021/jepg-toolbox-1/index.html",
+      "/publications/2025/jepg-inspection/index.html",
+      "/publications/2020/app-sensory-discrimination/index.html"
+    ]
+  },
+  {
+    "listing": "/team/index.html",
+    "items": [
+      "/team/jason-tsukahara/index.html",
+      "/news/2026-04-website-launch copy/index.html"
     ]
   }
 ]

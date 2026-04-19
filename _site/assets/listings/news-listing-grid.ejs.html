@@ -125,44 +125,50 @@ ul.task-list li input[type="checkbox"] {
   </div>
 
   <div class="listing-grid">
-  &lt;% for (const item of items) { %&gt;
-  <article class="listing-card card card-interactive" data-categories="<%- item.categories ? item.categories.join(',').toLowerCase() : '' %>">
-  <a href="<%- item.link ? item.link : item.path %>" class="listing-card-link" <%="item.link" ?="" 'target="_blank" rel="noopener" '="" :="" ''="" %="">&gt;
+    &lt;% for (const item of items) { %&gt;
+      <article class="listing-card card card-interactive" data-categories="<%- item.categories ? item.categories.join(',').toLowerCase() : '' %>">
+        
+        &lt;% if (item.page) { %&gt;
+          <a href="<%- item.page %>" class="listing-card-link">
+        &lt;% } else if (item.link) { %&gt;
+          </a><a href="<%- item.link %>" class="listing-card-link" target="_blank" rel="noopener noreferrer">
+        &lt;% } else { %&gt;
+          </a><a href="<%- item.path %>" class="listing-card-link">
+        &lt;% } %&gt;
 
-  &lt;% if (item.image) { %&gt;
-  <div class="listing-thumb-wrap">
-  <img src="<%- item.image %>" alt="" class="listing-thumb">
-  </div>
-  &lt;% } %&gt;
+        &lt;% if (item.image) { %&gt;
+          <div class="listing-thumb-wrap">
+            <img src="<%- item.image %>" alt="" class="listing-thumb">
+          </div>
+        &lt;% } %&gt;
 
-  <div class="listing-eyebrow">&lt;%- item.date ? item.date : "" %&gt;</div>
+        <div class="listing-eyebrow">&lt;%- item.date ? item.date : "" %&gt;</div>
 
-  &lt;% if (item.categories &amp;&amp; item.categories.length) { %&gt;
-  <div class="listing-tags">
-  &lt;% item.categories.forEach(function(cat) { %&gt;
-  <span class="pill pill-tag pill-soft">&lt;%- cat %&gt;</span>
-  &lt;% }) %&gt;
-  </div>
-  &lt;% } %&gt;
+        &lt;% if (item.categories &amp;&amp; item.categories.length) { %&gt;
+          <div class="listing-tags">
+            &lt;% item.categories.forEach(function(cat) { %&gt;
+              <span class="pill pill-tag pill-soft">&lt;%- cat %&gt;</span>
+            &lt;% }) %&gt;
+          </div>
+        &lt;% } %&gt;
 
-  <h3 class="listing-title card-title">&lt;%- item.title %&gt;</h3>
+        <h3 class="listing-title card-title">&lt;%- item.title %&gt;</h3>
 
-  &lt;% if (item.description) { %&gt;
-  <p class="listing-summary card-text">&lt;%- item.description %&gt;</p>
-  &lt;% } %&gt;
+        &lt;% if (item.description) { %&gt;
+          <p class="listing-summary card-text">&lt;%- item.description %&gt;</p>
+        &lt;% } %&gt;
 
-  <div class="listing-cta link-cta">
-  Read More
-  &lt;% if (item.link) { %&gt;
-  <span>↗</span>
-  &lt;% } else { %&gt;
-  <span>→</span>
-  &lt;% } %&gt;
-  </div>
-
-  </a>
-  </article>
-  &lt;% } %&gt;
+        <div class="listing-cta link-cta">
+          Read More
+          &lt;% if (item.link) { %&gt;
+            <span>↗</span>
+          &lt;% } else { %&gt;
+            <span>→</span>
+          &lt;% } %&gt;
+        </div>
+        </a>
+      </article>
+    &lt;% } %&gt;
   </div>
 </div>
 
@@ -198,6 +204,76 @@ document.addEventListener("DOMContentLoaded", () => {
     a.innerHTML = `<i class="${icon}"></i> ${label}`;
     container.appendChild(a);
   });
+});
+</script>
+
+
+<script>
+function copyEmail(link) {
+  const email = link.dataset.copy;
+  const icon = link.querySelector('i');
+  navigator.clipboard.writeText(email).then(() => {
+    icon.classList.remove('bi-copy');
+    icon.classList.add('bi-check2');
+    setTimeout(() => {
+      icon.classList.remove('bi-check2');
+      icon.classList.add('bi-copy');
+    }, 1500);
+  });
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
+
+  function updatePublicationFilter(filter) {
+    const list = document.querySelector(".publications-list");
+    if (!list) return;
+
+    const children = Array.from(list.children);
+
+    children.forEach((el) => {
+      if (el.classList.contains("publication-entry")) {
+        const pubType = el.dataset.pubType || "";
+        const show = filter === "all" || pubType === filter;
+        el.style.display = show ? "" : "none";
+      }
+    });
+
+    const yearGroups = list.querySelectorAll(".publication-year-group");
+
+    yearGroups.forEach((group) => {
+      let next = group.nextElementSibling;
+      let hasVisibleEntries = false;
+
+      while (next && !next.classList.contains("publication-year-group")) {
+        if (
+          next.classList.contains("publication-entry") &&
+          next.style.display !== "none"
+        ) {
+          hasVisibleEntries = true;
+          break;
+        }
+        next = next.nextElementSibling;
+      }
+
+      group.style.display = hasVisibleEntries ? "" : "none";
+    });
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const filter = this.dataset.filter;
+
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      updatePublicationFilter(filter);
+    });
+  });
+
+  updatePublicationFilter("all");
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

@@ -16,6 +16,7 @@ pdf: "/publications/2021/cog-pupil-luminance-reply/Tsukahara_et_al_2021_Cognitio
 data: ""
 code: ""
 doi: "10.1016/j.cognition.2021.104826"
+link: ""
 
 listing-page: false
 format: html

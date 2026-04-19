@@ -25,11 +25,9 @@
 
       <h3 class="publication-title card-title">
         <% if (item.pdf) { %>
-          <a href="<%- item.pdf %>" target="_blank" rel="noopener"><%= item.title %></a>
-        <% } else if (item.path) { %>
           <a href="<%- item.path %>"><%= item.title %></a>
         <% } else { %>
-          <%= item.title %>
+          <a href="<%- item.link %>" target="_blank" rel="noopener noreferrer"><%= item.title %></a>
         <% } %>
       </h3>
 
@@ -60,16 +58,23 @@
 
       <div class="publication-links">
         <% if (item.pdf) { %>
-          <a class="pub-link pub-link-pdf" href="<%- item.pdf %>" target="_blank" rel="noopener">
+          <a class="pub-link pub-link-pdf" href="<%- item.path %>">
             <span class="pub-link-icon">
               <i class="bi bi-file-earmark-pdf"></i>
+            </span>
+            <span class="pub-link-label">Read</span>
+          </a>
+        <% } else { %>
+          <a class="pub-link pub-link-pdf" href="<%- item.link %>" target="_blank" rel="noopener noreferrer">
+            <span class="pub-link-icon">
+              <i class="bi bi-link-45deg"></i>
             </span>
             <span class="pub-link-label">Read</span>
           </a>
         <% } %>
 
         <% if (item.data) { %>
-          <a class="pub-link pub-link-data" href="<%- item.data %>" target="_blank" rel="noopener">
+          <a class="pub-link pub-link-data" href="<%- item.data %>" target="_blank" rel="noopener noreferrer">
             <span class="pub-link-icon">
               <i class="bi bi-database"></i>
             </span>
@@ -78,7 +83,7 @@
         <% } %>
 
         <% if (item.code) { %>
-          <a class="pub-link pub-link-code" href="<%- item.code %>" target="_blank" rel="noopener">
+          <a class="pub-link pub-link-code" href="<%- item.code %>" target="_blank" rel="noopener noreferrer">
             <span class="pub-link-icon">
               <i class="bi bi-code-slash"></i>
             </span>

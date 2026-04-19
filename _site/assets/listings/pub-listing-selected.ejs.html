@@ -121,11 +121,9 @@ ul.task-list li input[type="checkbox"] {
 
       <h3 class="publication-title publication-title-profile">
         &lt;% if (item.pdf) { %&gt;
-          <a href="<%- item.pdf %>" target="_blank" rel="noopener">&lt;%= item.title %&gt;</a>
-        &lt;% } else if (item.path) { %&gt;
           <a href="<%- item.path %>">&lt;%= item.title %&gt;</a>
         &lt;% } else { %&gt;
-          &lt;%= item.title %&gt;
+          <a href="<%- item.link %>" target="_blank" rel="noopener noreferrer">&lt;%= item.title %&gt;</a>
         &lt;% } %&gt;
       </h3>
 
@@ -164,9 +162,16 @@ ul.task-list li input[type="checkbox"] {
 
       <div class="publication-links publication-links-profile">
         &lt;% if (item.pdf) { %&gt;
-          <a class="pub-link pub-link-pdf pub-link-profile" href="<%- item.pdf %>" target="_blank" rel="noopener">
-            <span class="pub-link-icon pub-link-icon-profile">
+          <a class="pub-link pub-link-pdf" href="<%- item.path %>">
+            <span class="pub-link-icon">
               <i class="bi bi-file-earmark-pdf"></i>
+            </span>
+            <span class="pub-link-label">Read</span>
+          </a>
+        &lt;% } else { %&gt;
+          <a class="pub-link pub-link-pdf" href="<%- item.link %>" target="_blank" rel="noopener noreferrer">
+            <span class="pub-link-icon">
+              <i class="bi bi-link-45deg"></i>
             </span>
             <span class="pub-link-label">Read</span>
           </a>
@@ -227,6 +232,76 @@ document.addEventListener("DOMContentLoaded", () => {
     a.innerHTML = `<i class="${icon}"></i> ${label}`;
     container.appendChild(a);
   });
+});
+</script>
+
+
+<script>
+function copyEmail(link) {
+  const email = link.dataset.copy;
+  const icon = link.querySelector('i');
+  navigator.clipboard.writeText(email).then(() => {
+    icon.classList.remove('bi-copy');
+    icon.classList.add('bi-check2');
+    setTimeout(() => {
+      icon.classList.remove('bi-check2');
+      icon.classList.add('bi-copy');
+    }, 1500);
+  });
+}
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
+
+  function updatePublicationFilter(filter) {
+    const list = document.querySelector(".publications-list");
+    if (!list) return;
+
+    const children = Array.from(list.children);
+
+    children.forEach((el) => {
+      if (el.classList.contains("publication-entry")) {
+        const pubType = el.dataset.pubType || "";
+        const show = filter === "all" || pubType === filter;
+        el.style.display = show ? "" : "none";
+      }
+    });
+
+    const yearGroups = list.querySelectorAll(".publication-year-group");
+
+    yearGroups.forEach((group) => {
+      let next = group.nextElementSibling;
+      let hasVisibleEntries = false;
+
+      while (next && !next.classList.contains("publication-year-group")) {
+        if (
+          next.classList.contains("publication-entry") &&
+          next.style.display !== "none"
+        ) {
+          hasVisibleEntries = true;
+          break;
+        }
+        next = next.nextElementSibling;
+      }
+
+      group.style.display = hasVisibleEntries ? "" : "none";
+    });
+  }
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", function () {
+      const filter = this.dataset.filter;
+
+      buttons.forEach((btn) => btn.classList.remove("active"));
+      this.classList.add("active");
+
+      updatePublicationFilter(filter);
+    });
+  });
+
+  updatePublicationFilter("all");
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

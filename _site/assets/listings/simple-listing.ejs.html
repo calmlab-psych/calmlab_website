@@ -130,7 +130,17 @@ ul.task-list li input[type="checkbox"] {
       </h3>
 
       &lt;% if (item.description) { %&gt;
-        <p class="listing-simple-description card-text">&lt;%- item.description %&gt;</p>
+        &lt;% if (item.path) { %&gt;
+          <a href="<%- item.path %>">
+          <p class="listing-simple-description card-text">&lt;%- item.description %&gt;</p>
+          </a>
+        &lt;% } else if (item.url) { %&gt;
+          <a href="<%- item.url %>" target="_blank" rel="noopener">
+            <p class="listing-simple-description card-text">&lt;%- item.description %&gt;</p>
+          </a>
+        &lt;% } else { %&gt;
+          <p class="listing-simple-description card-text">&lt;%- item.description %&gt;</p>
+        &lt;% } %&gt;
       &lt;% } %&gt;
 
       &lt;% if (item.path || item.url) { %&gt;

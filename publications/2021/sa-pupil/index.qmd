@@ -12,10 +12,11 @@ venue: "Scientific American Mind"
 pub-type: "Popular Writing"
 pub-status: "Published"
 
-pdf: "https://www.scientificamerican.com/article/pupil-size-is-a-marker-of-intelligence/"
+pdf: ""
 data: ""
 code: ""
 doi: ""
+link: "https://www.scientificamerican.com/article/pupil-size-is-a-marker-of-intelligence/"
 
 listing-page: false
 format: html

@@ -14,12 +14,24 @@ pub-type: Empirical Article
 pub-status: Published
 
 pdf: /publications/2025/jepg-inspection/Tsukahara_et_al_2025_Journal_of_Experimental_Psychology_General.pdf
-data:
-code:
+data: https://osf.io/uxywg/
+code: https://osf.io/uxywg/
 doi: "10.1037/xge0001758"
+link: ""
 
 abstract: "Mental speed theories of intelligence suggest that people are smarter because they are faster. We argue that attention control plays an important and fundamental role in mediating the relationship between basic sensory processes and more complex cognitive processes such as fluid intelligence. One of the most successful paradigms for establishing a mental speed theory of intelligence is the inspection time task. In this article, we examine the mental speed and the attention control perspectives on the inspection time task and its relationship with fluid intelligence. Integrating experimental and correlational approaches, we find that attention control statistically explains the inspection time task’s correlation with fluid intelligence and working memory capacity. Attention control and inspection time are correlated beyond their relationship with other measures of processing speed. Further, while we find no evidence that selective attention specifically is related to inspection time performance, both attention control and inspection time predicted declines in accuracy as participants sustained their attention over time; other measures of processing speed did not predict sustained attention performance. Collectively, these results indicate that inspection time is related to the ability to control attention, especially the ability to sustain attention over time."
 
 listing-page: false
-format: html
+page-layout: full
+format:
+  html:
+    include-in-header:
+      - text: |
+          <style>.quarto-title-meta { display: none !important; } .quarto-title-block .abstract { display: none !important; }</style>
 ---
+
+{{< include ../../../assets/_meta-publication.qmd >}}
+
+{{< include ../../../assets/_download-buttons.qmd >}}
+
+{{< include ../../../assets/_pdf-viewer.qmd >}}

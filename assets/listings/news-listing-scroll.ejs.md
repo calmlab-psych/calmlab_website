@@ -12,15 +12,19 @@
   <div class="listing-scroll-shell">
     <div class="listing-scroll-row">
       <% for (const item of items) { %>
-      <article class="listing-card card card-interactive" data-categories="<%- item.categories ? item.categories.join(',').toLowerCase() : '' %>">
-        <a href="<%- item.link ? item.link : item.path %>" 
-           class="listing-card-link"
-           <%= item.link ? 'target="_blank" rel="noopener"' : '' %>>
+        <article class="listing-card card card-interactive" data-categories="<%- item.categories ? item.categories.join(',').toLowerCase() : '' %>">
+          <% if (item.page) { %>
+            <a href="<%- item.page %>" class="listing-card-link">
+          <% } else if (item.link) { %>
+            <a href="<%- item.link %>" class="listing-card-link" target="_blank" rel="noopener noreferrer">
+          <% } else { %>
+            <a href="<%- item.path %>" class="listing-card-link">
+          <% } %>
 
           <% if (item.image) { %>
-          <div class="listing-thumb-wrap">
-            <img src="<%- item.image %>" alt="" class="listing-thumb">
-          </div>
+            <div class="listing-thumb-wrap">
+              <img src="<%- item.image %>" alt="" class="listing-thumb">
+            </div>
           <% } %>
 
           <div class="listing-eyebrow"><%- item.date ? item.date : "" %></div>
@@ -42,14 +46,13 @@
           <div class="listing-cta link-cta">
             Read More
             <% if (item.link) { %>
-            <span>↗</span>
+              <span>↗</span>
             <% } else { %>
-            <span>→</span>
+              <span>→</span>
             <% } %>
           </div>
-
-        </a>
-      </article>
+          </a>
+        </article>
       <% } %>
     </div>
   </div>

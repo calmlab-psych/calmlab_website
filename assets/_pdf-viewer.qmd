@@ -1,0 +1,12 @@
+```{=html}
+<object
+  class="pdf-viewer-frame"
+  data="{{< meta pdf >}}"
+  type="application/pdf"
+>
+  <p class="pdf-viewer-fallback">
+    Your browser can't display this PDF inline.
+    <a href="{{< meta pdf >}}" download>Download it instead</a>.
+  </p>
+</object>
+```

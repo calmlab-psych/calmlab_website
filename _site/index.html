@@ -66,7 +66,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-date','listing-description','listing-categories','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-date","listing-categories","listing-description","listing-image","listing-link","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-date","listing-categories","listing-description","listing-image","listing-page","listing-link","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -94,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
     const options = {
       valueNames: ['listing-title','listing-pub-year','listing-pub-authors','listing-venue','listing-pub-status','listing-pub-type','listing-pdf','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-categories","listing-project-areas","listing-show-on-profiles"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-pub-authors","listing-pub-year","listing-date","listing-venue","listing-pub-type","listing-pub-status","listing-pdf","listing-data","listing-code","listing-doi","listing-link","listing-abstract","listing-listing-page","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count","listing-categories","listing-project-areas","listing-show-on-profiles","listing-page-layout"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -272,48 +272,15 @@ window.Quarto = {
   <div class="listing-scroll-shell">
     <div class="listing-scroll-row">
       
-      <article class="listing-card card card-interactive" data-categories="paper">
-        <a href="https://www.jasontsukahara.com" class="listing-card-link" target="_blank" rel="noopener">
-
+        <article class="listing-card card card-interactive" data-categories="paper">
           
-          <div class="listing-thumb-wrap">
-            <img src="./images/lablogo.png" alt="" class="listing-thumb">
-          </div>
+            <a href="https://www.jasontsukahara.com" class="listing-card-link" target="_blank" rel="noopener noreferrer">
           
 
-          <div class="listing-eyebrow">May 1, 2026</div>
-
           
-          <div class="listing-tags">
-            
-            <span class="pill pill-tag pill-soft">Paper</span>
-            
-          </div>
-          
-
-          <h3 class="listing-title card-title">New publication on attention control in the brain</h3>
-
-          
-          <p class="listing-summary card-text">Our latest work on attention control and large-scale brain network dynamics is now available.</p>
-          
-
-          <div class="listing-cta link-cta">
-            Read More
-            
-            <span>↗</span>
-            
-          </div>
-
-        </a>
-      </article>
-      
-      <article class="listing-card card card-interactive" data-categories="paper">
-        <a href="https://www.jasontsukahara.com" class="listing-card-link" target="_blank" rel="noopener">
-
-          
-          <div class="listing-thumb-wrap">
-            <img src="./images/lablogo.png" alt="" class="listing-thumb">
-          </div>
+            <div class="listing-thumb-wrap">
+              <img src="./images/lablogo.png" alt="" class="listing-thumb">
+            </div>
           
 
           <div class="listing-eyebrow">May 1, 2026</div>
@@ -335,20 +302,21 @@ window.Quarto = {
           <div class="listing-cta link-cta">
             Read More
             
-            <span>↗</span>
+              <span>↗</span>
             
           </div>
-
-        </a>
-      </article>
+          </a>
+        </article>
       
-      <article class="listing-card card card-interactive" data-categories="paper">
-        <a href="https://www.jasontsukahara.com" class="listing-card-link" target="_blank" rel="noopener">
+        <article class="listing-card card card-interactive" data-categories="paper">
+          
+            <a href="https://www.jasontsukahara.com" class="listing-card-link" target="_blank" rel="noopener noreferrer">
+          
 
           
-          <div class="listing-thumb-wrap">
-            <img src="./images/lablogo.png" alt="" class="listing-thumb">
-          </div>
+            <div class="listing-thumb-wrap">
+              <img src="./images/lablogo.png" alt="" class="listing-thumb">
+            </div>
           
 
           <div class="listing-eyebrow">May 1, 2026</div>
@@ -370,20 +338,57 @@ window.Quarto = {
           <div class="listing-cta link-cta">
             Read More
             
-            <span>↗</span>
+              <span>↗</span>
             
           </div>
-
-        </a>
-      </article>
+          </a>
+        </article>
       
-      <article class="listing-card card card-interactive" data-categories="team">
-        <a href="./news/2026-04-website-launch copy/index.html" class="listing-card-link">
+        <article class="listing-card card card-interactive" data-categories="paper">
+          
+            <a href="./publications/2026/pnas-qpp" class="listing-card-link">
+          
 
           
-          <div class="listing-thumb-wrap">
-            <img src="./images/lablogo.png" alt="" class="listing-thumb">
+            <div class="listing-thumb-wrap">
+              <img src="./images/lablogo.png" alt="" class="listing-thumb">
+            </div>
+          
+
+          <div class="listing-eyebrow">May 1, 2026</div>
+
+          
+          <div class="listing-tags">
+            
+            <span class="pill pill-tag pill-soft">Paper</span>
+            
           </div>
+          
+
+          <h3 class="listing-title card-title">New publication on attention control in the brainz</h3>
+
+          
+          <p class="listing-summary card-text">Our latest work on attention control and large-scale brain network dynamics is now available.</p>
+          
+
+          <div class="listing-cta link-cta">
+            Read More
+            
+              <span>→</span>
+            
+          </div>
+          </a>
+        </article>
+      
+        <article class="listing-card card card-interactive" data-categories="team">
+          
+            <a href="./news/2026-04-website-launch copy/index.html" class="listing-card-link">
+          
+
+          
+            <div class="listing-thumb-wrap">
+              <img src="./images/lablogo.png" alt="" class="listing-thumb">
+            </div>
           
 
           <div class="listing-eyebrow">Apr 1, 2026</div>
@@ -405,20 +410,21 @@ window.Quarto = {
           <div class="listing-cta link-cta">
             Read More
             
-            <span>→</span>
+              <span>→</span>
             
           </div>
-
-        </a>
-      </article>
+          </a>
+        </article>
       
-      <article class="listing-card card card-interactive" data-categories="lab">
-        <a href="./news/2026-04-website-launch/index.html" class="listing-card-link">
+        <article class="listing-card card card-interactive" data-categories="lab">
+          
+            <a href="./news/2026-04-website-launch/index.html" class="listing-card-link">
+          
 
           
-          <div class="listing-thumb-wrap">
-            <img src="./images/lablogo.png" alt="" class="listing-thumb">
-          </div>
+            <div class="listing-thumb-wrap">
+              <img src="./images/lablogo.png" alt="" class="listing-thumb">
+            </div>
           
 
           <div class="listing-eyebrow">Apr 1, 2026</div>
@@ -440,12 +446,11 @@ window.Quarto = {
           <div class="listing-cta link-cta">
             Read More
             
-            <span>→</span>
+              <span>→</span>
             
           </div>
-
-        </a>
-      </article>
+          </a>
+        </article>
       
     </div>
   </div>
@@ -464,7 +469,10 @@ window.Quarto = {
   <div class="listing-scroll-row">
     
       <article class="listing-card card card-interactive" data-pub-type="empirical article">
-        <a href="https://psyarxiv.com/wd5kz/" class="listing-card-link" target="_blank" rel="noopener">
+
+        
+          <a href="./publications/2023/sact-2/index.html" class="listing-card-link">
+        
 
           <div class="listing-eyebrow">
             Preprint
@@ -486,14 +494,19 @@ window.Quarto = {
 
           <div class="listing-cta link-cta">
             Read
-            <span>→</span>
+            
+              <span>→</span>
+            
           </div>
 
         </a>
       </article>
     
       <article class="listing-card card card-interactive" data-pub-type="empirical article">
-        <a href="./" class="listing-card-link" target="_blank" rel="noopener">
+
+        
+          <a href="./publications/2026/cogneuro-eeg-micro/index.html" class="listing-card-link">
+        
 
           <div class="listing-eyebrow">
             2026
@@ -515,14 +528,19 @@ window.Quarto = {
 
           <div class="listing-cta link-cta">
             Read
-            <span>→</span>
+            
+              <span>→</span>
+            
           </div>
 
         </a>
       </article>
     
       <article class="listing-card card card-interactive" data-pub-type="empirical article">
-        <a href="./" class="listing-card-link" target="_blank" rel="noopener">
+
+        
+          <a href="./publications/2026/pnas-qpp/index.html" class="listing-card-link">
+        
 
           <div class="listing-eyebrow">
             2026
@@ -544,14 +562,19 @@ window.Quarto = {
 
           <div class="listing-cta link-cta">
             Read
-            <span>→</span>
+            
+              <span>→</span>
+            
           </div>
 
         </a>
       </article>
     
       <article class="listing-card card card-interactive" data-pub-type="empirical article">
-        <a href="./publications/2025/ijsa-navy/Burgoyne_et_al_2025_International_Journal_of_Selection_and_Assessment.pdf" class="listing-card-link" target="_blank" rel="noopener">
+
+        
+          <a href="./publications/2025/ijsa-navy/index.html" class="listing-card-link">
+        
 
           <div class="listing-eyebrow">
             2025
@@ -573,14 +596,19 @@ window.Quarto = {
 
           <div class="listing-cta link-cta">
             Read
-            <span>→</span>
+            
+              <span>→</span>
+            
           </div>
 
         </a>
       </article>
     
       <article class="listing-card card card-interactive" data-pub-type="empirical article">
-        <a href="./publications/2025/front-climate/Denkova_et_al_2025.pdf" class="listing-card-link" target="_blank" rel="noopener">
+
+        
+          <a href="./publications/2025/front-climate/index.html" class="listing-card-link">
+        
 
           <div class="listing-eyebrow">
             2025
@@ -602,14 +630,19 @@ window.Quarto = {
 
           <div class="listing-cta link-cta">
             Read
-            <span>→</span>
+            
+              <span>→</span>
+            
           </div>
 
         </a>
       </article>
     
       <article class="listing-card card card-interactive" data-pub-type="empirical article">
-        <a href="./publications/2025/venue-title/Schwartzman_et_al_2025_Frontiers_in_Cognition.pdf" class="listing-card-link" target="_blank" rel="noopener">
+
+        
+          <a href="./publications/2025/front-vigdec/index.html" class="listing-card-link">
+        
 
           <div class="listing-eyebrow">
             2025
@@ -631,7 +664,9 @@ window.Quarto = {
 
           <div class="listing-cta link-cta">
             Read
-            <span>→</span>
+            
+              <span>→</span>
+            
           </div>
 
         </a>

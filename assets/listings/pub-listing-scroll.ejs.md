@@ -6,11 +6,12 @@
         class="listing-card card card-interactive"
         data-pub-type="<%- item['pub-type'] ? item['pub-type'].toLowerCase() : '' %>"
       >
-        <a
-          href="<%- item.pdf ? item.pdf : item.path %>"
-          class="listing-card-link"
-          <%= item.pdf ? 'target="_blank" rel="noopener"' : '' %>
-        >
+
+        <% if (item.pdf) { %>
+          <a href="<%- item.path %>" class="listing-card-link">
+        <% } else { %>
+          <a href="<%- item.link %>" class="listing-card-link" target="_blank" rel="noopener noreferrer">
+        <% } %>
 
           <div class="listing-eyebrow">
             <%- item["pub-status"] === "Preprint" ? "Preprint" : (item["pub-year"] ? item["pub-year"] : "") %>
@@ -37,7 +38,11 @@
 
           <div class="listing-cta link-cta">
             Read
-            <span>→</span>
+            <% if (item.link) { %>
+              <span>↗</span>
+            <% } else { %>
+              <span>→</span>
+            <% } %>
           </div>
 
         </a>

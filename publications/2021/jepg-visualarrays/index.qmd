@@ -20,6 +20,7 @@ pdf: "/publications/2021/jepg-visualarrays/Martin_et_al_2021_Journal_of_Experime
 data: "https://osf.io/23nzu/"
 code: "https://osf.io/23nzu/"
 doi: "10.1037/xge0001048"
+link: ""
 
 abstract: "Extant literature suggests that performance on visual arrays tasks reflects limited-capacity storage of visual information. However, there is also evidence to suggest that visual arrays task performance reflects individual differences in controlled processing. The purpose of this study was to empirically evaluate the degree to which visual arrays tasks are more closely related to memory storage capacity or measures of attention control. To this end, we conducted new analyses on a series of large data sets that incorporate various versions of a visual arrays task. Based on these analyses, we suggest that the degree to which the visual arrays is related to memory storage ability or effortful attention control may be task-dependent. Specifically, when versions of the task require participants to ignore elements of the target display, individual differences in controlled attention reliably provide unique predictive value. Therefore, at least some versions of the visual arrays tasks can be used as valid indicators of individual differences in attention control."
 

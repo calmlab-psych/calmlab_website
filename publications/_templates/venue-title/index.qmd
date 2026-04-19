@@ -19,6 +19,7 @@ pdf: filename.pdf
 data:
 code:
 doi: ""
+link: ""
 
 abstract: "Paper Abstract"
 

@@ -6,11 +6,9 @@
 
       <h3 class="publication-title publication-title-profile">
         <% if (item.pdf) { %>
-          <a href="<%- item.pdf %>" target="_blank" rel="noopener"><%= item.title %></a>
-        <% } else if (item.path) { %>
           <a href="<%- item.path %>"><%= item.title %></a>
         <% } else { %>
-          <%= item.title %>
+          <a href="<%- item.link %>" target="_blank" rel="noopener noreferrer"><%= item.title %></a>
         <% } %>
       </h3>
 
@@ -49,9 +47,16 @@
 
       <div class="publication-links publication-links-profile">
         <% if (item.pdf) { %>
-          <a class="pub-link pub-link-pdf pub-link-profile" href="<%- item.pdf %>" target="_blank" rel="noopener">
-            <span class="pub-link-icon pub-link-icon-profile">
+          <a class="pub-link pub-link-pdf" href="<%- item.path %>">
+            <span class="pub-link-icon">
               <i class="bi bi-file-earmark-pdf"></i>
+            </span>
+            <span class="pub-link-label">Read</span>
+          </a>
+        <% } else { %>
+          <a class="pub-link pub-link-pdf" href="<%- item.link %>" target="_blank" rel="noopener noreferrer">
+            <span class="pub-link-icon">
+              <i class="bi bi-link-45deg"></i>
             </span>
             <span class="pub-link-label">Read</span>
           </a>
