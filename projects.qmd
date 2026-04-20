@@ -94,9 +94,9 @@ How can mindfulness and contemplative practices strengthen attention control and
 
 ------------------------------------------------------------------------
 
-# Individual Differences and Cognitive Mechanisms {#cognitive-section style="text-align: center; color: var(--color-primary);"}
+# Individual Differences and Cognitive Mechanisms {#cognitive-section}
 
-::: {style="text-align: center; color: var(--color-secondary); font-size: 1.25rem; font-weight: 700;"}
+::: {style="text-align: center; color: var(--color-secondary); font-size: 1.3rem; font-weight: 700;"}
 How do differences in the ability to control attention relate to cognition and well-being?
 :::
 
@@ -125,9 +125,9 @@ Critical to understanding the role of attention control in cognition and well-be
 
 ------------------------------------------------------------------------
 
-# Neural Mechanisms {#brain-section style="text-align: center; color: var(--color-primary);"}
+# Neural Mechanisms {#brain-section}
 
-::: {style="text-align: center; color: var(--color-secondary); font-size: 1.25rem; font-weight: 700;"}
+::: {style="text-align: center; color: var(--color-secondary); font-size: 1.3rem; font-weight: 700;"}
 What are the neural mechanisms underlying the ability to control attention?
 :::
 
@@ -152,9 +152,9 @@ We investigate the neural mechanisms underlying attention control, including the
 
 ------------------------------------------------------------------------
 
-# Mindfulness and Contemplative Practices {#mindfulness-section style="text-align: center; color: var(--color-primary);"}
+# Mindfulness and Contemplative Practices {#mindfulness-section}
 
-::: {style="text-align: center; color: var(--color-secondary); font-size: 1.25rem; font-weight: 700;"}
+::: {style="text-align: center; color: var(--color-secondary); font-size: 1.3rem; font-weight: 700;"}
 How can mindfulness and contemplative practices strengthen attention control and well-being?
 :::
 
