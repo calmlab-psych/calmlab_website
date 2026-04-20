@@ -1198,11 +1198,13 @@ function copyEmail(link) {
   const email = link.dataset.copy;
   const icon = link.querySelector('i');
   navigator.clipboard.writeText(email).then(() => {
-    icon.classList.remove('bi-copy');
-    icon.classList.add('bi-check2');
+    const originalClass = icon.className;
+    icon.className = 'bi bi-check2';
+    const textNode = document.createTextNode(' copied!');
+    icon.after(textNode);
     setTimeout(() => {
-      icon.classList.remove('bi-check2');
-      icon.classList.add('bi-copy');
+      icon.className = originalClass;
+      textNode.remove();
     }, 1500);
   });
 }

@@ -1,5 +1,7 @@
 project:
   type: website
+  resources:
+    - "team/**/*.pdf"
 
 website:
   title: "CALM LAB"

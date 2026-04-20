@@ -95,7 +95,7 @@ Interested in collaborating, joining the lab, or learning more about our work?
 
 ------------------------------------------------------------------------
 
-# Latest News  {style="text-align: center; color: var(--color-primary);"}
+# [Latest News]{.section-title}
 
 ::: {#home-news}
 :::
@@ -108,9 +108,9 @@ Interested in collaborating, joining the lab, or learning more about our work?
 
 ------------------------------------------------------------------------
 
-# Research {style="text-align: center; color: var(--color-primary);"}
+# [Research]{.section-title}
 
-::: {style="text-align: center; color: var(--color-text); font-size: 1.25rem; font-weight: 500;"}
+::: {style="color: var(--color-text); font-size: 1.25rem; font-weight: 500;"}
 The CALM Lab’s research is organized around three interconnected areas that together aim to understand the role of attention across contexts of life and mind.
 :::
 
@@ -149,7 +149,7 @@ How can mindfulness and contemplative practices strengthen attention control and
 
 ::::::::::::
 
-### Latest Publications {style="text-align: center; color: var(--color-primary);"}
+### [Latest Publications]{style="color: var(--color-primary);"}
 
 ::: {#home-publications}
 :::

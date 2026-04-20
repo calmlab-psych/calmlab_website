@@ -5,11 +5,12 @@ tagline: Dr. Tsukahara directs the CALM Lab and studies attention control across
 
 image: "photo.jpeg"
 
-department: UNC Wilmington, Department of Psychology
-office: Teachers Lab Room 123
+department: "Assistant Professor"
+
+office: "Teacher Lab 123"
 
 email: jason.tsukahara@miami.edu
-cv: jtsukahara_cv.pdf
+cv: /team/jason-tsukahara/jtsukahara_cv.pdf
 website-external:
 google_scholar: https://scholar.google.com/citations?user=393wE14AAAAJ&hl=en&oi=ao
 linkedin: ""
@@ -55,21 +56,19 @@ listing:
   data-cv="{{< meta cv >}}"
   data-website="{{< meta website-external >}}"
   data-google-scholar="{{< meta google_scholar >}}"
+  data-researchgate="{{< meta researchgate >}}"
+  data-github="{{< meta github >}}"
   data-linkedin="{{< meta linkedin >}}"
   data-bluesky="{{< meta bluesky >}}"
-  data-researchgate="{{< meta researchgate >}}"
-  data-x="{{< meta x >}}"
-  data-github="{{< meta github >}}">
+  data-x="{{< meta x >}}">
 </div>
-
-:::
 
 :::
 
 :::: {.profile-meta-grid}
 
 ::: {.profile-meta-card}
-### Department
+### Position
 {{< meta department >}}
 :::
 
@@ -107,11 +106,20 @@ This is a longer paragraph style explanation of my research interests into somet
 
 ### Education
 
-**Ph.D. in Psychology** — Example University
+::: {style="line-height: 0.5;"}
+**Ph.D. in Cognitive Brain Science**\
+Georgia Tech · Dr. Randall Engle
+:::
 
-**M.A. in Cognitive Science** — Example University
+::: {style="line-height: 0.5;"}
+**M.A. in Experimental Psychology**\
+CSU, San Bernardino · Dr. Hideya Koshino
+:::
 
-**B.A. in Psychology** — Example University
+::: {style="line-height: 0.5;"}
+**B.A. in Behavioral Neuroscience**\
+Western Washington University
+:::
 
 :::
 

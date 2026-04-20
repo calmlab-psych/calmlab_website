@@ -257,8 +257,8 @@ window.Quarto = {
 </div>
 </div>
 <hr>
-<section id="latest-news" class="level1" style="text-align: center; color: var(--color-primary);">
-<h1 style="text-align: center; color: var(--color-primary);">Latest News</h1>
+<section id="latest-news" class="level1">
+<h1><span class="section-title">Latest News</span></h1>
 <div id="listing-home-news" class="quarto-listing quarto-listing-container-custom">
 <div class="listing-block" data-filterable="true">
   <div class="listing-toolbar">
@@ -317,9 +317,9 @@ window.Quarto = {
 </div>
 <hr>
 </section>
-<section id="research" class="level1" style="text-align: center; color: var(--color-primary);">
-<h1 style="text-align: center; color: var(--color-primary);">Research</h1>
-<div style="text-align: center; color: var(--color-text); font-size: 1.25rem; font-weight: 500;">
+<section id="research" class="level1">
+<h1><span class="section-title">Research</span></h1>
+<div style="color: var(--color-text); font-size: 1.25rem; font-weight: 500;">
 <p>The CALM Lab’s research is organized around three interconnected areas that together aim to understand the role of attention across contexts of life and mind.</p>
 </div>
 <div class="grid-3 section-shell">
@@ -348,8 +348,8 @@ window.Quarto = {
 </section>
 </div>
 </div>
-<section id="latest-publications" class="level3" style="text-align: center; color: var(--color-primary);">
-<h3 style="text-align: center; color: var(--color-primary);" data-anchor-id="latest-publications">Latest Publications</h3>
+<section id="latest-publications" class="level3">
+<h3 data-anchor-id="latest-publications"><span style="color: var(--color-primary);">Latest Publications</span></h3>
 <div id="listing-home-publications" class="quarto-listing quarto-listing-container-custom">
 <div class="listing-scroll-shell">
   <div class="listing-scroll-row">
@@ -610,11 +610,13 @@ function copyEmail(link) {
   const email = link.dataset.copy;
   const icon = link.querySelector('i');
   navigator.clipboard.writeText(email).then(() => {
-    icon.classList.remove('bi-copy');
-    icon.classList.add('bi-check2');
+    const originalClass = icon.className;
+    icon.className = 'bi bi-check2';
+    const textNode = document.createTextNode(' copied!');
+    icon.after(textNode);
     setTimeout(() => {
-      icon.classList.remove('bi-check2');
-      icon.classList.add('bi-copy');
+      icon.className = originalClass;
+      textNode.remove();
     }, 1500);
   });
 }
