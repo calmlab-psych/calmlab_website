@@ -27,15 +27,17 @@
     <div class="pi-links">
 
       <% if (item.cv) { %>
-      <a href="<%- item.cv %>">CV</a>
+      <a href="<%- item.cv %>" style="color: var(--color-primary);">Download CV &nbsp; <i class="bi bi-download"></i></a>
       <% } %>
+
+      &nbsp;
 
       <% if (item.email) { %>
-      <a href="mailto:<%- item.email %>">Email</a>
+      <span style="color: var(--color-primary); font-weight: 600; font-size: 1.1rem;">Email </span> <a onclick="copyEmail(this); return false;" data-copy="<%- item.email %>" title="Copy email" class="copy-email-link" style="color: var(--color-primary);"><i class="bi bi-copy"></i></a>
       <% } %>
 
-      <% if (item.website) { %>
-      <a href="<%- item.website %>">Personal Website ↗</a>
+      <% if (item["website-external"]) { %>
+      <a href="<%- item['website-external'] %>">Personal Website ↗</a>
       <% } %>
 
     </div>

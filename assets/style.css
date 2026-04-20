@@ -1400,6 +1400,7 @@ a {
   margin: 0;
   line-height: 1.55;
   font-size: 1rem;
+  font-weight: 500;
   color: var(--color-primary);
 }
 

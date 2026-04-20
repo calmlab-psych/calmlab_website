@@ -8,14 +8,14 @@ image: "photo.jpeg"
 department: UNC Wilmington, Department of Psychology
 office: Teachers Lab Room 123
 
-email: jane@university.edu
-cv: jane-doe-cv.pdf
-website: https://www.jasontsukahara.com
+email: jason.tsukahara@miami.edu
+cv: jtsukahara_cv.pdf
+website-external:
 google_scholar: https://scholar.google.com/citations?user=393wE14AAAAJ&hl=en&oi=ao
-linkedin: ok
+linkedin: ""
 bluesky: drjt.bsky.social
-researchgate: yes
-x: jasontsukahara
+researchgate: https://www.researchgate.net/profile/Jason-Tsukahara-2
+x: ""
 github: dr-JT
 
 page-layout: full
@@ -53,7 +53,7 @@ listing:
 
 <div id="profile-links-dynamic"
   data-cv="{{< meta cv >}}"
-  data-website="{{< meta website >}}"
+  data-website="{{< meta website-external >}}"
   data-google-scholar="{{< meta google_scholar >}}"
   data-linkedin="{{< meta linkedin >}}"
   data-bluesky="{{< meta bluesky >}}"
@@ -69,7 +69,7 @@ listing:
 :::: {.profile-meta-grid}
 
 ::: {.profile-meta-card}
-### Degree Program
+### Department
 {{< meta department >}}
 :::
 
@@ -79,7 +79,7 @@ listing:
 :::
 
 ::: {.profile-meta-card}
-### In the Lab
+### Office
 {{< meta office >}}
 :::
 

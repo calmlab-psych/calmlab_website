@@ -64,9 +64,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-name','listing-position','listing-tagline','listing-image','listing-department','listing-office','listing-email','listing-cv','listing-google_scholar','listing-linkedin','listing-bluesky','listing-researchgate','listing-x','listing-github','listing-page-layout','listing-body-classes','listing-about','listing-listing','listing-path','listing-outputHref','listing-title','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      valueNames: ['listing-project','listing-website','listing-format','listing-engines','listing-language','listing-name','listing-position','listing-tagline','listing-image','listing-department','listing-office','listing-email','listing-cv','listing-website-external','listing-google_scholar','listing-linkedin','listing-bluesky','listing-researchgate','listing-x','listing-github','listing-page-layout','listing-body-classes','listing-about','listing-listing','listing-path','listing-outputHref','listing-title','listing-author','listing-description','listing-filename','listing-file-modified','listing-reading-time','listing-word-count',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-name","listing-position","listing-tagline","listing-image","listing-department","listing-office","listing-email","listing-cv","listing-google_scholar","listing-linkedin","listing-bluesky","listing-researchgate","listing-x","listing-github","listing-page-layout","listing-body-classes","listing-about","listing-listing","listing-path","listing-outputHref","listing-title","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-name","listing-position","listing-tagline","listing-image","listing-department","listing-office","listing-email","listing-cv","listing-website-external","listing-google_scholar","listing-linkedin","listing-bluesky","listing-researchgate","listing-x","listing-github","listing-page-layout","listing-body-classes","listing-about","listing-listing","listing-path","listing-outputHref","listing-title","listing-author","listing-description","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -254,15 +254,15 @@ window.Quarto = {
     <div class="pi-links">
 
       
-      <a href="jane-doe-cv.pdf">CV</a>
+      <a href="jtsukahara_cv.pdf" style="color: var(--color-primary);">Download CV &nbsp; <i class="bi bi-download"></i></a>
       
 
-      
-      <a href="mailto:jane@university.edu">Email</a>
-      
+      &nbsp;
 
       
-      <a href="https://www.jasontsukahara.com">Personal Website ↗</a>
+      <span style="color: var(--color-primary); font-weight: 600; font-size: 1.1rem;">Email &nbsp;</span> <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link" style="color: var(--color-primary);"><i class="bi bi-copy"></i></a>
+      
+
       
 
     </div>
@@ -307,7 +307,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const items = [
     { key: "cv",            icon: "bi bi-file-earmark-text", label: "CV",             base: "" },
-    { key: "website",       icon: "bi bi-globe",             label: "Website",         base: "" },
+    { key: "website-external",       icon: "bi bi-globe",             label: "Website",         base: "" },
     { key: "googleScholar", icon: "bi bi-mortarboard",       label: "Google Scholar",  base: "" },
     { key: "linkedin",      icon: "bi bi-linkedin",          label: "LinkedIn",        base: "https://linkedin.com/in/" },
     { key: "bluesky",       icon: "bi bi-cloud",             label: "Bluesky",         base: "https://bsky.app/profile/" },
@@ -318,7 +318,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   items.forEach(({ key, icon, label, base }) => {
     const val = dataset[key]?.trim();
-    if (!val || val.startsWith("{{")) return;
+    if (!val || val === "" || val.startsWith("{{")) return;
 
     const a = document.createElement("a");
     a.href = base + val;
