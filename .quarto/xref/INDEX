@@ -337,5 +337,8 @@
   },
   "news/2026/05-01-website-launch/index.qmd": {
     "index.html": "162aff8f"
+  },
+  "projects.qmd": {
+    "projects.html": "1d26bb74"
   }
 }

@@ -84,16 +84,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../projects/index.html"> 
+    <a class="nav-link" href="../../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../../research_tools/index.html"> 
-<span class="menu-text">Research Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../../contact.html"> 
@@ -192,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const items = [
     { key: "cv",            icon: "bi bi-file-earmark-text", label: "CV",             base: "" },
-    { key: "website",       icon: "bi bi-globe",             label: "Website",         base: "" },
+    { key: "website-external",       icon: "bi bi-globe",             label: "Website",         base: "" },
     { key: "googleScholar", icon: "bi bi-mortarboard",       label: "Google Scholar",  base: "" },
     { key: "linkedin",      icon: "bi bi-linkedin",          label: "LinkedIn",        base: "https://linkedin.com/in/" },
     { key: "bluesky",       icon: "bi bi-cloud",             label: "Bluesky",         base: "https://bsky.app/profile/" },
@@ -203,7 +199,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   items.forEach(({ key, icon, label, base }) => {
     const val = dataset[key]?.trim();
-    if (!val || val.startsWith("{{")) return;
+    if (!val || val === "" || val.startsWith("{{")) return;
 
     const a = document.createElement("a");
     a.href = base + val;

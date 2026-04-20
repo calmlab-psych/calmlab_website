@@ -83,16 +83,12 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../projects/index.html"> 
+    <a class="nav-link" href="../../projects.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../../research_tools/index.html"> 
-<span class="menu-text">Research Tools</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../contact.html"> 
@@ -181,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const items = [
     { key: "cv",            icon: "bi bi-file-earmark-text", label: "CV",             base: "" },
-    { key: "website",       icon: "bi bi-globe",             label: "Website",         base: "" },
+    { key: "website-external",       icon: "bi bi-globe",             label: "Website",         base: "" },
     { key: "googleScholar", icon: "bi bi-mortarboard",       label: "Google Scholar",  base: "" },
     { key: "linkedin",      icon: "bi bi-linkedin",          label: "LinkedIn",        base: "https://linkedin.com/in/" },
     { key: "bluesky",       icon: "bi bi-cloud",             label: "Bluesky",         base: "https://bsky.app/profile/" },
@@ -192,7 +188,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   items.forEach(({ key, icon, label, base }) => {
     const val = dataset[key]?.trim();
-    if (!val || val.startsWith("{{")) return;
+    if (!val || val === "" || val.startsWith("{{")) return;
 
     const a = document.createElement("a");
     a.href = base + val;
@@ -220,55 +216,65 @@ function copyEmail(link) {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  const buttons = document.querySelectorAll(".pub-filter-bar .pill-filter");
+  const filterBars = document.querySelectorAll(".pub-filter-bar");
 
-  function updatePublicationFilter(filter) {
-    const list = document.querySelector(".publications-list");
-    if (!list) return;
+  filterBars.forEach((bar) => {
+    const buttons = bar.querySelectorAll(".pill-filter");
+    const targetSelector = bar.dataset.target || ".publications-list";
+    const filterBy = bar.dataset.filterBy || "pub-type";
+    const list = document.querySelector(targetSelector);
+    if (!list || !buttons.length) return;
 
-    const children = Array.from(list.children);
+    const datasetKey = filterBy.replace(/-([a-z])/g, (_, c) => c.toUpperCase());
 
-    children.forEach((el) => {
-      if (el.classList.contains("publication-entry")) {
-        const pubType = el.dataset.pubType || "";
-        const show = filter === "all" || pubType === filter;
-        el.style.display = show ? "" : "none";
+    function itemMatches(el, filter) {
+      if (filter === "all") return true;
+      const raw = (el.dataset[datasetKey] || "").trim();
+      if (!raw) return false;
+
+      // If the value contains commas, treat as multi-valued; otherwise exact match
+      if (raw.includes(",")) {
+        const values = raw.split(",").map((v) => v.trim()).filter(Boolean);
+        return values.includes(filter);
       }
-    });
+      return raw === filter;
+    }
 
-    const yearGroups = list.querySelectorAll(".publication-year-group");
+    function applyFilter(filter) {
+      const entries = list.querySelectorAll(".publication-entry, .listing-card");
+      entries.forEach((el) => {
+        el.style.display = itemMatches(el, filter) ? "" : "none";
+      });
 
-    yearGroups.forEach((group) => {
-      let next = group.nextElementSibling;
-      let hasVisibleEntries = false;
-
-      while (next && !next.classList.contains("publication-year-group")) {
-        if (
-          next.classList.contains("publication-entry") &&
-          next.style.display !== "none"
-        ) {
-          hasVisibleEntries = true;
-          break;
+      const yearGroups = list.querySelectorAll(".publication-year-group");
+      yearGroups.forEach((group) => {
+        let next = group.nextElementSibling;
+        let hasVisibleEntries = false;
+        while (next && !next.classList.contains("publication-year-group")) {
+          if (
+            next.classList.contains("publication-entry") &&
+            next.style.display !== "none"
+          ) {
+            hasVisibleEntries = true;
+            break;
+          }
+          next = next.nextElementSibling;
         }
-        next = next.nextElementSibling;
-      }
+        group.style.display = hasVisibleEntries ? "" : "none";
+      });
+    }
 
-      group.style.display = hasVisibleEntries ? "" : "none";
+    buttons.forEach((button) => {
+      button.addEventListener("click", function () {
+        const filter = this.dataset.filter;
+        buttons.forEach((btn) => btn.classList.remove("active"));
+        this.classList.add("active");
+        applyFilter(filter);
+      });
     });
-  }
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", function () {
-      const filter = this.dataset.filter;
-
-      buttons.forEach((btn) => btn.classList.remove("active"));
-      this.classList.add("active");
-
-      updatePublicationFilter(filter);
-    });
+    applyFilter("all");
   });
-
-  updatePublicationFilter("all");
 });
 </script>
 <script id="quarto-html-after-body" type="application/javascript">

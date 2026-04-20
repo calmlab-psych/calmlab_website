@@ -42,7 +42,7 @@
     ]
   },
   {
-    "listing": "/projects/index.html",
+    "listing": "/projects.html",
     "items": [
       "/publications/2023/sact-2/index.html",
       "/publications/2025/ijsa-navy/index.html",
@@ -97,26 +97,6 @@
       "/publications/2020/wms-book-chapter/index.html",
       "/publications/2020/app-sensory-discrimination/index.html",
       "/publications/2016/cp-baseline-pupil-og/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/individual-differences/index.html",
-    "items": [
-      "/publications/2023/sact-2/index.html",
-      "/publications/2023/brm-toolbox-2/index.html",
-      "/publications/2023/jepg-squared-intro/index.html",
-      "/publications/2021/jepg-visualarrays/index.html",
-      "/publications/2021/jepg-toolbox-1/index.html",
-      "/publications/2020/wms-book-chapter/index.html",
-      "/publications/2025/jepg-inspection/index.html",
-      "/publications/2020/app-sensory-discrimination/index.html",
-      "/publications/2025/ijsa-navy/index.html",
-      "/publications/2025/front-climate/index.html",
-      "/publications/2024/ac-psychomotor/index.html",
-      "/publications/2022/chwml-book-chapter/index.html",
-      "/publications/2022/int-pot/index.html",
-      "/publications/2021/tr-rationality/index.html",
-      "/publications/2020/lm-diff-exp/index.html"
     ]
   },
   {

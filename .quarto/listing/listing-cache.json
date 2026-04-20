@@ -109,6 +109,9 @@
       "../../publications/2024/ac-psychomotor/index.qmd",
       "../../publications/2025/front-climate/index.qmd",
       "../../publications/2025/ijsa-navy/index.qmd"
+    ],
+    "projects.qmd": [
+      "/publications/*/*/index.qmd"
     ]
   }
 }

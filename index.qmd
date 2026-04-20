@@ -110,13 +110,13 @@ Interested in collaborating, joining the lab, or learning more about our work?
 
 # Research {style="text-align: center; color: var(--color-primary);"}
 
-::: {style="text-align: center; color: var(--color-secondary); font-size: 1.25rem; font-weight: 700;"}
-The CALM Lab’s research is organized around three interconnected areas that together aim to understand attention across contexts of life and mind.
+::: {style="text-align: center; color: var(--color-text); font-size: 1.25rem; font-weight: 500;"}
+The CALM Lab’s research is organized around three interconnected areas that together aim to understand the role of attention across contexts of life and mind.
 :::
 
 :::::::::::: {.grid-3 .section-shell}
 ::::: {.card .card-interactive .quick-card .is-blue}
-<a href="/projects#cognitive-section">
+<a href="/projects.qmd#cognitive-section">
 
 ### Cognitive Mechanisms
 
@@ -126,7 +126,7 @@ How do differences in the ability to control attention relate to cognition and w
 :::::
 
 ::::: {.card .card-interactive .quick-card .is-yellow}
-<a href="/projects#brain-section">
+<a href="/projects.qmd#brain-section">
 
 ### Neural Mechanisms
 
@@ -137,7 +137,7 @@ What are the neural mechanisms underlying the ability to control attention?
 :::::
 
 ::::: {.card .card-interactive .quick-card .is-green}
-<a href="/projects#mindfulness-section">
+<a href="/projects.qmd#mindfulness-section">
 
 ### Mindfulness
 
