@@ -24,7 +24,7 @@ Get in touch with the CALM Lab.
 
 ::: {.grid-2}
 
-::: {.card .card-lg .card-interactive .is-blue}
+::: {.card .card-lg .is-blue}
 
 ::: {.card-body .card-body-lg}
 
@@ -54,7 +54,7 @@ Principal Investigator
 
 :::
 
-::: {.card .card-lg .card-interactive .is-green}
+::: {.card .card-lg .is-blue}
 
 ::: {.card-body .card-body-lg}
 
@@ -90,7 +90,7 @@ General Inquiries
 
 ::: {.grid-2}
 
-::: {.card .card-lg .card-interactive .is-blue}
+::: {.card .card-lg .is-green}
 
 ::: {.card-body .card-body-lg}
 
