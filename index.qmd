@@ -58,7 +58,7 @@ The CALM Lab studies attention control across contexts of life and mind, combini
 
 Meet the researchers and students working in the CALM Lab.
 
-[View Team →]{.link-cta}</a>
+[Meet the Team →]{.link-cta}</a>
 :::::
 
 ::::: {.card .card-interactive .quick-card .is-yellow}
@@ -72,7 +72,7 @@ Meet the researchers and students working in the CALM Lab.
 
 Explore our research on attention control, brain networks, and mindfulness.
 
-[View Projects →]{.link-cta}</a>
+[Explore Projects →]{.link-cta}</a>
 
 :::::
 

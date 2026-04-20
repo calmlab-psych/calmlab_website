@@ -331,5 +331,11 @@
   },
   "assets/listings/simple-listing-grid-2col.ejs.md": {
     "simple-listing-grid-2col.ejs.html": "82ce2384"
+  },
+  "news/2026/06-01-recruit/index.qmd": {
+    "index.html": "9ea3f8a2"
+  },
+  "news/2026/05-01-website-launch/index.qmd": {
+    "index.html": "162aff8f"
   }
 }
