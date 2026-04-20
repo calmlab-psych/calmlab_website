@@ -5,8 +5,8 @@ tagline: Dr. Tsukahara directs the CALM Lab and studies attention control across
 
 image: "photo.jpeg"
 
-degree_program: Ph.D. Psychological Sciences
-in_lab: 2024-Present
+department: UNC Wilmington, Department of Psychology
+office: Teachers Lab Room 123
 
 email: jane@university.edu
 cv: jane-doe-cv.pdf
@@ -70,7 +70,7 @@ listing:
 
 ::: {.profile-meta-card}
 ### Degree Program
-{{< meta degree_program >}}
+{{< meta department >}}
 :::
 
 ::: {.profile-meta-card}
@@ -80,7 +80,7 @@ listing:
 
 ::: {.profile-meta-card}
 ### In the Lab
-{{< meta in_lab >}}
+{{< meta office >}}
 :::
 
 ::::

@@ -9,12 +9,14 @@
       "news/posts",
       "publications/*/index.qmd",
       "news/*/index.qmd",
-      "publications/*/*/index.qmd"
+      "publications/*/*/index.qmd",
+      "news/*/*/index.qmd"
     ],
     "news/index.qmd": [
       "news/posts",
       "posts",
-      "*/index.qmd"
+      "*/index.qmd",
+      "*/*/index.qmd"
     ],
     "team/index.qmd": [
       "./",
@@ -29,7 +31,8 @@
       "../news/posts",
       "../news/posts/*.qmd",
       "undergrads",
-      "../news/*/index.qmd"
+      "../news/*/index.qmd",
+      "../news/*/*/index.qmd"
     ],
     "publications/index.qmd": [
       ".",

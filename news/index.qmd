@@ -1,11 +1,13 @@
 ---
 listing:
-  contents: "*/index.qmd"
+  contents: "*/*/index.qmd"
   sort: "date desc"
   template: ../assets/listings/news-listing-grid.ejs.md
   fields: [title, date, description, categories, path]
   filter-ui: false
   sort-ui: false
+  exclude:
+    draft: true
 page-layout: full
 ---
 

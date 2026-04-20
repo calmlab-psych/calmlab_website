@@ -4,10 +4,12 @@ page-layout: full
 
 listing:
   - id: home-news
-    contents: news/*/index.qmd
+    contents: news/*/*/index.qmd
     sort: "date desc"
     template: assets/listings/news-listing-scroll.ejs.md
     fields: [title, date, description, categories, path]
+    exclude:
+      draft: true
     max-items: 6
 
   - id: home-publications
@@ -32,6 +34,10 @@ CALM LAB
 
 ::: hero-subtitle
 Control of Attention in Life and Mind
+:::
+
+::: hero-sub-subtitle
+University of North Carolina Wilmington
 :::
 :::::
 :::::::

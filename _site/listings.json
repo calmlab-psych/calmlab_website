@@ -2,11 +2,7 @@
   {
     "listing": "/index.html",
     "items": [
-      "/news/2026-05-new-paper copy 2/index.html",
-      "/news/2026-05-new-paper copy/index.html",
-      "/news/2026-05-new-paper/index.html",
-      "/news/2026-04-website-launch copy/index.html",
-      "/news/2026-04-website-launch/index.html",
+      "/news/2026/05-01-website-launch/index.html",
       "/publications/2023/sact-2/index.html",
       "/publications/2026/cogneuro-eeg-micro/index.html",
       "/publications/2026/pnas-qpp/index.html",
@@ -42,11 +38,7 @@
   {
     "listing": "/news/index.html",
     "items": [
-      "/news/2026-05-new-paper copy 2/index.html",
-      "/news/2026-05-new-paper copy/index.html",
-      "/news/2026-05-new-paper/index.html",
-      "/news/2026-04-website-launch copy/index.html",
-      "/news/2026-04-website-launch/index.html"
+      "/news/2026/05-01-website-launch/index.html"
     ]
   },
   {
@@ -130,8 +122,7 @@
   {
     "listing": "/team/index.html",
     "items": [
-      "/team/jason-tsukahara/index.html",
-      "/news/2026-04-website-launch copy/index.html"
+      "/team/jason-tsukahara/index.html"
     ]
   }
 ]

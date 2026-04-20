@@ -1,0 +1,14 @@
+---
+title: "CALM Lab website launches"
+date: 2026-05-01
+categories: [Lab]
+description: "We are excited to announce the launch of the CALM Lab website."
+image: ../../../images/lablogo.png
+page: ""
+link: ""
+draft: false
+---
+
+::: {style="text-align: center;"}
+We are excited to announce the launch of the CALM Lab website! This website serves as a hub for our research, publications, projects, and news. We hope it will be a valuable resource for students, researchers, and anyone interested in the science of attention control. Please explore the site and feel free to reach out if you have any questions.
+:::

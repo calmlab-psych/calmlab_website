@@ -1,0 +1,18 @@
+---
+title: Recruiting Undergraduate Research Assistants
+date: 2026-06-01
+categories: Team
+description: We are recruiting undergraduate research assistants to join the CALM Lab starting in Fall 2026 or Spring 2027
+image: ../../../images/person_add.png
+page: ""
+link: ""
+draft: true
+---
+
+::: {style="text-align: center;"}
+We are excited to announce that the CALM Lab is recruiting undergraduate research assistants to join our team starting in Fall 2026 or Spring 2027! This is a great opportunity for students interested in gaining research experience in cognitive neuroscience, attention control, and mindfulness.
+
+As a research assistant in the CALM Lab, you will have the chance to work closely with our team on ongoing projects, contribute to data collection and analysis, and gain valuable skills in research methods and scientific communication. We welcome students from all majors who are passionate about learning and contributing to our research.
+
+If you are interested in applying, please contact us at jason.tsukahara@miami.edu. We look forward to hearing from you and potentially welcoming you to the CALM Lab!
+:::

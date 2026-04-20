@@ -6,6 +6,9 @@ description: short description of news item
 image: image.png
 page: ""
 link: ""
+draft: true
 ---
 
+::: {style="text-align: center;"}
 More details about the news item can go here. This is the content of the news post, which can include text, images, and links.
+:::
