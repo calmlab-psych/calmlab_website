@@ -149,7 +149,7 @@ How can mindfulness and contemplative practices strengthen attention control and
 
 ::::::::::::
 
-### [Latest Publications]{style="color: var(--color-primary);"}
+### Latest Publications
 
 ::: {#home-publications}
 :::
