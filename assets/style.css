@@ -398,7 +398,6 @@ h1#mindfulness-section {
   font-size: 1.35rem;
   width: 100%;
   height: 100%;
-  transform: translateY(8px);
 }
 
 /* =========================
@@ -1356,7 +1355,7 @@ h1#mindfulness-section {
 }
 
 .profile-position {
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 600 !important;
   color: var(--color-yellow);
   margin-top: 0.5rem !important;
@@ -1532,16 +1531,30 @@ h1#mindfulness-section {
   color: var(--color-text);
 }
 
-.profile-section-card p,
+.profile-section-card p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--color-text);
+  margin-bottom: 0;
+}
+
 .profile-section-card li {
   font-size: 1.05rem;
   line-height: 1.75;
   color: var(--color-text);
+  margin-bottom: 0.85rem;
+  margin-top: 0;
 }
 
 .profile-section-card ul,
 .profile-section-card ol {
-  margin: 0.5rem 0 0 1.25rem;
+  margin: 0 0 0 1.25rem;
+  padding: 0;
+}
+
+.profile-section-card ul,
+.profile-section-card ol > *:last-child {
+  margin: 0.5rem 0 0.5rem 1.25rem;
   padding: 0;
 }
 
@@ -1572,6 +1585,13 @@ h1#mindfulness-section {
   line-height: 1;
   width: 100%;
   height: 100%;
+}
+
+.profile-section-icon p,
+.icon-badge p {
+  margin: 0;
+  line-height: 0;
+  display: contents; /* makes the <p> disappear from layout */
   transform: translateY(8px);
 }
 
