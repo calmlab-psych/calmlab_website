@@ -248,13 +248,13 @@ window.Quarto = {
     
 
     
-      <p>Dr. Tsukahara directs the CALM Lab and studies attention control across contexts of life and mind. His research integrates cognitive psychology, neuroscience, and contemplative science to understand the nature and potentials of attention.</p>
+      <p>Dr. Tsukahara directs the CALM Lab and studies attention control across contexts of life and mind. His research integrates cognitive psychology, neuroscience, and contemplative practices to understand the nature and potential of attention.</p>
     
 
     <div class="pi-links">
 
       
-      <a href="../team/jason-tsukahara/jtsukahara_cv.pdf" style="color: var(--color-primary);">Download CV &nbsp; <i class="bi bi-download"></i></a>
+      <a href="../team/jason-tsukahara/jtsukahara_cv.pdf" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary);">Download CV &nbsp; <i class="bi bi-download"></i></a>
       
 
       &nbsp;
@@ -322,6 +322,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const a = document.createElement("a");
     a.href = base + val;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
     a.innerHTML = `<i class="${icon}"></i> ${label}`;
     container.appendChild(a);
   });
@@ -412,6 +414,30 @@ document.addEventListener("DOMContentLoaded", function () {
     applyFilter("all");
   });
 });
+</script>
+
+<script>
+(function() {
+  function updateActiveNav() {
+    document.querySelectorAll('.navbar .nav-link').forEach(link => {
+      try {
+        const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
+        const currentPath = window.location.pathname.replace(/\/$/, '');
+        if (linkPath && (currentPath === linkPath || currentPath.startsWith(linkPath + '/'))) {
+          link.classList.add('active');
+        }
+      } catch (e) {}
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateActiveNav);
+  } else {
+    updateActiveNav();
+  }
+  // Run again after a beat in case Quarto/Bootstrap rewrites classes
+  setTimeout(updateActiveNav, 100);
+})();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

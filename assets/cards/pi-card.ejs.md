@@ -27,7 +27,7 @@
     <div class="pi-links">
 
       <% if (item.cv) { %>
-      <a href="<%- item.cv %>" style="color: var(--color-primary);">Download CV &nbsp; <i class="bi bi-download"></i></a>
+      <a href="<%- item.cv %>" target="_blank" rel="noopener noreferrer" style="color: var(--color-primary);">Download CV &nbsp; <i class="bi bi-download"></i></a>
       <% } %>
 
       &nbsp;

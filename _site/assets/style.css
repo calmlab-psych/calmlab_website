@@ -623,10 +623,10 @@ h1#mindfulness-section {
 }
 
 .hero-sub-subtitle {
-  font-size: 1.25rem;
+  font-size: 1.5rem;
   font-weight: 500;
-  color: var(--color-text);
-  opacity: 0.7;
+  color: var(--color-secondary);
+  opacity: 1;
   margin-top: -0.4em;
 }
 
@@ -637,7 +637,6 @@ h1#mindfulness-section {
 .hero-intro {
   max-width: 1000px;
   margin: 1rem auto 3rem auto;
-  padding-left: 3rem;
   font-size: 1.35rem;
   font-weight: 500;
   line-height: 1.6;
@@ -1646,12 +1645,13 @@ h1#mindfulness-section {
 .profile-section-card .publication-title-profile {
   margin: 0 0 0.45rem 0;
   font-size: 1.35rem;
-  font-weight: 700;
+  font-weight: 700 !important;
   color: var(--color-primary);
 }
 
 .profile-section-card .publication-title-profile a {
   color: var(--color-primary);
+  font-weight: 700 !important;
   text-decoration: none;
   font-weight: 600;
   font-size: 1.25rem;

@@ -28,22 +28,24 @@ listing:
 :::
 
 ::::: hero-text
-::: hero-title
-CALM LAB
-:::
 
 ::: hero-subtitle
 Control of Attention in Life and Mind
 :::
 
-::: hero-sub-subtitle
-University of North Carolina Wilmington
+::: hero-title
+CALM LAB
 :::
+
+::: hero-sub-subtitle
+UNC Wilmington
+:::
+
 :::::
 :::::::
 
 ::: hero-intro
-The CALM Lab studies attention control across contexts of life and mind, combining cognitive science, neuroscience, and contemplative approaches to understand how attention shapes thought, success, and well-being.
+The CALM Lab at the University of North Carolina Wilmington studies attention control across contexts of life and mind, combining cognitive psychology, neuroscience, and contemplative practices to understand how attention shapes thought, success, and well-being.
 :::
 
 :::::::::::: {.grid-3 .section-shell}

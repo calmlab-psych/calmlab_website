@@ -207,19 +207,19 @@ window.Quarto = {
 <p><img src="images/lablogo.png" class="img-fluid" alt="CALM Lab logo"></p>
 </div>
 <div class="hero-text">
-<div class="hero-title">
-<p>CALM LAB</p>
-</div>
 <div class="hero-subtitle">
 <p>Control of Attention in Life and Mind</p>
 </div>
+<div class="hero-title">
+<p>CALM LAB</p>
+</div>
 <div class="hero-sub-subtitle">
-<p>University of North Carolina Wilmington</p>
+<p>UNC Wilmington</p>
 </div>
 </div>
 </div>
 <div class="hero-intro">
-<p>The CALM Lab studies attention control across contexts of life and mind, combining cognitive science, neuroscience, and contemplative approaches to understand how attention shapes thought, success, and well-being.</p>
+<p>The CALM Lab at the University of North Carolina Wilmington studies attention control across contexts of life and mind, combining cognitive psychology, neuroscience, and contemplative practices to understand how attention shapes thought, success, and well-being.</p>
 </div>
 <div class="grid-3 section-shell">
 <div class="card card-interactive quick-card is-blue">
@@ -598,6 +598,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const a = document.createElement("a");
     a.href = base + val;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
     a.innerHTML = `<i class="${icon}"></i> ${label}`;
     container.appendChild(a);
   });
@@ -688,6 +690,30 @@ document.addEventListener("DOMContentLoaded", function () {
     applyFilter("all");
   });
 });
+</script>
+
+<script>
+(function() {
+  function updateActiveNav() {
+    document.querySelectorAll('.navbar .nav-link').forEach(link => {
+      try {
+        const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
+        const currentPath = window.location.pathname.replace(/\/$/, '');
+        if (linkPath && (currentPath === linkPath || currentPath.startsWith(linkPath + '/'))) {
+          link.classList.add('active');
+        }
+      } catch (e) {}
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', updateActiveNav);
+  } else {
+    updateActiveNav();
+  }
+  // Run again after a beat in case Quarto/Bootstrap rewrites classes
+  setTimeout(updateActiveNav, 100);
+})();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

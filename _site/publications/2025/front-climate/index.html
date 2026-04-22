@@ -187,14 +187,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const dataset = container.dataset;
 
   const items = [
-    { key: "cv",            icon: "bi bi-file-earmark-text", label: "CV",             base: "" },
+    { key: "cv",            icon: "bi bi-file-earmark-text", label: "View CV",             base: "" },
     { key: "website-external",       icon: "bi bi-globe",             label: "Website",         base: "" },
     { key: "googleScholar", icon: "bi bi-mortarboard",       label: "Google Scholar",  base: "" },
+    { key: "researchgate",  icon: "ai ai-researchgate",      label: "ResearchGate",    base: "https://www.researchgate.net/profile/" },
+    { key: "github",        icon: "bi bi-github",            label: "GitHub",          base: "https://github.com/" },
     { key: "linkedin",      icon: "bi bi-linkedin",          label: "LinkedIn",        base: "https://linkedin.com/in/" },
     { key: "bluesky",       icon: "bi bi-cloud",             label: "Bluesky",         base: "https://bsky.app/profile/" },
-    { key: "researchgate",  icon: "ai ai-researchgate",      label: "ResearchGate",    base: "https://www.researchgate.net/profile/" },
     { key: "x",             icon: "bi bi-twitter-x",         label: "X.com",               base: "https://x.com/" },
-    { key: "github",        icon: "bi bi-github",            label: "GitHub",          base: "https://github.com/" },
   ];
 
   items.forEach(({ key, icon, label, base }) => {
@@ -203,6 +203,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const a = document.createElement("a");
     a.href = base + val;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
     a.innerHTML = `<i class="${icon}"></i> ${label}`;
     container.appendChild(a);
   });
@@ -215,11 +217,17 @@ function copyEmail(link) {
   const email = link.dataset.copy;
   const icon = link.querySelector('i');
   navigator.clipboard.writeText(email).then(() => {
-    icon.classList.remove('bi-copy');
-    icon.classList.add('bi-check2');
+    const originalClass = icon.className;
+    icon.className = 'bi bi-check2';
+
+    const confirmSpan = document.createElement('span');
+    confirmSpan.className = 'copy-confirm';
+    confirmSpan.textContent = ' copied!';
+    icon.after(confirmSpan);
+
     setTimeout(() => {
-      icon.classList.remove('bi-check2');
-      icon.classList.add('bi-copy');
+      icon.className = originalClass;
+      confirmSpan.remove();
     }, 1500);
   });
 }
