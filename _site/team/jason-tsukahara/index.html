@@ -198,47 +198,47 @@ window.Quarto = {
 </div>
 <div class="profile-section-layout">
 <div class="profile-section-card">
-<div class="profile-section-icon profile-section-yellow">
+<div class="profile-section-icon profile-section-blue">
 <p><i class="bi bi-mortarboard"></i></p>
 </div>
 <section id="education" class="level3">
-<h3 data-anchor-id="education">Education</h3>
-<div style="line-height: 0.25; margin-bottom: 0.5rem;">
-<p><span style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;">Ph.D.&nbsp;in Cognitive Brain Science</span><br>
-Georgia Tech · Dr.&nbsp;Randall Engle</p>
+<h3 data-anchor-id="education"><span style="color: var(--color-primary);">Education</span></h3>
+<div style="margin-bottom: 0.5rem;">
+<p><span style="font-size: 1.2rem;">Ph.D.&nbsp;in Cognitive Brain Science</span><br>
+<span style="font-weight: 400;">Georgia Tech · Dr.&nbsp;Randall Engle</span></p>
 </div>
-<div style="line-height: 0.25; margin-bottom: 0.5rem;">
-<p><span style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;">M.A.&nbsp;in Experimental Psychology</span><br>
-CSU, San Bernardino · Dr.&nbsp;Hideya Koshino</p>
+<div style="margin-bottom: 0.5rem;">
+<p><span style="font-size: 1.2rem;">M.A.&nbsp;in Experimental Psychology</span><br>
+<span style="font-weight: 400;">CSU, San Bernardino · Dr.&nbsp;Hideya Koshino</span></p>
 </div>
-<div style="line-height: 0.25; margin-bottom: 0.5rem;">
-<p><span style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;">B.A. in Behavioral Neuroscience</span><br>
-Western Washington University</p>
+<div style="margin-bottom: 0.5rem;">
+<p><span style="font-size: 1.2rem;">B.A. in Behavioral Neuroscience</span><br>
+<span style="font-weight: 400;">Western Washington University</span></p>
 </div>
 </section>
 </div>
 <div class="profile-section-card">
-<div class="profile-section-icon profile-section-blue">
+<div class="profile-section-icon profile-section-green">
 <p><i class="bi bi-lightbulb"></i></p>
 </div>
 <section id="currently-teaching" class="level3">
-<h3 data-anchor-id="currently-teaching">Currently Teaching</h3>
-<p><span style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;">Graduate Courses</span></p>
+<h3 data-anchor-id="currently-teaching"><span style="color: var(--color-green);">Currently Teaching</span></h3>
+<p><span style="font-weight: 700; font-size: 1.2rem;">Graduate Courses</span></p>
 <ul>
 <li>Cognitive Psychology</li>
 </ul>
-<p><span style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;">Undergraduate Courses</span></p>
+<p><span style="font-weight: 700; font-size: 1.2rem;">Undergraduate Courses</span></p>
 <ul>
 <li>Sensation and Perception</li>
 </ul>
 </section>
 </div>
 <div class="profile-section-card profile-publications">
-<div class="profile-section-icon profile-section-green">
+<div class="profile-section-icon profile-section-yellow">
 <p><i class="bi bi-journal-text"></i></p>
 </div>
 <section id="selected-publications" class="level3">
-<h3 data-anchor-id="selected-publications">Selected Publications</h3>
+<h3 data-anchor-id="selected-publications"><span style="color: var(--color-yellow);">Selected Publications</span></h3>
 <div id="listing-profile-publications-list" class="quarto-listing quarto-listing-container-custom">
 <div class="publications-list">
   <div class="publication-entry publication-entry-profile">
@@ -346,7 +346,7 @@ function copyEmail(link) {
 
     const confirmSpan = document.createElement('span');
     confirmSpan.className = 'copy-confirm';
-    confirmSpan.textContent = ' copied!';
+    confirmSpan.textContent = '';
     icon.after(confirmSpan);
 
     setTimeout(() => {
@@ -443,6 +443,95 @@ document.addEventListener("DOMContentLoaded", function () {
   // Run again after a beat in case Quarto/Bootstrap rewrites classes
   setTimeout(updateActiveNav, 100);
 })();
+</script>
+
+<script>
+  (function initScrollNavs() {
+    const components = document.querySelectorAll('.listing-scroll-component');
+
+    components.forEach((root) => {
+      const row = root.querySelector('.listing-scroll-row');
+      const fill = root.querySelector('.scroll-nav__fill');
+      const track = root.querySelector('.scroll-nav__track');
+      const prevBtn = root.querySelector('.scroll-nav__prev');
+      const nextBtn = root.querySelector('.scroll-nav__next');
+
+      if (!row || !fill || !prevBtn || !nextBtn) return;
+
+      const cards = Array.from(row.children);
+      if (cards.length === 0) return;
+
+      let activeIdx = 0;
+
+      function scrollToCard(idx) {
+        const target = cards[idx];
+        if (!target) return;
+        const padLeft = parseFloat(getComputedStyle(row).paddingLeft) || 0;
+        row.scrollTo({
+          left: target.offsetLeft - padLeft,
+          behavior: 'smooth',
+        });
+      }
+
+      function update() {
+        const padLeft = parseFloat(getComputedStyle(row).paddingLeft) || 0;
+        const anchor = row.scrollLeft + padLeft;
+
+        let bestIdx = 0;
+        let bestDist = Infinity;
+        cards.forEach((card, i) => {
+          const dist = Math.abs(card.offsetLeft - anchor);
+          if (dist < bestDist) {
+            bestDist = dist;
+            bestIdx = i;
+          }
+        });
+
+        activeIdx = bestIdx;
+
+        const max = row.scrollWidth - row.clientWidth;
+        const ratio = max > 0 ? Math.min(1, Math.max(0, row.scrollLeft / max)) : 0;
+        const pct = Math.max(4, ratio * 100);
+        fill.style.width = pct + '%';
+
+        prevBtn.disabled = activeIdx === 0;
+        nextBtn.disabled = activeIdx >= cards.length - 1;
+      }
+
+      function getStep() {
+  // Scroll by one card width + gap, so each click reveals one new card
+  const card = cards[0];
+  const gap = parseFloat(getComputedStyle(row).columnGap || getComputedStyle(row).gap) || 0;
+  return (card?.offsetWidth || 360) + gap;
+}
+
+  prevBtn.addEventListener('click', () => {
+    row.scrollBy({ left: -getStep(), behavior: 'smooth' });
+  });
+  nextBtn.addEventListener('click', () => {
+    row.scrollBy({ left: getStep(), behavior: 'smooth' });
+  });
+
+      track.addEventListener('click', (e) => {
+        const rect = track.getBoundingClientRect();
+        const ratio = (e.clientX - rect.left) / rect.width;
+        const max = row.scrollWidth - row.clientWidth;
+        row.scrollTo({ left: ratio * max, behavior: 'smooth' });
+      });
+
+      let scrollRaf = null;
+      row.addEventListener('scroll', () => {
+        if (scrollRaf) return;
+        scrollRaf = requestAnimationFrame(() => {
+          update();
+          scrollRaf = null;
+        });
+      });
+      window.addEventListener('resize', update);
+
+      update();
+    });
+  })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

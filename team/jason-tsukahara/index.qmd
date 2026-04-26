@@ -88,42 +88,42 @@ listing:
 
 ::: {.profile-section-card}
 
-<div class="profile-section-icon profile-section-yellow">
+<div class="profile-section-icon profile-section-blue">
 <i class="bi bi-mortarboard"></i>
 </div>
 
-### Education
+### [Education]{style="color: var(--color-primary);"}
 
-::: {style="line-height: 0.25; margin-bottom: 0.5rem;"}
-[Ph.D. in Cognitive Brain Science]{style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;"}\
-Georgia Tech · Dr. Randall Engle
+::: {style="margin-bottom: 0.5rem;"}
+[Ph.D. in Cognitive Brain Science]{style="font-size: 1.2rem;"}\
+[Georgia Tech · Dr. Randall Engle]{style="font-weight: 400;"}
 :::
 
-::: {style="line-height: 0.25; margin-bottom: 0.5rem;"}
-[M.A. in Experimental Psychology]{style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;"}\
-CSU, San Bernardino · Dr. Hideya Koshino
+::: {style="margin-bottom: 0.5rem;"}
+[M.A. in Experimental Psychology]{style="font-size: 1.2rem;"}\
+[CSU, San Bernardino · Dr. Hideya Koshino]{style="font-weight: 400;"}
 :::
 
-::: {style="line-height: 0.25; margin-bottom: 0.5rem;"}
-[B.A. in Behavioral Neuroscience]{style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;"}\
-Western Washington University
+::: {style="margin-bottom: 0.5rem;"}
+[B.A. in Behavioral Neuroscience]{style="font-size: 1.2rem;"}\
+[Western Washington University]{style="font-weight: 400;"}
 :::
 
 :::
 
 ::: {.profile-section-card}
 
-<div class="profile-section-icon profile-section-blue">
+<div class="profile-section-icon profile-section-green">
 <i class="bi bi-lightbulb"></i>
 </div>
 
-### Currently Teaching
+### [Currently Teaching]{style="color: var(--color-green);"}
 
-[Graduate Courses]{style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;"}
+[Graduate Courses]{style="font-weight: 700; font-size: 1.2rem;"}
 
 - Cognitive Psychology
 
-[Undergraduate Courses]{style="color: var(--color-primary); font-weight: 700; font-size: 1.2rem;"}
+[Undergraduate Courses]{style="font-weight: 700; font-size: 1.2rem;"}
 
 - Sensation and Perception
 
@@ -131,11 +131,11 @@ Western Washington University
 
 ::: {.profile-section-card .profile-publications}
 
-<div class="profile-section-icon profile-section-green">
+<div class="profile-section-icon profile-section-yellow">
 <i class="bi bi-journal-text"></i>
 </div>
 
-### Selected Publications
+### [Selected Publications]{style="color: var(--color-yellow);"}
 
 ::: {#profile-publications-list}
 :::
