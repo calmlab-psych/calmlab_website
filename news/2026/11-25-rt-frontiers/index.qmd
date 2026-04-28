@@ -1,0 +1,14 @@
+---
+title: Dr. Tsukahara Edits a Research Topic in Frontiers in Cognition
+date: 2025-11-25
+categories: [Team]
+description: Read papers or submit your own in a Frontiers Research Topic exploring the properties of intrinsic functional brain networks and their intersection with ascending arousal systems.
+image: 17917545.png
+page: ""
+link: "https://www.frontiersin.org/research-topics/75476/architectures-of-the-resting-brain-discrete-networks-continuous-gradients-and-their-biological-foundations"
+draft: false
+---
+
+::: {style="text-align: center;"}
+
+:::

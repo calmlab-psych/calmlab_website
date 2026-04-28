@@ -1,7 +1,7 @@
 ---
 title: title
 date: YYYY-MM-DD
-categories: [category label] (e.g., [Lab])
+categories: [category label] ([Lab], [Team], or [Papers])
 description: short description of news item
 image: image.png
 page: ""

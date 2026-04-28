@@ -1,6 +1,6 @@
 ---
 title: Recruiting Undergraduate Research Assistants
-date: 2026-06-01
+date: 2026-07-10
 categories: Team
 description: We are recruiting undergraduate research assistants to join the CALM Lab starting in Fall 2026 or Spring 2027
 image: ../../../images/person_add.png

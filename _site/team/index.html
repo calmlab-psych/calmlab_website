@@ -92,9 +92,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-date','listing-description','listing-path',{ data: ['index'] },{ data: ['categories'] }],
+      valueNames: ['listing-title','listing-date','listing-description','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-date-modified-sort'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
       
-      searchColumns: [],
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-date","listing-categories","listing-description","listing-image","listing-page","listing-link","listing-draft","listing-path","listing-outputHref","listing-date-modified","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -248,7 +248,7 @@ window.Quarto = {
     
 
     
-      <p>Dr. Tsukahara directs the CALM Lab and studies attention control across contexts of life and mind. His research integrates cognitive psychology, neuroscience, and contemplative practices to understand the nature and potential of attention.</p>
+      <p>Dr. Tsukahara directs the CALM Lab and is an Assistant Professor in the Department of Psychology at the University of North Carolina Wilmington.</p>
     
 
     <div class="pi-links">
@@ -285,6 +285,44 @@ window.Quarto = {
 <div class="listing-block" data-filterable="true">
 
   <div class="listing-grid">
+    
+      <article class="listing-card card card-interactive" data-categories="team">
+
+        
+          <a href="https://www.frontiersin.org/research-topics/75476/architectures-of-the-resting-brain-discrete-networks-continuous-gradients-and-their-biological-foundations" class="listing-card-link" target="_blank" rel="noopener noreferrer">
+        
+
+        
+          <div class="listing-thumb-wrap">
+            <img src="../news/2026/11-25-rt-frontiers/17917545.png" alt="" class="listing-thumb">
+          </div>
+        
+
+        <div class="listing-eyebrow">Nov 25, 2025</div>
+
+        
+          <div class="listing-tags">
+            
+            <span class="pill pill-tag pill-soft">Team</span>
+            
+          </div>
+        
+
+        <h3 class="listing-title card-title">Dr. Tsukahara Edits a Research Topic in Frontiers in Cognition</h3>
+
+        
+          <p class="listing-summary card-text">Read papers or submit your own in a Frontiers Research Topic exploring the properties of intrinsic functional brain networks and their intersection with ascending arousal systems.</p>
+        
+
+        <div class="listing-cta link-cta">
+          Read More
+          
+            <span>↗</span>
+          
+        </div>
+
+        </a>
+      </article>
     
   </div>
 </div>
@@ -341,7 +379,7 @@ function copyEmail(link) {
 
     const confirmSpan = document.createElement('span');
     confirmSpan.className = 'copy-confirm';
-    confirmSpan.textContent = ' copied!';
+    confirmSpan.textContent = '';
     icon.after(confirmSpan);
 
     setTimeout(() => {

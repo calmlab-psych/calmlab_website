@@ -117,10 +117,10 @@ window.Quarto = {
 
 <link rel="stylesheet" href="../assets/style.css">
 <meta name="twitter:title" content="CALM LAB">
-<meta name="twitter:image" content="https://jasontsukahara.com/images/lablogo.png">
+<meta name="twitter:image" content="https://jasontsukahara.com/news/2026/08-10-bluesky/Bluesky_Logo_(with_wordmark).svg.png">
 <meta name="twitter:image:alt" content="">
-<meta name="twitter:image-height" content="800">
-<meta name="twitter:image-width" content="800">
+<meta name="twitter:image-height" content="214">
+<meta name="twitter:image-width" content="960">
 <meta name="twitter:card" content="summary_large_image">
 </head>
 
@@ -202,6 +202,43 @@ window.Quarto = {
       <article class="listing-card card card-interactive" data-categories="lab">
         
         
+          <a href="../news/2026/08-10-bluesky/index.html" class="listing-card-link">
+        
+
+        
+          <div class="listing-thumb-wrap">
+            <img src="../news/2026/08-10-bluesky/Bluesky_Logo_(with_wordmark).svg.png" alt="" class="listing-thumb">
+          </div>
+        
+
+        <div class="listing-eyebrow">Aug 10, 2026</div>
+
+        
+          <div class="listing-tags">
+            
+              <span class="pill pill-tag pill-soft">Lab</span>
+            
+          </div>
+        
+
+        <h3 class="listing-title card-title">Follow us on Bluesky</h3>
+
+        
+          <p class="listing-summary card-text">The CALM Lab is now on Bluesky! Follow us for updates on our research, publications, and news.</p>
+        
+
+        <div class="listing-cta link-cta">
+          Read More
+          
+            <span>→</span>
+          
+        </div>
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-categories="lab">
+        
+        
           <a href="../news/2026/05-01-website-launch/index.html" class="listing-card-link">
         
 
@@ -231,6 +268,43 @@ window.Quarto = {
           Read More
           
             <span>→</span>
+          
+        </div>
+        </a>
+      </article>
+    
+      <article class="listing-card card card-interactive" data-categories="team">
+        
+        
+          <a href="https://www.frontiersin.org/research-topics/75476/architectures-of-the-resting-brain-discrete-networks-continuous-gradients-and-their-biological-foundations" class="listing-card-link" target="_blank" rel="noopener noreferrer">
+        
+
+        
+          <div class="listing-thumb-wrap">
+            <img src="../news/2026/11-25-rt-frontiers/17917545.png" alt="" class="listing-thumb">
+          </div>
+        
+
+        <div class="listing-eyebrow">Nov 25, 2025</div>
+
+        
+          <div class="listing-tags">
+            
+              <span class="pill pill-tag pill-soft">Team</span>
+            
+          </div>
+        
+
+        <h3 class="listing-title card-title">Dr. Tsukahara Edits a Research Topic in Frontiers in Cognition</h3>
+
+        
+          <p class="listing-summary card-text">Read papers or submit your own in a Frontiers Research Topic exploring the properties of intrinsic functional brain networks and their intersection with ascending arousal systems.</p>
+        
+
+        <div class="listing-cta link-cta">
+          Read More
+          
+            <span>↗</span>
           
         </div>
         </a>
@@ -285,7 +359,7 @@ function copyEmail(link) {
 
     const confirmSpan = document.createElement('span');
     confirmSpan.className = 'copy-confirm';
-    confirmSpan.textContent = ' copied!';
+    confirmSpan.textContent = '';
     icon.after(confirmSpan);
 
     setTimeout(() => {
@@ -382,6 +456,95 @@ document.addEventListener("DOMContentLoaded", function () {
   // Run again after a beat in case Quarto/Bootstrap rewrites classes
   setTimeout(updateActiveNav, 100);
 })();
+</script>
+
+<script>
+  (function initScrollNavs() {
+    const components = document.querySelectorAll('.listing-scroll-component');
+
+    components.forEach((root) => {
+      const row = root.querySelector('.listing-scroll-row');
+      const fill = root.querySelector('.scroll-nav__fill');
+      const track = root.querySelector('.scroll-nav__track');
+      const prevBtn = root.querySelector('.scroll-nav__prev');
+      const nextBtn = root.querySelector('.scroll-nav__next');
+
+      if (!row || !fill || !prevBtn || !nextBtn) return;
+
+      const cards = Array.from(row.children);
+      if (cards.length === 0) return;
+
+      let activeIdx = 0;
+
+      function scrollToCard(idx) {
+        const target = cards[idx];
+        if (!target) return;
+        const padLeft = parseFloat(getComputedStyle(row).paddingLeft) || 0;
+        row.scrollTo({
+          left: target.offsetLeft - padLeft,
+          behavior: 'smooth',
+        });
+      }
+
+      function update() {
+        const padLeft = parseFloat(getComputedStyle(row).paddingLeft) || 0;
+        const anchor = row.scrollLeft + padLeft;
+
+        let bestIdx = 0;
+        let bestDist = Infinity;
+        cards.forEach((card, i) => {
+          const dist = Math.abs(card.offsetLeft - anchor);
+          if (dist < bestDist) {
+            bestDist = dist;
+            bestIdx = i;
+          }
+        });
+
+        activeIdx = bestIdx;
+
+        const max = row.scrollWidth - row.clientWidth;
+        const ratio = max > 0 ? Math.min(1, Math.max(0, row.scrollLeft / max)) : 0;
+        const pct = Math.max(4, ratio * 100);
+        fill.style.width = pct + '%';
+
+        prevBtn.disabled = activeIdx === 0;
+        nextBtn.disabled = activeIdx >= cards.length - 1;
+      }
+
+      function getStep() {
+  // Scroll by one card width + gap, so each click reveals one new card
+  const card = cards[0];
+  const gap = parseFloat(getComputedStyle(row).columnGap || getComputedStyle(row).gap) || 0;
+  return (card?.offsetWidth || 360) + gap;
+}
+
+  prevBtn.addEventListener('click', () => {
+    row.scrollBy({ left: -getStep(), behavior: 'smooth' });
+  });
+  nextBtn.addEventListener('click', () => {
+    row.scrollBy({ left: getStep(), behavior: 'smooth' });
+  });
+
+      track.addEventListener('click', (e) => {
+        const rect = track.getBoundingClientRect();
+        const ratio = (e.clientX - rect.left) / rect.width;
+        const max = row.scrollWidth - row.clientWidth;
+        row.scrollTo({ left: ratio * max, behavior: 'smooth' });
+      });
+
+      let scrollRaf = null;
+      row.addEventListener('scroll', () => {
+        if (scrollRaf) return;
+        scrollRaf = requestAnimationFrame(() => {
+          update();
+          scrollRaf = null;
+        });
+      });
+      window.addEventListener('resize', update);
+
+      update();
+    });
+  })();
 </script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {

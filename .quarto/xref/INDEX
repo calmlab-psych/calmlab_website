@@ -340,5 +340,11 @@
   },
   "projects.qmd": {
     "projects.html": "1d26bb74"
+  },
+  "news/2026/11-25-rt-frontiers/index.qmd": {
+    "index.html": "1fad0b0e"
+  },
+  "news/2026/08-10-bluesky/index.qmd": {
+    "index.html": "25d201ea"
   }
 }

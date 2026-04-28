@@ -1,7 +1,7 @@
 ---
 name: Jason S. Tsukahara, Ph.D.
 position: Principal Investigator
-tagline: Dr. Tsukahara directs the CALM Lab and studies attention control across contexts of life and mind. His research integrates cognitive psychology, neuroscience, and contemplative practices to understand the nature and potential of attention.
+tagline: Dr. Tsukahara directs the CALM Lab and is an Assistant Professor in the Department of Psychology at the University of North Carolina Wilmington.
 
 image: "photo.jpeg"
 
