@@ -35,21 +35,46 @@
 
   --transition-fast: 0.2s ease;
   --transition-base: 0.25s ease;
+
+  /* Fluid type — scales smoothly between 320px and 1200px viewports */
+  --fs-hero: clamp(2.6rem, 8vw + 0.5rem, 6.5rem);
+  --fs-hero-sub: clamp(1.1rem, 2vw + 0.5rem, 1.8rem);
+  --fs-hero-subsub: clamp(1rem, 1.5vw + 0.5rem, 1.5rem);
+  --fs-hero-intro: clamp(1.05rem, 0.6vw + 0.95rem, 1.3rem);
+  --fs-section: clamp(1.7rem, 2.5vw + 1rem, 2.5rem);
+  --fs-pi-name: clamp(1.55rem, 1.5vw + 1.1rem, 2rem);
 }
 
 /* =========================
    Base
    ========================= */
 
+* {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%; /* prevent iOS auto-zoom on rotate */
+}
+
 body {
   font-family: var(--font-body);
   background: var(--color-bg);
   color: var(--color-text);
+  overflow-x: hidden; /* belt-and-suspenders against horizontal scroll on mobile */
+}
+
+img,
+svg,
+video {
+  max-width: 100%;
+  height: auto;
 }
 
 a {
   color: var(--color-primary);
   text-decoration: none;
+  font-weight: 600;
 }
 
 .page-title .quarto-title-block {
@@ -79,6 +104,7 @@ h2::before {
   transform: scaleY(0);
   transform-origin: center;
   animation: headerBarGrow 0.6s ease forwards;
+  flex-shrink: 0;
 }
 
 hr {
@@ -121,17 +147,13 @@ hr {
   padding-left: 0.5rem;
 }
 
-a {
-  font-weight: 600;
-}
-
 .section-title {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   text-align: center;
   color: var(--color-primary);
-  font-size: 2.5rem;
+  font-size: var(--fs-section);
 }
 
 .section-title::before {
@@ -144,33 +166,19 @@ a {
   transform: scaleY(0);
   transform-origin: center;
   animation: headerBarGrow 0.6s ease forwards;
-}
-
-@keyframes headerBarGrow {
-  to {
-    transform: scaleY(1);
-  }
+  flex-shrink: 0;
 }
 
 #cognitive-section > h1,
-h1#cognitive-section {
-  text-align: center;
-  color: var(--color-primary);
-  font-size: 2.5rem;
-}
-
+h1#cognitive-section,
 #brain-section > h1,
-h1#brain-section {
-  text-align: center;
-  color: var(--color-primary);
-  font-size: 2.5rem;
-}
-
+h1#brain-section,
 #mindfulness-section > h1,
 h1#mindfulness-section {
   text-align: center;
   color: var(--color-primary);
-  font-size: 2.5rem;
+  font-size: var(--fs-section);
+  line-height: 1.15;
 }
 
 /* =========================
@@ -267,21 +275,11 @@ h1#mindfulness-section {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
-.card-lg {
-  border-radius: var(--radius-lg);
-}
+.card-lg  { border-radius: var(--radius-lg); }
+.card-xl  { border-radius: var(--radius-xl); }
 
-.card-xl {
-  border-radius: var(--radius-xl);
-}
-
-.card-body {
-  padding: 1.5rem;
-}
-
-.card-body-lg {
-  padding: 2rem;
-}
+.card-body    { padding: 1.5rem; }
+.card-body-lg { padding: 2rem; }
 
 .card-interactive {
   transition:
@@ -299,15 +297,8 @@ h1#mindfulness-section {
   box-shadow: var(--shadow-lift);
 }
 
-.card-title {
-  margin-top: 0;
-  color: var(--color-text);
-}
-
-.card-text {
-  line-height: 1.65;
-  color: var(--color-text);
-}
+.card-title { margin-top: 0; color: var(--color-text); }
+.card-text  { line-height: 1.65; color: var(--color-text); }
 
 .card-meta {
   display: flex;
@@ -333,13 +324,14 @@ h1#mindfulness-section {
 }
 
 .pill-filter {
-  padding: 0.45rem 0.9rem;
+  padding: 0.5rem 0.95rem; /* was 0.45/0.9 — bumped for tap target */
   font-size: 0.9rem;
   font-weight: 600;
   border: 1px solid var(--color-white-border);
   background: var(--color-white);
   color: var(--color-primary);
   cursor: pointer;
+  min-height: 38px;
   transition: all var(--transition-fast);
 }
 
@@ -422,98 +414,53 @@ h1#mindfulness-section {
    ========================= */
 
 .is-primary .icon-badge,
-.icon-badge-primary {
-  background: var(--color-secondary-highlight);
-}
+.icon-badge-primary { background: var(--color-secondary-highlight); }
 
 .is-primary .icon-badge i,
-.icon-badge-primary i {
-  color: var(--color-secondary);
-}
+.icon-badge-primary i { color: var(--color-secondary); }
 
-.is-primary:hover {
-  border: 1px solid var(--color-secondary);
-}
+.is-primary:hover { border: 1px solid var(--color-secondary); }
 
 .is-blue .icon-badge,
-.icon-badge-blue {
-  background: var(--color-blue-highlight);
-}
+.icon-badge-blue { background: var(--color-blue-highlight); }
 
-.is-blue h3 {
-  color: var(--color-blue) !important;
-}
-
-.is-blue .link-cta {
-  color: var(--color-blue) !important;
-}
+.is-blue h3 { color: var(--color-blue) !important; }
+.is-blue .link-cta { color: var(--color-blue) !important; }
 
 .is-blue .icon-badge i,
-.icon-badge-blue i {
-  color: var(--color-blue);
-}
+.icon-badge-blue i { color: var(--color-blue); }
 
-.is-blue:hover {
-  border: 1px solid var(--color-blue);
-}
+.is-blue:hover { border: 1px solid var(--color-blue); }
 
 .is-yellow .icon-badge,
-.icon-badge-yellow {
-  background: var(--color-secondary-highlight);
-}
+.icon-badge-yellow { background: var(--color-secondary-highlight); }
 
-.is-yellow h3 {
-  color: var(--color-yellow) !important;
-}
-
-.is-yellow .link-cta {
-  color: var(--color-yellow) !important;
-}
+.is-yellow h3 { color: var(--color-yellow) !important; }
+.is-yellow .link-cta { color: var(--color-yellow) !important; }
 
 .is-yellow .icon-badge i,
-.icon-badge-yellow i {
-  color: var(--color-secondary);
-}
+.icon-badge-yellow i { color: var(--color-secondary); }
 
-.is-yellow:hover {
-  border: 1px solid var(--color-secondary);
-}
+.is-yellow:hover { border: 1px solid var(--color-secondary); }
 
 .is-yellow .icon-badge,
-.icon-badge-red {
-  background: var(--color-yellow-highlight);
-}
+.icon-badge-red { background: var(--color-yellow-highlight); }
 
 .is-yellow .icon-badge i,
-.icon-badge-red i {
-  color: var(--color-yellow);
-}
+.icon-badge-red i { color: var(--color-yellow); }
 
-.is-yellow:hover {
-  border: 1px solid var(--color-yellow);
-}
+.is-yellow:hover { border: 1px solid var(--color-yellow); }
 
 .is-green .icon-badge,
-.icon-badge-green {
-  background: var(--color-green-highlight);
-}
+.icon-badge-green { background: var(--color-green-highlight); }
 
-.is-green h3 {
-  color: var(--color-green) !important;
-}
-
-.is-green .link-cta {
-  color: var(--color-green) !important;
-}
+.is-green h3 { color: var(--color-green) !important; }
+.is-green .link-cta { color: var(--color-green) !important; }
 
 .is-green .icon-badge i,
-.icon-badge-green i {
-  color: var(--color-green);
-}
+.icon-badge-green i { color: var(--color-green); }
 
-.is-green:hover {
-  border: 1px solid var(--color-green);
-}
+.is-green:hover { border: 1px solid var(--color-green); }
 
 /* =========================
    Navbar
@@ -536,9 +483,7 @@ h1#mindfulness-section {
   letter-spacing: 0.05em;
 }
 
-.navbar-brand:hover {
-  color: var(--color-primary);
-}
+.navbar-brand:hover { color: var(--color-primary); }
 
 .navbar-nav .nav-link {
   margin-inline: 0.6rem;
@@ -559,6 +504,21 @@ h1#mindfulness-section {
   font-weight: 700;
 }
 
+/* Mobile-collapsed nav: more breathing room when stacked */
+@media (max-width: 991px) {
+  .navbar-nav .nav-link {
+    margin-inline: 0;
+    padding: 0.55rem 0.25rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+}
+
 /* =========================
    Hero / Page Header
    ========================= */
@@ -567,7 +527,7 @@ h1#mindfulness-section {
   display: flex;
   align-items: center;
   gap: 2rem;
-  padding: 3rem 0 2rem 4rem;
+  padding: 3rem 1.5rem 2rem 4rem;
   max-width: 1100px;
   margin: 0 auto;
 }
@@ -591,56 +551,83 @@ h1#mindfulness-section {
   text-align: center;
 }
 
-.hero-text {
-  flex: 1;
-}
+.hero-text { flex: 1; min-width: 0; }
 
 .page-header {
   align-items: center;
-  padding: 2.5rem 0 1.5rem 0;
+  padding: 2.5rem 1rem 1.5rem 1rem;
 }
 
 .hero-title,
 .header-title {
   font-family: var(--font-logo);
-  font-size: 6.5rem;
+  font-size: var(--fs-hero);
   font-weight: 600;
   line-height: 1;
   letter-spacing: 0.1em;
   color: var(--color-primary);
+  word-break: break-word;
 }
 
 .hero-subtitle,
 .header-subtitle {
-  font-size: 1.8rem;
+  font-size: var(--fs-hero-sub);
   font-weight: 500;
   letter-spacing: 0.02em;
-  line-height: 0.5;
+  /* Was line-height: 0.5 — that broke wrapping. Tight but safe instead. */
+  line-height: 1.1;
 }
 
-.hero-subtitle {
-  color: var(--color-secondary);
-}
+.hero-subtitle { color: var(--color-secondary); }
 
 .hero-sub-subtitle {
-  font-size: 1.5rem;
+  font-size: var(--fs-hero-subsub);
   font-weight: 500;
   color: var(--color-secondary);
   opacity: 1;
-  margin-top: -0.4em;
+  margin-top: 0.15em;
+  line-height: 1.2;
 }
 
-.header-subtitle {
-  color: var(--color-secondary);
-}
+.header-subtitle { color: var(--color-secondary); }
 
 .hero-intro {
   max-width: 1000px;
   margin: 1rem auto 3rem auto;
-  font-size: 1.3rem;
+  padding: 0 1rem;
+  font-size: var(--fs-hero-intro);
   font-weight: 500;
   line-height: 1.6;
   text-align: center;
+}
+
+/* Hero collapses below tablet */
+@media (max-width: 900px) {
+  .hero-header {
+    flex-direction: column;
+    gap: 1.25rem;
+    padding: 2rem 1rem 1.5rem 1rem;
+    text-align: center;
+  }
+
+  .hero-logo img {
+    width: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-header {
+    padding: 1.5rem 0.75rem 1rem 0.75rem;
+  }
+
+  .hero-logo img {
+    width: 130px;
+  }
+
+  .hero-title,
+  .header-title {
+    letter-spacing: 0.06em; /* tight letter-spacing on small screens */
+  }
 }
 
 /* =========================
@@ -676,6 +663,10 @@ h1#mindfulness-section {
 
 .quick-card:hover .link-cta {
   transform: translateX(3px);
+}
+
+@media (max-width: 480px) {
+  .quick-card { padding: 1.25rem; }
 }
 
 /* =========================
@@ -756,9 +747,7 @@ h1#mindfulness-section {
   transform: translateX(3px);
 }
 
-.listing-more {
-  margin-top: 0.75rem;
-}
+.listing-more { margin-top: 0.75rem; }
 
 .listing-thumb-wrap {
   width: 100%;
@@ -796,7 +785,6 @@ h1#mindfulness-section {
   z-index: 2;
 }
 
-
 .listing-scroll-shell::after {
   right: 0;
   width: 72px;
@@ -808,19 +796,19 @@ h1#mindfulness-section {
   gap: 1.25rem;
   overflow-x: auto;
   overflow-y: hidden;
-  padding: 8px 2.5rem 0.6rem 0;  /* ← left padding now 0 */
-  margin-left: 0;                /* ← was 0.75rem */
+  padding: 8px 2.5rem 0.6rem 0;
+  margin-left: 0;
   -webkit-overflow-scrolling: touch;
+  scroll-snap-type: x mandatory;       /* nicer mobile feel */
   scrollbar-width: none;
 }
 
-.listing-scroll-row::-webkit-scrollbar {
-  display: none;                  /* ← keep, replaces the old height/track/thumb rules */
-}
+.listing-scroll-row::-webkit-scrollbar { display: none; }
 
 .listing-scroll-row .listing-card {
   flex: 0 0 360px;
   min-width: 360px;
+  scroll-snap-align: start;
 }
 
 /* =========================
@@ -832,7 +820,7 @@ h1#mindfulness-section {
   align-items: center;
   gap: 1.25rem;
   max-width: 480px;
-  margin: 0.4rem auto 0 auto;  /* ← was 0.75rem, now tighter */
+  margin: 0.4rem auto 0 auto;
   padding: 0 1rem;
 }
 
@@ -863,7 +851,6 @@ h1#mindfulness-section {
   border-radius: var(--radius-pill);
   position: relative;
   cursor: pointer;
-  /* Bigger invisible hit target for the thin track */
   padding: 8px 0;
   background-clip: content-box;
 }
@@ -887,8 +874,8 @@ h1#mindfulness-section {
 }
 
 .scroll-nav__btn {
-  width: 36px;
-  height: 36px;
+  width: 44px;          /* was 36 — full tap target on mobile */
+  height: 44px;
   padding: 0;
   border-radius: 50%;
   border: 1px solid var(--color-white-border);
@@ -939,17 +926,6 @@ h1#mindfulness-section {
   letter-spacing: 0.01em;
 }
 
-@media (max-width: 700px) {
-  .scroll-nav {
-    gap: 0.85rem;
-    padding: 0 0.5rem;
-  }
-
-  .scroll-nav__hint {
-    display: none;
-  }
-}
-
 /* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   .scroll-nav__fill,
@@ -967,16 +943,15 @@ h1#mindfulness-section {
     padding: 0 0.5rem;
   }
 
-  .scroll-nav__track {
-    display: none;
-  }
+  .scroll-nav__track { display: none; }
 
   .scroll-nav__counter {
     flex: 1;
     justify-content: flex-start;
   }
-}
 
+  .scroll-nav__hint { display: none; }
+}
 
 /* =========================
    Publications Archive
@@ -998,13 +973,9 @@ h1#mindfulness-section {
   padding: 1rem 0;
 }
 
-.publication-entry:first-child {
-  padding-top: 0.35rem;
-}
+.publication-entry:first-child { padding-top: 0.35rem; }
 
-.publication-content {
-  max-width: 1050px;
-}
+.publication-content { max-width: 1050px; }
 
 .publication-title h3 {
   margin: 0 0 0.6rem 0;
@@ -1019,11 +990,11 @@ h1#mindfulness-section {
   text-decoration: none;
   font-weight: 600;
   font-size: 1.25rem;
+  line-height: 1.3;
+  display: inline-block; /* lets line-height take effect on long titles */
 }
 
-.publication-title a:hover {
-  text-decoration: none;
-}
+.publication-title a:hover { text-decoration: none; }
 
 .publication-authors {
   margin-bottom: 0.7rem;
@@ -1044,15 +1015,8 @@ h1#mindfulness-section {
   color: var(--color-outline);
 }
 
-.publication-venue {
-  color: var(--color-text);
-  font-style: italic;
-}
-
-.publication-year {
-  color: var(--color-text);
-  font-weight: 600;
-}
+.publication-venue { color: var(--color-text); font-style: italic; }
+.publication-year  { color: var(--color-text); font-weight: 600; }
 
 .publication-entry.card {
   padding: 1.35rem 1.5rem;
@@ -1066,22 +1030,14 @@ h1#mindfulness-section {
   margin-top: 0.9rem;
 }
 
-.publication-entry.card .publication-title {
-  margin-bottom: 0.4rem;
-}
-
-.publication-entry.card .publication-authors {
-  margin-bottom: 0.5rem;
-}
-
-.publication-entry.card .publication-meta {
-  margin-bottom: 0.7rem;
-}
+.publication-entry.card .publication-title  { margin-bottom: 0.4rem; }
+.publication-entry.card .publication-authors { margin-bottom: 0.5rem; }
+.publication-entry.card .publication-meta    { margin-bottom: 0.7rem; }
 
 .publication-links {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem !important;
+  gap: 0.6rem !important;  /* was 1rem — too wide once links wrap */
   margin-bottom: 0rem;
 }
 
@@ -1089,7 +1045,7 @@ h1#mindfulness-section {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem !important;
-  padding: 0.2rem 1.22rem 0.2rem 0.82rem !important;
+  padding: 0.32rem 1.05rem 0.32rem 0.55rem !important; /* slight bump for tap */
   border-radius: var(--radius-pill);
   border: 1px solid var(--color-white-border);
   background: var(--color-white);
@@ -1098,6 +1054,7 @@ h1#mindfulness-section {
   font-weight: 700;
   line-height: 1;
   text-decoration: none;
+  min-height: 36px;
   transition:
     border-color var(--transition-fast),
     background-color var(--transition-fast),
@@ -1133,55 +1090,29 @@ h1#mindfulness-section {
   white-space: nowrap;
 }
 
-.pub-link-pdf .pub-link-icon {
-  background: var(--color-primary-highlight);
-}
+.pub-link-pdf .pub-link-icon  { background: var(--color-primary-highlight); }
+.pub-link-pdf .pub-link-icon i { color: var(--color-primary); }
+.pub-link-pdf:hover           { border-color: var(--color-primary); }
 
-.pub-link-pdf .pub-link-icon i {
-  color: var(--color-primary);
-}
+.pub-link-data .pub-link-icon  { background: var(--color-yellow-highlight); }
+.pub-link-data .pub-link-icon i { color: var(--color-yellow); }
+.pub-link-data:hover           { border-color: var(--color-yellow); }
 
-.pub-link-pdf:hover {
-  border-color: var(--color-primary);
-}
-
-.pub-link-data .pub-link-icon {
-  background: var(--color-yellow-highlight);
-}
-
-.pub-link-data .pub-link-icon i {
-  color: var(--color-yellow);
-}
-
-.pub-link-data:hover {
-  border-color: var(--color-yellow);
-}
-
-.pub-link-code .pub-link-icon {
-  background: var(--color-green-highlight);
-}
-
-.pub-link-code .pub-link-icon i {
-  color: var(--color-green);
-}
-
-.pub-link-code:hover {
-  border-color: var(--color-green);
-}
+.pub-link-code .pub-link-icon  { background: var(--color-green-highlight); }
+.pub-link-code .pub-link-icon i { color: var(--color-green); }
+.pub-link-code:hover           { border-color: var(--color-green); }
 
 .publication-year-group {
   margin-top: 2.25rem;
   margin-bottom: 1rem;
 }
 
-.publication-year-group:first-child {
-  margin-top: 0.25rem;
-}
+.publication-year-group:first-child { margin-top: 0.25rem; }
 
 .publication-year-heading {
   margin: 0 0 0.35rem 0;
   font-family: var(--font-logo);
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 1vw + 1.25rem, 2rem);
   font-weight: 700;
   color: var(--color-primary);
   line-height: 1;
@@ -1189,7 +1120,7 @@ h1#mindfulness-section {
 }
 
 /* =========================
-   Responsive
+   Responsive — listing & publications
    ========================= */
 
 @media (max-width: 1000px) {
@@ -1201,9 +1132,7 @@ h1#mindfulness-section {
     font-size: 1.38rem;
   }
 
-  .publication-authors {
-    font-size: 0.96rem;
-  }
+  .publication-authors { font-size: 0.96rem; }
 
   .publication-meta {
     font-size: 0.87rem;
@@ -1212,17 +1141,17 @@ h1#mindfulness-section {
 }
 
 @media (max-width: 900px) {
-  .quick-grid {
-    grid-template-columns: 1fr;
-  }
+  .quick-grid { grid-template-columns: 1fr; }
 
-  .publication-entry {
-    padding: 1.65rem 0 1.8rem 0;
+  .publication-entry { padding: 1.65rem 0 1.8rem 0; }
+
+  .publication-entry.card {
+    padding: 1.15rem 1.15rem;
   }
 
   .pub-link {
     font-size: 0.8rem;
-    padding: 0.34rem 0.72rem 0.34rem 0.4rem;
+    padding: 0.34rem 0.8rem 0.34rem 0.4rem !important;
   }
 
   .pub-link-icon {
@@ -1231,14 +1160,15 @@ h1#mindfulness-section {
     flex-basis: 1.7rem;
   }
 
-  .pub-link-icon i {
-    font-size: 0.82rem;
-  }
+  .pub-link-icon i { font-size: 0.82rem; }
 }
 
 @media (max-width: 700px) {
-  .listing-grid {
-    grid-template-columns: 1fr;
+  .listing-grid { grid-template-columns: 1fr; }
+
+  .listing-toolbar,
+  .pub-filter-bar {
+    gap: 0.5rem;
   }
 
   .listing-scroll-shell::before,
@@ -1246,9 +1176,37 @@ h1#mindfulness-section {
     width: 24px;
   }
 
+  .listing-scroll-row {
+    padding-right: 1.25rem;
+  }
+
   .listing-scroll-row .listing-card {
     flex: 0 0 84vw;
     min-width: 84vw;
+  }
+
+  .listing-card-link {
+    padding: 1.15rem;
+  }
+
+  .publication-title a {
+    font-size: 1.1rem;
+  }
+
+  .publication-authors {
+    font-size: 0.92rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .pub-link {
+    font-size: 0.78rem;
+    padding: 0.34rem 0.7rem 0.34rem 0.36rem !important;
+    gap: 0.5rem !important;
+  }
+
+  .publication-entry.card {
+    padding: 1rem;
   }
 }
 
@@ -1290,9 +1248,7 @@ h1#mindfulness-section {
   transition: transform var(--transition-fast);
 }
 
-.pi-view-link:hover {
-  transform: translateX(3px);
-}
+.pi-view-link:hover { transform: translateX(3px); }
 
 .pi-content {
   margin-top: -1.25rem;
@@ -1305,32 +1261,73 @@ h1#mindfulness-section {
 
 .pi-name {
   margin: 0;
-  font-size: 2rem;
+  font-size: var(--fs-pi-name);
   font-weight: 800;
   color: var(--color-primary);
+  line-height: 1.15;
 }
 
 .pi-position {
   font-weight: 700;
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   margin-top: -0.25rem;
   margin-bottom: 1rem;
   color: var(--color-secondary);
 }
 
+.pi-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1rem;
+}
+
 .pi-links a {
-  margin-right: 1rem;
-  font-size: 1.1rem;
+  margin-right: 0;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--color-secondary);
+  padding: 0.25rem 0;
+}
+
+@media (max-width: 800px) {
+  .pi-card {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin: 1.5rem 0 2.25rem 0;
+    text-align: center;
+  }
+
+  .pi-photo {
+    margin: 1rem auto 0 auto;
+    padding: 1rem 1rem 0 1rem;
+    max-width: 280px;
+  }
+
+  .pi-content {
+    margin-top: 0;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    align-items: center;
+  }
+
+  .pi-links {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .pi-photo { max-width: 220px; }
+  .pi-content { padding: 0 1.1rem 1.25rem 1.1rem; }
 }
 
 .grad-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, 320px);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
   justify-content: center;
   margin: 0 0 3rem 0;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .grad-card {
@@ -1355,6 +1352,7 @@ h1#mindfulness-section {
   margin-bottom: 0.1rem;
   font-size: 1.5rem;
   color: var(--color-primary);
+  line-height: 1.2;
 }
 
 .grad-position {
@@ -1381,11 +1379,14 @@ h1#mindfulness-section {
   font-weight: 700;
 }
 
-.grad-card:hover {
-  transform: translateY(-3px);
+.grad-card:hover { transform: translateY(-3px); }
+
+@media (max-width: 480px) {
+  .grad-photo { padding: 1.1rem; }
+  .grad-name { font-size: 1.3rem; }
 }
 
-
+/* RA grid: rebuilt with auto-fit so it actually adapts */
 .ra-card {
   padding: 2.5rem 3rem;
   background: var(--color-white);
@@ -1396,7 +1397,7 @@ h1#mindfulness-section {
 
 .ra-grid {
   display: grid;
-  grid-template-columns: repeat(3, 260px);
+  grid-template-columns: repeat(auto-fit, minmax(220px, 260px));
   justify-content: center;
   column-gap: 6rem;
   row-gap: 2.5rem;
@@ -1412,6 +1413,8 @@ h1#mindfulness-section {
   padding: 0.25rem;
 }
 
+/* The 3-column divider only makes sense on desktop. Hide it everywhere
+   it can't reliably know "I'm not the rightmost in a row." */
 .ra-person:not(:nth-child(3n))::after {
   content: "";
   position: absolute;
@@ -1421,9 +1424,7 @@ h1#mindfulness-section {
   background: rgba(0, 0, 0, 0.15);
 }
 
-.ra-image-link {
-  text-decoration: none;
-}
+.ra-image-link { text-decoration: none; }
 
 .ra-photo {
   width: 100%;
@@ -1436,6 +1437,43 @@ h1#mindfulness-section {
   margin-bottom: -1rem;
   font-size: 1.5rem;
   line-height: 1.25;
+}
+
+@media (max-width: 1100px) {
+  .ra-card {
+    padding: 2rem 1.75rem;
+  }
+
+  .ra-grid {
+    column-gap: 2rem;
+    row-gap: 2rem;
+  }
+
+  /* Once columns wrap freely, the desktop divider trick no longer
+     reliably hits "non-last in row" — so just hide it. */
+  .ra-person::after {
+    display: none !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .ra-card {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .ra-grid {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+    row-gap: 1.5rem;
+  }
+
+  .ra-photo {
+    padding: 1.5rem;
+    max-width: 200px;
+    margin: 0 auto;
+  }
+
+  .ra-name { font-size: 1.3rem; }
 }
 
 /* =========================
@@ -1480,16 +1518,17 @@ h1#mindfulness-section {
 
 .profile-name {
   font-family: var(--font-logo);
-  font-size: 3.2rem;
-  line-height: 1;
+  font-size: clamp(2rem, 3vw + 1.4rem, 3.2rem);
+  line-height: 1.05;
   color: var(--color-primary);
   font-weight: 600;
   letter-spacing: 0.02em;
   margin: 0 0 0.25rem 0;
+  word-break: break-word;
 }
 
 .profile-position {
-  font-size: 1.25rem;
+  font-size: clamp(0.9rem, 0.5vw + 0.8rem, 1.25rem);
   font-weight: 600 !important;
   color: var(--color-yellow);
   margin-top: 0.5rem !important;
@@ -1499,23 +1538,17 @@ h1#mindfulness-section {
 }
 
 .profile-tagline {
-  font-size: 1.2rem;
+  font-size: clamp(1rem, 0.4vw + 0.95rem, 1.2rem);
   font-weight: 400 !important;
   line-height: 1.6;
   max-width: 900px;
   margin: 0.5rem auto 2rem auto;
   color: var(--color-text);
+  padding: 0 0.5rem;
 }
 
 .profile-links,
-#profile-links-dynamic {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.5rem 0.75rem;
-}
-
-.profile-links,
+#profile-links-dynamic,
 #profile-links-cv {
   display: flex;
   flex-wrap: wrap;
@@ -1535,7 +1568,7 @@ h1#mindfulness-section {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
-  padding: 0.75rem 1.25rem;
+  padding: 0.7rem 1.15rem;
   background: var(--color-white);
   border: 1px solid var(--color-white-border);
   border-radius: var(--radius-pill);
@@ -1544,6 +1577,7 @@ h1#mindfulness-section {
   font-weight: 700;
   letter-spacing: 0.01em;
   text-decoration: none;
+  min-height: 40px;
   transition:
     background var(--transition-fast),
     border-color var(--transition-fast),
@@ -1553,8 +1587,8 @@ h1#mindfulness-section {
 }
 
 .profile-cv a {
-  padding: 1rem 1.5rem !important;
-  font-size: 1rem !important;
+  padding: 0.9rem 1.4rem !important;
+  font-size: 0.95rem !important;
 }
 
 .profile-links a:hover {
@@ -1603,16 +1637,11 @@ h1#mindfulness-section {
   font-size: 1rem;
   font-weight: 600;
   color: var(--color-primary);
+  word-break: break-word;
 }
 
-/* This is the key: wrap the p's OR use a pseudo-trick */
-.profile-meta-card p:first-of-type {
-  margin-top: auto;
-}
-
-.profile-meta-card p:last-of-type {
-  margin-bottom: auto;
-}
+.profile-meta-card p:first-of-type { margin-top: auto; }
+.profile-meta-card p:last-of-type  { margin-bottom: auto; }
 
 .profile-meta-card a {
   color: var(--color-primary);
@@ -1660,9 +1689,10 @@ h1#mindfulness-section {
   margin-top: 0;
   margin-bottom: 0.9rem;
   font-family: var(--font-body);
-  font-size: 1.7rem;
+  font-size: clamp(1.35rem, 1vw + 1.1rem, 1.7rem);
   font-weight: 700;
   color: var(--color-text);
+  line-height: 1.25;
 }
 
 .profile-section-card p {
@@ -1697,8 +1727,7 @@ h1#mindfulness-section {
   margin-bottom: 0;
 }
 
-/* Force body font for all profile page text by default — only specific
-   headings and profile-name use Nunito */
+/* Force body font for all profile page text by default */
 .profile-page,
 .profile-page p,
 .profile-page li,
@@ -1713,10 +1742,7 @@ h1#mindfulness-section {
   font-family: var(--font-body);
 }
 
-/* Then explicitly opt-in to Nunito where you actually want it */
-.profile-name {
-  font-family: var(--font-logo);
-}
+.profile-name { font-family: var(--font-logo); }
 
 /* =========================
    Profile Section Icons
@@ -1731,6 +1757,7 @@ h1#mindfulness-section {
   justify-content: center;
   margin-bottom: 1rem;
   line-height: 0;
+  flex-shrink: 0;
 }
 
 .profile-section-icon i {
@@ -1747,33 +1774,18 @@ h1#mindfulness-section {
 .icon-badge p {
   margin: 0;
   line-height: 0;
-  display: contents; /* makes the <p> disappear from layout */
+  display: contents;
   transform: translateY(8px);
 }
 
-.profile-section-blue {
-  background: var(--color-primary-highlight);
-}
+.profile-section-blue   { background: var(--color-primary-highlight); }
+.profile-section-blue i { color: var(--color-primary); }
 
-.profile-section-blue i {
-  color: var(--color-primary);
-}
+.profile-section-green   { background: var(--color-green-highlight); }
+.profile-section-green i { color: var(--color-green); }
 
-.profile-section-green {
-  background: var(--color-green-highlight);
-}
-
-.profile-section-green i {
-  color: var(--color-green);
-}
-
-.profile-section-yellow {
-  background: var(--color-yellow-highlight);
-}
-
-.profile-section-yellow i {
-  color: var(--color-yellow);
-}
+.profile-section-yellow   { background: var(--color-yellow-highlight); }
+.profile-section-yellow i { color: var(--color-yellow); }
 
 /* =========================
    Selected Publications
@@ -1786,13 +1798,8 @@ h1#mindfulness-section {
   line-height: 1.6;
 }
 
-.publication-entry-profile {
-  padding: 1.15rem 0;
-}
-
-.publication-entry-profile:first-child {
-  padding-top: 0.2rem;
-}
+.publication-entry-profile { padding: 1.15rem 0; }
+.publication-entry-profile:first-child { padding-top: 0.2rem; }
 
 .publication-entry-profile:last-child {
   border-bottom: none;
@@ -1805,19 +1812,19 @@ h1#mindfulness-section {
   font-size: 1.35rem;
   font-weight: 700 !important;
   color: var(--color-primary);
+  line-height: 1.3;
 }
 
 .profile-section-card .publication-title-profile a {
   color: var(--color-primary);
   font-weight: 700 !important;
   text-decoration: none;
-  font-weight: 600;
   font-size: 1.25rem;
+  line-height: 1.3;
+  display: inline-block;
 }
 
-.publication-title-profile a:hover {
-  text-decoration: none;
-}
+.publication-title-profile a:hover { text-decoration: none; }
 
 .publication-authors-profile {
   margin-bottom: 0.45rem;
@@ -1838,13 +1845,8 @@ h1#mindfulness-section {
   color: var(--color-secondary);
 }
 
-.publication-year-profile {
-  color: var(--color-text);
-}
-
-.publication-year-profile strong {
-  font-weight: 400;
-}
+.publication-year-profile { color: var(--color-text); }
+.publication-year-profile strong { font-weight: 400; }
 
 .publication-meta-profile .publication-venue {
   color: var(--color-text);
@@ -1859,7 +1861,7 @@ h1#mindfulness-section {
 .publication-links-profile {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.7rem !important;
+  gap: 0.6rem !important;
   margin-bottom: 0;
 }
 
@@ -1867,9 +1869,10 @@ h1#mindfulness-section {
   display: inline-flex;
   align-items: center;
   gap: 0.55rem !important;
-  padding: 0.18rem 0.95rem 0.18rem 0.72rem !important;
+  padding: 0.22rem 0.95rem 0.22rem 0.5rem !important;
   font-size: 0.8rem;
   line-height: 1;
+  min-height: 32px;
 }
 
 .pub-link-icon-profile {
@@ -1878,9 +1881,7 @@ h1#mindfulness-section {
   flex: 0 0 1.65rem;
 }
 
-.pub-link-icon-profile i {
-  font-size: 0.82rem;
-}
+.pub-link-icon-profile i { font-size: 0.82rem; }
 
 /* =========================
    Profile About Section
@@ -1891,26 +1892,15 @@ h1#mindfulness-section {
   font-family: var(--font-body);
 }
 
-.profile-about p + p {
-  margin-top: 1rem;
-}
+.profile-about p + p { margin-top: 1rem; }
 
 /* =========================
-   Responsive
+   Profile responsive
    ========================= */
 
 @media (max-width: 1000px) {
-  .profile-name {
-    font-size: 2.8rem;
-  }
-
-  .publication-title-profile {
-    font-size: 1.2rem;
-  }
-
-  .publication-authors-profile {
-    font-size: 0.95rem;
-  }
+  .publication-title-profile { font-size: 1.2rem; }
+  .publication-authors-profile { font-size: 0.95rem; }
 
   .publication-meta-profile {
     font-size: 0.87rem;
@@ -1919,14 +1909,11 @@ h1#mindfulness-section {
 }
 
 @media (max-width: 900px) {
-  .profile-section-layout {
+  .profile-section-layout,
+  .profile-section-layout-alt {
     grid-template-columns: 1fr;
     gap: 1.25rem;
     margin: 1.75rem 0 2.5rem 0;
-  }
-
-  .profile-name {
-    font-size: 2.4rem;
   }
 
   .profile-tagline {
@@ -1948,13 +1935,11 @@ h1#mindfulness-section {
     grid-template-columns: 1fr;
   }
 
-  .publication-entry-profile {
-    padding: 1rem 0;
-  }
+  .publication-entry-profile { padding: 1rem 0; }
 
   .pub-link-profile {
     font-size: 0.78rem;
-    padding: 0.18rem 0.82rem 0.18rem 0.62rem !important;
+    padding: 0.22rem 0.82rem 0.22rem 0.45rem !important;
   }
 
   .pub-link-icon-profile {
@@ -1963,28 +1948,17 @@ h1#mindfulness-section {
     flex-basis: 1.55rem;
   }
 
-  .pub-link-icon-profile i {
-    font-size: 0.78rem;
-  }
+  .pub-link-icon-profile i { font-size: 0.78rem; }
 }
 
 @media (max-width: 700px) {
-  .profile-heading {
-    margin: 0.25rem 0 1.4rem 0;
-  }
-
-  .profile-name {
-    font-size: 2.05rem;
-    line-height: 1.05;
-  }
+  .profile-heading { margin: 0.25rem 0 1.4rem 0; }
 
   .profile-position {
-    font-size: 0.9rem;
     letter-spacing: 0.06em;
   }
 
   .profile-tagline {
-    font-size: 1rem;
     line-height: 1.65;
   }
 
@@ -1995,11 +1969,12 @@ h1#mindfulness-section {
 
   .profile-links a {
     font-size: 0.82rem;
-    padding: 0.45rem 0.9rem;
+    padding: 0.6rem 0.95rem;
   }
 
   .profile-page .about-entity {
     display: block;
+    padding: 1.25rem;
   }
 
   .profile-page .about-image {
@@ -2007,8 +1982,8 @@ h1#mindfulness-section {
     margin: 0 auto 1.25rem auto;
   }
 
-  .profile-section-card h3 {
-    font-size: 1.45rem;
+  .profile-section-card {
+    padding: 1.25rem 1.15rem;
   }
 
   .profile-section-card p,
@@ -2022,14 +1997,27 @@ h1#mindfulness-section {
     line-height: 1.32;
   }
 
-  .publication-authors-profile {
-    font-size: 0.92rem;
+  .publication-authors-profile { font-size: 0.92rem; }
+  .publication-meta-profile { font-size: 0.84rem; }
+}
+
+@media (max-width: 480px) {
+  .profile-section-card {
+    padding: 1.1rem 1rem;
   }
 
-  .publication-meta-profile {
-    font-size: 0.84rem;
+  .profile-page .about-entity {
+    padding: 1rem;
+  }
+
+  .profile-meta-card {
+    padding: 0.95rem 1rem;
   }
 }
+
+/* =========================
+   Copy email link
+   ========================= */
 
 .copy-email-link {
   display: inline-flex;
@@ -2041,6 +2029,7 @@ h1#mindfulness-section {
   transition: opacity 0.15s ease, color 0.15s ease;
   cursor: pointer;
   position: relative;
+  padding: 0.2em;
 }
 
 .copy-email-link:hover {
@@ -2048,9 +2037,7 @@ h1#mindfulness-section {
   color: var(--color-primary);
 }
 
-.copy-email-link i {
-  font-size: 0.75em;
-}
+.copy-email-link i { font-size: 0.75em; }
 
 .copy-email-link .copy-confirm {
   position: absolute;
@@ -2061,7 +2048,6 @@ h1#mindfulness-section {
   margin-left: 0.15em;
   white-space: nowrap;
 }
-
 
 /* =========================
    Simple Listing
@@ -2102,9 +2088,7 @@ h1#mindfulness-section {
   text-decoration: none;
 }
 
-.listing-simple-title a:hover {
-  text-decoration: none;
-}
+.listing-simple-title a:hover { text-decoration: none; }
 
 .listing-simple-description {
   margin: 0;
@@ -2126,8 +2110,15 @@ h1#mindfulness-section {
     padding: 1.25rem 1.35rem;
   }
 
-  .listing-simple-title {
+  .listing-simple-title,
+  .listing-simple-title a {
     font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .listing-simple-entry {
+    padding: 1.1rem 1.15rem;
   }
 }
 
@@ -2144,23 +2135,11 @@ h1#mindfulness-section {
   justify-content: center;
 }
 
-.listing-simple-grid-2col {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
+.listing-simple-grid-2col { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.listing-simple-grid-3col { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.listing-simple-grid-4col { grid-template-columns: repeat(4, minmax(0, 1fr)); }
 
-.listing-simple-grid-3col {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.listing-simple-grid-4col {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-}
-
-/* Center a lone trailing card when the final row isn't filled.
-   2-col: 1 orphan centers at half width.
-   3-col: 1 orphan centers at one-third width.
-   4-col: 1 orphan centers at one-quarter width. */
-
+/* Center a lone trailing card when the final row isn't filled. */
 .listing-simple-grid-2col .listing-simple-entry:last-child:nth-child(odd) {
   grid-column: 1 / -1;
   max-width: calc((100% - 1.25rem) / 2);
@@ -2225,7 +2204,7 @@ h1#mindfulness-section {
   display: inline-flex;
   align-items: center;
   gap: 0.65rem;
-  padding: 0.35rem 0.9rem 0.35rem 0.5rem;
+  padding: 0.42rem 1rem 0.42rem 0.5rem; /* slight bump for tap */
   border-radius: var(--radius-pill);
   border: 1px solid var(--color-white-border);
   background: var(--color-white);
@@ -2235,6 +2214,7 @@ h1#mindfulness-section {
   line-height: 1;
   text-decoration: none;
   box-sizing: border-box;
+  min-height: 40px;
   transition:
     border-color var(--transition-fast),
     transform var(--transition-fast),
@@ -2267,46 +2247,27 @@ h1#mindfulness-section {
   white-space: nowrap;
 }
 
-.download-btn-pdf .download-btn-icon {
-  background: var(--color-primary-highlight);
-}
+.download-btn-pdf .download-btn-icon  { background: var(--color-primary-highlight); }
+.download-btn-pdf .download-btn-icon i { color: var(--color-primary); }
+.download-btn-pdf:hover               { border-color: var(--color-primary); }
 
-.download-btn-pdf .download-btn-icon i {
-  color: var(--color-primary);
-}
+.download-btn-data .download-btn-icon  { background: var(--color-yellow-highlight); }
+.download-btn-data .download-btn-icon i { color: var(--color-yellow); }
+.download-btn-data:hover               { border-color: var(--color-yellow); }
 
-.download-btn-pdf:hover {
-  border-color: var(--color-primary);
-}
-
-.download-btn-data .download-btn-icon {
-  background: var(--color-yellow-highlight);
-}
-
-.download-btn-data .download-btn-icon i {
-  color: var(--color-yellow);
-}
-
-.download-btn-data:hover {
-  border-color: var(--color-yellow);
-}
-
-.download-btn-code .download-btn-icon {
-  background: var(--color-green-highlight);
-}
-
-.download-btn-code .download-btn-icon i {
-  color: var(--color-green);
-}
-
-.download-btn-code:hover {
-  border-color: var(--color-green);
-}
+.download-btn-code .download-btn-icon  { background: var(--color-green-highlight); }
+.download-btn-code .download-btn-icon i { color: var(--color-green); }
+.download-btn-code:hover               { border-color: var(--color-green); }
 
 @media (max-width: 500px) {
+  .download-buttons {
+    gap: 0.55rem;
+  }
+
   .download-btn {
-    width: auto;
+    width: 100%;     /* full-width stacked buttons read better at this size */
     flex: 1 1 auto;
+    justify-content: flex-start;
   }
 }
 
@@ -2337,6 +2298,16 @@ h1#mindfulness-section {
   font-weight: 700;
 }
 
+@media (max-width: 700px) {
+  .pdf-viewer-frame {
+    /* On phones, address bars eat real estate and 100vh causes scroll trapping.
+       Cap at a comfortable height instead. */
+    height: 75vh;
+    min-height: 420px;
+    border-radius: var(--radius-sm);
+  }
+}
+
 /* =========================
    Publication Header
    ========================= */
@@ -2349,6 +2320,7 @@ h1#mindfulness-section {
   margin: 2rem auto 0 auto;
   max-width: 900px;
   text-align: center;
+  padding: 0 1rem;
 }
 
 .pub-header-authors {
@@ -2371,9 +2343,7 @@ h1#mindfulness-section {
   line-height: 1.4;
 }
 
-.pub-header-year {
-  font-weight: 600;
-}
+.pub-header-year { font-weight: 600; }
 
 .pub-header-venue {
   font-style: italic;
@@ -2385,15 +2355,14 @@ h1#mindfulness-section {
   font-weight: 700;
 }
 
-.pub-header-doi {
-  font-size: 0.88rem;
-}
+.pub-header-doi { font-size: 0.88rem; }
 
 .pub-header-doi a {
   color: var(--color-primary);
   text-decoration: none;
   font-weight: 500;
   transition: color var(--transition-fast);
+  word-break: break-all; /* DOIs can be long; let them break on phones */
 }
 
 .pub-header-doi a:hover {
@@ -2423,5 +2392,15 @@ h1#mindfulness-section {
 
   .pub-header-citation {
     font-size: 0.92rem;
+  }
+
+  /* On a phone, the inline "venue · year · doi" row reads better stacked. */
+  .pub-header-sep {
+    display: none;
+  }
+
+  .pub-header-citation {
+    flex-direction: column;
+    gap: 0.35rem;
   }
 }
