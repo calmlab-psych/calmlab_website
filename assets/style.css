@@ -120,20 +120,28 @@ hr {
   to   { transform: scaleY(1); }
 }
 
-.title {
+.title,
+h1.title,
+.quarto-title-block .title,
+header#title-block-header .title {
   color: var(--color-primary);
   text-align: center;
-  /* Page titles like "PUBLICATIONS" can be long; let them scale down. */
-  font-size: clamp(1.85rem, 4vw + 1rem, 3rem);
+  /* Page titles like "PUBLICATIONS" can be long; let them scale down.
+     Selectors above outrank Cosmo/Quarto's default .title sizing. */
+  font-size: clamp(1.7rem, 4vw + 0.9rem, 3rem);
   line-height: 1.1;
   word-break: break-word;
   letter-spacing: 0.02em;
 }
 
 @media (max-width: 480px) {
-  .title {
+  .title,
+  h1.title,
+  .quarto-title-block .title,
+  header#title-block-header .title {
     /* Tighter letter-spacing helps a long all-caps word fit in one line. */
     letter-spacing: 0;
+    font-size: clamp(1.5rem, 8vw, 2rem);
   }
 }
 
@@ -1201,7 +1209,7 @@ h1#mindfulness-section {
      spacing and shrink pills slightly so more fit per row. */
   .listing-toolbar,
   .pub-filter-bar {
-    gap: 0.4rem 0.5rem;
+    gap: 0.65rem 0.5rem;  /* row-gap > column-gap so wrapped rows breathe */
     justify-content: center;
   }
 
