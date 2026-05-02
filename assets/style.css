@@ -881,22 +881,20 @@ h1#mindfulness-section {
 
 .scroll-nav__track {
   flex: 1;
-  height: 2px;
-  background: var(--color-secondary-highlight);
+  height: 8px;
+  background: var(--color-white) !important;
   border-radius: var(--radius-pill);
   position: relative;
   cursor: pointer;
-  padding: 8px 0;
-  background-clip: content-box;
 }
 
 .scroll-nav__fill {
   position: absolute;
   top: 50%;
   left: 0;
-  height: 2px;
-  width: 0;
-  background: var(--color-secondary);
+  height: 8px;
+  min-width: 8px;
+  background: var(--color-primary);
   border-radius: var(--radius-pill);
   transform: translateY(-50%);
   transition: width var(--transition-base);
