@@ -522,6 +522,20 @@ h1#mindfulness-section {
   font-weight: 700;
 }
 
+/* Hamburger toggler — force white icon on dark navbar */
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.3);
+  color: var(--color-white);
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.15);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
 /* Mobile-collapsed nav: more breathing room when stacked */
 @media (max-width: 991px) {
   .navbar-nav .nav-link {
