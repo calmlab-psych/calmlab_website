@@ -10,7 +10,7 @@ pub-authors:
   - Engle
 
 pub-year: 2026
-date: 2026-04-01
+date: 2026-05-04
 venue: "Proceedings for the National Academy of Sciences"
 pub-type: Empirical Article
 pub-status: Published
@@ -22,10 +22,10 @@ categories:
   - locus-coeruleus
   - brain-networks
 
-pdf: "/"
-data:
-code:
-doi: ""
+pdf: "Seeburger_et_al_2026_Proceedings_of_the_National_Academy_of_Sciences.pdf"
+data: https://osf.io/27yhq/overview
+code: https://osf.io/27yhq/overview
+doi: 10.1073/pnas.2526828123
 link: ""
 
 abstract: "Paper Abstract"
