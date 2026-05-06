@@ -1576,22 +1576,15 @@ h1#mindfulness-section {
   max-width: 100%;
 }
 
-.profile-page .about-image {
-  border-radius: 50%;
-  overflow: hidden;
-  aspect-ratio: 1 / 1;          /* force square container */
-  width: 100%;
-  max-width: 280px;             /* keep a sane size on desktop too */
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.profile-page .about-image img {
+.profile-page img.about-image {
+  width: 15em !important;
+  height: 15em !important;
+  max-width: 100%;
+  aspect-ratio: 1 / 1 !important;
+  object-fit: cover !important;
+  border-radius: 50% !important;
   display: block;
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover;
-  border-radius: 50%;
+  margin: 0 auto;
 }
 
 .profile-heading {
