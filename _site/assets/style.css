@@ -2483,3 +2483,59 @@ h1#mindfulness-section {
     gap: 0.35rem;
   }
 }
+
+.site-footer {
+  border-top: 1px solid var(--color-secondary);
+  padding: 2rem 0;
+  margin-top: 4rem;
+  font-size: 0.875rem;
+  color: var(--color-text);
+  grid-column: screen-start / screen-end;  /* span all grid columns */
+}
+
+.footer-content {
+  max-width: 1470px;
+  margin: 0 auto;
+  padding: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.footer-affiliation a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: border-color 0.2s ease;
+}
+
+.footer-sep {
+  margin: 0 0.5rem;
+  opacity: 0.5;
+}
+
+.footer-social a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--color-primary);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+@media (max-width: 600px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .footer-sep {
+    display: none;
+  }
+  .footer-affiliation {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+}

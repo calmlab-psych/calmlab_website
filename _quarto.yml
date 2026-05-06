@@ -7,7 +7,7 @@ website:
   title: "CALM LAB"
   site-url: https://jasontsukahara.com
   page-navigation: true
-  back-to-top-navigation: true
+  back-to-top-navigation: false
   twitter-card: true
   search: false
 
@@ -30,6 +30,8 @@ format:
     mainfont: "Source Sans 3"
     css:
       - assets/style.css
-    include-after-body: assets/scripts.html
+    include-after-body:
+      - assets/scripts.html
+      - assets/footer.html
     include-in-header: assets/academicons.html
     anchor-sections: false

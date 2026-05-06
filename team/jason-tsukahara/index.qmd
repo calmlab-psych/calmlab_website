@@ -7,7 +7,7 @@ image: "UM_Headshot_Square_BlueBackground_800.jpg"
 
 department: "Assistant Professor"
 
-office: "Teacher Lab 123"
+office: ""
 
 email: jason.tsukahara@miami.edu
 cv: /team/jason-tsukahara/jtsukahara_cv.pdf

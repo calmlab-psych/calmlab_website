@@ -41,11 +41,11 @@ Principal Investigator
 **Email**: jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 ::: {style="line-height: 1;"}
-**Office**: building, room number
+**Office**:
 
-**Office Phone**: office phone here
+**Office Phone**:
 
-**Mailing Address**: address here
+**Mailing Address**:
 :::
 
 
@@ -70,11 +70,11 @@ General Inquiries
 **Email**: jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 ::: {style="line-height: 1;"}
-**Lab Location:** building, room number
+**Lab Location:**
 
-**Lab Phone**: office phone here
+**Lab Phone**:
 
-**Mailing Address**: address here
+**Mailing Address**:
 :::
 
 :::
@@ -89,7 +89,7 @@ General Inquiries
 
 ::: {.grid-2}
 
-::: {.card .card-lg .is-green}
+::: {.card .card-lg .is-blue}
 
 ::: {.card-body .card-body-lg}
 
@@ -111,12 +111,36 @@ We are currently recruiting for:
 
 **Email**: jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
-Check out our [Projects](projects/index.qmd) to learn more about our research, and feel free to reach out with any questions or to express interest in joining the lab!
+Check out our [Projects](projects.qmd) to learn more about our research, and feel free to reach out with any questions or to express interest in joining the lab!
 
 :::
 
 :::
 
+
+::: {.card .card-lg .is-blue}
+
+::: {.card-body .card-body-lg}
+
+<div class="icon-badge icon-badge-blue">
+  <i class="bi bi-envelope"></i>
+</div>
+
+### Follow Us
+
+::: {style="color: var(--color-secondary); font-size: 1.25rem; font-weight: 700; margin-top: -.5rem;"}
+The CALM Lab is on Bluesky!
+:::
+
+::: {style="margin-bottom: 2rem;"}
+Follow us for updates on our research, publications, and news.
+:::
+
+**Bluesky**: [@calmlab.bsky.social](https://bsky.app/profile/calmlab.bsky.social){target="_blank" rel="noopener noreferrer"}
+
+:::
+
+:::
 
 
 :::
