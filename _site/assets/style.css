@@ -448,7 +448,7 @@ h1#mindfulness-section {
 .is-blue .icon-badge i,
 .icon-badge-blue i { color: var(--color-blue); }
 
-.is-blue:hover { border: 1px solid var(--color-blue); }
+.is-blue.card-interactive:hover { border: 1px solid var(--color-blue); }
 
 .is-yellow .icon-badge,
 .icon-badge-yellow { background: var(--color-secondary-highlight); }
@@ -459,7 +459,7 @@ h1#mindfulness-section {
 .is-yellow .icon-badge i,
 .icon-badge-yellow i { color: var(--color-secondary); }
 
-.is-yellow:hover { border: 1px solid var(--color-secondary); }
+.is-yellow.card-interactive:hover { border: 1px solid var(--color-secondary); }
 
 .is-yellow .icon-badge,
 .icon-badge-red { background: var(--color-yellow-highlight); }
@@ -467,7 +467,7 @@ h1#mindfulness-section {
 .is-yellow .icon-badge i,
 .icon-badge-red i { color: var(--color-yellow); }
 
-.is-yellow:hover { border: 1px solid var(--color-yellow); }
+.is-yellow.card-interactive:hover { border: 1px solid var(--color-yellow); }
 
 .is-green .icon-badge,
 .icon-badge-green { background: var(--color-green-highlight); }
@@ -478,7 +478,7 @@ h1#mindfulness-section {
 .is-green .icon-badge i,
 .icon-badge-green i { color: var(--color-green); }
 
-.is-green:hover { border: 1px solid var(--color-green); }
+.is-green.card-interactive:hover { border: 1px solid var(--color-green); }
 
 /* =========================
    Navbar
@@ -1754,6 +1754,13 @@ h1#mindfulness-section {
   border-radius: var(--radius-md);
   background: var(--color-white);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.profile-section-card-alt {
+  padding: 1.75rem 2rem;
+  min-width: 0;
+  text-align: left;
+  background: var(--color-bg);
 }
 
 .profile-publications,

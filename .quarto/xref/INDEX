@@ -358,5 +358,14 @@
   },
   "research.qmd": {
     "research.html": "4687dd3e"
+  },
+  "research_tools/attention_tasks/index.qmd": {
+    "index.html": "ae07a0a7"
+  },
+  "tools/index.qmd": {
+    "index.html": "0e42ac28"
+  },
+  "tools/attention_tasks/index.qmd": {
+    "index.html": "76bad1a1"
   }
 }

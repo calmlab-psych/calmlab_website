@@ -2,6 +2,16 @@
 title: "Research Tools"
 body-classes: page-title
 page-layout: full
+
+listing:
+  contents: "*/index.qmd"
+  sort: "order asc"
+  template: ../assets/listings/news-listing-grid.ejs.md
+  fields: [title, description, categories, path]
+  filter-ui: false
+  sort-ui: false
+  exclude:
+    draft: true
 ---
 
 ::: {.page-header}

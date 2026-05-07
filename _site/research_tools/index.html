@@ -27,6 +27,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -52,12 +54,72 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-categories','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-categories","listing-description","listing-order","listing-image","listing-link","listing-page-layout","listing-draft","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../assets/style.css">
 <meta name="twitter:title" content="Research Tools – CALM LAB">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://jasontsukahara.com/research_tools/attention_tasks/image.png">
+<meta name="twitter:image:alt" content="">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-fixed page-title quarto-light">
@@ -81,12 +143,16 @@ ul.task-list li input[type="checkbox"] {
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../projects.html"> 
-<span class="menu-text">Projects</span></a>
+    <a class="nav-link" href="../research.html"> 
+<span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../news/index.html"> 
+<span class="menu-text">News</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../contact.html"> 
@@ -139,7 +205,59 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="listing-block" data-filterable="true">
+  <div class="listing-toolbar">
+    <button class="pill pill-filter active" data-filter="all">All</button>
+    <button class="pill pill-filter" data-filter="lab">Lab</button>
+    <button class="pill pill-filter" data-filter="team">Team</button>
+    <button class="pill pill-filter" data-filter="paper">Papers</button>
+  </div>
+
+  <div class="listing-grid">
+    
+      <article class="listing-card card card-interactive" data-categories="cognitive tasks">
+        
+        
+          <a href="../research_tools/attention_tasks/index.html" class="listing-card-link">
+        
+
+        
+          <div class="listing-thumb-wrap">
+            <img src="../research_tools/attention_tasks/image.png" alt="" class="listing-thumb">
+          </div>
+        
+
+        <div class="listing-eyebrow"></div>
+
+        
+          <div class="listing-tags">
+            
+              <span class="pill pill-tag pill-soft">Cognitive Tasks</span>
+            
+          </div>
+        
+
+        <h3 class="listing-title card-title">Attention Control Tasks</h3>
+
+        
+          <p class="listing-summary card-text">Download and use the attention control tasks developed by the CALM LAB and collaborators.</p>
+        
+
+        <div class="listing-cta link-cta">
+          Read More
+          
+            <span>→</span>
+          
+        </div>
+        </a>
+      </article>
+    
+  </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <script src="../assets/listings/listing-filters.js"></script>
 
 <script>

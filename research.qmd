@@ -43,7 +43,7 @@ page-layout: full
 
 ::: {.header-text}
 ::: {.header-title}
-PROJECTS
+RESEARCH
 :::
 
 ::: {.header-subtitle}
@@ -107,7 +107,9 @@ People differ in their ability to control attention, and these differences are a
 
 The **measurement of attention control** forms a fundamental part of our research in this area. We study how to best measure attention control, including the development of new tasks and approaches to measuring attention control in the lab and in real-world contexts.
 
-[View and Download Attention Tasks →](){.link-cta}
+<br>
+
+[View and Download Attention Tasks →](/tools/attention_tasks/index.qmd){.link-cta}
 
 <br>
 

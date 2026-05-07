@@ -138,5 +138,17 @@
       "/publications/2021/ijp-vagus-pupil/index.html",
       "/publications/2016/cp-baseline-pupil-og/index.html"
     ]
+  },
+  {
+    "listing": "/research_tools/index.html",
+    "items": [
+      "/research_tools/attention_tasks/index.html"
+    ]
+  },
+  {
+    "listing": "/tools/index.html",
+    "items": [
+      "/tools/attention_tasks/index.html"
+    ]
   }
 ]

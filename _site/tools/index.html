@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2022-12-08">
 
-<title>Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension – CALM LAB</title>
+<title>Research Tools – CALM LAB</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -27,17 +26,19 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../site_libs/bootstrap/bootstrap-9469fafc28c56b8b430f3c2cc2a7a2e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7f8f88aac4f3542376d5c11b86a4c14d.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-9469fafc28c56b8b430f3c2cc2a7a2e4.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "language": {
     "search-no-results-text": "No results",
@@ -53,24 +54,82 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-description','listing-categories','listing-path',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-file-modified-sort'] },{ data: ['listing-reading-time-sort'] },{ data: ['listing-word-count-sort'] }],
+      
+      searchColumns: ["listing-project","listing-website","listing-format","listing-engines","listing-language","listing-title","listing-categories","listing-description","listing-order","listing-image","listing-link","listing-page-layout","listing-draft","listing-path","listing-outputHref","listing-author","listing-filename","listing-file-modified","listing-reading-time","listing-word-count"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-<style>.quarto-title-meta { display: none !important; } .quarto-title-block .abstract { display: none !important; }</style>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
-<link rel="stylesheet" href="../../../assets/style.css">
-<meta name="twitter:title" content="Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension – CALM LAB">
-<meta name="twitter:description" content="In this chapter, we discuss the measurement of working memory capacity and attention control. First, we examine the origins of complex span measures of working memory capacity, which were created to better understand the cognitive processes underpinning language comprehension. We then discuss the executive attention theory of working memory, which places attention control at the center of individual differences in working memory capacity and fluid intelligence. Next, we describe the relationship between working memory capacity, attention control, and language comprehension, and discuss how maintenance and disengagement – two functions supported by the control of attention – contribute to performance across a range of cognitive tasks. Afterward, we discuss challenges associated with measuring working memory capacity and attention control and identify factors that threaten the construct and criterion validity of these measures. We also detail the steps our laboratory has taken to refine the measurement of these cognitive constructs. We close by providing practical recommendations and resources to researchers who wish to use measures of working memory capacity and attention control in their work.">
-<meta name="twitter:card" content="summary">
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../assets/style.css">
+<meta name="twitter:title" content="Research Tools – CALM LAB">
+<meta name="twitter:image" content="https://jasontsukahara.com/tools/attention_tasks/image.png">
+<meta name="twitter:image:alt" content="">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed page-title quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="../../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">CALM LAB</span>
     </a>
   </div>
@@ -80,19 +139,23 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../team/index.html"> 
+    <a class="nav-link" href="../team/index.html"> 
 <span class="menu-text">Team</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../research.html"> 
+    <a class="nav-link" href="../research.html"> 
 <span class="menu-text">Research</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../publications/index.html"> 
+    <a class="nav-link" href="../publications/index.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../contact.html"> 
+    <a class="nav-link" href="../news/index.html"> 
+<span class="menu-text">News</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -112,71 +175,90 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">cognition</div>
-  </div>
-  </div>
+<h1 class="title">Research Tools</h1>
+</div>
 
 
 
 <div class="quarto-title-meta column-page">
 
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">December 8, 2022</p>
-    </div>
-  </div>
   
     
-    <div>
-    <div class="quarto-title-meta-heading">Doi</div>
-    <div class="quarto-title-meta-contents">
-      <p class="doi">
-        <a href="https://doi.org/10.3758/s13414-020-02044-9">10.3758/s13414-020-02044-9</a>
-      </p>
-    </div>
-  </div>
   </div>
   
-<div>
-  <div class="abstract">
-    <div class="block-title">Abstract</div>
-    In this chapter, we discuss the measurement of working memory capacity and attention control. First, we examine the origins of complex span measures of working memory capacity, which were created to better understand the cognitive processes underpinning language comprehension. We then discuss the executive attention theory of working memory, which places attention control at the center of individual differences in working memory capacity and fluid intelligence. Next, we describe the relationship between working memory capacity, attention control, and language comprehension, and discuss how maintenance and disengagement – two functions supported by the control of attention – contribute to performance across a range of cognitive tasks. Afterward, we discuss challenges associated with measuring working memory capacity and attention control and identify factors that threaten the construct and criterion validity of these measures. We also detail the steps our laboratory has taken to refine the measurement of these cognitive constructs. We close by providing practical recommendations and resources to researchers who wish to use measures of working memory capacity and attention control in their work.
-  </div>
-</div>
 
 
 </header>
 
 
-<div class="pub-header">
-<div class="pub-header-authors">
-Burgoyne, Martin, Mashburn, Tsukahara, Draheim, &amp; Engle
+<div class="page-header">
+<div class="header-text">
+<div class="header-title">
+<p>RESEARCH TOOLS</p>
 </div>
-<div class="pub-header-citation">
-<span class="pub-header-year">2022</span><span class="pub-header-sep">·</span><span class="pub-header-venue">The Cambridge Handbook of Working Memory and Language</span>
-</div>
-<div class="pub-header-doi">
-<a href="https://doi.org/10.3758/s13414-020-02044-9" target="_blank" rel="noopener">doi.org/10.3758/s13414-020-02044-9</a>
+<div class="header-subtitle">
+<p>Cognitive tasks and data analysis tools from the CALM Lab.</p>
 </div>
 </div>
-<div class="download-buttons">
-<a class="download-btn download-btn-pdf" href="../../../publications/2022/chwml-book-chapter/Burgoyne_et_al_2022_The_Cambridge_Handbook_of_Working_Memory_and_Language.pdf" download=""><span class="download-btn-icon"><i class="bi bi-download"></i></span><span class="download-btn-label">Download PDF</span></a>
 </div>
-<object class="pdf-viewer-frame" data="/publications/2022/chwml-book-chapter/Burgoyne_et_al_2022_The_Cambridge_Handbook_of_Working_Memory_and_Language.pdf" type="application/pdf">
-  <p class="pdf-viewer-fallback">
-    Your browser can't display this PDF inline.
-    <a href="../../../publications/2022/chwml-book-chapter/Burgoyne_et_al_2022_The_Cambridge_Handbook_of_Working_Memory_and_Language.pdf" download="">Download it instead</a>.
-  </p>
-</object>
 
 
 
-</main> <!-- /main -->
-<script src="../../../assets/listings/listing-filters.js"></script>
+
+<div class="quarto-listing quarto-listing-container-custom" id="listing-listing">
+<div class="listing-block" data-filterable="true">
+  <div class="listing-toolbar">
+    <button class="pill pill-filter active" data-filter="all">All</button>
+    <button class="pill pill-filter" data-filter="lab">Lab</button>
+    <button class="pill pill-filter" data-filter="team">Team</button>
+    <button class="pill pill-filter" data-filter="paper">Papers</button>
+  </div>
+
+  <div class="listing-grid">
+    
+      <article class="listing-card card card-interactive" data-categories="cognitive tasks">
+        
+        
+          <a href="../tools/attention_tasks/index.html" class="listing-card-link">
+        
+
+        
+          <div class="listing-thumb-wrap">
+            <img src="../tools/attention_tasks/image.png" alt="" class="listing-thumb">
+          </div>
+        
+
+        <div class="listing-eyebrow"></div>
+
+        
+          <div class="listing-tags">
+            
+              <span class="pill pill-tag pill-soft">Cognitive Tasks</span>
+            
+          </div>
+        
+
+        <h3 class="listing-title card-title">Attention Control Tasks</h3>
+
+        
+          <p class="listing-summary card-text">Download attention control tasks developed and used by the CALM LAB and collaborators.</p>
+        
+
+        <div class="listing-cta link-cta">
+          Read More
+          
+            <span>→</span>
+          
+        </div>
+        </a>
+      </article>
+    
+  </div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
+<script src="../assets/listings/listing-filters.js"></script>
 
 <script>
 document.addEventListener("DOMContentLoaded", () => {

@@ -1,0 +1,175 @@
+---
+title: Attention Control Tasks
+
+categories: Cognitive Tasks
+description: Download attention control tasks developed and used by the CALM LAB and collaborators.
+
+order: 1
+image: image.png
+
+link: ""
+
+page-layout: full
+draft: false
+---
+
+## Toolbox Tasks
+
+The Toolbox Tasks consist of accuracy-based and adaptive threshold attention tasks that demonstrate strong reliability and validity as measures of attention control. Each task takes roughly 10+ minutes to administer. It is advised to choose 3 of these tasks to measure attention control at the latent construct level. See Draheim et al. (2023) and Draheim et al. (2021) for more information.
+
+For any questions about downloading, administering, or scoring the tasks feel free to contact us at
+
+:::::::::::: {.grid-2 .section-shell}
+
+::::: {.card .quick-card .is-blue}
+
+### Antisaccade
+
+Available in E-Prime and PsychoPy.
+
+<div class="download-buttons" style="justify-content: left; margin-top: .5rem; margin-bottom: 0;">
+<a href="" class="download-btn download-btn-pdf">
+    <span class="download-btn-icon"><i class="bi bi-play-btn"></i></span>
+    <span class="download-btn-label">Demo</span>
+</a>
+
+<a href="" class="download-btn download-btn-code">
+    <span class="download-btn-icon"><i class="bi bi-download"></i></span>
+    <span class="download-btn-label">Download</span>
+</a>
+</div>
+:::::
+
+::::: {.card .quick-card .is-blue}
+
+### Selective Visual Arrays
+
+Available in E-Prime and PsychoPy.
+
+<div class="download-buttons" style="justify-content: left; margin-top: .5rem; margin-bottom: 0;">
+<a href="" class="download-btn download-btn-pdf">
+    <span class="download-btn-icon"><i class="bi bi-play-btn"></i></span>
+    <span class="download-btn-label">Demo</span>
+</a>
+
+<a href="" class="download-btn download-btn-code">
+    <span class="download-btn-icon"><i class="bi bi-download"></i></span>
+    <span class="download-btn-label">Download</span>
+</a>
+</div>
+:::::
+
+::::::::::::
+
+:::::::::::: {.grid-2 .section-shell}
+
+::::: {.card .quick-card .is-blue}
+
+### Stroop Adaptive Response Deadline
+
+Available in E-Prime and PsychoPy.
+
+<div class="download-buttons" style="justify-content: left; margin-top: .5rem; margin-bottom: 0;">
+<a href="" class="download-btn download-btn-pdf">
+    <span class="download-btn-icon"><i class="bi bi-play-btn"></i></span>
+    <span class="download-btn-label">Demo</span>
+</a>
+
+<a href="" class="download-btn download-btn-code">
+    <span class="download-btn-icon"><i class="bi bi-download"></i></span>
+    <span class="download-btn-label">Download</span>
+</a>
+</div>
+:::::
+
+::::: {.card .quick-card .is-blue}
+
+### Sustained Attention to Cue Task
+
+Available in E-Prime and PsychoPy.
+
+<div class="download-buttons" style="justify-content: left; margin-top: .5rem; margin-bottom: 0;">
+<a href="" class="download-btn download-btn-pdf">
+    <span class="download-btn-icon"><i class="bi bi-play-btn"></i></span>
+    <span class="download-btn-label">Demo</span>
+</a>
+
+<a href="" class="download-btn download-btn-code">
+    <span class="download-btn-icon"><i class="bi bi-download"></i></span>
+    <span class="download-btn-label">Download</span>
+</a>
+</div>
+:::::
+
+::::::::::::
+
+## Squared Tasks
+
+The Three-Minute Squared Tasks are classic Stroop, Simon, and Flanker tasks with a twist. The three tasks take in total about 9 minutes to adminster and provide a reliable and valid measure of attention control at the latent construct level. See Burgoyne et al. (2023) for more information.
+
+For any questions about downloading, administering, or scoring the tasks contact us at
+
+:::::::::::: {.grid-3 .section-shell}
+
+::::: {.card .quick-card .is-blue}
+
+### Squared Stroop
+
+Available in E-Prime, PsychoPy, and Inquisit.
+
+<div class="download-buttons" style="justify-content: left; margin-top: .5rem; margin-bottom: 0;">
+<a href="" class="download-btn download-btn-pdf">
+    <span class="download-btn-icon"><i class="bi bi-play-btn"></i></span>
+    <span class="download-btn-label">Demo</span>
+</a>
+
+<a href="" class="download-btn download-btn-code">
+    <span class="download-btn-icon"><i class="bi bi-download"></i></span>
+    <span class="download-btn-label">Download</span>
+</a>
+</div>
+:::::
+
+::::: {.card .quick-card .is-blue}
+
+### Squared Flanker
+
+Available in E-Prime, PsychoPy, and Inquisit.
+
+<div class="download-buttons" style="justify-content: left; margin-top: .5rem; margin-bottom: 0;">
+<a href="" class="download-btn download-btn-pdf">
+    <span class="download-btn-icon"><i class="bi bi-play-btn"></i></span>
+    <span class="download-btn-label">Demo</span>
+</a>
+
+<a href="" class="download-btn download-btn-code">
+    <span class="download-btn-icon"><i class="bi bi-download"></i></span>
+    <span class="download-btn-label">Download</span>
+</a>
+</div>
+:::::
+
+::::: {.card .quick-card .is-blue}
+
+### Squared Simon
+
+Available in E-Prime, PsychoPy, and Inquisit.
+
+<div class="download-buttons" style="justify-content: left; margin-top: .5rem; margin-bottom: 0;">
+<a href="" class="download-btn download-btn-pdf">
+    <span class="download-btn-icon"><i class="bi bi-play-btn"></i></span>
+    <span class="download-btn-label">Demo</span>
+</a>
+
+<a href="" class="download-btn download-btn-code">
+    <span class="download-btn-icon"><i class="bi bi-download"></i></span>
+    <span class="download-btn-label">Download</span>
+</a>
+</div>
+:::::
+
+::::::::::::
+
+## Other Tasks
+
+These are other attention and cognitive tasks we commonly use in our research but were not developed by us.
