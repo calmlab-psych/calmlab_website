@@ -112,6 +112,9 @@
     ],
     "projects.qmd": [
       "/publications/*/*/index.qmd"
+    ],
+    "research.qmd": [
+      "/publications/*/*/index.qmd"
     ]
   }
 }

@@ -111,7 +111,7 @@ We are currently recruiting for:
 
 **Email**: jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
-Check out our [Projects](projects.qmd) to learn more about our research, and feel free to reach out with any questions or to express interest in joining the lab!
+Check out our [Research](research.qmd) to learn more about our research, and feel free to reach out with any questions or to express interest in joining the lab!
 
 :::
 
