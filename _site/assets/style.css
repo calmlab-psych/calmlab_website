@@ -1010,6 +1010,13 @@ h1#mindfulness-section {
   margin: 1rem 0 0.5rem 0;
 }
 
+.pub-filter-bar > p {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin: 0;
+}
+
 .publications-list {
   width: 100%;
   margin-top: 0.5rem;
@@ -1216,7 +1223,7 @@ h1#mindfulness-section {
      a centered orphan reads better than a left-aligned one. Also tighten
      spacing and shrink pills slightly so more fit per row. */
   .listing-toolbar,
-  .pub-filter-bar {
+  .pub-filter-bar > p {
     row-gap: 1rem;
     column-gap: 0.45rem;
     justify-content: center;

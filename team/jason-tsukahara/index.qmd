@@ -95,7 +95,7 @@ listing:
 ### [Education]{style="color: var(--color-primary);"}
 
 ::: {style="margin-bottom: 0.5rem;"}
-[Ph.D.]{style="font-size: 1.2rem;"}\
+[**Ph.D.**]{style="font-size: 1.2rem;"}\
 [Cognitive Brain Science]{style="font-weight: 400;"}\
 [Georgia Tech · Dr. Randall Engle]{style="font-weight: 400;"}
 :::
@@ -128,7 +128,7 @@ listing:
 
 [Undergraduate Courses]{style="font-weight: 700; font-size: 1.2rem;"}
 
-- Sensation and Perception
+- Perception & Cognition
 
 :::
 
