@@ -101,13 +101,13 @@ listing:
 :::
 
 ::: {style="margin-bottom: 0.5rem;"}
-[M.A.]{style="font-size: 1.2rem;"}\
+[**M.A.**]{style="font-size: 1.2rem;"}\
 [Experimental Psychology]{style="font-weight: 400;"}\
 [CSU, San Bernardino · Dr. Hideya Koshino]{style="font-weight: 400;"}
 :::
 
 ::: {style="margin-bottom: 0.5rem;"}
-[B.A.]{style="font-size: 1.2rem;"}\
+[**B.A.**]{style="font-size: 1.2rem;"}\
 [Behavioral Neuroscience]{style="font-weight: 400;"}\
 [Western Washington University]{style="font-weight: 400;"}
 :::
