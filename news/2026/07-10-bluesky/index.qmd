@@ -1,6 +1,6 @@
 ---
 title: Follow us on Bluesky
-date: 2026-07-10
+date: 2026-07-02
 categories: [Lab]
 description: The CALM Lab is now on Bluesky! Follow us for updates on our research, publications, and news.
 image: Bluesky_Logo_(with_wordmark).svg.png
