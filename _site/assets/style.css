@@ -1217,7 +1217,8 @@ h1#mindfulness-section {
      spacing and shrink pills slightly so more fit per row. */
   .listing-toolbar,
   .pub-filter-bar {
-    gap: 0.9rem 0.5rem;  /* row-gap bumped from 0.65rem */
+    row-gap: 1rem;
+    column-gap: 0.45rem;
     justify-content: center;
   }
 
