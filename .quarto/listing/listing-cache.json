@@ -1,126 +1,28 @@
 {
   "listingMap": {
-    "index.qmd": [
-      "ac-cogability/index.qmd",
-      "ac-measurement/index.qmd",
-      "ac-brain/index.qmd",
-      "publications",
-      "news",
-      "news/posts",
-      "publications/*/index.qmd",
-      "news/*/index.qmd",
-      "publications/*/*/index.qmd",
-      "news/*/*/index.qmd"
-    ],
-    "news/index.qmd": [
-      "news/posts",
-      "posts",
-      "*/index.qmd",
-      "*/*/index.qmd"
-    ],
-    "team/index.qmd": [
-      "./",
-      "pi",
-      "graduate-students",
-      "undergraduates",
-      "research-assistants",
-      "jason-tsukahara",
-      "jason-tsukahara/index.qmd",
-      "grad-students",
-      "news/posts",
-      "../news/posts",
-      "../news/posts/*.qmd",
-      "undergrads",
-      "../news/*/index.qmd",
-      "../news/*/*/index.qmd"
-    ],
-    "publications/index.qmd": [
-      ".",
-      "*/index.qmd"
-    ],
-    "team/jason-tsukahara/index.qmd": [
-      "../../../publications/*/index.qmd",
-      "../../publications/*/index.qmd",
-      "../../publications/2023-jepg-squared-intro/index.qmd",
-      "../../publications/ac-psychomotor/index.qmd",
-      "../../publications/2023-ac-psychomotor/index.qmd",
-      "../../publications/2023/jepg-squared-intro/index.qmd",
-      "../../publications/2023/ac-psychomotor/index.qmd"
-    ],
-    "team/grad-students/grad1/index.qmd": [
-      "../../publications/*/index.qmd",
-      "../../../publications/*/index.qmd"
-    ],
-    "projects/index.qmd": [
-      "../publications/*/index.qmd",
-      "publications/*/index.qmd",
-      "*/index.qmd",
-      "../research_tools/index.qmd",
-      "../../publications/2020/wms-book-chapter/index.qmd",
-      "../../publications/2021/jepg-toolbox-1/index.qmd",
-      "../../publications/2021/jepg-visualarrays/index.qmd",
-      "../../publications/2023/brm-toolbox-2/index.qmd",
-      "../../publications/2023/jepg-squared-intro/index.qmd",
-      "../../publications/2023/sact-2/index.qmd",
-      "../../publications/2020/app-sensory-discrimination/index.qmd",
-      "../../publications/2025/jepg-inspection/index.qmd",
-      "../../publications/2020/lm-diff-exp/index.qmd",
-      "../../publications/2021/tr-rationality/index.qmd",
-      "../../publications/2022/chwml-book-chapter/index.qmd",
-      "../../publications/2022/int-pot/index.qmd",
-      "../../publications/2024/ac-psychomotor/index.qmd",
-      "../../publications/2025/front-climate/index.qmd",
-      "../../publications/2025/ijsa-navy/index.qmd",
-      "../publications/2020/wms-book-chapter/index.qmd",
-      "../publications/2021/jepg-toolbox-1/index.qmd",
-      "../publications/2021/jepg-visualarrays/index.qmd",
-      "../publications/2023/brm-toolbox-2/index.qmd",
-      "../publications/2023/jepg-squared-intro/index.qmd",
-      "../publications/2023/sact-2/index.qmd",
-      "../publications/2020/app-sensory-discrimination/index.qmd",
-      "../publications/2025/jepg-inspection/index.qmd",
-      "../publications/2020/lm-diff-exp/index.qmd",
-      "../publications/2021/tr-rationality/index.qmd",
-      "../publications/2022/chwml-book-chapter/index.qmd",
-      "../publications/2022/int-pot/index.qmd",
-      "../publications/2024/ac-psychomotor/index.qmd",
-      "../publications/2025/front-climate/index.qmd",
-      "../publications/2025/ijsa-navy/index.qmd",
-      "../publications/2025/front-vigdec/index.qmd",
-      "../publications/2026/cogneuro-eeg-micro/index.qmd",
-      "../publications/*/*/index.qmd"
-    ],
-    "team/templates/grad-name/index.qmd": [
-      "../../../publications/*/index.qmd"
-    ],
-    "projects/individual-differences/index.qmd": [
-      "../../publications/2020/app-sensory-discrimination/index.qmd",
-      "../../publications/2025/jepg-inspection/index.qmd",
-      "../../publications/2021/jepg-toolbox-1/index.qmd",
-      "../../publications/2021/jepg-visualarrays/index.qmd",
-      "../../publications/2022/chwml-book-chapter/index.qmd",
-      "../../publications/2023/brm-toolbox-2/index.qmd",
-      "../../publications/2023/jepg-squared-intro/index.qmd",
-      "../../publications/2023/sact-2/index.qmd",
-      "../../publications/2020/wms-book-chapter/index.qmd",
-      "../../publications/2020/lm-diff-exp/index.qmd",
-      "../../publications/2021/tr-rationality/index.qmd",
-      "../../publications/2022/int-pot/index.qmd",
-      "../../publications/2024/ac-psychomotor/index.qmd",
-      "../../publications/2025/front-climate/index.qmd",
-      "../../publications/2025/ijsa-navy/index.qmd"
-    ],
-    "projects.qmd": [
-      "/publications/*/*/index.qmd"
-    ],
     "research.qmd": [
       "/publications/*/*/index.qmd"
     ],
-    "research_tools/index.qmd": [
-      "*/index.qmd"
-    ],
     "tools/index.qmd": [
       "*/index.qmd"
+    ],
+    "publications/index.qmd": [
+      "*/index.qmd"
+    ],
+    "index.qmd": [
+      "news/*/*/index.qmd",
+      "publications/*/*/index.qmd"
+    ],
+    "news/index.qmd": [
+      "*/*/index.qmd"
+    ],
+    "team/index.qmd": [
+      "jason-tsukahara/index.qmd",
+      "../news/*/*/index.qmd"
+    ],
+    "team/jason-tsukahara/index.qmd": [
+      "../../publications/2023/jepg-squared-intro/index.qmd",
+      "../../publications/2023/ac-psychomotor/index.qmd"
     ]
   }
 }

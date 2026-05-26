@@ -22,13 +22,13 @@ categories:
   - locus-coeruleus
   - brain-networks
 
-pdf: "Seeburger_et_al_2026_Proceedings_of_the_National_Academy_of_Sciences.pdf"
+pdf: /publications/2026/pnas-qpp/Seeburger_et_al_2026_Proceedings_of_the_National_Academy_of_Sciences.pdf
 data: https://osf.io/27yhq/overview
 code: https://osf.io/27yhq/overview
 doi: 10.1073/pnas.2526828123
 link: ""
 
-abstract: "Paper Abstract"
+abstract: "Attention control predicts academic achievement, professional success, and health outcomes. However, the neural basis of stable, individual differences in attention control remains unclear. Prior research has emphasized momentary fluctuations in attentional engagement, often overlooking enduring individual differences. Here, we applied the quasi-periodic pattern analysis of infraslow functional magnetic resonance imaging (fMRI) dynamics in a large sample (N = 196) to test whether trait attention control is reflected in network-level brain activity as well as the locus coeruleus (LC). Using latent-variable measures of attention control, working memory capacity, and fluid intelligence, we isolated the unique contribution of attention control across rest, 1-back, and 3-back conditions. As cognitive demand increased, individuals with higher attention control exhibited more coordinated activity of the frontoparietal control network (FPCN): they showed enhanced coupling with the dorsal attention network (DAN), and greater engagement with the LC and stronger decoupling from the default mode network (DMN). Even at rest, high attention individuals demonstrated stronger FPCN–DAN coupling and little to no correlation between FPCN–DMN, indicating that attentional capacity is reflected in both task-evoked reconfiguration and baseline network architecture. These findings reveal how attention control, as an ability, is instantiated in the brain’s dynamic architecture."
 
 listing-page: false
 page-layout: full
