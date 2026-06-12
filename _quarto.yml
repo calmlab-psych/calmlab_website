@@ -5,14 +5,13 @@ project:
 
 website:
   title: "CALM LAB"
-  favicon: images/lablogo.png
-  site-url: https://jasontsukahara.com
+  favicon: /images/lablogo.png
+  site-url: https://calmlab.science
   page-navigation: true
   back-to-top-navigation: false
-  twitter-card:
-    image: images/share_preview.png
-  open-graph:
-    image: images/share_preview.png
+  twitter-card: true
+  open-graph: true
+  image: /images/share_preview.png
   search: false
 
   navbar:
