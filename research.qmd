@@ -1,4 +1,7 @@
 ---
+title: "Research"
+body-classes: page-title
+
 listing:
   - id: cognitive-pubs
     contents: "/publications/*/*/index.qmd"

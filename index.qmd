@@ -1,5 +1,6 @@
 ---
-title: ""
+title: "CALM Lab"
+body-classes: page-title
 page-layout: full
 
 listing:
