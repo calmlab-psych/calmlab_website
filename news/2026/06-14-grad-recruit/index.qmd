@@ -6,7 +6,7 @@ description: We are recruiting graduate students to join the CALM Lab starting i
 image: ../../../images/person_add.png
 page: ""
 link: ""
-draft: false
+draft: true
 ---
 
 ::: {style="text-align: center;"}
@@ -17,7 +17,7 @@ As a graduate student in the CALM Lab, you will have the chance to work closely 
 
 Check out our Research and Publications page to learn more about our work, and if you are interested in applying, please contact us at:
 
-jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+jason.tsukahara@gatech.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@gatech.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 We look forward to hearing from you!
 

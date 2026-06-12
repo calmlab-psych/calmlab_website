@@ -9,7 +9,7 @@ department: "Assistant Professor"
 
 office: ""
 
-email: jason.tsukahara@miami.edu
+email: jason.tsukahara@gatech.edu
 cv: /team/jason-tsukahara/jtsukahara_cv.pdf
 website-external:
 google_scholar: https://scholar.google.com/citations?user=393wE14AAAAJ&hl=en&oi=ao
