@@ -107,6 +107,11 @@ Interested in joining the CALM Lab?
 We are currently recruiting for:
 
 - Undergraduate Research Assistant
+
+- Master's Students
+
+- PhD Students
+
 :::
 
 **Email**: jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>

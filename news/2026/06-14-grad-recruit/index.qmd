@@ -1,0 +1,24 @@
+---
+title: Recruiting Graduate Students
+date: 2026-06-14
+categories: Team
+description: We are recruiting graduate students to join the CALM Lab starting in Fall 2027
+image: ../../../images/person_add.png
+page: ""
+link: ""
+draft: false
+---
+
+::: {style="text-align: center;"}
+
+We are excited to announce that the CALM Lab is recruiting Master's and PhD students to join our team starting in Fall 2027! This is a great opportunity for students interested in pursuing a Master's or PhD in Psychology.
+
+As a graduate student in the CALM Lab, you will have the chance to work closely with our team on cutting-edge research projects, contribute to data collection and analysis, and gain valuable skills in research methods and scientific communication. We welcome students from all backgrounds who are passionate about learning and contributing to our research.
+
+Check out our Research and Publications page to learn more about our work, and if you are interested in applying, please contact us at:
+
+jason.tsukahara@miami.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@miami.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+
+We look forward to hearing from you!
+
+:::
