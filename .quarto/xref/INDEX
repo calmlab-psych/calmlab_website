@@ -367,5 +367,11 @@
   },
   "tools/attention_tasks/index.qmd": {
     "index.html": "76bad1a1"
+  },
+  "news/2026/06-12-bluesky/index.qmd": {
+    "index.html": "e9dc210a"
+  },
+  "news/2026/06-12-website-launch/index.qmd": {
+    "index.html": "a919851e"
   }
 }

@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const filterableListings = document.querySelectorAll('.listing-block[data-filterable="true"]');
+  const filterableListings = document.querySelectorAll('[data-filterable="true"]');
 
   filterableListings.forEach((listing) => {
     const buttons = listing.querySelectorAll(".listing-toolbar .pill-filter");
