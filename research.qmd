@@ -112,7 +112,7 @@ The **measurement of attention control** forms a fundamental part of our researc
 
 <br>
 
-[View and Download Attention Tasks →](/tools/attention_tasks/index.qmd){.link-cta}
+[View and Download Attention Tasks →](){.link-cta}
 
 <br>
 
