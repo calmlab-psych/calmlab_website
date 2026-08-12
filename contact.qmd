@@ -41,11 +41,7 @@ Principal Investigator
 **Email**: tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 ::: {style="line-height: 1;"}
-**Office**:
-
-**Office Phone**:
-
-**Mailing Address**:
+**Office**: Teaching Lab 3088
 :::
 
 
@@ -70,11 +66,9 @@ General Inquiries
 **Email**: tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 ::: {style="line-height: 1;"}
-**Lab Location:**
+**Lab Location:** Teaching Lab
 
 **Lab Phone**:
-
-**Mailing Address**:
 :::
 
 :::
