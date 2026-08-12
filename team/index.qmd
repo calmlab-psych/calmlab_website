@@ -59,7 +59,7 @@ Meat the CALM Lab team.
 
 ::: {.profile-section-card}
 
-We are always looking for motivated and talented students to join the CALM Lab. If you are interested in joining our team, please contact Dr. Jason S. Tsukahara at: jason.tsukahara@gatech.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@gatech.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+We are always looking for motivated and talented students to join the CALM Lab. If you are interested in joining our team, please contact Dr. Jason S. Tsukahara at: tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 :::
 

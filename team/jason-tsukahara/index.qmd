@@ -7,9 +7,9 @@ image: "UM_Headshot_Square_BlueBackground_800.jpg"
 
 department: "Assistant Professor"
 
-office: ""
+office: "TL 3088"
 
-email: jason.tsukahara@gatech.edu
+email: tsukaharaj@uncw.edu
 cv: /team/jason-tsukahara/jtsukahara_cv.pdf
 website-external:
 google_scholar: https://scholar.google.com/citations?user=393wE14AAAAJ&hl=en&oi=ao

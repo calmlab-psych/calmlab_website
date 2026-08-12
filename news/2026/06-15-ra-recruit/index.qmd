@@ -16,7 +16,7 @@ As a research assistant in the CALM Lab, you will have the chance to work closel
 
 If you are interested in applying, please contact us at:
 
-jason.tsukahara@gatech.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@gatech.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 We look forward to hearing from you and potentially welcoming you to the CALM Lab!
 :::

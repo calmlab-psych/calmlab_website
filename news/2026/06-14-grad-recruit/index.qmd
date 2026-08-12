@@ -17,7 +17,7 @@ As a graduate student in the CALM Lab, you will have the chance to work closely 
 
 Check out our Research and Publications page to learn more about our work, and if you are interested in applying, please contact us at:
 
-jason.tsukahara@gatech.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@gatech.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 We look forward to hearing from you!
 

@@ -38,7 +38,7 @@ Get in touch with the CALM Lab.
 Principal Investigator
 :::
 
-**Email**: jason.tsukahara@gatech.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@gatech.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+**Email**: tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 ::: {style="line-height: 1;"}
 **Office**:
@@ -67,7 +67,7 @@ Principal Investigator
 General Inquiries
 :::
 
-**Email**: jason.tsukahara@gatech.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@gatech.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+**Email**: tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 ::: {style="line-height: 1;"}
 **Lab Location:**
@@ -114,7 +114,7 @@ We are currently recruiting for:
 
 :::
 
-**Email**: jason.tsukahara@gatech.edu <a onclick="copyEmail(this); return false;" data-copy="jason.tsukahara@gatech.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+**Email**: tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 Check out our [Research](research.qmd) to learn more about our research, and feel free to reach out with any questions or to express interest in joining the lab!
 
