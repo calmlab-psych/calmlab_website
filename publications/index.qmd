@@ -28,6 +28,8 @@ Peer-reviewed articles, chapters, and related scholarly work.
 :::
 :::
 
+<a href="/research.qmd" class="link-cta">View Publications by Research Area →</a>
+
 <div class="pub-filter-bar" data-filter-by="pub-type" data-target=".publications-list">
   <button class="pill pill-filter active" data-filter="all">All</button>
   <button class="pill pill-filter" data-filter="Empirical Article">Empirical Articles</button>

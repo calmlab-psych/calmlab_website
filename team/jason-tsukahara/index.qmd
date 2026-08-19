@@ -7,7 +7,7 @@ image: "UM_Headshot_Square_BlueBackground_800.jpg"
 
 department: "Assistant Professor"
 
-office: "TL 3088"
+office: "Teaching Lab 3088"
 
 email: tsukaharaj@uncw.edu
 cv: /team/jason-tsukahara/jtsukahara_cv.pdf
@@ -153,9 +153,13 @@ listing:
 
 ### About
 
-Jason Tsukahara is originally from Bothell, Washington, and will always consider the Pacific Northwest home. He earned his B.A. in Behavioral Neuroscience at Western Washington University in [Bellingham, WA](https://www.bellingham.org/bellingham){target=_blank rel=noreferrer}, where he developed his interests in cognitive psychology, Buddhism, and contemplative practice. Following his undergraduate studies, he spent a year deepening his practice, including an eight-week silent retreat on Shamatha and the Four Immeasurables in Phuket, Thailand, guided by [Lama Alan Wallace](https://www.alanwallace.org){target=_blank rel=noreferrer}.
+Jason Tsukahara is an Assistant Professor in the Department of Psychology at the University of North Carolina Wilmington, where he directs the CALM Lab. His research focuses on understanding the mechanisms underlying attention control and how those mechanisms can be enhanced through mindfulness-related practice. He is particularly interested in how the locus coeruleus-norepinephrine (LC-NE) system acts as a central hub for regulating attention and arousal, and how this system interacts with other brain networks to support the control of attention.
 
-Jason went on to complete his M.A. in General Experimental Psychology at [California State University, San Bernardino](https://www.csusb.edu/psychology){target=_blank rel=noreferrer}, where he worked with Dr. Hideya Koshino on selective attention and working memory. He then joined [Dr. Randall Engle's Attention and Working Memory Lab](https://englelab.gatech.edu){target=_blank rel=noreferrer} at the Georgia Institute of Technology as a doctoral student, conducting research on individual differences in attention control. During his time at Georgia Tech, he also served as President of the Meditation Club and collaborated with faculty to introduce mindfulness practices across the university community. After completing his Ph.D. in December 2022, he continued as a postdoctoral researcher in the Engle Lab before joining [Dr. Amishi Jha's lab](https://lab.amishi.com){target=_blank rel=noreferrer} at the University of Miami in 2024, where he extended his work on attention control into the domain of mindfulness and meditation—an area of both academic and personal significance to him. Jason is now an Assistant Professor in the Department of Psychology at the University of North Carolina Wilmington, where he directs the CALM Lab.
+Jason grew up in the Pacific Northwest and earned his B.A. in Behavioral Neuroscience at Western Washington University, where he developed his interests in cognitive psychology, Buddhism, and contemplative practice. Following his undergraduate studies, he spent a year deepening his contemplative practice, including an eight-week silent retreat on Shamatha and the Four Immeasurables in Phuket, Thailand, guided by [Lama Alan Wallace](https://www.alanwallace.org){target=_blank rel=noreferrer}.
+
+Jason went on to complete his M.A. in General Experimental Psychology at [California State University, San Bernardino](https://www.csusb.edu/psychology){target=_blank rel=noreferrer}, where he worked with Dr. Hideya Koshino on selective attention and working memory. He then joined [Dr. Randall Engle's Attention and Working Memory Lab](https://englelab.gatech.edu){target=_blank rel=noreferrer} at the Georgia Institute of Technology as a doctoral student, conducting research on individual differences in attention control. During his time at Georgia Tech, he also served as President of the Meditation Club and collaborated with faculty to introduce mindfulness practices across the university community.
+
+After completing his Ph.D. in December 2022, he continued as a postdoctoral researcher in the Engle Lab before joining [Dr. Amishi Jha's lab](https://lab.amishi.com){target=_blank rel=noreferrer} at the University of Miami in 2024, where he extended his work on attention control into the domain of mindfulness and meditation—an area of both academic and personal significance to him.
 
 Outside of his academic work, Jason maintains a sustained interest in Buddhist contemplative practice, drawing primarily from the Nyingma tradition of Tibetan Buddhism and Dzogchen teachings. He also teaches meditation and mindfulness, and enjoys hiking, camping, cycling, and photography. He hopes to learn to surf in the near future and welcomes recommendations for hiking trails in the Wilmington area.
 

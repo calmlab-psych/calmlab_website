@@ -1,12 +1,12 @@
 ---
 title: Recruiting Graduate Students
-date: 2026-06-14
+date: 2026-08-14
 categories: Team
 description: We are recruiting graduate students to join the CALM Lab starting in Fall 2027
 image: ../../../images/person_add.png
 page: ""
 link: ""
-draft: true
+draft: false
 ---
 
 ::: {style="text-align: center;"}
