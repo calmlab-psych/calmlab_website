@@ -1,4 +1,5 @@
 ---
+pagetitle: "Tsukahara & Engle (2021) PNAS"
 title: "Fluid intelligence and the locus coeruleus-norepinephrine system"
 
 pub-authors:

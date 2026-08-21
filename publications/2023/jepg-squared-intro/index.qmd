@@ -1,4 +1,5 @@
 ---
+pagetitle: "Burgoyne et al. (2023) JEP:G"
 title: "Nature and measurement of attention control"
 
 pub-authors:

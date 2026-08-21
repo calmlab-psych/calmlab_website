@@ -1,4 +1,5 @@
 ---
+pagetitle: "Mashburn et al. (2020) WMS"
 title: "Individual differences in attention control: Implications for the relationship between working memory capacity and fluid intelligence"
 
 pub-authors:

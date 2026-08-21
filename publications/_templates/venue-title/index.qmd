@@ -1,4 +1,5 @@
 ---
+pagetitle: "Authors et al. (Year) Venue"
 title: "paper title"
 
 pub-authors:

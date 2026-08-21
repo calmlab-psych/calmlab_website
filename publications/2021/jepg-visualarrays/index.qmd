@@ -1,4 +1,5 @@
 ---
+pagetitle: "Martin et al. (2021) JEP:G"
 title: "The visual arrays task: Visual storage capacity or attention control?"
 
 pub-authors:

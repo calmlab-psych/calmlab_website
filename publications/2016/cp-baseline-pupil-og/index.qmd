@@ -1,4 +1,5 @@
 ---
+pagetitle: "Tsukahara et al. (2016) CP"
 title: "The relationship between baseline pupil size and intelligence"
 
 pub-authors:

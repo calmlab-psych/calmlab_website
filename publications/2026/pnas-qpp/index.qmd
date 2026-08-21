@@ -1,4 +1,5 @@
 ---
+pagetitle: "Seeburger et al. (2026) PNAS"
 title: "Attention control ability is associated with frontoparietal control network interactions"
 
 pub-authors:

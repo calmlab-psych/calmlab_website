@@ -1,4 +1,5 @@
 ---
+pagetitle: " Draheim et al. (2023) BRM"
 title: "Replication and extension of the toolbox approach to measuring attention control"
 
 pub-authors:

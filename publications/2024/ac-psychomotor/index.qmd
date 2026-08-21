@@ -1,4 +1,5 @@
 ---
+pagetitle: "Mashburn et al. (2024) Intelligence"
 title: "Knowledge, attention, and psychomotor ability: A latent variable approach to understanding individual differences in simulated work performance"
 
 pub-authors:

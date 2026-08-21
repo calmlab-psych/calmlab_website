@@ -1,4 +1,5 @@
 ---
+pagetitle: "Burgoyne et al. (2025) Int. J. Sel. Assess."
 title: Attention control measures improve the prediction of performance in Navy trainees
 
 pub-authors:

@@ -1,4 +1,5 @@
 ---
+pagetitle: "Burgoyne et al. (2021) Thinking and Reasoning"
 title: "Understanding the relationship between rationality and intelligence: A latent-variable approach"
 
 pub-authors:

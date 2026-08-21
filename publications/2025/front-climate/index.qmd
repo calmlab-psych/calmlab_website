@@ -1,4 +1,5 @@
 ---
+pagetitle: "Denkova et al. (2025) Front. Psy."
 title: "Climate anxiety impairs sustained attention: Objective evidence of a cognitive cost"
 
 pub-authors:

@@ -1,4 +1,5 @@
 ---
+pagetitle: "Tsukahara & Engle (2021) Cognition"
 title: "Is baseline pupil size related to cognitive ability? Yes (under proper lighting conditions)"
 
 pub-authors:

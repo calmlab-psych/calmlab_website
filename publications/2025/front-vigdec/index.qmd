@@ -1,4 +1,5 @@
 ---
+pagetitle: "Schwartzman et al. (2025) Front. Cogn."
 title: Examining the association between vigilance and mind wandering
 
 pub-authors:

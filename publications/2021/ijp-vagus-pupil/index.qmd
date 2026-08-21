@@ -1,4 +1,5 @@
 ---
+pagetitle: "Borges et al. (2021) IJP"
 title: "Transcutaneous vagus nerve stimulation via tragus or cymba conchae: Are its psychophysiological effects dependent on the stimulation area?"
 
 pub-authors:

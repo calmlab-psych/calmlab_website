@@ -1,4 +1,5 @@
 ---
+pagetitle: "Burgoyne et al. (2022) Intelligence"
 title: "Attention control and process overlap theory: Searching for cognitive processes underpinning the positive manifold"
 
 pub-authors:

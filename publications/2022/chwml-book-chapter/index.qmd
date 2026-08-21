@@ -1,4 +1,5 @@
 ---
+pagetitle: "Burgoyne et al. (2022) The Cambridge Handbook of Working Memory and Language"
 title: "Measuring individual differences in working memory capacity and attention control and their contribution to language comprehension"
 
 pub-authors:

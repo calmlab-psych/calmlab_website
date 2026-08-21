@@ -1,4 +1,5 @@
 ---
+pagetitle: "Draheim et al. (2021) JEP:G"
 title: "A toolbox approach to improving the measurement of attention control"
 
 pub-authors:

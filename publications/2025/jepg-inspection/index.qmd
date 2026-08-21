@@ -1,4 +1,5 @@
 ---
+pagetitle: "Tsukahara et al. (2025) JEP:G"
 title: "Faster, smarter, and more attentive: The control of attention is about more than just conflict resolution"
 
 pub-authors:
