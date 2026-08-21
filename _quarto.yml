@@ -30,6 +30,9 @@ website:
 
 format:
   html:
+    # The site currently contains no TeX math. Keep formulas as plain spans
+    # so Quarto does not add MathJax and its polyfill to every page.
+    html-math-method: plain
     theme:
       - cosmo
     mainfont: "Source Sans 3"
@@ -38,5 +41,4 @@ format:
     include-after-body:
       - assets/scripts.html
       - assets/footer.html
-    include-in-header: assets/academicons.html
     anchor-sections: false

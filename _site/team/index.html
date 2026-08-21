@@ -26,6 +26,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
@@ -115,37 +116,7 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../assets/style.css">
 <meta property="og:title" content="Team – CALM LAB">
@@ -329,7 +300,7 @@ window.Quarto = {
         <h3 class="listing-title card-title">Recruiting Graduate Students</h3>
 
         
-          <p class="listing-summary card-text">We are recruiting graduate students to join the CALM Lab starting in Fall 2027</p>
+          <p class="listing-summary card-text">I am recruiting graduate students to join the CALM Lab starting in Fall 2027</p>
         
 
         <div class="listing-cta link-cta">
@@ -354,7 +325,7 @@ window.Quarto = {
           </div>
         
 
-        <div class="listing-eyebrow">Jun 15, 2026</div>
+        <div class="listing-eyebrow">Aug 10, 2026</div>
 
         
           <div class="listing-tags">

@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://calmlab.science/assets/listings/news-listing-scroll.ejs.html</loc>
-    <lastmod>2026-04-30T02:13:00.266Z</lastmod>
+    <lastmod>2026-08-21T14:30:27.543Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/assets/listings/simple-listing-grid-4col.ejs.html</loc>
@@ -22,15 +22,19 @@
   </url>
   <url>
     <loc>https://calmlab.science/assets/cards/grad-card.ejs.html</loc>
-    <lastmod>2026-04-11T19:58:36.889Z</lastmod>
+    <lastmod>2026-08-21T14:30:47.057Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/assets/cards/ra-card.ejs.html</loc>
-    <lastmod>2026-04-11T19:58:36.889Z</lastmod>
+    <lastmod>2026-08-21T14:30:27.739Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/team/index.html</loc>
     <lastmod>2026-08-12T17:46:13.678Z</lastmod>
+  </url>
+  <url>
+    <loc>https://calmlab.science/news/2026/06-14-grad-recruit/index.html</loc>
+    <lastmod>2026-08-21T14:42:11.971Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/news/2026/06-11-bluesky/index.html</loc>
@@ -158,11 +162,11 @@
   </url>
   <url>
     <loc>https://calmlab.science/index.html</loc>
-    <lastmod>2026-08-19T02:11:32.864Z</lastmod>
+    <lastmod>2026-08-21T14:41:03.001Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/news/2026/06-15-ra-recruit/index.html</loc>
-    <lastmod>2026-08-12T17:47:12.737Z</lastmod>
+    <lastmod>2026-08-21T14:33:39.756Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/news/2026/06-10-website-launch/index.html</loc>
@@ -174,15 +178,15 @@
   </url>
   <url>
     <loc>https://calmlab.science/team/jason-tsukahara/index.html</loc>
-    <lastmod>2026-08-19T02:21:46.613Z</lastmod>
+    <lastmod>2026-08-21T14:31:13.107Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/assets/cards/pi-card.ejs.html</loc>
-    <lastmod>2026-04-21T23:51:49.267Z</lastmod>
+    <lastmod>2026-08-21T14:20:09.194Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/assets/listings/news-listing-grid.ejs.html</loc>
-    <lastmod>2026-04-19T15:50:21.590Z</lastmod>
+    <lastmod>2026-08-21T14:30:27.595Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/assets/listings/simple-listing-grid-3col.ejs.html</loc>
@@ -194,7 +198,7 @@
   </url>
   <url>
     <loc>https://calmlab.science/assets/listings/news-listing-grid-notags.ejs.html</loc>
-    <lastmod>2026-04-19T15:51:41.217Z</lastmod>
+    <lastmod>2026-08-21T14:30:27.643Z</lastmod>
   </url>
   <url>
     <loc>https://calmlab.science/assets/listings/simple-listing-grid-2col.ejs.html</loc>

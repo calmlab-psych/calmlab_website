@@ -2,7 +2,7 @@
 title: Recruiting Graduate Students
 date: 2026-08-14
 categories: Team
-description: We are recruiting graduate students to join the CALM Lab starting in Fall 2027
+description: I am recruiting graduate students to join the CALM Lab starting in Fall 2027
 image: ../../../images/person_add.png
 page: ""
 link: ""
@@ -11,14 +11,18 @@ draft: false
 
 ::: {style="text-align: center;"}
 
-We are excited to announce that the CALM Lab is recruiting Master's and PhD students to join our team starting in Fall 2027! This is a great opportunity for students interested in pursuing a Master's or PhD in Psychology.
+I am excited to announce that the CALM Lab is recruiting Master's and PhD students to join our team starting in Fall 2027! This is a great opportunity for students interested in pursuing a Master's or PhD in Psychology.
+
+The University of North Carolina Wilmington offers a supportive and collaborative environment for graduate students. They offer a Master's program in Psychological Science ([learn more here](https://www.uncw.edu/academics/majors-programs/cse/psychology-ms/details/science-concentration/){target="_blank"}) and a PhD program in Psychological Science ([learn more here](https://www.uncw.edu/academics/majors-programs/cse/psychology-phd/details/psychological-science/){target="_blank"}). Both programs provide students with the opportunity to work closely with faculty members on research projects, gain hands-on experience in data collection and analysis, and develop skills in research methods and scientific communication. To learn more about the University of North Carolina Wilmington's Psychology graduate programs, please visit the [UNCW Psychology Graduate Program](https://www.uncw.edu/academics/colleges/cse/departments/psychology/graduate-programs){target="_blank"} page.
 
 As a graduate student in the CALM Lab, you will have the chance to work closely with our team on cutting-edge research projects, contribute to data collection and analysis, and gain valuable skills in research methods and scientific communication. We welcome students from all backgrounds who are passionate about learning and contributing to our research.
 
-Check out our Research and Publications page to learn more about our work, and if you are interested in applying, please contact us at:
+Check out our Research and Publications page to learn more about our work, and if you are interested in applying, please contact me at:
 
 tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
-We look forward to hearing from you!
+I look forward to hearing from you!
+
+Jason Tsukahara, Ph.D.
 
 :::

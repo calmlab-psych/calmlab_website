@@ -22,6 +22,12 @@ github: dr-JT
 page-layout: full
 body-classes: profile-page
 
+format:
+  html:
+    include-in-header:
+      - text: |
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+
 about:
   id: person-about
   template: jolla

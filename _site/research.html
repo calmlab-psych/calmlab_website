@@ -26,6 +26,7 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+.display.math{display: block; text-align: center; margin: 0.5rem auto;}
 </style>
 
 
@@ -143,37 +144,7 @@ ul.task-list li input[type="checkbox"] {
     }
   })
   </script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
 
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="assets/style.css">
 <meta property="og:title" content="Research – CALM LAB">
@@ -1218,7 +1189,7 @@ window.Quarto = {
 <p>How can mindfulness-related practice enhance our ability to pay attention, and how can that, in turn, improve our well-being and quality of life?</p>
 </div>
 <div class="profile-section-card">
-<p>Mindfulness traditions across the world have long emphasized the importance of attention in shaping the mind. We study how mindfulness-related practices can enhance our ability to pay attention, and that how that, in turn, can improve our well-being and quality of life.</p>
+<p>Contemplative traditions across the world have long emphasized the importance of attention in shaping the mind. We study how mindfulness-related practices can enhance our ability to pay attention, and that how that, in turn, can improve our well-being and quality of life.</p>
 </div>
 <section id="publications-2" class="level3">
 <h3 data-anchor-id="publications-2">Publications</h3>
