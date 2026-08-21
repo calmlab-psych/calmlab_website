@@ -1,4 +1,5 @@
 ---
+pagetitle: Jason
 name: Jason S. Tsukahara, Ph.D.
 position: Principal Investigator
 tagline: Dr. Tsukahara directs the CALM Lab and is an Assistant Professor in the Department of Psychology at the University of North Carolina Wilmington.
