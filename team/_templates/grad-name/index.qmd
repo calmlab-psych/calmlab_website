@@ -1,4 +1,5 @@
 ---
+pagetitle: First
 name: First Last
 position: Graduate Student
 tagline: Short sentence describing research interest.
