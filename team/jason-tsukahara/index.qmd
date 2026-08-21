@@ -35,8 +35,10 @@ about:
 listing:
   - id: profile-publications-list
     contents:
-      - "../../publications/2023/jepg-squared-intro/index.qmd"
-      - "../../publications/2023/ac-psychomotor/index.qmd"
+      - "../../publications/2021/pnas-intelligence-lc/index.qmd"
+      - "../../publications/2021/jepg-toolbox-1/index.qmd"
+      - "../../publications/2026/cogneuro-eeg-micro/index.qmd"
+      - "../../publications/2026/pnas-qpp/index.qmd"
     template: "../../assets/listings/pub-listing-selected.ejs.md"
     fields: [title, pub-authors, show-on-profiles, pub-year, venue, pub-type, pub-status, pdf, data, code]
     sort:
