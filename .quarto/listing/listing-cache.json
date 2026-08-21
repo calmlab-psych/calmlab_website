@@ -21,8 +21,10 @@
       "../news/*/*/index.qmd"
     ],
     "team/jason-tsukahara/index.qmd": [
-      "../../publications/2023/jepg-squared-intro/index.qmd",
-      "../../publications/2023/ac-psychomotor/index.qmd"
+      "../../publications/2021/pnas-intelligence-lc/index.qmd",
+      "../../publications/2021/jepg-toolbox-1/index.qmd",
+      "../../publications/2026/cogneuro-eeg-micro/index.qmd",
+      "../../publications/2026/pnas-qpp/index.qmd"
     ]
   }
 }
