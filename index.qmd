@@ -125,7 +125,7 @@ Our research in the CALM Lab is organized around three interconnected areas that
 
 People differ in their ability to pay attention, and those differences are a fundamental aspect of human cognition. We study how well individuals can control their attention and how this ability influences their perception, memory, reasoning, and well-being.
 
-[View Project →]{.link-cta}</a>
+[Learn More →]{.link-cta}</a>
 :::::
 
 ::::: {.card .card-interactive .quick-card .is-yellow}
@@ -135,7 +135,7 @@ People differ in their ability to pay attention, and those differences are a fun
 
 A key focus of our research in this area is how the locus coeruleus-norepinephrine (LC-NE) system acts as a central hub for regulating attention and arousal, and how this system interacts with other brain networks to support the control of attention.
 
-[View Project →]{.link-cta}</a>
+[Learn More →]{.link-cta}</a>
 
 :::::
 
@@ -146,7 +146,7 @@ A key focus of our research in this area is how the locus coeruleus-norepinephri
 
 Contemplative traditions across the world have long emphasized the importance of attention in shaping the mind. We study how mindfulness-related practices can enhance our ability to pay attention, and that how that, in turn, can improve our well-being and quality of life.
 
-[View Project →]{.link-cta}</a>
+[Learn More →]{.link-cta}</a>
 
 :::::
 

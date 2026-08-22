@@ -56,10 +56,6 @@ Research areas and ongoing lines of work in the CALM Lab.
 
 :::
 
-::: hero-intro
-Our research in the CALM Lab is organized around three interconnected areas that together aim to understand the role of attention across contexts of life and mind.
-:::
-
 :::::::::::: {.grid-3 .section-shell}
 ::::: {.card .card-interactive .quick-card .is-blue}
 <a href="#cognitive-section">
