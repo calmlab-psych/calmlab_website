@@ -63,7 +63,7 @@ Principal Investigator
 General Inquiries
 :::
 
-**Email**: tsukaharaj@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="tsukaharaj@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
+**Email**: calmlab@uncw.edu <a onclick="copyEmail(this); return false;" data-copy="calmlab@uncw.edu" title="Copy email" class="copy-email-link"><i class="bi bi-copy"></i></a>
 
 ::: {style="line-height: 1;"}
 **Location:** Teaching Lab 3107
