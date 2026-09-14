@@ -46,67 +46,7 @@ UNC Wilmington
 :::::::
 
 ::: hero-intro
-What you pay attention to, and how well you are able to pay attention, shapes your thoughts, your success, and your well-being. Understanding the voluntary control of attention is the focus of the CALM Lab, where we combine cognitive psychology, neuroscience, and contemplative practices to understand how attention shapes life and mind.
-:::
-
-:::::::::::: {.grid-3 .section-shell}
-::::: {.card .card-interactive .quick-card .is-blue}
-<a href="team/index.qmd">
-
-::: {.icon-badge .icon-badge-sm}
-<i class="bi bi-people"></i>
-:::
-
-### Team
-
-Meet the researchers and students working in the CALM Lab.
-
-[Meet the Team →]{.link-cta}</a>
-:::::
-
-::::: {.card .card-interactive .quick-card .is-yellow}
-<a href="research.qmd">
-
-::: {.icon-badge .icon-badge-sm}
-<i class="bi bi-diagram-3"></i>
-:::
-
-### Research
-
-Explore our research on attention control, brain networks, and mindfulness.
-
-[Explore Research →]{.link-cta}</a>
-
-:::::
-
-::::: {.card .card-interactive .quick-card .is-green}
-<a href="contact.qmd">
-
-::: {.icon-badge .icon-badge-sm}
-<i class="bi bi-envelope"></i>
-:::
-
-### Connect
-
-Interested in collaborating, joining the lab, or connecting with us?
-
-[Get in Touch →]{.link-cta}</a>
-
-:::::
-
-::::::::::::
-
-------------------------------------------------------------------------
-
-# [Latest News]{.section-title}
-
-::: {#home-news}
-:::
-
-::: listing-more
-
-<a href="/news/" class="link-cta">View All News →</a>
-
+The CALM Lab studies how the ability to control attention influences cognition, supports performance, and promotes well-being. We examine why people differ in this ability, the cognitive and neural mechanisms that support it, and whether contemplative practices can strengthen it.
 :::
 
 ------------------------------------------------------------------------
@@ -160,3 +100,50 @@ Contemplative traditions across the world have long emphasized the importance of
 ::: listing-more
 <a href="/publications/" class="link-cta">View All Publications →</a>
 :::
+
+------------------------------------------------------------------------
+
+# [Lab News]{.section-title}
+
+::: {#home-news}
+:::
+
+::: listing-more
+
+<a href="/news/" class="link-cta">View All News →</a>
+
+:::
+
+------------------------------------------------------------------------
+
+:::::::::::: {.grid-2 .section-shell}
+::::: {.card .card-interactive .quick-card .is-blue}
+<a href="team/index.qmd">
+
+::: {.icon-badge .icon-badge-sm}
+<i class="bi bi-people"></i>
+:::
+
+### Team
+
+Meet the researchers and students working in the CALM Lab.
+
+[Meet the Team →]{.link-cta}</a>
+:::::
+
+::::: {.card .card-interactive .quick-card .is-green}
+<a href="contact.qmd">
+
+::: {.icon-badge .icon-badge-sm}
+<i class="bi bi-envelope"></i>
+:::
+
+### Connect
+
+Interested in collaborating, joining the lab, or connecting with us?
+
+[Get in Touch →]{.link-cta}</a>
+
+:::::
+
+::::::::::::
