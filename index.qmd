@@ -116,6 +116,8 @@ Contemplative traditions across the world have long emphasized the importance of
 
 ------------------------------------------------------------------------
 
+ 
+
 :::::::::::: {.grid-2 .section-shell}
 ::::: {.card .card-interactive .quick-card .is-blue}
 <a href="team/index.qmd">
