@@ -116,7 +116,7 @@ Contemplative traditions across the world have long emphasized the importance of
 
 ------------------------------------------------------------------------
 
- 
+# [Connect]{.section-title}
 
 :::::::::::: {.grid-2 .section-shell}
 ::::: {.card .card-interactive .quick-card .is-blue}
@@ -140,7 +140,7 @@ Meet the researchers and students working in the CALM Lab.
 <i class="bi bi-envelope"></i>
 :::
 
-### Connect
+### Contact
 
 Interested in collaborating, joining the lab, or connecting with us?
 
