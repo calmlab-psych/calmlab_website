@@ -14,6 +14,12 @@ website:
   image: /images/share_preview.png
   search: false
 
+  announcement:
+    dismissable: true
+    content: "**Announcement** - We are recruiting a Master or Ph.D. student to join our lab! [See more information here](news/2026/06-14-grad-recruit/index.qmd)."
+    type: primary
+    position: below-navbar
+
   navbar:
     pinned: true
     right:

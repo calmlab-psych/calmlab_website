@@ -51,6 +51,27 @@
    Base
    ========================= */
 
+/* 1. Reset the main announcement container alignment */
+#quarto-announcement {
+  align-items: center !important;
+}
+
+/* 2. Push the text wrapper to fill the center space */
+#quarto-announcement .quarto-announcement-content {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px; /* Adds a nice gap between the icon and the text */
+}
+
+/* 3. Pull the icon inside the centered text container layout */
+#quarto-announcement .quarto-announcement-icon {
+  margin: 0 !important;
+  position: static !important;
+}
+
 * {
   box-sizing: border-box;
 }
